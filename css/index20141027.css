@@ -50,11 +50,11 @@ a:hover{ text-decoration:underline; color:#cc0000}
 /********************第一行**************************/
 #mainContent .mainRow1{}
 /*---搜索条件---*/
-.mainRow1 .row1_search{float:left; width:950px; height:410px; background-color:#ffffff; border:1px solid #d88080; border-left:none;-moz-box-shadow: 2px 2px 3px #909090;/*firefox*/-webkit-box-shadow: 2px 2px 3px #909090;/*safari或chrome*/box-shadow:2px 2px 3px #909090;/*opera或ie9*/ display: block;}
+.mainRow1 .row1_search{float:left; width:950px; height:463px; background-color:#ffffff; border:1px solid #d88080; border-left:none;-moz-box-shadow: 2px 2px 3px #909090;/*firefox*/-webkit-box-shadow: 2px 2px 3px #909090;/*safari或chrome*/box-shadow:2px 2px 3px #909090;/*opera或ie9*/ display: block;}
 /*-左侧分类-*/
-.row1_search .search_left{ width:181px; float:left; background-color:#c81623;height:410px;}
+.row1_search .search_left{ width:181px; float:left; background-color:#c81623;height:463px;}
 .row1_search .search_left ul{ border-top:1px solid #ba2e22;}
-.row1_search .search_left ul li{ margin-left:2px; height:42px; border-bottom:1px solid #ba2e22; border-top:1px solid #eb4c3f; font-size:14px; line-height:42px; color:#fff7ea; font-weight:bolder; cursor:pointer}
+.row1_search .search_left ul li{ margin-left:2px; height:50px; border-bottom:1px solid #ba2e22; border-top:1px solid #eb4c3f; font-size:14px; line-height:50px; color:#fff7ea; font-weight:bolder; cursor:pointer}
 .row1_search .search_left ul li p{ margin:0px; padding:0px; margin-left:0px;_margin-left:0px; padding-left:55px}
 .row1_search .search_left ul li p span{ color:#fff7ea; margin-left:20px;_margin-left:10px;}
 .row1_search .search_left ul li:hover{background-color:#ffffff; color:#d25e56}
@@ -66,8 +66,9 @@ a:hover{ text-decoration:underline; color:#cc0000}
 .row1_search .search_left ul .search_kind3{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -76px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-3.png",sizingMethod='crop');_height:42px;_width:100px;}
 .row1_search .search_left ul .search_kind4{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -120px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-4.png",sizingMethod='crop');_height:42px;_width:100px;}
 .row1_search .search_left ul .search_kind5{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -163px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-5.png",sizingMethod='crop');_height:42px;_width:100px;}
-.row1_search .search_left ul .search_kind6{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -207px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-6.png",sizingMethod='crop');_height:42px;_width:100px;}
-.row1_search .search_left ul .search_kindh{ background-color:#fb8901; height:45px; margin-left:0px; border-bottom:none;color:#fff7ea;}
+.row1_search .search_left ul .search_kind6{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -296px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-6.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kind8{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -340px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-6.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kindh{ background-color:#fb8901; height:45px; line-height:45px;margin-left:0px; border-bottom:none;color:#fff7ea;}
 .row1_search .search_left ul .search_kind7{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 18px -252px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-7.png",sizingMethod='crop');_height:42px;_width:100px;margin-left:2px; }
 .row1_search .search_left ul .search_kindh .current7{ color:#4594fb; background-color:#ffffff; height:44px}
 .row1_search .search_left ul .search_kindh .current7 span{color:#63dcf9}
@@ -120,7 +121,7 @@ a:hover{ text-decoration:underline; color:#cc0000}
 #hot_kind7 .kindH_p .kindH_pul li.current{ color:#f2612c; border-bottom:2px solid #f2612c; line-height:34px;}
 /*填写采购请求*/
 #hot_kind7 .kindH_p .kind_fillin{ padding-left:15px; padding-bottom:15px}
-.kindH_p .kind_fillin .txt_class,.kindH_p .kind_fillin .txt_hnsort{ width:160px; border:1px solid #ececec; height:30px; line-height:30px; background:url(../Images/icon/icon_calendar1.gif) no-repeat 125px 8px; border-radius:8px; padding-left:5px; vertical-align:middle}
+.kindH_p .kind_fillin .txt_class,.kindH_p .kind_fillin .txt_hnsort{ width:160px; border:1px solid #ececec; height:30px; line-height:30px; border-radius:8px; padding-left:5px; vertical-align:middle}
 .kindH_p .kind_fillin .txt_address,.kindH_p .kind_fillin  .txt_hspec,.kindH_p .kind_fillin .txt_hmaterial{width:160px; border:1px solid #ececec; height:30px; line-height:30px; border-radius:8px; padding-left:5px; vertical-align:middle}
 /*上传采购清单*/
 .kindH_p .kind_up{ padding-left:15px; line-height:21px; color:#787777; display:none}
