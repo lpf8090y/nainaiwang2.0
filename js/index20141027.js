@@ -28,7 +28,7 @@ $(function () {
     }
 
     //钢材分类
-    $(".search_left ul li").click(function () {
+    $(".search_left ul li").mouseover(function () {
         $(this).addClass("current").siblings().removeClass("current");
         $("#hot_kind").show();
         $("#hot_kind7").hide();
@@ -798,7 +798,7 @@ $(function () {
     });
     //在线客服链接
     $(".online_div1").click(function () {
-        javascript: window.open('http://live800.gtxh.cn/live800/chatClient/chatbox.jsp?companyID=8909&amp;configID=9&amp;skillId=2&amp;enterurl=http%3A%2F%2Fwww%2Egtxh%2Ecom%2F&amp;k=1', 'newwindow', 'height=520, width=778, top=100, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no');
+        javascript: window.open('#', 'newwindow', 'height=520, width=778, top=100, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no');
     });
 
     //**最新成交 开始**// 

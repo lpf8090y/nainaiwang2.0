@@ -5,6 +5,7 @@
 基本
 ********************/
 body{margin:0px;padding:0px; font-size:12px; font-family:Arial,"宋体","华文细黑"; color:#333333; background-color:#ffffff; }
+body{behavior:url(css/csshover.htc);} 
 ol,ul,li{list-style:none;margin:0px;padding:0px;}
 img{vertical-align:top;border:0px}
 a{ text-decoration:none}
@@ -61,20 +62,21 @@ a:hover{ text-decoration:underline; color:#cc0000}
 .row1_search .search_left ul li:hover p span{color:#c81623}
 .row1_search .search_left ul .current{background-color:#ffffff; color:#c81623}
 .row1_search .search_left ul .current p span{ color:#c81623}
-.row1_search .search_left ul .search_kind1{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px 11px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-1.png",sizingMethod='crop');_height:42px;_width:100px;}
-.row1_search .search_left ul .search_kind2{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -33px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-2.png",sizingMethod='crop');_height:42px;_width:100px;}
-.row1_search .search_left ul .search_kind3{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -76px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-3.png",sizingMethod='crop');_height:42px;_width:100px;}
-.row1_search .search_left ul .search_kind4{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -120px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-4.png",sizingMethod='crop');_height:42px;_width:100px;}
-.row1_search .search_left ul .search_kind5{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -163px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-5.png",sizingMethod='crop');_height:42px;_width:100px;}
-.row1_search .search_left ul .search_kind6{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -296px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-6.png",sizingMethod='crop');_height:42px;_width:100px;}
-.row1_search .search_left ul .search_kind8{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 20px -340px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-6.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kind1{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 5px 15px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-1.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kind2{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 5px -25px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-2.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kind3{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 5px -65px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-3.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kind4{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 5px -105px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-4.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kind5{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 5px -151px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-5.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kind6{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 5px -296px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-6.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kind8{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 5px -340px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-6.png",sizingMethod='crop');_height:42px;_width:100px;}
+.row1_search .search_left ul .search_kind9{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 5px -200px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-6.png",sizingMethod='crop');_height:42px;_width:100px;}
 .row1_search .search_left ul .search_kindh{ background-color:#fb8901; height:45px; line-height:45px;margin-left:0px; border-bottom:none;color:#fff7ea;}
-.row1_search .search_left ul .search_kind7{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 18px -252px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-7.png",sizingMethod='crop');_height:42px;_width:100px;margin-left:2px; }
+.row1_search .search_left ul .search_kind7{ background:url(../Images/icon/icon_index_searchl.png) no-repeat 5px -252px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pub.prcsteel.com/Images/icon/icon_index_searchl-7.png",sizingMethod='crop');_height:42px;_width:100px;margin-left:2px; }
 .row1_search .search_left ul .search_kindh .current7{ color:#4594fb; background-color:#ffffff; height:44px}
 .row1_search .search_left ul .search_kindh .current7 span{color:#63dcf9}
 
 /*--右侧搜索--*/
-.row1_search .search_right{ float:left; background:url(../Images/bg/bg_index_searchr.gif) repeat-x top;  width:769px; height:408px}
+.row1_search .search_right{ float:left; background:url(../Images/bg/bg_index_searchr.gif) repeat-x top;  width:769px; height:463px}
 /*-搜索条件-*/
 .search_right .search_rightt{ height:70px; margin-top:24px; text-align:center; position:relative;}
 .search_right .search_rightt .txt_nsort,.search_right .search_rightt .txt_spec,.search_right .search_rightt .txt_material{ width:120px; border:1px solid #ececec; height:35px; line-height:32px; background:url(../Images/icon/icon_calendar1.gif) no-repeat 125px 8px; border-radius:3px; padding-left:5px; padding-right:25px; vertical-align:middle}
