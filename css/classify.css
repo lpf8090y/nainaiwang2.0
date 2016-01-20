@@ -108,4 +108,4 @@ a:hover,a:active { text-decoration:underline; }
 
 
 /*轮播大图*/
-.banner{width:770px;height:433px;border:0;background: #fff;position: absolute;top:0;left:181px;}
+.banner{width:770px;height:433px;border:0;background:none;position: absolute;top:0;left:181px;}

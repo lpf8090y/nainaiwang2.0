@@ -4,7 +4,7 @@
 /*******************
 基本
 ********************/
-body{margin:0px;padding:0px; font-size:12px; font-family:Arial,"宋体","华文细黑"; color:#333333; background-color:#ffffff; }
+body{margin:0px;padding:0px; font-size:12px; font-family:Arial,"宋体","华文细黑"; color:#333333; background-color:#d8dedb; }
 body{behavior:url(css/csshover.htc);} 
 ol,ul,li{list-style:none;margin:0px;padding:0px;}
 img{vertical-align:top;border:0px}
@@ -13,12 +13,14 @@ a:hover{ text-decoration:underline; color:#cc0000}
 
 .page_width{ width:1190px; margin:auto}
 
+.clear{clear:both;}
+
 /********************页面结构**************************/
 #index_logo{height:80px; background-color:#ffffff; }/*logo*/
 #index_nav{height:43px; background-color:#c81623; font-family:"微软雅黑","宋体", "华文细黑"; font-size:16px;}/*导航*/
 #mainContent{background:url(../Images/bg/bg_index_main.gif) repeat-x;_margin-top:-19px;*margin-top:-19px}/*主要内容*/
 #mainContent .page_width{ position:relative}
-#mainContent .mainRow1{height:525px; margin-bottom:10px;}/*第一行 搜索*/
+#mainContent .mainRow1{height:535px; margin-bottom:10px;}/*第一行 搜索*/
 #mainContent .mainRow2{ height:135px}/*第二行正在求购*/
 #mainContent .banner_advert{height:60px; background:url(../Images/Temporary/temp_index_advert.gif); margin-top:10px; margin-bottom:5px;}/*广告栏*/
 #mainContent .mainRow3{width:1190px; float:left;position:relative; }/*第三行 五大类*/
@@ -167,17 +169,39 @@ a:hover{ text-decoration:underline; color:#cc0000}
 .row1_clinch #clinch_con_tips .top{width:0; height:0; border-width:7px 7px; border-style:solid; border-color: transparent transparent #ffffcc transparent; position:absolute; top:-14px; left:51px;}
 
 .row1_clinch .data-list{
-	padding:3px 15px 3px 15px;
-	height: 240px;
+	padding:3px 15px;
+	height: 265px;
 	overflow: hidden;
 	position: relative;
+	background: #fff;
 }
 .row1_clinch .data-list .data-tit{
+	width: 210px;
 	height: 60px;
 	padding:3px 0;
+	border-bottom: 1px dotted #aaa;
 }
-.row1_clinch .data-list .data-tit .data{width: 145px;}
-.row1_clinch .data-list .data-tit .data_img{width: 63px;}
+.row1_clinch .data-list .data-tit .data{width: 108px;line-height: 30px;float: left;}
+.row1_clinch .data-list .data-tit .data .data_title{color:#999;font-size: 12px;}
+.row1_clinch .data-list .data-tit .data .data_content{color:#c81623;font-size: 18px;font-weight: bolder;padding-left: 24px;}
+.row1_clinch .data-list .data-tit .data_img{width: 100px;}
+
+/*快捷通道*/
+.mainRow1 .row1_quick{width:238px;_width:230px;height:200px; margin-top:8px; background-color:#ffffff;float:right; position:relative}
+.row1_quick .row1_tit{ height:33px; border-bottom:1px solid #e4e2e2; line-height:33px;}
+.row1_quick .row1_tit b{border-bottom:2px solid #e4e2e2; display:block; float:left; line-height:32px; padding-left:15px; padding-right:15px; color:#6c6a6b;font-size:14px;}
+.row1_quick li{float:left;width:118px;height:82px;}
+.row1_quick .quick_but1{background: url(../images/quick_02.png) no-repeat;border-bottom: 1px solid #CCC;border-right: 1px solid #CCC;}
+.row1_quick .quick_but2{background: url(../images/quick_04.png) no-repeat;border-bottom: 1px solid #CCC;}
+.row1_quick .quick_but3{background: url(../images/quick_06.png) no-repeat;border-right: 1px solid #CCC;}
+.row1_quick .quick_but4{background: url(../images/quick_08.png) no-repeat;}
+.row1_quick .quick_but1:hover{background: url(../images/quick_03.png) no-repeat;cursor: pointer;}
+.row1_quick .quick_but2:hover{background: url(../images/quick_05.png) no-repeat;cursor: pointer;}
+.row1_quick .quick_but3:hover{background: url(../images/quick_07.png) no-repeat;cursor: pointer;}
+.row1_quick .quick_but4:hover{background: url(../images/quick_09.png) no-repeat;cursor: pointer;}
+
+/*广告条*/
+.ad_line{width:943px;height:93px;background: #fff;position: absolute;top:444px;}
 
 
 /********************第二行**************************/
@@ -408,7 +432,7 @@ a.close         {width:30px;height:30px;float:right;background:url(http://market
   .search-btn-o {background:#ef1f2d;}
   .search-btn-c {background:#9e2325;}
 .row1_clinch .clinch_con #clinch_con div,.row1_clinch .clinch_con,.mainRow1 .row1_clinch,.row1_clinch .clinch_con #clinch_con{ position: static;}
-.mainRow1 .row1_clinch{height:315px;overflow:hidden;}
+.mainRow1 .row1_clinch{height:326px;overflow:hidden;}
 .row1_clinch .clinch_con #clinch_con div .clinch_con_time{position:static;}
 .row1_clinch .clinch_con #clinch_con div{height:36px;padding-left:20px;line-height:36px;background-position:3px 13px;}
 #mainContent  {overflow:hidden;}
