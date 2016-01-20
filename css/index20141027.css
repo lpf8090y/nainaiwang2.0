@@ -166,8 +166,18 @@ a:hover{ text-decoration:underline; color:#cc0000}
 .row1_clinch #clinch_con_tips .bot{width:0; height:0; border-width:8px 8px; border-style:solid; border-color: transparent transparent #ffcc99 transparent; position:absolute; top:-16px; left:50px;}
 .row1_clinch #clinch_con_tips .top{width:0; height:0; border-width:7px 7px; border-style:solid; border-color: transparent transparent #ffffcc transparent; position:absolute; top:-14px; left:51px;}
 
-/*轮播大图*/
-.banner
+.row1_clinch .data-list{
+	padding:3px 15px 3px 15px;
+	height: 240px;
+	overflow: hidden;
+	position: relative;
+}
+.row1_clinch .data-list .data-tit{
+	height: 60px;
+	padding:3px 0;
+}
+.row1_clinch .data-list .data-tit .data{width: 145px;}
+.row1_clinch .data-list .data-tit .data_img{width: 63px;}
 
 
 /********************第二行**************************/
