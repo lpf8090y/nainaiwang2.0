@@ -42,11 +42,13 @@ a:hover,a:active { text-decoration:underline; }
 
 
 
-.wrap { width:900px; float: left;}
-.all-sort-list { position:relative; width:179px; border:1px solid #c81623; border-top:none; padding:0px 0px 3px 0px; }
+.wrap { width:941px; float: left;}
+.all-sort-list { position:relative; width:179px; border:1px solid #c81623; border-top:none; padding:0px; }
 .all-sort-list .item { height:46px; width:179px;border-top:1px solid #eb4c3f; border-bottom: 1px solid #ba2e22;color: #fff;background:#c81623;}
+.all-sort-list .item-sp{background:#fb8901;}
 .all-sort-list .item .fenlei-h1{font-size: 18px; font-weight: normal;}
-.all-sort-list .item:hover{color:red;background:none;}
+.all-sort-list .item .fenlei-h2{font-size: 18px; font-weight: normal; line-height: 45px;}
+.all-sort-list .item:hover{color:red;background:none;font-weight: bolder;}
 
 .all-sort-list .item .icon-nh1{width:43px;height: 46px;background: url(../Images/icon/icon_index_searchl.png) no-repeat 10px 12px;_background:none;float: left;}
 .all-sort-list .item .icon-nh2{width:43px;height: 46px;background: url(../Images/icon/icon_index_searchl.png) no-repeat 10px -25px;_background:none;float: left;}
@@ -103,3 +105,8 @@ a:hover,a:active { text-decoration:underline; }
 .item-list .cat-right dd { padding-top:6px; line-height:22px; overflow:hidden; padding:3px 0px 0px; }
 .item-list .cat-right dt { padding:3px 6px 0px 0px; font-weight:700; color:#E4393C;  }
 .item-list .cat-right dd a:hover { color:#666; }
+
+
+
+/*轮播大图*/
+.banner{width:770px;height:433px;border:0;background: #fff;position: absolute;top:0;left:181px;}

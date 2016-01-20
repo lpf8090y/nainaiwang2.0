@@ -166,6 +166,9 @@ a:hover{ text-decoration:underline; color:#cc0000}
 .row1_clinch #clinch_con_tips .bot{width:0; height:0; border-width:8px 8px; border-style:solid; border-color: transparent transparent #ffcc99 transparent; position:absolute; top:-16px; left:50px;}
 .row1_clinch #clinch_con_tips .top{width:0; height:0; border-width:7px 7px; border-style:solid; border-color: transparent transparent #ffffcc transparent; position:absolute; top:-14px; left:51px;}
 
+/*轮播大图*/
+.banner
+
 
 /********************第二行**************************/
 #mainContent .mainRow2{}
