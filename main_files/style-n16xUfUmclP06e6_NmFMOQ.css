@@ -2489,3 +2489,36 @@ text-indent: 1em;
 	display: block;
 }
 
+.i_market_right .ShopPro .shop_rank{
+	width: 240px;margin:0 auto;
+	padding-top: 15px;
+	height:464px;
+}
+.shop_rank span{
+	display: inline-block;
+	text-align: center;
+}
+.shop_rank .rank_tit{
+	text-align: center;
+	line-height: 42px;
+}
+.shop_rank .rank_list{
+	text-align: center;
+	border-bottom: 1px dotted #aaa;
+	line-height: 42px;
+}
+.i_r_1{
+	width: 30px;
+}
+.i_r_2{
+	width: 60px;
+}
+.i_r_3{
+	width: 30px;
+}
+.i_r_4{
+	width: 30px;
+}
+.i_r_5{
+	width: 50px;
+}
