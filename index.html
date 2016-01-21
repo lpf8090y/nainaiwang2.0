@@ -939,10 +939,26 @@ body{_padding-top:30px;}
                             },function(){
                                 $(this).removeClass('hover');
                                 $(this).children('.item-list').css('display','none');
+                                var id=$(this).attr("id");
+                                //alert(id);
                                 $(this).children('.icon-nh'+id).removeClass('icon-nh'+id+'-1');
                             });
 
                         </script>
+
+                    // <script type="text/javascript">                                                                                                                                                                                        
+                    //  $(document).ready(function(){
+                    //  $(".item").mouseenter(function(){                                                                                                                                                                                                                        
+                    //  $(".item").css("background-color","yellow");
+                    //   });
+                    //  $(".item").mouseleave(function(){
+                    //  $(".item").css("background-color","#E9E9E4");
+                    //   });   
+                    //     });
+                    // </script>
+
+
+
                 <!--搜索条件 结束-->
                 <!--最新交易 开始-->
                 <div id="row1_clinch" class="row1_clinch">
