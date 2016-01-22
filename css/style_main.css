@@ -590,6 +590,7 @@
 /*市场框架*/
 .i_market{
 	width: 1190px;
+	height: 488px;
 	margin: 20px auto 0 auto;
 }
 .i_market_left{
@@ -1192,12 +1193,13 @@
 }
 .iServiceCon ul li.iServiceText{
 	margin: 15px 0 0 0;
+	height: 60px;
 	position: relative;
 	line-height: 20px;
 	padding: 0 0 0 50px;
 }
 .iServiceCon ul li s{
-	background: url(../css/../images/body_bg_v3.png);
+	background: url(../images/body_bg_v3.png);
 	position: absolute;
 }
 .iServiceCon ul li s.iS_img1{
