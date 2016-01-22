@@ -1,5 +1,4 @@
-*{margin:0;padding:0;list-style:none;border:none;outline:none;}
-body{font-family:"microsoft yahei";background:#444;color:#fff;}
+
 #fixed {
 	background-color:#c81624;
 	width:55px;
@@ -7,6 +6,7 @@ body{font-family:"microsoft yahei";background:#444;color:#fff;}
 	top:0;
 	bottom:0;
 	z-index:99999;
+	position: fixed;
 }
 #fixed dl {
 	list-style:none;
