@@ -211,9 +211,21 @@ body{_padding-top:30px;}
         <div class="page_width">
             <div class="index_logo">
                 <h1>
-                    <a href="http://www.prcsteel.com/"></a>
+                    <a href="http://www.nainaiwang.com/"></a>
                 </h1>
             </div>
+
+            <script type="text/javascript" src="js/search&floor.js"></script>
+            <div class="searchbox">
+                <ul class="border1">
+                    <li><a href="#" class="style1">供应</a></li>
+                    <li><a href="#">求购</a></li>
+                </ul>
+                <div class="bodys">
+                    <p><input type="text" value="" id="" class="one" placeholder="高铝砖 乙醇 PP" /><button class="one1">搜索</button></p>
+                    <p><input type="text" value="" id="" class="two" placeholder="乙醇 PP 高铝砖" /><button class="two2">搜索</button></p>
+                </div>
+            </div>  
             <div class="index_phone">
                 全国服务热线：<span>400-6738-086</span></div>
         </div>
@@ -244,9 +256,11 @@ body{_padding-top:30px;}
     </div>
     <!------------------导航 开始-------------------->
     <form method="post" action="" id="form1">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="b7kHdN58Jsi2cPaAmmpEqXjSD5M7lilMmnUNdKzTkgYwpBrDsYEml4gvo/iOj8sf">
-</div>
+        <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="b7kHdN58Jsi2cPaAmmpEqXjSD5M7lilMmnUNdKzTkgYwpBrDsYEml4gvo/iOj8sf">
+        </div>
+    </form>
+
 
     <input type="hidden" id="UserID">
     <!--主要内容 开始-->
@@ -1071,6 +1085,7 @@ body{_padding-top:30px;}
                                 <div class="i_market clearfix">
 
                                     <div class="i_market_left" id="rmb_market">
+                                            <div id="floor-1" class="item"></div>
 
                                         <div class="i_leftTit clearfix">
                                             <div class="i_left_title" name="1" id="item1">交易市场</div>
@@ -1584,6 +1599,7 @@ body{_padding-top:30px;}
                                 <div class="i_market clearfix">
 
                                     <div class="i_market_left" id="rmb_market">
+                                            <div id="floor-2" class="item"></div>
 
                                         <div class="i_leftTit clearfix">
                                             <div class="i_left_title" name="1" id="item2">市场指数</div>
@@ -2016,6 +2032,7 @@ body{_padding-top:30px;}
                                 <div class="i_market clearfix">
 
                                     <div class="i_market_left" id="retail_market">
+                                            <div id="floor-3" class="item"></div>
 
                                         <div class="i_leftTit clearfix">
                                             <div class="i_left_title" name="1" id="item3">推荐商家</div>
@@ -2768,14 +2785,13 @@ body{_padding-top:30px;}
             
 
 
-            
-            <div class="flink_bg">      
+                  
                 <div class="div_flink">
                     
                             <a href="http://www.gt123.cn/link/link.asp" target="_blank">钢铁123网</a>
                                                                     
                 </div>                
-            </div>   
+           
             <!--公用底部控件 开始-->
             <div class="page_width" style="_margin-top: -15px; position: static;">
                 <!--样式待改善-->
@@ -2803,6 +2819,11 @@ body{_padding-top:30px;}
         版权所有
     </div>
     <div>
+
+
+
+
+
         <center>
             &nbsp;
             <a rel="external nofollow" href="http://www.miibeian.gov.cn/" target="_blank">
@@ -2829,6 +2850,7 @@ body{_padding-top:30px;}
 
         </div>
     </div>
+</div>  
     <!--主要内容 结束-->
     
 <script type="text/javascript" src="js/jquery.fixed.js" charset="UTF-8"></script>
@@ -2845,5 +2867,39 @@ body{_padding-top:30px;}
         <dd><a href="http://sc.chinaz.com/" target="_blank" class="dh">耐耐社区</a></dd>
     </dl>
 </div>
+
+<!-- 页面侧边栏 -->
+
+<!-- 底部导航 -->
+
+<link type="text/css" rel="stylesheet" href="css/global_site_index_new.css">
+
+
+<!--楼层电梯 -->
+<div class="floor_left_box" id="floornav" data-tpa="YHD_HOMEPAGE_FLOORNAV" style="display:none;">
+
+<a href="#floor-1" data="#floor-1" rel="floor-1" class="cur">
+<i class="left_iconfont "><img src="images/floor_07.png">交易市场</i>
+<em class="two_line"><img src="images/floor_cur_07.png">交易市场</em>
+</a>
+<a href="#floor-2" data="#floor-2" rel="floor-2">
+<i class="left_iconfont "><img src="images/floor_09.png">市场指数</i>
+<em class="two_line"><img src="images/floor_cur_09.png">市场指数</em>
+</a>
+<a href="#floor-3" data="#floor-3" rel="floor-3">
+<i class="left_iconfont "><img src="images/floor_03.png">推荐商家</i>
+<em class="two_line"><img src="images/floor_cur_03.png">推荐商家</em>
+</a>
+<!-- 
+<a href="javascript:;" data="#toTop" rel="toTop">
+<i class="left_iconfont ">返回顶部</i>
+<em class="two_line">返回顶部</em>
+</a> -->
+
+</div> 
+
+
+
+<!--悬浮导航-->
 
 </body></html>
