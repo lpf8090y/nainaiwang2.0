@@ -44,6 +44,9 @@ a{
   border: 1px solid;
   padding: 2px 10px;
 }
+.nav-list li:hover{
+	background: #930d13;
+}
 .nav-list li{
   float: left;
   height: 60px;
@@ -165,7 +168,7 @@ background: #027cff;
 	display:none;
 }
 .user_nrz {
-	border: 1px solid #c0c0c0;
+	
 	margin-bottom:20px;
 }
 .user_nrz .nrz_tit{
@@ -208,20 +211,22 @@ background: #027cff;
 		color:#fff;
 }
 /*中间内容*/
-.user_zhxi,.user_pay{
+.user_zhxi,.user_pay,.user_pay_tx,.user_xqbz{
 	
 	text-align: left;
 }
-.user_zhxi .zhxi_tit,.user_pay .zhxi_tit{
+.user_zhxi .zhxi_tit,.user_pay .zhxi_tit,.user_pay_tx .zhxi_tit,.user_xqbz .zhxi_tit{
     height: 35px;
     line-height: 35px;
-    padding: 0 20px;
     border-bottom: 1px solid #EC2F2F;
     margin: 0 5px;
 }
-.user_zhxi .zhxi_tit p span,.user_pay .zhxi_tit p span{
+.user_zhxi .zhxi_tit p a,.user_pay .zhxi_tit p a,.user_pay_tx .zhxi_tit p a,.user_xqbz .zhxi_tit p a{
 	padding: 0 10px;
     font-size: 18px;
+}
+.zhxi_tit p a:hover{
+	color:#102BEC;
 }
 .zhxi_con{
 	padding:10px 0px;
@@ -232,9 +237,10 @@ background: #027cff;
 }
 .zhxi_con span.con_tit{
 	display: block;
-    width: 180px;
+    width: 170px;
     text-align: right;
     float: left;
+	line-height:30px;
 }
 .zhxi_con .text{
 	height: 25px;
@@ -345,16 +351,35 @@ background: #027cff;
     line-height: 40px;
     background: #D6D2D2;
     margin:10px 10px 20px 10px;
+	font-size:12px;
 }
+.zj_mx .mx_l{
+	float:left;
+	padding-left:5px;
+}
+.zj_mx .mx_r{
+	float:right;
+	padding-right:5px;
+}
+/*选择日期时间段*/
+.Wdate{
+	border:#999 1px solid;
+	height:20px;
+	width:100px;
+	background:#fff url("../images/icon/datePicker.gif") no-repeat right;
+}
+.Wdate::-ms-clear{display:none;}
 
- .user_c .user_zhxi table{
+
+
+ .user_c .user_zhxi .jy_xq table{
   margin:20px auto;
   width: 725px;
   border-top: 1px #dcdcdc solid;
   border-left: 1px #dcdcdc solid;
   text-align: center;
 }
- .user_c .user_zhxi table tr th{
+ .user_c .user_zhxi .jy_xq table tr th{
   border-bottom: 1px #dcdcdc solid;
   border-right: 1px #dcdcdc solid;
   background: #eeeeee;
@@ -364,7 +389,7 @@ background: #027cff;
   font-weight: normal;
   color: #000000;
 }
- .user_c .user_zhxi table tr td{
+ .user_c .user_zhxi .jy_xq table tr td{
     border-bottom: 1px #dcdcdc solid;
     border-right: 1px #dcdcdc solid;
     height: 30px;
@@ -374,7 +399,7 @@ background: #027cff;
     color: #000000;
 }
 
- .user_c .user_zhxi table tr td .dj_xq i{
+ .user_c .user_zhxi .jy_xq table tr td .dj_xq i{
   content: '';
   height: 23px;
   width: 13px;
@@ -398,6 +423,151 @@ background: #027cff;
 .user_pay .pay_cot{
   margin: 10px 0px;
 }
+/*详情备注*/
+.user_xqbz .user_bz{
+	margin: 10px 100px;
+}
+
+/*隐藏div*/
+.user_pay,.user_pay_tx,.user_xqbz{
+	display:none;
+}
+/*产品发布*/
+.center_tabl table,.xx_center table{
+  margin:20px auto;
+  width: 725px;
+}
+.center_tabl  th {
+    text-align: left;
+    background: #FFF0F0 none repeat scroll 0% 0%;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+}
+.center_tabl td input, .center_tabl td select {
+    margin-left: 10px;
+    width: 224px;
+    border: 1px solid #CCC;
+    line-height: 24px;
+    height: 24px;
+}
+.center_tabl td:first-child {
+    width: 104px;
+    height: 30px;
+    text-align: right;
+}
+.center_tabl td:nth-child(3) {
+    width: 104px;
+    height: 30px;
+    text-align: right;
+}
+.center_tabl td:nth-child(2), .center_tabl td:nth-child(4) {
+    width: 224px;
+    height: 30px;
+    text-align: left;
+}
+.center_tabl td {
+    font-size: 12px;
+    font-family: "宋体";
+    color: #666;
+    padding: 5px 0px;
+    line-height: 30px;
+}
+.center_tabl td a {
+    padding: 6px 20px;
+    background: #BF1D25 none repeat scroll 0% 0%;
+    color: #FFF;
+}
+.center_tabl th a:nth-child(2) {
+    background: #CCC none repeat scroll 0% 0%;
+}
+.center_tabl th a {
+    font-size: 18px;
+    color: #FFF;
+    background: #BF1D25 none repeat scroll 0% 0%;
+    padding: 10px 50px;
+}
+.center_tabl table tr td textarea{
+	margin-left: 10px;
+    width: 95%;
+}
+
+.center_tabl td span {
+    color: #BF1D25;
+}
+/*产品信息*/
+.chp_xx{
+	margin:10px;
+}
+.chp_xx .xx_top{
+	background: rgb(255, 240, 240) none repeat scroll 0% 0%;
+	padding: 5px;
+}
+.xx_top ul li{
+	float:left;
+}
+.chp_xx .xx_center tr{
+	height:30px;
+	line-height:30px;
+}
+.chp_xx .xx_center table{
+	border-collapse: collapse;
+	text-align:center;
+}
+.chp_xx .xx_center tr:first-child{
+    font-weight: bold;
+    background: #EEE none repeat scroll 0% 0%;
+   
+    color: #666;
+}
+.chp_xx .xx_center tr{
+	 border-bottom: 1px solid #CCC;
+}
+.tab_bt {
+    height: 54px;
+    padding: 10px 0px;
+}
+.tab_bt .t_bt {
+    padding-left: 299px;
+    border-top: 1px dashed #FFBFBF;
+}
+.tab_bt .t_bt a {
+    display: block;
+    float: left;
+    width: 25px;
+    height: 24px;
+    background: transparent url("../images/icon/tab_bt.png") no-repeat scroll 0% 0%;
+    margin: 10px;
+}
+.tab_bt .t_bt a:first-child {
+    background-position: -10px -10px;
+}
+.tab_bt .t_bt a:nth-child(2),.tab_bt .t_bt a:hover .tab_bt .t_bt a:nth-child(2){
+    background-position:-10px -44px
+}
+.tab_bt .t_bt a:nth-child(3){
+    background-position:-10px -78px;
+}
+.tab_bt .t_bt a:hover{ background:url(../images/icon/tab_bt_red.png) top left no-repeat;}
+.tab_bt .t_bt a:first-child:hover{background-position:-10px -10px;}
+.tab_bt .t_bt .a_2:hover{background-position:-10px -44px;}
+.tab_bt .t_bt .a_3:hover{background-position:-10px -78px;}
+.add_fl{
+	display:none;
+}
+.add_fl .submit{
+	margin: 0 20px 0 180px;
+    width: 100px;
+}
+.add_fl .reset{
+	margin: 0px;
+    background-color: #C5C4C4;
+}
+
+
 
 
 
