@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>资金管理</title>
+  <meta name="keywords"/>
+  <meta name="description"/>
+  <meta charset="utf-8">
+  <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="../js/user_index.js"></script>
+  <script type="text/javascript" src="../js/WdatePicker.js"></script>
+  
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<div class="logo-box zn-l">
+				<dl>
+					<dt><a href="" class="logo">
+						耐耐网
+					</a></dt>
+					<dd><a href="/" class="back-index">返回耐耐首页</a></dd>
+				</dl>	
+			</div>
+			<div class="nav-tit">
+				<ul class="nav-list">
+					<li>
+						<a href="user_index.html">首页</a>
+					</li>
+					<li>
+						<a href="user_zh.html">账户管理</a>
+					</li>
+					<li>
+						<a href="user_zj.html"  class="cur">资金管理</a>
+					</li>
+					<li>
+						<a href="user_chp.html">产品管理</a>
+					</li>
+					<li>
+						<a href="user_dd.html">订单管理</a>
+					</li>
+					<li>
+						<a href="user_gz.html">关注中心</a>
+					</li>
+			 	</ul>
+			</div>
+		</div>
+	</div>
+	<div class="user_body">
+		<div class="user_b">
+			<!--start左侧导航-->	
+			<div class="user_l">
+				<div class="left_navigation">
+					<ul>
+						<li class="let_nav_tit"><h3>资金管理</h3></li>
+						<li><a href="user_zh.html" class="cur">代理账户管理</a></li>
+						<li><a href="zh_mm.html">签约账户管理</a></li>
+						<li><a href="zh_rez.html">票据账户管理</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--end左侧导航-->	
+			<!--start中间内容-->	
+			<div class="user_c">
+				<div class="user_zhxi">
+				<form>
+					<div class="zhxi_tit">
+						<p><span>资金管理</span>><span>代理账户管理</span></p>
+					</div>
+					<div>
+						<div class="zj_gl">
+							<div class="zj_l">
+								<a class="zj_a cz">充值</a>
+								<a class="zj_a tx">提现</a>	
+								<p class="re_t">结算账号资金总额</p>
+								<h1 class="rental">￥0.00</h1>
+							</div>
+							<div class="zj_r">
+								<div class="zj_price">￥0.00</div>
+								<div class="price">
+									<span class="price_l">
+										<i class="pr_l"></i>
+										<span>可用资金</span>
+									</span>
+									<span class="price_r">
+										<i class="pr_r"></i>
+										<span>冻结资金</span>
+									</span>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						
+					</div>
+                    <div class="zj_mx">
+                    	<div class="mx_l">结算账户资金明细</div>
+                        <div class="mx_r">
+							<form action="/account/jiesuan_zijin.html" method="get">
+                        交易时间：<input type="text" class="Wdate" onclick="WdatePicker()" name="StartTime" value="" readonly="">
+                        <span class="js_span1">-</span><input type="text" class="Wdate" onclick="WdatePicker()" name="EndTime" value="" readonly="">
+                        <span class="js_span2">交易号：</span><input type="text" value="" name="Sn">
+                        <button type="submit">搜索</button> 
+                   </form>
+						</div>
+                    </div>
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                        	<th>交易时间</th>
+                   			<th>交易号</th>
+                            <th>交易方式</th>
+                            <th>金额</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+						<tr>
+							<td>2016-01-25</td>
+							<td>0913809830</td>
+							<td>支付宝</td>
+							<td>$0.00</td>
+							<td>已付款</td>
+							<td>
+								<div class="dj_xq"><a>详情</a><i class="dian"></i></div>
+								<ul class="cz_show">
+									<li><a>备注</a></li>
+									<li><a>删除</a></li>
+								</ul>
+							</td>
+						</tr>
+                    </table>
+				</form>
+				</div>
+				<div class="user_pay">
+				<form>
+					<div class="zhxi_tit">
+						<p><span>资金管理</span>><span>代理账户管理</span>><span>充值</span>
+						</p>
+					</div>
+					<div class="pay_cot">
+						<div class="zhxi_con">
+							<span class="con_tit"><i>*</i>账户余额：</span>
+							<span>￥0.00</span>
+						</div>
+						<div class="zhxi_con">
+							<span class="con_tit"><i>*</i>姓名：</span>
+							<span><input class="text" type="text"/></span>
+						</div>
+						<div class="zhxi_con">
+							<span class="con_tit"><i>*</i>银行卡号：</span>
+							<span><input class="text" type="text"/></span>
+						</div>
+						<div class="zhxi_con">
+							<span class="con_tit"><i>*</i>充值金额：</span>
+							<span><input class="text" type="text"/></span>
+						</div>
+						<div class="zhxi_con">
+							<span><input class="submit" type="submit" value="充值"/></span>
+						</div>
+					</div>
+				</form>
+				</div>
+				<div class="user_pay">
+				<form>
+					<div class="zhxi_tit">
+						<p><span>资金管理</span>><span>代理账户管理</span>><span>提现</span>
+						</p>
+					</div>
+					<div class="pay_cot">
+						
+						<div class="zhxi_con">
+							<span class="con_tit"><i>*</i>姓名：</span>
+							<span><input class="text" type="text"/></span>
+						</div>
+						<div class="zhxi_con">
+							<span class="con_tit"><i>*</i>银行卡号：</span>
+							<span><input class="text" type="text"/></span>
+						</div>
+						<div class="zhxi_con">
+							<span class="con_tit"><i>*</i>提现金额：</span>
+							<span><input class="text" type="text"/></span>
+						</div>
+						<div class="zhxi_con">
+							<span class="con_tit"><i>*</i>到帐时间：</span>
+							<span>2个工作日内</span>
+						</div>
+						<div class="zhxi_con">
+							<span class="con_tit"><i>*</i>提现说明：</span>
+							<span><input class="text" type="text"/></span>
+						</div>
+						
+						<div class="zhxi_con">
+							<span><input class="submit" type="submit" value="提现"/></span>
+						</div>
+					</div>
+				</form>
+				</div>
+			</div>
+			
+	<!--end中间内容-->		
+	<!--start右侧广告-->			
+			<div class="user_r">
+				<div class="wrap_con">
+					<div class="tit clearfix">
+						<h3>公告</h3>
+					</div>
+					<div class="con">
+						<div class="con_medal clearfix">
+							<ul>
+								<li><a>暂无勋章</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end右侧广告-->
+		</div>
+	</div>
+</body>
+</html>
