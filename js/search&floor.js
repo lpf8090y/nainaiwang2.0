@@ -24,7 +24,7 @@ $(function () {
         var scrollTop = $(document).scrollTop();
         var documentHeight = $(document).height();
         var windowHeight = $(window).height();
-        var contentItems = $("#mainContent").find(".i_market_left");
+        var contentItems = $("#mainContent").find(".i_market .i_market_left");
         var currentItem = "";
 
         if (scrollTop+windowHeight==documentHeight) {

@@ -90,13 +90,13 @@ a:hover,a:active { text-decoration:underline; }
 }
 
 
-.item-list .subitem { float:left; width:477px; padding:0px 4px 0px 8px; }
-.item-list .subitem dl { border-top:1px solid #EEE; padding:6px 0px; overflow:hidden; zoom:1; }
-.item-list .subitem .fore1 { border-top:none; }
-.item-list .subitem dt { float:left; width:54px; line-height:22px; text-align:right; padding:3px 6px 0px 0px; font-weight:700; color:#E4393C; }
+.item-list .subitem { float:left; width:540px; padding:0px 4px 0px 8px; }
+.item-list .subitem dl { border-top:1px solid #EEE; padding:6px 0px; overflow:hidden; zoom:1; width: 160px;height:100px; float: left;}
+.item-list .subitem .fore1 { border-top:none;}
+.item-list .subitem dt {width:54px; line-height:22px; text-align:left; padding:3px 6px 0px 0px; font-weight:700; color:#E4393C; }
 .item-list .subitem dt a { color:#E4393C; text-decoration:underline; }
-.item-list .subitem dd { float:left; width:415px; padding:3px 0px 0px; overflow:hidden; }
-.item-list .subitem dd em { float:left; height:14px; line-height:14px; padding:0px 8px; margin-top:5px; border-left:1px solid #CCC; }
+.item-list .subitem dd {width:150px; padding:3px 0px 0px; overflow:hidden; }
+.item-list .subitem dd em { float:left; height:14px; line-height:14px; padding-right:8px; margin-top:5px; }
 .item-list .subitem dd em a, .item-list .cat-right dd a { color:#666; text-decoration:none; }
 .item-list .subitem dd em a:hover, .item-list .cat-right dd a:hover { font-weight:normal; text-decoration:underline; }
 .item-list .cat-right { float:right; width:210px; }

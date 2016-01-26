@@ -61,7 +61,7 @@ a:hover{text-decoration:underline}
 .bg_topnav .popueButton b{ background:url(../Images/icon/icon_aorrow_down9.gif) no-repeat 1px 3px; padding:5px;}
 .bg_topnav .popueButton:hover{ cursor:pointer;}
 .bg_topnav .popueButton:hover b{ background:url(../Images/icon/icon_aorrow_down10.gif) no-repeat 1px 3px; padding:5px;}
-.bg_topnav .hover{border-left:1px solid #e1e1e1;border-right:2px solid #e1e1e1;height:30px; line-height:30px; background-color:#ffffff; cursor:pointer; width:72px;}
+.bg_topnav .hover{border-left:1px solid #e1e1e1;border-right:2px solid #e1e1e1;height:30px; line-height:30px; background-color:#ffffff; cursor:pointer; width:72px;padding-left: 6px;}
 .bg_topnav .hover b{color:#ff8400;}
 .bg_topnav .popuePanel{display:none;text-align:left;position:absolute;background-color:#fff;z-index:10000;top:30px;_top:31px;right:0px;border-left:1px solid #e1e1e1;border-right:2px solid #e1e1e1;border-bottom:2px solid #e1e1e1; padding:10px;line-height:28px;color:#5a5a5a; letter-spacing:1px;color:#737373}
 .bg_topnav .popuePanel a{color:#737373; margin-right:5px}
@@ -94,7 +94,7 @@ a:hover{text-decoration:underline}
 
 /********************LOGO 电话**************gtxh_logo2************/
 #index_logo .index_logo{ background:url(../Images/logo/gtxh_logo2.png) no-repeat 0 0 scroll; width:287px; height:60px; float:left;margin-top:11px;}
-#index_logo .index_logo a{ display:block; width:287px; height:60px}
+#index_logo .index_logo a{ display:block; width:165px; height:60px}
 #index_logo .index_phone{ float:right; background:url(../Images/icon/icon_phone12.gif) no-repeat left center; padding-left:40px; height:35px; line-height:32px; font-family:"微软雅黑", "Arial Unicode MS"; font-size:16px; margin-top:20px; color:#7a7878; vertical-align:middle}
 #index_logo .index_phone span{ color:#ff4400; font-family:Arial; font-size:20px;}
 
