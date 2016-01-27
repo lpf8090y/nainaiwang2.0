@@ -7,7 +7,6 @@
   <meta charset="utf-8">
   <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="../js/user_index.js"></script>
 
 </head>
 <body>
@@ -33,13 +32,13 @@
 						<a href="user_zj.html">资金管理</a>
 					</li>
 					<li>
-						<a href="user_chp.html" class="cur">产品管理</a>
+						<a href="user_chp.html">产品管理</a>
 					</li>
 					<li>
-						<a href="user_dd.html">订单管理</a>
+						<a href="user_dd.html">交易管理</a>
 					</li>
 					<li>
-						<a href="user_gz.html">关注中心</a>
+						<a href="user_gz.html" class="cur">关注中心</a>
 					</li>
 			 	</ul>
 			</div>
@@ -51,11 +50,9 @@
 			<div class="user_l">
 				<div class="left_navigation">
 					<ul>
-						<li class="let_nav_tit"><h3>产品管理</h3></li>
-						<li><a href="user_chp.html">产品信息</a></li>
-						<li><a href="chp_fb.html">产品发布</a></li>
-						<li><a href="chp_lb.html"class="cur">商品类别</a></li>
-						<li><a href="chp_gp.html">挂牌</a></li>
+						<li class="let_nav_tit"><h3>关注中心</h3></li>
+						<li><a href="user_gz.html">收藏商品</a></li>
+						<li><a href="gz_tj.html" class="cur">推荐商品</a></li>
 					</ul>
 				</div>
 			</div>
@@ -64,62 +61,62 @@
 			<div class="user_c">
 				<div class="user_zhxi">
 					<div class="zhxi_tit">
-						<p><a>产品管理</a>><a>商品分类</a></p>
+						<p><a>关注中心</a>><a>推荐商品</a></p>
 					</div>
 					<div class="chp_xx">
+						<div class="gz_sp">
+							<ul>
+								<li>
+									<a href="">
+										<img src="../images/banner/551b861eNe1c401dc.jpg"/>
+										<hr/>
+										<div class="sp_sm">
+											<p class="price">￥58.00/米</p>
+											<p>最少批量：10米</p>
+											<p>定制新型现代大型会议室小型接待室会议台自助餐台台围</p>
+											<p class="mz">广州市昊汇装饰材料有限公司</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="../images/banner/551b861eNe1c401dc.jpg"/>
+										<hr/>
+										<div class="sp_sm">
+											<p class="price">￥58.00/米</p>
+											<p>最少批量：10米</p>
+											<p>定制新型现代大型会议室小型接待室会议台自助餐台台围</p>
+											<p class="mz">广州市昊汇装饰材料有限公司</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="../images/banner/551b861eNe1c401dc.jpg"/>
+										<hr/>
+										<div class="sp_sm">
+											<p class="price">￥58.00/米</p>
+											<p>最少批量：10米</p>
+											<p>定制新型现代大型会议室小型接待室会议台自助餐台台围</p>
+											<p class="mz">广州市昊汇装饰材料有限公司</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div style="clear:both;"></div>
+						</div>
 						
-						<div class="xx_center">
-							<table border="0"  cellpadding="" cellspacing="">
-								<tr class="title">
-									<td><input onclick="selectAll1();" name="controlAll" style="controlAll" id="controlAll" type="checkbox"></td>
-									<td>序号</td>
-									<td>商品类别名称</td>
-								</tr>
-								<tr>
-									<td><input name="controlAll" style="controlAll" id="controlAll" type="checkbox"></td>
-									<td>xxx</td>
-									<td>货名</td>
-								</tr>
-							</table>
-						</div>
-						<div class="tab_bt">
-							<div class="t_bt">
-								<a class="a_1"></a>
-								<a class="a_2 add"></a>
-								<a class="a_3"></a>
-							</div>
-						</div>
-						<div class="page_num">
+						<div class="page_num marg">
 							共0条记录&nbsp;当前第<font color="#FF0000">1</font>/0页&nbsp;
 							<a href="#">第一页</a>&nbsp;
 							<a href="#">上一页</a>&nbsp;
 							<a href="#">下一页</a>&nbsp;
 							<a href="#">最后页</a>&nbsp; 
 							跳转到第 <input name="pagefind" id="pagefind" type="text" style="width:20px;font-size: 12px;" maxlength="5" value="1"> 页 
-							<a><span class="style1">确定</span></a>
+							<a href=""><span class="style1">确定</span></a>
 						</div>
 					</div>
-					<!--start添加商品分类-->
-					<div class="add_fl">
-						<form>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>编号：</span>
-								<span><input class="text" type="text"></span>
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>类别名称:</span>
-								<span><input class="text" type="text"></span>
-							</div>
-							<div class="zhxi_con">	
-								<span><input class="submit" type="submit"></span>
-								<span><input class="submit reset" type="reset"></span>
-							</div>
-						</form>
-					</div>
-					<!--end添加商品分类-->
 				</div>
-				
-				
 			</div>
 			<!--end中间内容-->	
 			<!--start右侧广告-->			
@@ -141,5 +138,4 @@
 		</div>
 	</div>
 </body>
-</html>
 </html>
