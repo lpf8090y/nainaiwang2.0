@@ -187,7 +187,12 @@ background: #027cff;
 .user_nrz table a{
 	color:#4C4949;
 }
-
+.user_nrz .nrz_tit .gengduo{
+	float:right;
+}
+.user_nrz .nrz_tit .gengduo:hover{
+	color:#3966c7;
+}
 /*左侧导航栏*/
 .left_navigation{
 	border:1px solid #c0c0c0;
@@ -230,6 +235,7 @@ background: #027cff;
 }
 .zhxi_con{
 	padding:10px 0px;
+	line-height: 40px;
 }
 .zhxi_con span i{
 	color:red;
@@ -240,7 +246,7 @@ background: #027cff;
     width: 170px;
     text-align: right;
     float: left;
-	line-height:30px;
+	line-height:40px;
 }
 .zhxi_con .text{
 	height: 25px;
@@ -275,7 +281,7 @@ background: #027cff;
 }
 .tj{
 	margin: 0 0px 0 10px;
-    width: 46px;
+    width: 46px !important;
 }
 
 /*资金管理中心内容*/
@@ -507,7 +513,18 @@ background: #027cff;
 	padding: 5px;
 }
 .xx_top ul li{
-	float:left;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding-right: 5px;
+}
+.xx_top ul li .chaz{
+	height: 20px;
+line-height: 20px;
+padding: 4px 10px;
+background: #A0A0A0;
+margin: 0 10px;
+color: #fff;
 }
 .chp_xx .xx_center tr{
 	height:30px;
@@ -566,9 +583,84 @@ background: #027cff;
 	margin: 0px;
     background-color: #C5C4C4;
 }
+/*分页*/
+.page_num{
+	text-align: center;
+}
+.page_num a:link, .page_num a:visited, .page_num a:active {
+padding: 2px 6px;
+border: #FFC3AC 1px solid;
+background: #FEE9E0;
+color: #000;
+}
+.page_num a:link, .page_num a:visited, .page_num a:active {
+padding: 2px 6px;
+border: #FFC3AC 1px solid;
+background: #FEE9E0;
+color: #000;
+}
+.page_num a:hover {
+padding: 2px 6px;
+border: #666 1px solid;
+background: #fff;
+color: #333;
+}
+.marg{
+	margin: 40px 0 20px 0px;
+}
+/*关注商品*/
+.gz_sp ul li{
+	float: left;
+	width: 31%;
+	text-align: center;
+	border: 1px solid #ccc;
+	margin: 0 1% 10px 1%;
+}
+.gz_sp ul li:hover{
+	border: 1px solid  #F20C0C;
+}
+.gz_sp ul li img{
+	width: 220px;
+	height: 220px;
+}
+.gz_sp ul li .sp_sm{
+	margin:10px 5px;
+	text-align:left;
+}
+.gz_sp ul li hr{
+	margin: 2px 5px;
+	color: #E7E6E6;
+}
 
-
-
+.gz_sp ul li .sp_sm p{
+	padding: 0 0 10px 0;
+	color: #302F2F;
+}
+.gz_sp ul li .sp_sm p.price{
+	font-size: 20px;
+	color: #C21B1B;
+	font-weight: 700;
+}
+.gz_sp ul li .sp_sm p.mz{
+	color: #8B8484;
+}
+/*资质认证*/
+.zhxi_con .zh_img img{
+	width:200px;
+	height:200px;
+	padding:0 10px;
+}
+.tit_img{
+	line-height:200px !important;
+}
+.zhs_img img{
+	width: 100px;
+	height: 100px;
+	padding:0 10px;
+}
+.zhs_tit{
+	line-height:100px !important;
+}
 
 
 
