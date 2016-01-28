@@ -11,6 +11,7 @@ a{
  	text-decoration: none;
 	color:#666;
 }
+img{border:0px;}
 .header{
   width: 100%;
 	height: 60px;
@@ -119,6 +120,10 @@ border-radius: 3px;
 padding: 2px 10px;
 margin: 8px 0;
 display: inline-block;
+}
+.user_b .user_l .per_collection a.sc:hover{
+	background:#C51104 ;
+	color: #Fff !important;
 }
 
 .wrap_con .tit {
@@ -562,10 +567,10 @@ color: #fff;
 .tab_bt .t_bt a:first-child {
     background-position: -10px -10px;
 }
-.tab_bt .t_bt a:nth-child(2),.tab_bt .t_bt a:hover .tab_bt .t_bt a:nth-child(2){
-    background-position:-10px -44px
+.tab_bt .t_bt a.a_2{
+    background-position:-10px -44px;
 }
-.tab_bt .t_bt a:nth-child(3){
+.tab_bt .t_bt a.a_3{
     background-position:-10px -78px;
 }
 .tab_bt .t_bt a:hover{ background:url(../images/icon/tab_bt_red.png) top left no-repeat;}
@@ -609,41 +614,52 @@ color: #333;
 	margin: 40px 0 20px 0px;
 }
 /*关注商品*/
+
 .gz_sp ul li{
-	float: left;
-	width: 31%;
-	text-align: center;
-	border: 1px solid #ccc;
-	margin: 0 1% 10px 1%;
+float: left;
+width: 334px;
+background:#F0EFEF none repeat scroll 0% 0%;
+padding: 10px;
+margin:5px;
 }
 .gz_sp ul li:hover{
-	border: 1px solid  #F20C0C;
+
+	background:#DBDADA none repeat scroll 0% 0%
 }
-.gz_sp ul li img{
-	width: 220px;
-	height: 220px;
+.gz_sp ul li .img_l img{
+	width: 110px;
+	min-height: 110px;
 }
-.gz_sp ul li .sp_sm{
-	margin:10px 5px;
-	text-align:left;
+.img_l,.tit_r{
+	float:left;	
 }
-.gz_sp ul li hr{
-	margin: 2px 5px;
-	color: #E7E6E6;
+.img_l{
+	width:35%;
+}
+.tit_r{
+	width:65%
+}
+.tit_r p{
+	height: 25px;
+line-height: 25px;
+}
+.sp_an{
+	margin-top:10px;
+}
+.sp_an a.jr{
+	background:#F6680E none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    margin: 0px 10px 0px 0px;
+
+}
+.sp_an a.jr:hover{
+	background: rgb(246, 14, 14) none repeat scroll 0% 0%;
+}
+.sp_an a.de:hover{
+	color:#F60808;
 }
 
-.gz_sp ul li .sp_sm p{
-	padding: 0 0 10px 0;
-	color: #302F2F;
-}
-.gz_sp ul li .sp_sm p.price{
-	font-size: 20px;
-	color: #C21B1B;
-	font-weight: 700;
-}
-.gz_sp ul li .sp_sm p.mz{
-	color: #8B8484;
-}
 /*资质认证*/
 .zhxi_con .zh_img img{
 	width:200px;
