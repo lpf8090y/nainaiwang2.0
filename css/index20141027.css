@@ -57,7 +57,7 @@ a:hover{ text-decoration:underline; color:#cc0000}
 .searchbox ul li a{ float:left; line-height:25px; padding:0 15px; text-decoration:none; color:#666; font-size:14px; font-weight:normal;}
 .searchbox ul li .style1{ background-color:#c81623; color:#fff}
 .searchbox ul li .style2{ background-color:#c81623;color:#fff}
-.bodys input{ height:30px;line-height:30px;width:390px;padding:0 10px;float:left;}
+.bodys input{ height:32px;line-height:30px;width:390px;padding:0 10px;float:left;}
 .bodys .one{ border:#c81623 3px solid}
 .bodys .two{ border:#c81623 3px solid}
 .bodys .one1{ background-color:#c81623;font-size: 16px;}
