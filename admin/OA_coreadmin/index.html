@@ -88,13 +88,13 @@
                         耐耐网后台管理系统
                     </a>
                 </li>
-                <li class="current"><a href="#"><img src="img/icons/menu/layout.png" alt="" />系统管理</a>
+                <li class="current"><a href="#" target="content"><img src="img/icons/menu/layout.png" alt="" />系统管理</a>
                     <ul>
                                                 <li class="current"><a href="dashboard.html?p=index">权限管理</a>
                                                     <ul>
-                                                        <li><a href="#">管理员分组</a></li>
-                                                        <li><a href="#">管理员列表</a></li>
-                                                        <li><a href="#">权限分配</a></li>
+                                                        <li><a href="dashboard.html" target="content">管理员分组</a></li>
+                                                        <li><a href="dashboard.html" target="content">管理员列表</a></li>
+                                                        <li><a href="dashboard.html" target="content">权限分配</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="forms.html?p=forms">系统设置</a></li>
@@ -180,9 +180,9 @@
         <!--            
               CONTENT 
                         --> 
-        <iframe id="content" class="white">
-            
-        </iframe>
+        <div class="main_content" id="content" >
+            <iframe class="white" scrolling="yes" frameborder="0" src="welcome.html" name="content"></iframe>
+        </div>
 
 
 </div>

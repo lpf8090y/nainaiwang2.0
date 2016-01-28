@@ -1960,3 +1960,13 @@ div.uploader input{
 	border: none;
 	cursor: default;
 }
+
+#iframe_box{
+	position: absolute;
+	top: 35px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+	z-index: 1;
+}
