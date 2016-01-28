@@ -20,7 +20,7 @@ a:hover{ text-decoration:underline; color:#cc0000}
 #index_nav{height:43px; background-color:#c81623; font-family:"微软雅黑","宋体", "华文细黑"; font-size:16px;}/*导航*/
 #mainContent{background:url(../Images/bg/bg_index_main.gif) repeat-x;_margin-top:-19px;*margin-top:-19px}/*主要内容*/
 #mainContent .page_width{ position:relative}
-#mainContent .mainRow1{height:537px; margin-bottom:10px;}/*第一行 搜索*/
+#mainContent .mainRow1{height:537px; }/*第一行 搜索*/
 #mainContent .mainRow2{ height:135px}/*第二行正在求购*/
 #mainContent .banner_advert{height:60px; background:url(../Images/Temporary/temp_index_advert.gif); margin-top:10px; margin-bottom:5px;}/*广告栏*/
 #mainContent .mainRow3{width:1190px; float:left;position:relative; }/*第三行 五大类*/
@@ -48,6 +48,21 @@ a:hover{ text-decoration:underline; color:#cc0000}
 .mainCode_left .codeleft_con div, .mainCode_left_sec .codeleft_con div{ font-size:15px; color:#2d8beb; font-family:"微软雅黑","宋体","华文细黑"; line-height:22px;text-align:center;}
 .mainCode_left .codeleft_con div a, .mainCode_left_sec .codeleft_con div a{color:#838282;}
 .mainCode_left .codeleft_con div span, .mainCode_left_sec .codeleft_con div span{ font-size:15px}
+
+
+/********************搜索框**************************/
+.searchbox{width:520px;height:80px;margin:10px auto;float: left;}
+.searchbox ul{ height:25px; width:500px; list-style:none; }
+.searchbox ul li{ float:left}
+.searchbox ul li a{ float:left; line-height:25px; padding:0 15px; text-decoration:none; color:#666; font-size:14px; font-weight:normal;}
+.searchbox ul li .style1{ background-color:#c81623; color:#fff}
+.searchbox ul li .style2{ background-color:#c81623;color:#fff}
+.bodys input{ height:30px;line-height:30px;width:390px;padding:0 10px;float:left;}
+.bodys .one{ border:#c81623 3px solid}
+.bodys .two{ border:#c81623 3px solid}
+.bodys .one1{ background-color:#c81623;font-size: 16px;}
+.bodys .two2{ background-color:#c81623;font-size: 16px;}
+.bodys button{float:left;border:0;height:36px;width:100px; color:#FFF; line-height:36px;text-align:center;overflow:hidden;}
 
 
 /********************第一行**************************/
@@ -381,5 +396,5 @@ a.close         {width:30px;height:30px;float:right;background:url(http://market
 
 /*-------友情链接------*/
 .flink_bg{background: #fff;width:100%;height: 94px;}
-.div_flink{background:url(../Images/icon/icon_news_img.gif) no-repeat 20px -610px; padding-left:110px; height:70px; overflow:hidden;   float:left; width:1080px; padding-top:10px; padding-bottom:10px}
+.div_flink{background:#fff; padding-left:20px; height:70px; overflow:hidden;   float:left; width:1170px; padding-top:10px; padding-bottom:10px; margin-top: 10px;}
 .div_flink a{ display:inline-block; width:85px; color:#000000; line-height:25px}

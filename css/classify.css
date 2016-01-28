@@ -43,7 +43,7 @@ a:hover,a:active { text-decoration:underline; }
 
 
 .wrap { width:941px; float: left;}
-.all-sort-list { position:relative; width:179px; border:1px solid #c81623; border-top:none; padding:0px; z-index: 3;}
+.all-sort-list { position:relative; width:179px; border:1px solid #c81623; border-top:none; padding:0px; z-index: 3; background: #fff;}
 .all-sort-list .item { height:46px; width:179px;border-top:1px solid #eb4c3f; border-bottom: 1px solid #ba2e22;color: #fff;background:#c81623;}
 .all-sort-list .item-sp{background:#fb8901;}
 .all-sort-list .item .fenlei-h1{font-size: 18px; font-weight: normal;}
@@ -80,7 +80,7 @@ a:hover,a:active { text-decoration:underline; }
 .all-sort-list .item-list { 
 	display:none;
 	position:absolute;
-	width:770px;
+	width:763px;
 	height:435px;
 	_height:435px;
 	background:#FFF;
@@ -90,13 +90,13 @@ a:hover,a:active { text-decoration:underline; }
 }
 
 
-.item-list .subitem { float:left; width:477px; padding:0px 4px 0px 8px; }
-.item-list .subitem dl { border-top:1px solid #EEE; padding:6px 0px; overflow:hidden; zoom:1; }
-.item-list .subitem .fore1 { border-top:none; }
-.item-list .subitem dt { float:left; width:54px; line-height:22px; text-align:right; padding:3px 6px 0px 0px; font-weight:700; color:#E4393C; }
+.item-list .subitem { float:left; width:540px; padding:0px 4px 0px 8px; }
+.item-list .subitem dl { border-top:1px solid #EEE; padding:6px 0px; overflow:hidden; zoom:1; width: 160px;height:100px; float: left;}
+.item-list .subitem .fore1 { border-top:none;}
+.item-list .subitem dt {width:54px; line-height:22px; text-align:left; padding:3px 6px 0px 0px; font-weight:700; color:#E4393C; }
 .item-list .subitem dt a { color:#E4393C; text-decoration:underline; }
-.item-list .subitem dd { float:left; width:415px; padding:3px 0px 0px; overflow:hidden; }
-.item-list .subitem dd em { float:left; height:14px; line-height:14px; padding:0px 8px; margin-top:5px; border-left:1px solid #CCC; }
+.item-list .subitem dd {width:150px; padding:3px 0px 0px; overflow:hidden; }
+.item-list .subitem dd em { float:left; height:14px; line-height:14px; padding-right:8px; margin-top:5px; }
 .item-list .subitem dd em a, .item-list .cat-right dd a { color:#666; text-decoration:none; }
 .item-list .subitem dd em a:hover, .item-list .cat-right dd a:hover { font-weight:normal; text-decoration:underline; }
 .item-list .cat-right { float:right; width:210px; }
