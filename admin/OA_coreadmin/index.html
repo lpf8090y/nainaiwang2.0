@@ -15,6 +15,9 @@
         -->
         <link rel="stylesheet" href="css/min.css" />
         <script type="text/javascript" src="js/min.js"></script>
+        <style type="text/css">
+            html { overflow-y:hidden; }
+        </style>
         
     </head>
     <body>
@@ -23,7 +26,7 @@
 <link rel="stylesheet" href="content/settings/style.css" />
 
 
-  <div class="settings" id="settings">
+  <!-- <div class="settings" id="settings">
         <div class="wrapper">
             <div class="grid3">
                 <div class="titre">Backgrounds</div>
@@ -55,7 +58,7 @@
         <a class="settingbutton" href="#">
 
         </a>
-    </div>        
+    </div>  -->       
         <!--              
                 HEAD
                         --> 
@@ -88,103 +91,104 @@
                         耐耐网后台管理系统
                     </a>
                 </li>
-                <li class="current"><a href="#" target="content"><img src="img/icons/menu/layout.png" alt="" />系统管理</a>
+                <li class="current"><a target="content"><img src="img/icons/menu/layout.png" alt="" />系统管理</a>
                     <ul>
-                                                <li class="current"><a href="dashboard.html?p=index">权限管理</a>
+                                                <li class="current"><a target="content">权限管理</a>
                                                     <ul>
-                                                        <li><a href="dashboard.html" target="content">管理员分组</a></li>
-                                                        <li><a href="dashboard.html" target="content">管理员列表</a></li>
-                                                        <li><a href="dashboard.html" target="content">权限分配</a></li>
+                                                        <li><a href="admin-role.html" target="content">管理员分组</a></li>
+                                                        <li><a href="admin-list.html" target="content">管理员列表</a></li>
+                                                        <li><a href="admin-permission.html" target="content">权限分配</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="forms.html?p=forms">系统设置</a></li>
-                                                <li><a href="table.html?p=table">导航栏目管理</a></li>
-                                                <li><a href="tabs.html?p=tabs">地域信息管理</a></li>
-                                                <li><a href="gallery.html?p=gallery">客服添加</a></li>
+                                                <li><a href="system-base.html" target="content">系统设置</a></li>
+                                                <li><a href="table.html?p=table" target="content">导航栏目管理</a></li>
+                                                <li><a href="tabs.html?p=tabs" target="content">地域信息管理</a></li>
+                                                <li><a href="gallery.html?p=gallery" target="content">客服添加</a></li>
                                             </ul>
                 </li>
-                <li><a href="#"><img src="img/icons/menu/brush.png" alt="" />会员管理</a>
+                <li><a href="#" target="content"><img src="img/icons/menu/brush.png" alt="" />会员管理</a>
                     <ul>
-                        <li><a href="#">会员审核</a></li>
-                        <li><a href="#">会员认证</a></li>
-                        <li><a href="#">角色分组</a></li>
-                        <li><a href="#">会员列表</a></li>
-                        <li><a href="#">黑名单列表</a></li>
-                        <li><a href="#">经纪人管理</a></li>
-                        <li><a href="#">商铺管理</a></li>
-                        <li><a href="#">业务撮合人员列表</a></li>
+                        <li><a href="member-audit" target="content">会员审核</a></li>
+                        <li><a href="member-renzheng" target="content">会员认证</a></li>
+                        <li><a href="admin-role.html" target="content">角色分组</a></li>
+                        <li><a href="member-list.html" target="content">会员列表</a></li>
+                        <li><a href="member-del.html" target="content">黑名单列表</a></li>
+                        <li><a href="agent-list.html" target="content">经纪人管理</a></li>
+                        <li><a href="shop-list.html" target="content">商铺管理</a></li>
+                        <li><a href="#" target="content">业务撮合人员列表</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><img src="img/icons/menu/brush.png" alt="" />交易管理</a>
+                <li><a href="#" target="content"><img src="img/icons/menu/brush.png" alt="" />交易管理</a>
                     <ul>
-                        <li><a href="#">产品分类设置</a></li>
-                        <li><a href="#">交易费率设置</a>
+                        <li><a href="#" target="content">产品分类设置</a></li>
+                        <li><a href="#" target="content">交易费率设置</a>
                             <ul>
-                                <li><a href="#">保证金收取比例</a></li>
-                                <li><a href="#">手续费收取比例</a></li>
-                                <li><a href="#">自由报盘收费设置</a></li>
+                                <li><a href="#" target="content">保证金收取比例</a></li>
+                                <li><a href="#" target="content">手续费收取比例</a></li>
+                                <li><a href="#" target="content">自由报盘收费设置</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">报盘管理</a>
+                        <li><a href="#" target="content">报盘管理</a>
                             <ul>
-                                <li><a href="#">审核</a></li>
-                                <li><a href="#">列表</a></li>
-                                <li><a href="#">状态</a></li>
+                                <li><a href="#" target="content">审核</a></li>
+                                <li><a href="#" target="content">列表</a></li>
+                                <li><a href="#" target="content">状态</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">合同管理</a>
+                        <li><a href="#" target="content">合同管理</a>
                             <ul>
-                                <li><a href="#">审核</a></li>
-                                <li><a href="#">列表</a></li>
-                                <li><a href="#">状态</a></li>
+                                <li><a href="#" target="content">审核</a></li>
+                                <li><a href="#" target="content">列表</a></li>
+                                <li><a href="#" target="content">状态</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">申诉管理</a></li>
+                        <li><a href="#" target="content">申诉管理</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><img src="img/icons/menu/lab.png" alt="" /> 结算管理</a>
+                <li><a href="#" target="content"><img src="img/icons/menu/lab.png" alt="" /> 结算管理</a>
                     <ul>
-                        <li><a href="#">入金审核</a></li>
-                        <li><a href="#">出金审核</a></li>
-                        <li><a href="#">账户管理</a>
+                        <li><a href="#" target="content">入金审核</a></li>
+                        <li><a href="#" target="content">出金审核</a></li>
+                        <li><a href="#" target="content">账户管理</a>
                             <ul>
-                                <li><a href="#">会员账户</a></li>
-                                <li><a href="#">市场账户</a></li>
-                                <li><a href="#">经纪人账户</a></li>
+                                <li><a href="#" target="content">会员账户</a></li>
+                                <li><a href="#" target="content">市场账户</a></li>
+                                <li><a href="#" target="content">经纪人账户</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li><a href="#"><img src="img/icons/menu/lab.png" alt="" /> 信誉管理</a>
+                <li><a href="#" target="content"><img src="img/icons/menu/lab.png" alt="" /> 信誉管理</a>
                     <ul>
-                        <li><a href="#">算法设置</a>
+                        <li><a href="#" target="content">算法设置</a>
                             <ul>
-                                <li><a href="#">添加元素</a></li>
-                                <li><a href="#">设置比例</a></li>
+                                <li><a href="#" target="content">添加元素</a></li>
+                                <li><a href="#" target="content">设置比例</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">等级管理</a></li>
-                        <li><a href="#">信誉排名</a></li>
+                        <li><a href="#" target="content">等级管理</a></li>
+                        <li><a href="#" target="content">信誉排名</a></li>
                     </ul>
                 </li>
-                <li class="nosubmenu"><a href="modal.html" class="zoombox w450 h700"><img src="img/icons/menu/comment.png" alt="" /> 数据统计</a></li>
-                <li class="nosubmenu"><a href="modal.html" class="zoombox w450 h700"><img src="img/icons/menu/comment.png" alt="" /> 仓库管理</a></li>
+                <li class="nosubmenu"><a href="modal.html" class="zoombox w450 h700" target="content"><img src="img/icons/menu/comment.png" alt="" /> 数据统计</a></li>
+                <li class="nosubmenu"><a href="modal.html" class="zoombox w450 h700" target="content"><img src="img/icons/menu/comment.png" alt="" /> 仓库管理</a></li>
             </ul>
 
 
         </div>
-                
-                
+          
                 
                 
         <!--            
               CONTENT 
                         --> 
-        <div class="main_content" id="content" >
-            <iframe class="white" scrolling="yes" frameborder="0" src="welcome.html" name="content"></iframe>
-        </div>
+        <div class="main_content" id="content_1" >
+            <iframe class="white" scrolling="yes" frameborder="0" src="welcome.html" name="content" marginheight="0" marginwidth="0" width="100%" height="785px"  id="iframe" style="overflow-y:scroll;"></iframe>
+      
 
+            
 
+     </div>
 </div>
         
         
