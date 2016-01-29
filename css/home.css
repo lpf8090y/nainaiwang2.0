@@ -75,3 +75,11 @@ button.button{height:40px;padding:0 10px;line-height:normal;}
 .reg-form .user-agreement input{float:left;width:14px;height:14px;margin:1px 5px 0 0;}
 .reg-form .bottom{height:40px;}
 .reg-form .bottom .button{display:block;border-radius:3px;}
+.mm_reg{
+	margin-top:20px;
+	text-align:right;
+}
+.mm_reg a{
+	padding:0px 15px;
+	cursor:pointer;
+}
