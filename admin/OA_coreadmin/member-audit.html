@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>会员审核</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        
+        <!-- jQuery AND jQueryUI -->
+        <script type="text/javascript" src="js/libs/jquery/1.6/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+        
+        <!-- Compressed Version
+        <link type="text/css" rel="stylesheet" href="min/b=CoreAdmin&f=css/reset.css,css/style.css,css/jqueryui/jqueryui.css,js/jwysiwyg/jquery.wysiwyg.old-school.css,js/zoombox/zoombox.css" />
+        <script type="text/javascript" src="min/b=CoreAdmin/js&f=cookie/jquery.cookie.js,jwysiwyg/jquery.wysiwyg.js,tooltipsy.min.js,iphone-style-checkboxes.js,excanvas.js,zoombox/zoombox.js,visualize.jQuery.js,jquery.uniform.min.js,main.js"></script>
+        -->
+        <link rel="stylesheet" href="css/min.css" />
+        <script type="text/javascript" src="js/min.js"></script>
+        
+    </head>
+    <body>
+        
+        <script type="text/javascript" src="content/settings/main.js"></script>
+<link rel="stylesheet" href="content/settings/style.css" />
+<link rel="stylesheet" type="text/css" href="css/H-ui.min.css">
+
+          
+            
+                
+                
+        <!--            
+              CONTENT 
+                        --> 
+        <div id="content" class="white">
+            <h1><img src="img/icons/posts.png" alt="" /> 会员审核</h1>
+<div class="bloc">
+    <div class="title">
+        会员审核
+    </div>
+    <div class="content">
+        <div class="pd-20">
+            <div class="text-c">
+                <form class="Huiform" method="post" action="" target="_self">
+                    <input type="text" class="input-text" style="width:250px" placeholder="权限名称" id="" name="">
+                    <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜权限节点</button>
+                </form>
+            </div>
+            <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a href="javascript:;" onclick="admin_permission_add('添加权限节点','admin-permission-add.html','','310')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加权限节点</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+            <table class="table table-border table-bordered table-bg">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="7">权限节点</th>
+                    </tr>
+                    <tr class="text-c">
+                        <th width="25"><input type="checkbox" name="" value=""></th>
+                        <th width="40">ID</th>
+                        <th width="200">权限名称</th>
+                        <th>字段名</th>
+                        <th width="100">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-c">
+                        <td><input type="checkbox" value="1" name=""></td>
+                        <td>1</td>
+                        <td>栏目添加</td>
+                        <td></td>
+                        <td><a title="编辑" href="javascript:;" onclick="admin_permission_edit('角色编辑','admin-permission-add.html','1','','310')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_permission_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
+       
+    </div>
+</div>
+
+
+     
+        
+    </body>
+</html>
