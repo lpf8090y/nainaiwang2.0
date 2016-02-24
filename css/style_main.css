@@ -601,7 +601,7 @@
 }
 .i_market_right{
 	width: 260px;
-	float: right;
+	float: right;border:1px solid #ccc;
 }
 /*人民币市场*/
 .i_leftTit{
@@ -1556,7 +1556,7 @@
 
 /*全局样式*/
 *{ margin: 0; padding:0;}
-html, body { font:normal 12px arial,'Microsoft YaHei','\u5b8b\u4f53'; margin: 0; padding: 0; color:#666; background: #d8dedb;}
+html, body { font:normal 12px arial,'Microsoft YaHei','\u5b8b\u4f53'; margin: 0; padding: 0; color:#666; background: #fff;}
 div, p, ul, li, form, input, h1, h2, h3, h4, h5, h6, dl, dt, dd, img { padding: 0; margin: 0;}
 input, label{ vertical-align:middle}
 h1, h2, h3, h4, h5, h6 { font-weight: normal;}
