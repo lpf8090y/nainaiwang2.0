@@ -421,7 +421,7 @@ body{_padding-top:30px;}
        			<div class="tit_center">
        				<p><span class="title_big"><a><u class="red">登录</u> </a>后可查看更多现货资源。</span><a><u class="red">点击这里免费注册</u></a></p>
        			</div>
-       		<div>
+       		</div>
        		<div class="pro_gg">
        			<div class="gg_img">
        				<div class="gg_cen">
@@ -486,7 +486,6 @@ body{_padding-top:30px;}
     	</div>
 	</div>  
     <!--主要内容 结束-->
-    
 <script type="text/javascript" src="js/jquery.fixed.js" charset="UTF-8"></script>
 <script type="text/javascript" src="js/init.fixed.js" charset="UTF-8"></script>
 <link href="css/fixed.css" rel="stylesheet" type="text/css"/>
@@ -502,73 +501,45 @@ body{_padding-top:30px;}
     </dl>
 </div>
 
-<!-- 页面侧边栏 -->
-
-<!-- 底部导航 -->
-
-<!-- <link type="text/css" rel="stylesheet" href="css/global_site_index_new.css"> -->
-
-
-<!--楼层电梯 -->
-<!-- <div class="floor_left_box" id="floornav" data-tpa="YHD_HOMEPAGE_FLOORNAV" style="display:none;">
-
-<a href="#floor-1" data="#floor-1" rel="floor-1" class="cur">
-<i class="left_iconfont "><img src="images/floor_07.png">交易市场</i>
-<em class="two_line"><img src="images/floor_cur_07.png">交易市场</em>
-</a>
-<a href="#floor-2" data="#floor-2" rel="floor-2">
-<i class="left_iconfont "><img src="images/floor_09.png">市场指数</i>
-<em class="two_line"><img src="images/floor_cur_09.png">市场指数</em>
-</a>
-<a href="#floor-3" data="#floor-3" rel="floor-3">
-<i class="left_iconfont "><img src="images/floor_03.png" >推荐商家</i>
-<em class="two_line"><img src="images/floor_cur_03.png">推荐商家</em>
-</a>
-<a href="#UniSwfStore_uniswfstore_0" data="#toTop" rel="toTop">
-<i class="left_iconfont "><img src="images/floor_08.png">返回顶部</i>
-<em class="two_line"><img src="images/floor_cur_08.png">返回顶部</em>
-</a>
-
-</div> 
- -->
 
 
 <!--悬浮导航-->
 <!-- 图片弹出层 -->
-<!-- 写点样式，让轮播好看点 -->
 <div class="cd-popup" role="alert">
 	<div class="cd-popup-container">
         <span class="pop_con_tit">商品图片</span>
 		<!-- <a href="#" class="pop_con_qx cd-popup-close"><i class="icon-remove"></i></a> -->
-        <a  class="cd-popup-close"><i class="icon-remove pop_qx"></i></a>
+        <a  class="cd-popup-close"><img class="pop_qx"src="images/icon/icon_qx.jpg"/></a>
 		<!-- 把要轮播的地方写上来 -->
         <div id="myCarousel" class="carousel slide">
-   <!-- 轮播（Carousel）指标 -->
-   <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-   </ol>   
-   <!-- 轮播（Carousel）项目 -->
-   <div class="carousel-inner">
-      <div class="item active">
-         <img src="images/banner/01.jpg" alt="First slide">
-      </div>
-      <div class="item">
-         <img src="images/banner/02.jpg" alt="Second slide">
-      </div>
-      <div class="item">
-         <img src="images/banner/03.jpg" alt="Third slide">
-      </div>
-   </div>
-   <!-- 轮播（Carousel）导航 -->
-   <a class="carousel-control left" href="#myCarousel" 
-      data-slide="prev">&lsaquo;</a>
-   <a class="carousel-control right" href="#myCarousel" 
-      data-slide="next">&rsaquo;</a>
+           <!-- 轮播（Carousel）指标 -->
+          <!--  <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+           </ol>    -->
+           <!-- 轮播（Carousel）项目 -->
+           <div class="carousel-inner">
+              <div class="item active">
+                 <img src="images/banner/01.jpg" alt="First slide">
+              </div>
+              <div class="item">
+                 <img src="images/banner/02.jpg" alt="Second slide">
+              </div>
+              <div class="item">
+                 <img src="images/banner/03.jpg" alt="Third slide">
+              </div>
+           </div>
+            <!-- 轮播（Carousel）导航 -->
+           <a class="carousel-control left" href="#myCarousel" 
+              data-slide="prev">&lsaquo;</a>
+           <a class="carousel-control right" href="#myCarousel" 
+              data-slide="next">&rsaquo;</a>
+        </div>
     <!-- 把要轮播的地方写上来 --> 
 	</div> <!-- cd-popup-container -->
-</div> <!-- cd-popup -->
+</div><!-- cd-popup -->
+ 
 
 <!-- 图片弹出层end -->
 
@@ -577,7 +548,7 @@ body{_padding-top:30px;}
     <div class="cd-popup-container_d">
         <span class="pop_con_tit">商品详情</span>
         <!-- <a href="#" class="pop_con_qx cd-popup-close"><i class="icon-remove"></i></a> -->
-        <a  class="cd-popup-close"><i class="icon-remove pop_qx"></i></a>
+        <a  class="cd-popup-close"><img class="pop_qx"src="images/icon/icon_qx.jpg"/></a>
         <div class="pop_con">
             <table>
                 <tr>
@@ -624,10 +595,11 @@ body{_padding-top:30px;}
 </div>
 <!-- 订单弹出层end -->
 <!-- 合同弹出层 -->
+
 <div class="cd-popup_ht" role="alert">
     <div class="cd-popup-container_ht">
         <span class="pop_con_tit"></span>
-        <a class="cd-popup-close"><i class="icon-remove pop_qx"></i></a>
+        <a class="cd-popup-close"><img class="pop_qx"src="images/icon/icon_qx.jpg"/></a>
         <div class="main">
             <p align="center"><strong style="font-size:20px;">耐耐网电子商务交易合同条款 </strong></p>
 
@@ -706,5 +678,8 @@ body{_padding-top:30px;}
         </div>
     </div>
 </div>
-<!-- 订单弹出层end -->
+
+<!-- 合同弹出层end -->
+<!-- 遮罩层 -->
+<div id="bg"></div>
 </body></html>
