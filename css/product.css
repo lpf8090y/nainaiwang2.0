@@ -1,0 +1,326 @@
+a{cursor: pointer;text-decoration: none;}
+.pro_se{
+	border: 1px solid #c0c0c0;
+    padding:15px;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+.pro_se input[type="text"]{
+	width: 135px;
+}
+.pro_se .search{
+	padding: 5px 15px;
+    border: 0px;
+    background: #c0181d;
+    color: #fff;
+    font-family: '微软雅黑';
+}
+.pro_se .pro_clear{
+	padding: 5px 15px;
+    border: 0px;
+    background: #c0c0c0;
+    color: #fff;
+    font-family: '微软雅黑';
+}
+/*分类*/
+.pro_classify{
+	border: 1px solid #ccc;
+}
+.pro_classify .class_jy {
+	padding: 0px 15px;
+border-bottom: 1px solid #ccc;
+}
+.pro_classify .class_jy .jy_title{
+	font-weight: 700;
+	float: left;
+	line-height: 30px;
+}
+.pro_classify .class_jy ul {
+	width:100%;
+	height: 30px;
+	line-height: 30px;
+}
+.pro_classify .class_jy ul li{
+	float: left;
+	width: 8%;
+	text-align: center;
+}
+.pro_main{
+	margin-top: 15px;
+}
+.pro_main .pro_cen ul li{
+	float: left;
+	width: 9%;
+	text-align: center;
+}
+.pro_main .pro_cen .main_title{
+	height: 35px;
+	line-height: 35px;
+	background: #f3f3f3;
+	border-top: 2px solid #e3e3e3;
+}
+.pro_main .pro_cen .main_title .main_mr{
+	-moz-box-shadow: -1px -1px 2px #999;
+	-webkit-box-shadow: -1px -1px 2px #999;
+	box-shadow: -1px -1px 2px #999;
+	padding: 2px 10px;
+	background: #fff;
+}
+.pro_main .pro_cen .main_title .main_px{
+	padding: 2px 5px;
+	border: 1px solid #ccc;
+	
+}
+.pro_main .pro_cen .main_title .arrow_color {
+	color: #b4b4b4;
+}
+.pro_main  .main_centon{
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.pro_main  .main_centon .pz_img{
+	position: relative;
+	top:6px;
+}
+.pro_main .pro_cen .main_centon .qian_blue{
+	color:#1cddaf;
+}
+
+.pro_main .pro_cen .main_centon .icon_img{
+	vertical-align: middle;
+}
+
+.pro_main .pro_cen ul li .cz{
+	position: relative;
+	top: 10px;
+}
+.pro_main .pro_cen ul li  ul{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	background: #c0c0c0;
+	width: 50%;
+}
+.pro_main .pro_cen ul li ul li{
+	float: none;
+	width: 100%;
+	background: #DD2D35;
+	line-height: 25px;
+	border-bottom: 1px solid;
+}
+.pro_main .pro_cen ul li .xd{
+	width: 50%;
+	background: #c4141c;
+	line-height: 25px;
+	border-bottom: 1px solid;
+
+}
+.pro_main .pro_cen ul li a{
+	text-decoration:none;
+	cursor: pointer;
+}
+.pro_main .pro_cen ul li .cz_wz{
+	padding: 0 5px;
+	color: #fff;
+}
+.pro_main .pro_cen .icon_color{
+	line-height: 25px;
+	background: #9c1017;
+	position: relative;
+	right: -1px;
+	color: #fff;
+}
+.pro_main .pro_cen .icon_color:hover{
+	background: #DA0F1A;
+}
+.tit_left{
+	text-align: left!important;
+	padding-left: 5px;
+}
+/*广告*/
+.pro_gg{
+	margin-top: 15px;
+}
+.pro_gg .tit_center{
+	text-align: center;
+	background: #e9fcfa;
+	height: 45px;
+	line-height: 45px;
+}
+.pro_gg .tit_center .title_big{
+	font-size: 18px;
+}
+.pro_gg .gg_img{
+	background: url(../images/icon/icon_gg.jpg);
+	height: 80px;
+	text-align: center;
+}
+.pro_gg .gg_img .gg_cen{
+	position: relative;
+	top: 10px;
+}
+.pro_gg .gg_img .gg_cen .text{
+	height: 52px;
+	width: 300px;
+	padding: 3px 10px;
+}
+.icon_type{
+	position: absolute;
+	line-height: 59px;
+	padding-left: 10px;
+	font-size: 24px;
+	color: #fff;
+	z-index: 1;
+}
+.pro_gg .gg_img .gg_cen .sumit{
+	    height: 61px;
+	line-height: 61px;
+    width: 65px;
+    background: #c81624;
+    border: 0px;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 38px;
+    position: relative;
+    top: -19px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {   .pro_gg .gg_img .gg_cen .sumit {       position: relative;
+    top: -26px!important;    }}
+@-moz-document url-prefix() {    .pro_gg .gg_img .gg_cen .sumit {       position: relative;
+    top: -23px;    }}
+.wx_tit{
+	padding: 20px 15px;
+}
+
+/*弹框*/
+.cd-popup,.cd-popup_d,.cd-popup_ht {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+ 
+  visibility: hidden;
+    z-index: 20;
+   
+}
+
+.cd-popup.is-visible, .cd-popup_d.is-visible,.cd-popup_ht.is-visible{
+  opacity: 1!important;
+  visibility: visible;
+ 
+}
+
+.cd-popup-container,.cd-popup-container_d,.cd-popup-container_ht {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  max-height: 488px;
+  margin: 4em auto;
+  background: #FFF;
+  border: 5px solid #ddd;
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+}
+
+.is-visible .cd-popup-container, .is-visible .cd-popup-container_d,.is-visible .cd-popup-container_ht{
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.is-visible .pop_con_tit{
+	float: left;
+	padding: 15px 25px;
+	font-size: 20px;
+}
+.is-visible .cd-popup-close{
+padding: 7px 25px 0 0px;
+font-size: 15px;
+position: relative;
+display: block;
+text-align: right;
+text-decoration: none;
+}
+#myCarousel{
+	padding-bottom: 20px;
+margin: 0 auto;
+max-width: 540px;
+}
+/*商品详情*/
+.pop_con{
+	padding: 15px ;
+}
+.pop_con table tr{
+	height: 35px;
+}
+.pop_con table tr th{
+	text-align: right;
+}
+.pop_con .an-xd{
+	background: #c81623;
+color: #Fff;
+padding: 5px 20px;
+text-decoration: none;
+cursor: pointer;
+}
+.pop_con .an-xd:hover{
+	background: #E81524;
+}
+.pop_con .table2 tr td{
+ 	border: 1px solid #c0c0c0;
+ 	text-align: center;
+}
+#jian,#add{
+	width: 22px;
+	line-height: 20px;
+	background: #e8e8e8;
+	border: 1px solid #ddd;
+	color: #b4b4b4;
+}
+#num{
+	border-right: 0px;
+	border-left: 0px;
+	border-top: 1px solid #ddd;
+	border-bottom:1px solid  #ddd;
+	width: 50px;
+	text-align: center;
+	height: 20px;
+
+}
+.cd-popup_ht .cd-popup-container_ht .main{
+ 	max-height: 430px;
+	overflow: auto;
+	margin: 15px 25px 10px 25px;
+	padding-right: 5px;
+}
+
+
+#bg {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 16;
+    -moz-opacity: 0.7;
+    opacity: .70;
+    filter: alpha(opacity=70);
+}
