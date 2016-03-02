@@ -88,8 +88,14 @@ position: relative;
 }
 .pro_main .pro_cen ul li{
 	float: left;
-	width: 9%;
+	width: 94px;
 	text-align: center;
+}
+.pro_main .pro_cen ul .tit_left{
+	width: 150px;
+}
+.pro_main .pro_cen ul .but_left{
+	width: 100px;
 }
 .pro_main .pro_cen .main_title{
 	height: 35px;
@@ -171,10 +177,6 @@ position: relative;
 }
 .pro_main .pro_cen .icon_color:hover{
 	background: #DA0F1A;
-}
-.tit_left{
-	text-align: left!important;
-	padding-left: 5px;
 }
 /*广告*/
 .pro_gg{
