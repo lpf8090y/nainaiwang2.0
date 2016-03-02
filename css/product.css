@@ -25,11 +25,23 @@ a{cursor: pointer;text-decoration: none;}
 }
 /*分类*/
 .pro_classify{
-	border: 1px solid #ccc;
+    margin: 10px 0;
 }
+.pro_classify .class_re{
+	border-bottom: 1px solid #DDD;
+	background: #F1F1F1;
+	line-height: 34px;
+	height: 34px;
+	overflow: hidden;
+	zoom: 1;
+}
+.pro_classify .class_re h3{float: left;padding-left: 15px;}
+.pro_classify .class_re h3 b{color: #c81623;margin-right: 5px;}
+.pro_classify .class_re .st_ext{float: left;padding-left: 10px;}
 .pro_classify .class_jy {
 	padding: 0px 15px;
-border-bottom: 1px solid #ccc;
+border-bottom: 1px solid #e3e3e3;
+position: relative;
 }
 .pro_classify .class_jy .jy_title{
 	font-weight: 700;
@@ -45,6 +57,31 @@ border-bottom: 1px solid #ccc;
 	float: left;
 	width: 8%;
 	text-align: center;
+}
+.pro_classify .class_jy ul .a_choose a{
+	display: block;
+	color: #c81623;
+}
+.pro_classify .class_jy .sl_ext{
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	width: auto;
+	height: auto;
+	line-height: 20px;
+	overflow: hidden;
+	zoom: 1;
+}
+.pro_classify .class_jy .sl_ext .sl_e_more{
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	width: auto;
+	height: auto;
+	padding:0px 5px;
+	background: #fff;
+	visibility: hidden;
+	border:1px solid #ccc;
 }
 .pro_main{
 	margin-top: 15px;
