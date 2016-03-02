@@ -86,6 +86,43 @@ position: relative;
 .pro_main{
 	margin-top: 15px;
 }
+.pro_main .pro_sort{
+	padding: 6px 8px;
+	border-bottom: 1px solid #E7E3E7;
+	background: #F1F1F1;
+	height: 25px;
+	zoom: 1;
+}
+.pro_main .pro_sort .sort_list{
+	float: left;
+	margin-right: 24px;
+}
+.pro_main .pro_sort .sort_list a{
+	float: left;
+	padding: 0 15px;
+	height: 23px;
+	border: 1px solid #CCC;
+	line-height: 23px;
+	padding-left: 10px;
+	background: #FFF;
+	color: #333;
+}
+.pro_main .pro_sort .sort_list a.curr{
+	background-color: #e4393c;
+	color: #fff;
+	border-color: #e4393c;
+}
+.pro_main .pro_sort .sort_list i{
+	background: url(../images/icon/arrow.png) no-repeat;
+	display: block;
+	position: absolute;
+	top: 6px;
+	right: 0px;
+	width: 13px;
+	height: 12px;
+	overflow: hidden;
+	font-size: 0;
+}
 .pro_main .pro_cen ul li{
 	float: left;
 	width: 94px;
