@@ -49,9 +49,15 @@ position: relative;
 	line-height: 30px;
 }
 .pro_classify .class_jy ul {
-	width:100%;
+	width:92%;
 	height: 30px;
 	line-height: 30px;
+}
+.pro_classify .class_jy .infoslider{
+    display: block;
+    padding: 0px 9px 0px 60px;
+    height: auto;
+    overflow: hidden;
 }
 .pro_classify .class_jy ul li{
 	float: left;
