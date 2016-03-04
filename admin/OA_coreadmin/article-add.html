@@ -19,8 +19,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/H-ui.min.css">
 		<script language="javascript" type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
-	<!-- 文本编辑器 -->
-		
+
 </head>
 
 <body>
@@ -108,7 +107,6 @@
 						<div class="formControls col-2 skin-minimal">
 							<div class="check-box">
 								<input type="checkbox" id="checkbox-pinglun">
-								<label for="checkbox-pinglun">&nbsp;</label>
 							</div>
 						</div>
 						<label class="form-label col-2">评论开始日期：</label>
@@ -133,10 +131,46 @@
 					<div class="row cl">
 						<label class="form-label col-2">缩略图：</label>
 						<div class="formControls col-10">
-							<div class="uploader-thum-container">
+							<div class="uploader-thum-container up_img">
 								<div id="fileList" class="uploader-list"></div>
-								<div id="filePicker" class="btn btn-secondary radius">选择图片</div>
-								<button id="btn-star" class="btn btn-default btn-uploadstar radius ml-10">开始上传</button>
+								<!-- 上传图片 -->
+								<div id="demo">
+									<div id="as" ></div>
+								</div>
+									<!-- 上传图片 -->
+								<script src="UploadImages/jquery.js"></script>
+							<link rel="stylesheet" type="text/css" href="UploadImages/diyUpload/css/webuploader.css">
+							<link rel="stylesheet" type="text/css" href="UploadImages/diyUpload/css/diyUpload.css">
+							<script type="text/javascript" src="UploadImages/diyUpload/js/diyUpload.js"></script>
+							<script type="text/javascript" src="UploadImages/diyUpload/js/webuploader.html5only.min.js"></script>
+
+							<!-- 上传图片end -->
+								<script type="text/javascript">
+								/*
+								* 服务器地址,成功返回,失败返回参数格式依照jquery.ajax习惯;
+								* 其他参数同WebUploader
+								*/
+								$('#as').diyUpload({
+									url:'server/fileupload.php',
+									success:function( data ) {
+										console.info( data );
+									},
+									error:function( err ) {
+										console.info( err );	
+									},
+									buttonText : '选择文件',
+									chunked:true,
+									// 分片大小
+									chunkSize:512 * 1024,
+									//最大上传的文件数量, 总文件大小,单个文件大小(单位字节);
+									fileNumLimit:50,
+									fileSizeLimit:500000 * 1024,
+									fileSingleSizeLimit:50000 * 1024,
+									accept: {}
+								});
+								</script>
+								<!-- 上传图片end-->
+							<!-- 	<button id="btn-star" class="btn btn-default btn-uploadstar radius ml-10">开始上传</button> -->
 							</div>
 						</div>
 					</div>

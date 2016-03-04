@@ -144,10 +144,11 @@ text-indent: 1em;
 }
 /*中心内容*/
 .user_c{
-   margin: 0 20px;
+   margin: 0 20px 10px 20px;
     width: 748px;
     text-align: center;
     border: 1px solid #c0c0c0;
+
 }
 .check-approve{
     position: relative;
@@ -548,6 +549,10 @@ color: #fff;
 .chp_xx .xx_center tr{
 	 border-bottom: 1px solid #CCC;
 }
+.xx_center td .ck:hover{
+  color: #CD0C0C;
+}
+
 .tab_bt {
     height: 54px;
     padding: 10px 0px;
@@ -677,6 +682,48 @@ line-height: 25px;
 .zhs_tit{
 	line-height:100px !important;
 }
+/*订单详情*/
+.de_ce{
+  border: 1px solid #b56a08;
+  padding-bottom: 10px;
+}
+.de_ce .detail_chj{
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+}
+.de_ce .detail_chj input[type="button"]{
+   padding: 5px 10px;
+   border: 0px;
+}
+.de_ce .detail_chj .fk_butt{
+  background: #FC7300;
+  color: #fff;
+}
+.sjxx{
+  margin:10px 0px;
+  border: 1px solid #ccc;
+}
+.sjxx p{
+  line-height: 30px;
+  background:#EFEFEF;
+  padding: 0px 10px;
+  border-bottom: 1px solid #ccc;
+}
+.sjxx .sj_detal{
+  line-height: 35px;
+  border-bottom: 1px solid #ccc;
+}
+.sjxx .sj_detal .sj_de_tit{
+  display: block;
+  width: 12%;
+  height: 34px;
+  line-height: 34px;
+  background: #F2F2F2;
+  float: left;
+  text-align: center;
+}
+
 
 
 
