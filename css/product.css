@@ -43,7 +43,7 @@ border-bottom: 1px solid #ccc;
 }
 .pro_classify .class_jy ul li{
 	float: left;
-	width: 8%;
+	padding: 0 10px;
 	text-align: center;
 }
 .pro_main{
