@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/index20141027.css">
     <script src="js/index20141027.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/classify.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/submit_order.css"/>
     <style type="text/css">
         /*临时顶部图片style 要remove的*/
         body{behavior:url(css/csshover.htc);} 
@@ -39,30 +39,7 @@
             background:url(images/top_index_bg1.jpg) no-repeat center #fff;
         }
     </style>
-    <style type="text/css">
-    #index_nav .nav {
-        height: 43px;
-        line-height: 43px;
-        float: left;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-    }
-    #index_nav .nav li {
-        float: left;
-        width: 155px;
-        text-align: center;
-        border-left: 1px solid #e53f30;
-        border-right: 1px solid #9e2324;
-    }
-    #index_nav .nav li a {
-        color: #ffffff;
-        display: block;
-        width: 155px;
-        text-align: center;
-        height: 43px;   
-    }
-</style>
+    
     <!--[if lte IE 6]>
 <script>
 $(function(){
@@ -257,14 +234,9 @@ body{_padding-top:30px;}
     <!------------------logo 结束-------------------->
     <!------------------导航 开始-------------------->
 
-
-
-
-
-  
-
     <div id="index_nav">
         <div class="page_width">
+            <!--<div class="all_steel">全部产品分类</div>-->
 
 
             <ul class="nav n_nav">
@@ -287,7 +259,12 @@ body{_padding-top:30px;}
 
     <input type="hidden" id="UserID">
     <!--主要内容 开始-->
-    <div id="mainContent">
+    <div id="mainContent" style="background:#FFF;"> 
+    
+    
+    
+    
+    
         <div class="page_width">
             <!--扫描 开始
             <div class="mainCode_left">
@@ -314,29 +291,77 @@ body{_padding-top:30px;}
             </div>
             <!---扫描 结束-->
             
+            <!----第一行搜索  开始---->
+            <div class="mainRow1">
+                <!--搜索条件 开始-->
+                    
             
+ 
             
-            <!----五大类  开始---->
-            <div class="mainRow3">                
-                                    <link rel="stylesheet" type="text/css" href="css/style_main.css">
+              
+             <!------------------交易 开始-------------------->
+            <div class="submit">
+             
+             <!--头部开始-->
+             <div class="submit_word">
+             <span>填写订货单</span>
+             <span>提交订单</span>
+             <span>支付货款</span>
+             <span>交易完成</span>
+             </div>  
+            <div class="submit_photo">
+              <img src="images/order/oder-5.jpg" width="209" height="47" alt="第一步" /> 
+              <img src="images/order/oder-7.jpg" width="203" height="47" alt="第二步" />
+              <img src="images/order/oder-8.jpg" width="205" height="47" alt="第三步" />
+              <img src="images/order/oder-4.jpg" width="211" height="47" alt="第四步" />
+              </div> 
+              <!--头部结束--> 
+              <div class="alreaor">
+             <h1>订单已提交，请尽快完成付款！</h1>  
+               
+               
+               
+               
+               <div class="bormin">
+               <p>订单号<i class="spsce">：</i>nh01234567</p>
+               <p>应付金额<i>：</i>￥1000.01</p>
+               <p>发票信息<i>：</i>耐耐云商科技有限公司</p>
+               <p><i class="leftspace">明细（耗材）</i></p>
+               <p>收货信息<i>：</i><span>刘鹏飞<span> <span>山西省-太原市-俺爸爸爸爸，</span> 
+                 <span>手机：13603560985，</span> <span>电话：1231231，</span> <span>邮编：030012</span>
+                   </p>
                 
-
-                            
-
-
-                                       
-
-                            <!--//通用底部-->
-                                        
-                                
-                                <script type="text/javascript" src="js/script-2-AQTnlOGb8Z1ylR8UZZJBEg.js"></script>
-                                
-
-
+                <span class="redword">为了保证及时处理你的订单，请于下单后尽快付款，如果您在72小时内未支付首款您的订单将被取消。</span>   
+              
+               <p class="zhisty">支付方式：<a href="javascript:;"><img src="images/order/jianh.jpg" width="143" height="40" alt="建行" /></a></p>
+               
+               <div class="od_buton">
+                <a class="zhifod" href="javascript:;">支付货款</a>
+                <a class="fanhod" href="javascript:;">返回订单</a>
                 
+                
+                </div>
+               
+               </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
             </div>
-            <!----五大类  结束---->
             
+
+             </div>
+       <!------------------交易 结束-------------------->
+
+
+
+       
 
 
                   
@@ -428,32 +453,19 @@ body{_padding-top:30px;}
 <!-- 底部导航 -->
 
 <link type="text/css" rel="stylesheet" href="css/global_site_index_new.css">
+<!--复选框-->
+<script>
 
+  $("#ckAll").click(function() {
+    $("input[name='sub']").prop("checked", this.checked);
+  });
+  
+  $("input[name='sub']").click(function() {
+    var $subs = $("input[name='sub']");
+    $("#ckAll").prop("checked" , $subs.length == $subs.filter(":checked").length ? true :false);
+  });
 
-<!--楼层电梯 -->
-<div class="floor_left_box" id="floornav" data-tpa="YHD_HOMEPAGE_FLOORNAV" style="display:none;">
+</script>
 
-<a href="#floor-1" data="#floor-1" rel="floor-1" class="cur">
-<i class="left_iconfont "><img src="images/floor_07.png">交易市场</i>
-<em class="two_line"><img src="images/floor_cur_07.png">交易市场</em>
-</a>
-<a href="#floor-2" data="#floor-2" rel="floor-2">
-<i class="left_iconfont "><img src="images/floor_09.png">市场指数</i>
-<em class="two_line"><img src="images/floor_cur_09.png">市场指数</em>
-</a>
-<a href="#floor-3" data="#floor-3" rel="floor-3">
-<i class="left_iconfont "><img src="images/floor_03.png" >推荐商家</i>
-<em class="two_line"><img src="images/floor_cur_03.png">推荐商家</em>
-</a>
-<a href="#UniSwfStore_uniswfstore_0" data="#toTop" rel="toTop">
-<i class="left_iconfont "><img src="images/floor_08.png">返回顶部</i>
-<em class="two_line"><img src="images/floor_cur_08.png">返回顶部</em>
-</a>
-
-</div> 
-
-
-
-<!--悬浮导航-->
 
 </body></html>

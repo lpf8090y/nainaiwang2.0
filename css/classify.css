@@ -48,7 +48,7 @@ a:hover,a:active { text-decoration:underline; }
 .all-sort-list .item-sp{background:#fb8901;}
 .all-sort-list .item .fenlei-h1{font-size: 18px; font-weight: normal;}
 .all-sort-list .item .fenlei-h2{font-size: 18px; font-weight: normal; line-height: 45px;}
-.all-sort-list .item:hover{color:red;background:none;font-weight: bolder;}
+.all-sort-list  .item:hover{color:red;background:none;font-weight: bolder;}
 
 .all-sort-list .item .icon-nh1{width:43px;height: 46px;background: url(../Images/icon/icon_index_searchl.png) no-repeat 10px 12px;_background:none;float: left;}
 .all-sort-list .item .icon-nh2{width:43px;height: 46px;background: url(../Images/icon/icon_index_searchl.png) no-repeat 10px -25px;_background:none;float: left;}
