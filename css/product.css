@@ -155,6 +155,10 @@ position: relative;
 	width: 94px;
 	text-align: center;
 }
+/*product.html*/
+.pro_main .pro_cen .poptwidth li{
+	width: 117px;
+}
 .pro_main .pro_cen ul .tit_left{
 	width: 150px;
 }
