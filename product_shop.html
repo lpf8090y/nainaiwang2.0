@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0038)http://www.nainaiwang.com/#index_banner6 -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
-	产品页
+	品牌商户
 </title><meta name="Keywords" content="耐火材料、耐耐网"><meta name="Description" content="耐火材料、耐耐网">
-    <script src="js/jquery-1.7.2.min.js" type="text/javascript" language="javascript"></script>
     <script type="text/javascript" defer="" async="" src="js/uta.js"></script>
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript" language="javascript"></script>
     <!-- 轮播图 -->
     <script src="js/roll.js"></script>
     <link rel="stylesheet" type="text/css" href="css/roll.css">
@@ -214,10 +214,10 @@ body{_padding-top:30px;}
 
             <ul class="nav n_nav">
                 <li><a href="http://www.nainaiwang.com/">首页</a></li>
-                <li class="current"><a href="http://market.nainaiwang.com/" target="_blank">交易中心</a></li>
+                <li><a href="http://market.nainaiwang.com/" target="_blank">交易中心</a></li>
                 <li><a href="http://market.nainaiwang.com/brand.html" target="_blank">数据中心</a></li>
                 <li><a href="http://market.nainaiwang.com/brand.html" target="_blank">竞价招投标</a></li>
-                <li><a href="http://market.nainaiwang.com/brand.html" target="_blank">品牌商户</a></li>
+                <li class="current"><a href="http://market.nainaiwang.com/brand.html" target="_blank">品牌商户</a></li>
                 <li style="border-right: none"><a href="http://bbs.nainaiwang.com/" target="_blank">耐耐朋友圈</a></li>
             </ul>
         </div>
@@ -253,7 +253,7 @@ body{_padding-top:30px;}
        		</div>
        		<!--搜索条件 end-->
        		<!-- 分类 start -->
-       		<div class="pro_classify">
+            <div class="pro_classify">
                                 <div class="class_re">
                                     <h3>
                                         <b>热卷</b>
@@ -301,34 +301,34 @@ body{_padding-top:30px;}
                                             
                                     </ul>
                                 </div> 
-       			<div class="class_jy">
-       				<span class="jy_title">市场类型：</span>
-       				<ul>
-							
-						<li class="">
-						 <a href=""> 不限</a>
-						</li>
-							
-						<li value="1" class="a_choose"><a>钢铁市场</a></li>
-						<li value="2">				
-							<a href="">建材市场
-							</a>
-						</li>
-						<li value="3">				
-							<a href="">耐火市场</a>
-						</li>
-						<li value="5">				
-							<a href="">设备市场</a>
-						</li>
-						<li value="6">				
-							<a href="">冶金化工市场</a>
-						</li>
-						<li value="7">				
-							<a herf="">其他市场</a>
-						</li>
-							
-					</ul>
-       			</div>
+                                <div class="class_jy">
+                                    <span class="jy_title">市场类型：</span>
+                                    <ul>
+                                            
+                                        <li class="">
+                                         <a href=""> 不限</a>
+                                        </li>
+                                            
+                                        <li value="1" class="a_choose"><a>钢铁市场</a></li>
+                                        <li value="2">              
+                                            <a href="">建材市场
+                                            </a>
+                                        </li>
+                                        <li value="3">              
+                                            <a href="">耐火市场</a>
+                                        </li>
+                                        <li value="5">              
+                                            <a href="">设备市场</a>
+                                        </li>
+                                        <li value="6">              
+                                            <a href="">冶金化工市场</a>
+                                        </li>
+                                        <li value="7">              
+                                            <a herf="">其他市场</a>
+                                        </li>
+                                            
+                                    </ul>
+                                </div>
                                     <div class="class_jy">
                                         <span class="jy_title">商品种类：</span>
                                                  <ul>
@@ -486,16 +486,16 @@ body{_padding-top:30px;}
                                      $(document).ready(function(){
                                         $(".class_jy").delegate(".info-show", "click", function () {
                                            //展开操作
-									//$(".infoslider").show();	
-									//$(this).parentsUntil(".class_jy").parent().find(".infoslider").show(); 
-									$(this).parents(".class_jy").find(".infoslider").show();   
+                                    //$(".infoslider").show();  
+                                    //$(this).parentsUntil(".class_jy").parent().find(".infoslider").show(); 
+                                    $(this).parents(".class_jy").find(".infoslider").show();   
                                     $(this).removeClass("info-show").addClass("info-hide").html("收起");
                                        });
                                     $(".class_jy").delegate(".info-hide", "click", function () {
                                     //收起操作
-								//$(".infoslider").hide();
-								//$(this).parentsUntil(".class_jy").parent().find(".infoslider").hide();
-								$(this).parents(".class_jy").find(".infoslider").hide();
+                                //$(".infoslider").hide();
+                                //$(this).parentsUntil(".class_jy").parent().find(".infoslider").hide();
+                                $(this).parents(".class_jy").find(".infoslider").hide();
                                 $(this).removeClass("info-hide").addClass("info-show").html("展开")
                                      });
 
@@ -546,6 +546,7 @@ body{_padding-top:30px;}
                                                 
                                         </ul>
                                          <ul class="infoslider" style="display:none;">
+                                                
                                                 
                                             <li value="1"><a>热卷</a></li>
                                             <li value="2">              
@@ -611,9 +612,76 @@ body{_padding-top:30px;}
                                                                         <a href="javascript:;" class="sl_e_more info-show" style="visibility: visible;">展开</a>
                                                                     </div>
                                     </div>
-       			<div style="clear:both"></div>
+                                    <div class="class_jy">
+                                        <span class="jy_title">商户品牌：</span>
+                                                 <ul>
+                                                
+                                            <li class="">
+                                             <a href=""> 全部</a>
+                                            </li>
+                                                
+                                            <li value="1" class="a_choose"><a>大禹耐材</a></li>
+                                            <li value="2">              
+                                                <a href="">华岭耐火
+                                                </a>
+                                            </li>
+                                            <li value="3">              
+                                                <a href="">上白泉耐火</a>
+                                            </li>
+                                                
+                                        </ul>
+                                        <ul class="infoslider" style="display:none;">
+                                                
+                                                
+                                            <li value="1"><a>大禹耐材</a></li>
+                                            <li value="2">              
+                                                <a href="">华岭耐火
+                                                </a>
+                                            </li>
+                                            <li value="3">              
+                                                <a href="">上白泉耐火</a>
+                                            </li>
+                                                
+                                        </ul>
+                                                                    <div class="sl_ext">
+                                                                        <a href="javascript:;" class="sl_e_more info-show" style="visibility: visible;">展开</a>
+                                                                    </div>
+                                    </div>
+                            <div style="clear:both"></div>
        		</div>
        		<!-- 分类 end -->
+                        <!-- 商家入驻 start -->
+                        <div class="shop_show">
+                            <div class="shop_left">
+                                <div class="box" style="margin-top:50px;">
+                                    <div class="picbox">
+                                        <ul class="piclist mainlist">
+                                            <li><a href="#" target="_blank"><img src="images/1.jpg" width="220" height="105" /></a></li>
+                                            <li><a href="#" target="_blank"><img src="images/2.jpg" /></a></li>
+                                            <li><a href="#" target="_blank"><img src="images/3.jpg" /></a></li>
+                                            <li><a href="#" target="_blank"><img src="images/4.jpg" /></a></li>
+                                            <li><a href="#" target="_blank"><img src="images/1.jpg" /></a></li>
+                                                <li><a href="#" target="_blank"><img src="images/2.jpg" /></a></li>
+                                            <li><a href="#" target="_blank"><img src="images/3.jpg" /></a></li>
+                                            <li><a href="#" target="_blank"><img src="images/4.jpg" /></a></li>
+                                        </ul>
+                                        <ul class="piclist swaplist"></ul>
+                                    </div>
+                                    <div class="og_prev"></div>
+                                    <div class="og_next"></div>
+                                </div>
+                            </div>
+                            <div class="shop_right">
+                                <ul>
+                                    <li>
+                                        <h3 class="">名企直通车</h3>
+                                        <b>400-6738-086</b>
+                                    </li>
+                                    <li><a href="">成为品牌商户</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 商家入驻 end -->
        		<!-- 产品 start -->
        		<div class="pro_main">
                                 <div class="pro_sort">
@@ -653,16 +721,16 @@ body{_padding-top:30px;}
                                     </script>
                                 </div>
        			<div class="pro_cen">
-       				<ul class="main_title poptwidth">
+       				<ul class="main_title">
        					<li class="tit_left">品名</li>
        					<li>供求</li>
                                                         <li>类型</li>
        					<li>规格</li>
        					<li>材质</li>
-       					<!--<li>产地</li>-->
+       					<li>厂家品牌</li>
        					<li>交货地</li>
        					<li>剩余（吨）</li>
-       					<!--<li>供应商</li>-->
+       					<li>供应商</li>
        					<li>
        						<!-- <a class="main_mr">默认</a><a class="main_px">从低到高<i class="arrow_color icon-arrow-up"></i></a> -->
                                                             价格      	
@@ -671,7 +739,7 @@ body{_padding-top:30px;}
        				</ul>
        			</div>
        			<div class="pro_cen">
-       				<ul class="main_centon poptwidth">
+       				<ul class="main_centon">
        					<li class="tit_left">
        						<a href="" title="品质保证"><img class="pz_img"src="images/icon/icon_pz.png"></a>
        						<span>三级抗震螺纹钢</span>
@@ -680,10 +748,10 @@ body{_padding-top:30px;}
                                                         <li>自由报盘</li>
        					<li>20*2500*l</li>
        					<li>Q345B</li>
-       					<!--<li>普阳</li>-->
+       					<li>普阳</li>
        					<li>邯郸市</li>
        					<li>78.225</li>
-       					<!--<li>1家报价</li>-->
+       					<li>1家报价</li>
        					<li><i class="qian_blue">￥2180</i></li>
        					<li>
        						<a href="" title="无保"><img class="icon_img" src="images/icon/icon_wb.png"/></a>
@@ -701,7 +769,7 @@ body{_padding-top:30px;}
        				</ul>
        			</div>
        			<div class="pro_cen">
-       				<ul class="main_centon poptwidth">
+       				<ul class="main_centon">
        					<li class="tit_left">
        						<a href="" title="推荐"><img class="pz_img"src="images/icon/icon_tj.png"></a>
        						<span>两切低合金板</span>
@@ -710,10 +778,10 @@ body{_padding-top:30px;}
                                                         <li>保证金报盘</li>
        					<li>16*12</li>
        					<li>Hrb400e</li>
-       					<!--<li>新抚顺</li>-->
+       					<li>新抚顺</li>
        					<li>广州市</li>
        					<li>18</li>
-       					<!--<li>1家报价</li>-->
+       					<li>1家报价</li>
        					<li><i class="qian_blue">￥2040</i></li>
        					<li>
        						<a href="" title="有保"><img class="icon_img" src="images/icon/icon_yb.png"/></a>
