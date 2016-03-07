@@ -131,8 +131,6 @@ height: 43px;
     border-radius: 15px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	position: relative;
 	left: -30px;
-	behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
-
 }
 
 .comm_problem{
