@@ -90,6 +90,20 @@ position: relative;
 	visibility: hidden;
 	border:1px solid #ccc;
 }
+/*商家入驻展示*/
+.shop_show{
+	width:1190px;
+}
+.shop_left{
+	width: 980px;
+	float: left;
+}
+.shop_right{
+	width:auto;
+	margin-left: 10px;
+	float: left;
+}
+
 .pro_main{
 	margin-top: 15px;
 }
