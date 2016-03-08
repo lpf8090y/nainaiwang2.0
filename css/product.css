@@ -99,9 +99,34 @@ position: relative;
 	float: left;
 }
 .shop_right{
-	width:auto;
-	margin-left: 10px;
+	width:190px;
+	margin-top: 60px;
+	margin-left: 20px;
 	float: left;
+	font-size: 18px;
+}
+.shop_right li{
+	margin-top:15px;
+}
+.shop_right b{
+	padding-left: 15px;
+	letter-spacing:1px;
+}
+.shop_right a{
+	display: block;
+	background: #de412c;
+	border:1px solid #910812;
+	border-radius: 5px;
+	color: #fff;
+	width:160px;
+	height: 50px;
+	line-height: 50px;
+}
+.shop_right a:hover{color: #fff;text-decoration: none;}
+.shop_right a span{
+	margin-left: 12px;
+	background: url(../images/icon/join.png) no-repeat;
+	padding-left: 25px;
 }
 
 .pro_main{
