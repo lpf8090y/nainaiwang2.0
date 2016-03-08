@@ -52,7 +52,7 @@ height: 43px;
 }
 .help_top{
 	text-align: center;
-	background: url(../images/bg/bgt.jpg) no-repeat;
+	background: url(../images/bg/bgt.jpg);
 	padding: 40px 0;
 }
 .help_top .help_search{
