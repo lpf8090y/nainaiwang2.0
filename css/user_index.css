@@ -736,21 +736,21 @@ line-height: 25px;
 
 
 
-.username{border-width:0px;color:red;width:300px;position: absolute;top: 85px;left: 170px;}
-.tran_saction{border-width:0px;color:red;width:300px;position: absolute;top: 145px;left: 170px;}
-.name_china{border-width:0px;color:red;width:300px;position: absolute;top: 204px;left: 170px;}
-.name_eng{border-width:0px;color:red;width:300px;position: absolute;top: 264px;left: 170px;}
-.email{border-width:0px;color:red;width:300px;position: absolute;top: 563px;left: 170px;}
-.mobile_no{border-width:0px;color:red;width:300px;position: absolute;top: 623px;left: 170px;}
-.phone_no{border-width:0px;color:red;width:300px;position: absolute;top: 683px;left: 170px;}
-.age_no{border-width:0px;color:red;width:300px;position: absolute;top: 743px;left: 170px;}
-.qq_no{border-width:0px;color:red;width:300px;position: absolute;top: 1103px;left: 170px;}
-.zhxi_con .realname, .zhxi_con .emaill{border-width:0px;color:red;width:300px;}
-.real_name{border-width:0px;color:red;width: 160px;}
-.user_names{border-width:0px;color:red;width:368px;}
-.origin_password{border-width:0px;color:red;width:368px;}
-.new_password{border-width:0px;color:red;width:368px;}
-.firm_password{border-width:0px;color:red;width:368px;}
+.username{border-width:0px;color:red;width:300px;position: absolute;top: 85px;left: 170px;cursor: default;}
+.tran_saction{border-width:0px;color:red;width:300px;position: absolute;top: 145px;left: 170px;cursor: default;}
+.name_china{border-width:0px;color:red;width:300px;position: absolute;top: 204px;left: 170px;cursor: default;}
+.name_eng{border-width:0px;color:red;width:300px;position: absolute;top: 264px;left: 170px;cursor: default;}
+.email{border-width:0px;color:red;width:300px;position: absolute;top: 563px;left: 170px;cursor: default;}
+.mobile_no{border-width:0px;color:red;width:300px;position: absolute;top: 623px;left: 170px;cursor: default;}
+.phone_no{border-width:0px;color:red;width:300px;position: absolute;top: 683px;left: 170px;cursor: default;}
+.age_no{border-width:0px;color:red;width:300px;position: absolute;top: 743px;left: 170px;cursor: default;}
+.qq_no{border-width:0px;color:red;width:300px;position: absolute;top: 1103px;left: 170px;cursor: default;}
+.zhxi_con .realname, .zhxi_con .emaill{border-width:0px;color:red;width:300px;cursor: default;}
+.real_name{border-width:0px;color:red;width: 160px;cursor: default;}
+.user_names{border-width:0px;color:red;width:366px;cursor: default;}
+.origin_password{border-width:0px;color:red;width:366px;cursor: default;}
+.new_password{border-width:0px;color:red;width:366px;cursor: default;}
+.firm_password{border-width:0px;color:red;width:366px;cursor: default;}
 /* 产品发布样式 */
 .center_tabl .unit_price{
   color: red;
@@ -761,6 +761,7 @@ line-height: 25px;
     top: 390px;
     left: 125px;
     line-height: 15px;
+    cursor: default;
 }
 
 .center_tabl .mobile_num{
@@ -773,6 +774,7 @@ line-height: 25px;
     left: 125px;
     line-height: 15px;
     width: 315px;
+    cursor: default;
 }
 .center_tabl .pub_qq_no{
   color: red;
@@ -784,6 +786,7 @@ line-height: 25px;
     left: 125px;
     line-height: 15px;
     width: 255px;
+    cursor: default;
 }
 .center_tabl .pub_ware_name{
   color: red;
@@ -795,6 +798,7 @@ line-height: 25px;
     left: 125px;
     line-height: 15px;
     width: 255px;
+    cursor: default;
 }
 .center_tabl .pub_weight{
   color: red;
@@ -806,6 +810,7 @@ line-height: 25px;
     left: 486px;
     line-height: 15px;
     width: 226px;
+    cursor: default;
 }
 
 
@@ -821,6 +826,7 @@ line-height: 25px;
     left: 486px;
     line-height: 15px;
     width: 226px;
+    cursor: default;
 }
 .center_tabl .pub_phone_no{
     color: red;
@@ -832,6 +838,7 @@ line-height: 25px;
     left: 486px;
     line-height: 15px;
     width: 226px;
+    cursor: default;
 }
 .center_tabl .pub_zip_no{
     color: red;
@@ -843,4 +850,5 @@ line-height: 25px;
     left: 486px;
     line-height: 15px;
     width: 226px;
+    cursor: default;
 }
