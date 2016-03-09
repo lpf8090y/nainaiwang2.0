@@ -34,7 +34,7 @@
                        if(reg.test(username)){
                         $(":input[name='checkb']").val("恭喜！输入正确");
                        }else{
-                         $(":input[name='checkb']").val("输入错误，4-16位字符,英文、数字、下划线的组合");
+                         $(":input[name='checkb']").val("输入错误，4-16位字符,英文 数字 下划线的组合");
                               }
                            });
                         });
@@ -47,7 +47,7 @@
                        if(reg.test(origin_password)){
                         $(":input[name='checkc']").val("恭喜！输入正确");
                        }else{
-                         $(":input[name='checkc']").val("输入错误，6-16个字符,包括数字、下划线、字母和常用特殊字符");
+                         $(":input[name='checkc']").val("输入错误，6-16个字符,包括数字 下划线 字母和常用特殊字符");
                               }
                            });
                         });
@@ -61,7 +61,7 @@
                        if(reg.test(new_password)){
                         $(":input[name='checkd']").val("恭喜！输入正确");
                        }else{
-                         $(":input[name='checkd']").val("输入错误，6-16个字符,包括数字、下划线、字母和常用特殊字符");
+                         $(":input[name='checkd']").val("输入错误，6-16个字符,包括数字 下划线 字母和常用特殊字符");
                               }
                            });
                         });
@@ -74,7 +74,7 @@
                        if(reg.test(firm_password)){
                         $(":input[name='checke']").val("恭喜！输入正确");
                        }else{
-                         $(":input[name='checke']").val("输入错误，6-16个字符,包括数字、下划线、字母和常用特殊字符");
+                         $(":input[name='checke']").val("输入错误，6-16个字符,包括数字 下划线 字母和常用特殊字符");
                               }
                            });
                         });
