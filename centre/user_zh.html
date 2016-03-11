@@ -8,6 +8,7 @@
   <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="../js/UploadImages.js"></script>
+  <script type="text/javascript" src="../js/regular.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -65,20 +66,44 @@
 						<form>
 						<div class="zhxi_con">
 							<span class="con_tit"><i>*</i>会员账号：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text" type="text" name="username"/>
+								<input type="text" readonly="readonly" name="checkb" class="username" /></span>
 						</div>
+						
+
+
+
+
 						<div class="zhxi_con">
 							<span class="con_tit"><i></i>交易号：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text" type="text" name="tran_saction"/>
+								<input type="text" readonly="readonly" name="checkee"  class="tran_saction"/></span>
 						</div>
+						
+                         
+
+
+
 						<div class="zhxi_con">
 							<span class="con_tit"><i>*</i>会员名：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text" type="text" name="name_china"/>
+								<input type="text" readonly="readonly" name="checkf"  class="name_china"/></span>
 						</div>
+                         
+
+
+
 						<div class="zhxi_con">
 							<span class="con_tit"><i>*</i>会员英文名称：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text" type="text" name="name_eng"/>
+								<input type="text" readonly="readonly" name="checkg"  class="name_eng"/></span>
 						</div>
+						
+
+
+
+
+
 						<div class="zhxi_con">
 							<span class="con_tit"><i></i>性别：</span>
 							<span><select class="select">
@@ -100,20 +125,43 @@
 						</div>
 						<div class="zhxi_con">
 							<span class="con_tit"><i>*</i>邮箱：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text" type="text" name="email"/>
+								<input type="text" readonly="readonly" name="check"  class="email"/></span>
 						</div>
+						
+
+
+
+
 						<div class="zhxi_con">
 							<span class="con_tit"><i></i>手机：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text" type="text" name="mobile_no"/>
+								<input type="text" readonly="readonly" name="checkh" class="mobile_no"/></span>
 						</div>
+						
+
+
+
+
+
 						<div class="zhxi_con">
 							<span class="con_tit"><i></i>联系电话：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text" type="text" name="phone_no"/>
+								<input type="text" readonly="readonly" name="checki"  class="phone_no"/></span>
 						</div>
+						
+
+
 						<div class="zhxi_con">
 							<span class="con_tit"><i></i>年龄：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text" type="text" name="age_no"/>
+								<input type="text" readonly="readonly" name="checkj" class="age_no"/></span>
 						</div>
+						
+
+
+
+
 						<div class="zhxi_con">
 							<span class="con_tit"><i></i>学历：</span>
 							<span><input class="text" type="text"/></span>
@@ -136,8 +184,13 @@
 						</div>
 						<div class="zhxi_con">
 							<span class="con_tit"><i></i>QQ：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text" type="text" name="qq_no"/>
+								<input type="text" readonly="readonly" name="checkk"  class="qq_no" /></span>
 						</div>
+						
+
+
+
 						<div class="zhxi_con">
 							<span><input class="submit" type="submit" value="保存"/></span>
 						</div>

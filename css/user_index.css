@@ -246,6 +246,7 @@ background: #027cff;
 .zhxi_con span i{
 	color:red;
 	padding:0 5px;
+  font-style: normal;
 }
 .zhxi_con span.con_tit{
 	display: block;
@@ -431,6 +432,7 @@ background: #027cff;
 .user_c .user_zhxi table tr td .cz_show li{
   border: 1px solid #DEDDDD;
 }
+.user_zhxi{ position: relative;}
 /*充值*/
 .user_pay .pay_cot{
   margin: 10px 0px;
@@ -464,7 +466,7 @@ background: #027cff;
     width: 224px;
     border: 1px solid #CCC;
     line-height: 24px;
-    height: 24px;
+    height: 30px;
 }
 .center_tabl td:first-child {
     width: 104px;
@@ -478,7 +480,7 @@ background: #027cff;
 }
 .center_tabl td:nth-child(2), .center_tabl td:nth-child(4) {
     width: 224px;
-    height: 30px;
+    height: 40px;
     text-align: left;
 }
 .center_tabl td {
@@ -505,6 +507,7 @@ background: #027cff;
 .center_tabl table tr td textarea{
 	margin-left: 10px;
     width: 95%;
+    margin-top: 12px;
 }
 
 .center_tabl td span {
@@ -724,11 +727,128 @@ line-height: 25px;
   text-align: center;
 }
 
+.user_r.posio{
+    float: right;
+    position: relative;
+    bottom: 380px;
+    right: 5px;
+}
+
+
+
+.username{border-width:0px;color:red;width:300px;position: absolute;top: 85px;left: 170px;cursor: default;}
+.tran_saction{border-width:0px;color:red;width:300px;position: absolute;top: 145px;left: 170px;cursor: default;}
+.name_china{border-width:0px;color:red;width:300px;position: absolute;top: 204px;left: 170px;cursor: default;}
+.name_eng{border-width:0px;color:red;width:300px;position: absolute;top: 264px;left: 170px;cursor: default;}
+.email{border-width:0px;color:red;width:300px;position: absolute;top: 563px;left: 170px;cursor: default;}
+.mobile_no{border-width:0px;color:red;width:300px;position: absolute;top: 623px;left: 170px;cursor: default;}
+.phone_no{border-width:0px;color:red;width:300px;position: absolute;top: 683px;left: 170px;cursor: default;}
+.age_no{border-width:0px;color:red;width:300px;position: absolute;top: 743px;left: 170px;cursor: default;}
+.qq_no{border-width:0px;color:red;width:300px;position: absolute;top: 1103px;left: 170px;cursor: default;}
+.zhxi_con .realname, .zhxi_con .emaill{border-width:0px;color:red;width:300px;cursor: default;}
+.real_name{border-width:0px;color:red;width: 160px;cursor: default;}
+.user_names{border-width:0px;color:red;width:366px;cursor: default;}
+.origin_password{border-width:0px;color:red;width:366px;cursor: default;}
+.new_password{border-width:0px;color:red;width:366px;cursor: default;}
+.firm_password{border-width:0px;color:red;width:366px;cursor: default;}
+/* 产品发布样式 */
+.center_tabl .unit_price{
+  color: red;
+    font-size: 12px;
+    border-width: 0px;
+    height: 15px;
+    position: absolute;
+    top: 390px;
+    left: 125px;
+    line-height: 15px;
+    cursor: default;
+}
+
+.center_tabl .mobile_num{
+  color: red;
+    font-size: 12px;
+    border-width: 0px;
+    height: 15px;
+    position: absolute;
+    top: 908px;
+    left: 125px;
+    line-height: 15px;
+    width: 315px;
+    cursor: default;
+}
+.center_tabl .pub_qq_no{
+  color: red;
+    font-size: 12px;
+    border-width: 0px;
+    height: 15px;
+    position: absolute;
+    top: 960px;
+    left: 125px;
+    line-height: 15px;
+    width: 255px;
+    cursor: default;
+}
+.center_tabl .pub_ware_name{
+  color: red;
+    font-size: 12px;
+    border-width: 0px;
+    height: 15px;
+    position: absolute;
+    top: 234px;
+    left: 125px;
+    line-height: 15px;
+    width: 255px;
+    cursor: default;
+}
+.center_tabl .pub_weight{
+  color: red;
+    font-size: 12px;
+    border-width: 0px;
+    height: 15px;
+    position: absolute;
+    top: 286px;
+    left: 486px;
+    line-height: 15px;
+    width: 226px;
+    cursor: default;
+}
 
 
 
 
-
-
-
-
+.center_tabl .pub_fax_no{
+    color: red;
+    font-size: 12px;
+    border-width: 0px;
+    height: 15px;
+    position: absolute;
+    top: 908px;
+    left: 486px;
+    line-height: 15px;
+    width: 226px;
+    cursor: default;
+}
+.center_tabl .pub_phone_no{
+    color: red;
+    font-size: 12px;
+    border-width: 0px;
+    height: 15px;
+    position: absolute;
+    top: 856px;
+    left: 486px;
+    line-height: 15px;
+    width: 226px;
+    cursor: default;
+}
+.center_tabl .pub_zip_no{
+    color: red;
+    font-size: 12px;
+    border-width: 0px;
+    height: 15px;
+    position: absolute;
+    top: 752px;
+    left: 486px;
+    line-height: 15px;
+    width: 226px;
+    cursor: default;
+}

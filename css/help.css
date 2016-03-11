@@ -6,24 +6,37 @@ input{
 }
 .help_sign{
 	float: left;
-	width: 260px;
-	height: 43px;
+	width: auto;
+	height: 63px;
 	background-color: #c81623;
 	font-size: 16px;
 	color: #ffffff;
 	text-align: center;
-	line-height: 43px;
+	line-height: 63px;
 	font-weight: bolder;
 	position: absolute;
 	left: 0px;
 	top: 0px;
 }
+.help_sign img{
+	padding-right: 20px;float: left;
+}
+.help_sign .line{
+	width:2px;
+	height: 50px;
+	margin-top:7px;
+	background: #fff;
+	display: inline-block;float: left;
+}
+.help_sign span{
+	margin-left: 20px;float: left;
+}
 .help_nav{
-	height: 43px;
-	line-height: 43px;
+	height: 63px;
+	line-height: 63px;
 	float: left;
 	position: absolute;
-	left: 785px;
+	right: 30px;
 	top: 0px;
 }
 #index_nav .help_nav li a{
@@ -48,7 +61,7 @@ color: #ffffff;
 display: block;
 width: 110px;
 text-align: center;
-height: 43px;
+height: 63px;
 }
 .help_top{
 	text-align: center;
@@ -106,13 +119,14 @@ height: 43px;
 	border-bottom: 1px solid red;
 	height: 45px;
 	line-height: 45px;
+	width: 1190px;
+	margin:0 auto;
 }
 .com_por_tit{
 	float: left;
 }
 .form_right{
 	float: right;
-	padding-right: 20px;
 }
 .form_right .com_pro_search{
 	border: 1px solid #9a9a9a;
