@@ -47,6 +47,8 @@ position: relative;
 	font-weight: 700;
 	float: left;
 	line-height: 30px;
+	width: 90px;
+text-align: right;
 }
 .pro_classify .class_jy ul {
 	width:92%;
@@ -55,7 +57,7 @@ position: relative;
 }
 .pro_classify .class_jy .infoslider{
     display: block;
-    padding: 0px 9px 0px 60px;
+    padding: 0px 9px 0px 90px;
     height: auto;
     overflow: hidden;
 }
