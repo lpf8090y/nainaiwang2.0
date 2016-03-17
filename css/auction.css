@@ -66,7 +66,6 @@
 	float: left;
     padding: 0 10px;
     text-align: center;
-    font-weight: 700;
 }
 .au_content_top .jy_bk{
 	border-top: 2px solid #b69f66;
@@ -184,5 +183,5 @@
     background: url(../images/icon/icon_jt.png) no-repeat 0px center;
 }
 .gg_con .gg_time{
-    padding-left: 55px;
+    float: right;
 }
