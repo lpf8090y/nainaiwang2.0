@@ -296,11 +296,20 @@
 	border-top: 2px solid #a60000;
 }
 .tender_hall .hall_con {
-	padding: 0px 10px;
-	height: 25px;
-	line-height: 25px;
+	padding: 5px 10px;
 	border-bottom: 1px solid #fafafa;
+
+}
+/*清除浮动*/
+.hall_con:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }   
+.tender_hall .hall_con .hall_tit{
+	padding: 10px 0;
 	font-weight: 700;
+	font-size: 14px;
+}
+.tender_hall .hall_con .bidStyle{
+	margin-right: 5px;
+	color: #900;
 }
 .tender_hall .hall_con .hall_con_left{
 	float: left;
@@ -308,6 +317,7 @@
 .tender_hall .hall_con .hall_con_right{
 	float:right;
 }
+
 .rc_con .rc_con_a{
 	display: block;
 	float: left;
@@ -337,3 +347,27 @@
 	cursor: pointer;
 }
 /*招标大厅tender_hall.html css end*/
+/*tender_announcement.html 搜索按钮样式*/
+.gj{
+	position: absolute;
+	top: 4px;
+	right: 300px;
+	line-height: 20px;
+	overflow: hidden;
+	zoom: 1;
+}
+.gj .gj_ci{
+	height: 20px;
+	border: 1px solid #e15767;
+	font-size: 14px/20px arial,微软雅黑,sans-serif;
+	text-indent: 0.5em;
+}
+.gj .gjcs{
+	border: 0;
+	width: 58px;
+	height: 22px;
+	font-size: 14px/22px arial,微软雅黑,sans-serif;
+	color: #fff;
+	background-color: #e15767;
+}
+/*tender_announcement.html 搜索按钮样式 end*/

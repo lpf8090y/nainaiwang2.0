@@ -6,8 +6,11 @@
     <script type="text/javascript" defer="" async="" src="js/uta.js"></script>
     <script src="js/jquery-1.7.2.min.js" type="text/javascript" language="javascript"></script>
     <!-- 招标页 -->
+     <link rel="stylesheet" type="text/css" href="css/product.css"/>
      <link rel="stylesheet" type="text/css" href="css/tender_con.css"/>
     <script src="js/tender_con.js" type="text/javascript"/>
+    <!-- 分类的样式 -->
+   
     <!-- 招标页 end -->
     <script src="js/gtxh_formlogin.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/index20141027.css">
@@ -234,12 +237,149 @@ body{_padding-top:30px;}
     <div id="mainContent">
         <div class="page_width">
             <!-- 未登录招标内容start -->
+           
            <div class="tender_content">
                 <div class="tender_top">
                     <b>
                         <a>首页</a> > <a>招投标大厅</a> > <a>招标公告</a>
                     </b>
                 </div>
+				 <!-- 分类 start -->
+            <div class="pro_classify"> 
+                <div class="class_re">
+                    <h3>
+                        <em>选择搜索条件</em>
+                    </h3>
+                    <div class="st_ext">
+                       <span id="span_r">共找到 <font style="color: #c00;">4342</font> 条相关信息</span>
+                    </div>
+                </div>          
+                <div class="class_jy">
+                    <span class="jy_title">地区选择：</span>
+                    <ul>                                              
+                        <li class="">
+                            <a href="">全国</a>
+                        </li>
+                        <li value="1" class="a_choose"><a>安徽</a></li>
+                        <li value="2"><a href="">北京</a></li>
+                        <li value="3"><a href="">天津</a></li>
+                        <li value="5"><a href="">福建</a></li>
+                        <li value="6"><a href="">甘肃</a></li>
+                        <li value="7"><a href="">广东</a></li>
+                        <li><a href="">广西</a></li>
+                        <li><a href="">贵州</a></li>                         
+                    </ul>                 
+                    <ul class="infoslider" style="display:none;">
+                        <li value="1"><a>海南</a></li>
+                        <li value="2">              
+                             <a href="">河北</a>
+                        </li>
+                        <li value="3">              
+                            <a href="">河南</a>
+                        </li>
+                        <li value="5">              
+                            <a href="">黑龙江</a>
+                        </li>
+                        <li value="6">              
+                             <a href="">湖北</a>
+                        </li>
+                        <li value="7">              
+                            <a href="">湖南</a>
+                        </li>
+                        <li>                
+                            <a href="">吉林</a>
+                        </li>
+                        <li>                
+                            <a href="">江苏</a>
+                        </li>
+						<li>                
+                            <a href="">江西</a>
+                        </li>
+						<li>                
+                            <a href="">辽宁</a>
+                        </li>
+						<li>                
+                            <a href="">内蒙古</a>
+                        </li>
+                    </ul>
+
+                    <script>
+                        $(document).ready(function(){
+                        $(".class_jy").delegate(".info-show", "click", function () {
+                        //展开操作
+                        //$(".infoslider").show();  
+					//$(this).parentsUntil(".class_jy").parent().find(".infoslider").show(); 
+                            $(this).parents(".class_jy").find(".infoslider").show();   
+                            $(this).removeClass("info-show").addClass("info-hide").html("收起");
+                        });
+                        $(".class_jy").delegate(".info-hide", "click", function () {
+                                    //收起操作
+                                //$(".infoslider").hide();
+                                //$(this).parentsUntil(".class_jy").parent().find(".infoslider").hide();
+                                $(this).parents(".class_jy").find(".infoslider").hide();
+                                $(this).removeClass("info-hide").addClass("info-show").html("展开")
+                        });
+
+                      });
+                    </script>
+                                        
+                                        
+                    <div class="sl_ext">
+                            <a href="javascript:;" class="sl_e_more info-show" style="visibility: visible;">展开</a>
+                    </div>
+                </div>
+                <div class="class_jy">
+                    <span class="jy_title">类型：</span>
+                        <ul>
+							<li value="1" class="a_choose"><a>招标公告</a></li>
+							<li value="2"><a>招标预告</a></li> 
+							<li value="3"><a>变更</a></li>
+							<li value="5"><a>中标</a></li>							
+                       </ul>                    
+                </div>
+				
+			    <div class="class_jy">
+                    <span class="jy_title">行业：</span>
+                    <ul>
+                        <li class=""><a href="">全部</a></li>
+                        <li value="1" class="a_choose"><a>耐火材料</a></li>
+                        <li value="2"><a href="">耐火材料</a></li>
+						<li value="3"><a href="">耐火材料</a></li>
+						<li value="4"><a href="">耐火材料</a></li>
+						<li value="5"><a href="">耐火材料</a></li>
+						<li value="6"><a href="">耐火材料</a></li>
+                    </ul>   
+					<ul class="infoslider" style="display:none;">
+                        <li class=""><a href="">耐火材料</a></li>
+                        <li value="1"><a>耐火材料</a></li>
+                        <li value="2"><a href="">耐火材料</a></li>
+						<li value="3"><a href="">耐火材料</a></li>
+						<li value="4"><a href="">耐火材料</a></li>
+						<li value="5"><a href="">耐火材料</a></li>
+						<li value="6"><a href="">耐火材料</a></li>
+                    </ul>   
+					<div class="sl_ext">
+                        <a href="javascript:;" class="sl_e_more info-show" style="visibility: visible;">展开</a>
+                    </div>
+                </div>
+			    <div class="class_jy">
+                    <span class="jy_title">发布日期：</span>
+                    <ul>
+                        <li class=""><a href="">全部</a></li>
+                        <li value="1" class="a_choose"><a>今天</a></li>
+                        <li value="2"><a href="">近三天</a></li>
+						<li value="3"><a href="">进一周</a></li>
+						<li value="4"><a href="">近一月</a></li>
+						<li value="5"><a href="">近三月</a></li>
+						<li value="6"><a href="">近一年</a></li>
+                    </ul>
+					<div class="gj">
+                        <b>关键词：</b><input class="gj_ci" type="text"/><input class="gjcs" type="button" value="搜索"/>
+                    </div>
+                </div>
+				<div style="clear:both"></div>
+            </div>
+            <!-- 分类 end -->
                 <div class="tender_center">
                     <div class="center_left">
                        <div class="tender_hall">
@@ -247,66 +387,49 @@ body{_padding-top:30px;}
                                 <div class="hall_con_left">标题</div>
                                 <div class="hall_con_right">发布日期</div>
                             </div>
-                             <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
-                            </div>
                             <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
+								<div class="hall_tit">
+									<font class="bidStyle">[公告]</font>
+									<a href="tender_content.html">学员楼运营管理招标项目公开招标公告</a>
+								</div>
+                                <div class="hall_con_left">
+									<i class="icon-map-marker">&nbsp;无</i>
+								</div>
+                                <div class="hall_con_right">2016-02-29</div>
                             </div>
-                            <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
+							<div class="hall_con">
+								<div class="hall_tit">
+									<font class="bidStyle">[预告]</font>
+									<a href="tender_content.html">学员楼运营管理招标项目公开招标公告</a>
+								</div>
+                                <div class="hall_con_left">
+									<i class="icon-map-marker">&nbsp;北京|北京市</i>
+								</div>
+                                <div class="hall_con_right">2016-02-29</div>
                             </div>
-                            <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
+							<div class="hall_con">
+								<div class="hall_tit">
+									<font class="bidStyle">[变更]</font>
+									<a href="tender_content.html">学员楼运营管理招标项目公开招标公告</a>
+								</div>
+                                <div class="hall_con_left">
+									<i class="icon-map-marker">&nbsp;无</i>
+								</div>
+                                <div class="hall_con_right">2016-02-29</div>
                             </div>
-                            <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
+							<div class="hall_con">
+								<div class="hall_tit">
+									<font class="bidStyle">[中标]</font>
+									<a href="tender_content.html">学员楼运营管理招标项目公开招标公告</a>
+								</div>
+                                <div class="hall_con_left">
+									<i class="icon-map-marker">&nbsp;无</i>
+								</div>
+                                <div class="hall_con_right">2016-02-29</div>
+								<div class="clear"></div>
                             </div>
-                            <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
-                            </div>
-                            <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
-                            </div>
-                            <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
-                            </div>
-                            <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
-                            </div>
-                            <div class="hall_con">
-                                <a href="">
-                                    <div class="hall_con_left">学员楼运营管理招标项目公开招标公告</div>
-                                </a>
-                                    <div class="hall_con_right">2016-02-29</div>
-                            </div>
+                            
+							<div class="clear"></div>
                        </div>
                         <div class="turn_page"> 
                             <form action="" method="post">
@@ -324,55 +447,13 @@ body{_padding-top:30px;}
                         <div class="gonggao">
                             <h2><img src="images/icon/reci.jpg">热词招标</h2>
                             <div class="rc_con">
-                                <a class="rc_con_a">耐火材料</a>
-                                <a class="rc_con_a">耐火材料</a>
-                                <a class="rc_con_a">耐火材料</a>
-                                <a class="rc_con_a">耐火材料</a>
+                                <a href="tender_announcement.html" class="rc_con_a">耐火材料</a>
+                                <a href="tender_announcement.html" class="rc_con_a">耐火材料</a>
+                                <a href="tender_announcement.html" class="rc_con_a">耐火材料</a>
+                                <a href="tender_announcement.html" class="rc_con_a">耐火材料</a>
                                 <div class="clear"></div>
                             </div>
-                        </div>
-                         <div class="gonggao">
-                            <h2><img src="images/icon/red_qi.jpg">行业招标</h2>
-                            <div class="rc_con">
-                                <a class="rc_con_a">耐火材料</a>
-                                <a class="rc_con_a">耐火材料</a>
-                                <a class="rc_con_a">耐火材料</a>
-                                <a class="rc_con_a">耐火材料</a>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        <div class="gonggao">
-                            <h2><img src="images/icon/zb.jpg">地区招标</h2>
-                            <div class="dq">
-                                <div class="dq_left"><b>华东</b></div>
-                                <div class="dq_right">
-                                    <a>&nbsp;山东&nbsp;</a>
-                                    <a>&nbsp;安徽&nbsp;</a>
-                                    <a>&nbsp;上海&nbsp;</a>
-                                    <a>&nbsp;江苏&nbsp;</a>
-                                    <a>&nbsp;浙江&nbsp;</a>
-                                    <a>&nbsp;福建&nbsp;</a>
-                                    <a>&nbsp;江西&nbsp;</a>
-                                </div>
-                                <div class="dq_left"><b>华南</b></div>
-                                <div class="dq_right">
-                                    <a>&nbsp;广东&nbsp;</a>
-                                    <a>&nbsp;广西&nbsp;</a>
-                                    <a>&nbsp;海南&nbsp;</a>
-                                </div>
-                                <div class="dq_left"><b>华北</b></div>
-                                <div class="dq_right">
-                                    <a>&nbsp;北京&nbsp;</a>
-                                    <a>&nbsp;天津&nbsp;</a>
-                                    <a>&nbsp;河北&nbsp;</a>
-                                    <a>&nbsp;山西&nbsp;</a>
-                                    <a>&nbsp;内蒙古&nbsp;</a>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-
-                        </div>
-                        
+                        </div> 
                     </div>
                     <div class="clear"></div>
                 </div>
