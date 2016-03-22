@@ -919,7 +919,7 @@ line-height: 25px;
     text-overflow: ellipsis;
     overflow: hidden;}
 .selectes{background:url(../images/submit/btn_1.png) 215px 12px no-repeat;}
-.new_plaint{width:236px;position:absolute;border:1px solid #CCC;display:none;background: #fff;left: 122px;}
+.new_plaint{width:236px;position:absolute;border:1px solid #CCC;display:none;background: #fff;left: 112px;}
 .nav_plaint ul li{line-height:30px;
      padding-left:10px;
      white-space: nowrap;
