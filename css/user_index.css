@@ -852,3 +852,18 @@ line-height: 25px;
     width: 226px;
     cursor: default;
 }
+/*子账户添加css*/
+.submit_zz{
+    margin: 0 20px 0 180px;
+    width: 100px;
+    height: 35px;
+    background: #DA0A0A;
+    border: 0px;
+    color: #fff;
+    font-size: 20px;
+}
+.reset_zz{
+      margin: 0px;
+    background-color: #C5C4C4;
+}
+/*子账户添加css end*/
