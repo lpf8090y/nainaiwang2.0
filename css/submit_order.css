@@ -790,3 +790,68 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .operate .tclick{background-position:82px 9px;}
 .operate li .list-item p.hover a{background-color:#8caf00;color:#fff;text-decoration:none;background-position:42px -14px;font-weight:800;}	
+
+/* 交易成功CSS */
+.deal_succeed {
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 45px 0 30px 128px;
+}
+.deal_succeed .scsd_img img{ width: 180px; height: 180px; float: left;}
+.deal_succeed .scsd_img h3{
+    font-size: 42px;
+    font-family: 微软雅黑;
+    font-weight: normal;
+    color: #c41e1e;
+    display: block;
+    float: left;
+    margin: 75px 0 0 32px;
+}
+.deal_succeed .scsd_word{
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px 0 20px 50px;
+}
+.deal_succeed .scsd_word h5{
+    font-size: 18px; 
+        margin:0 0 5px 45px;
+}  
+.deal_succeed .scsd_word p{
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 微软雅黑;
+}
+.deal_succeed .scsd_word p b{ font-weight: normal;}
+.deal_succeed .scsd_word p i{ font-size: 18px; color: #bc1b1b;margin: 0 5px;}
+.deal_succeed .scsd_word p .scsd_red{ color: #cf0606;}
+.deal_succeed .scsd_word p .scsd_red .cored{color: #bc1b1b;font-size: 18px;}
+.deal_succeed .botons_box .pay_continue{
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 100px;
+    height: 32px;
+    background: #cf0606;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 150px;
+}
+.deal_succeed .botons_box .return_order{
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 100px;
+    height: 32px;
+    background: #cf0606;
+    line-height: 32px;
+    text-align: center;
+}
+.deal_succeed .botons_box a{
+    color: #fff; font-size: 12px;
+}
+.deal_succeed .botons_box a:hover{text-decoration: none;}
+.page_width .margin_bottom{ margin-bottom: 200px;}
