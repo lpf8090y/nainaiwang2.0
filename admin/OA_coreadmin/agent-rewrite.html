@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
  <head>
-        <title>申诉管理</title>
+        <title>经济人管理</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
         
@@ -15,41 +15,35 @@
         -->
         <link rel="stylesheet" href="css/min.css" />
         <script type="text/javascript" src="js/min.js"></script>
-        <script type="text/javascript" src="content/settings/main.js"></script>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/H-ui.min.css">
     </head>
     <body>
-        
-
-
-      
-        
-                
-                
+            
         <!--            
               CONTENT 
                         --> 
         <div id="content" class="white">
-            <h1><img src="img/icons/dashboard.png" alt="" /> 添加管理员
+            <h1><img src="img/icons/dashboard.png" alt="" /> 编辑经纪人
 </h1>
                 
 <div class="bloc">
     <div class="title">
-        管理员信息
+       经纪人基本信息
     </div>
-   <div class="pd-20">
+ <div class="pd-20">
 	<form action="" method="post" class="form form-horizontal" id="form-admin-add">
 		<div class="row cl">
-			<label class="form-label col-3"><span class="c-red">*</span>管理员：</label>
+			<label class="form-label col-3"><span class="c-red">*</span>登录名：</label>
 			<div class="formControls col-5">
-				<input type="text" class="input-text" value="" placeholder="" id="user-name" name="user-name" datatype="*2-16" nullmsg="用户名不能为空">
+				<input type="text" class="input-text" value="张三" placeholder="" id="user-name" name="user-name" datatype="*2-16" nullmsg="用户名不能为空">
 			</div>
 			<div class="col-4"> </div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-3"><span class="c-red">*</span>初始密码：</label>
 			<div class="formControls col-5">
-				<input type="password" placeholder="密码" autocomplete="off" value="" class="input-text" datatype="*6-20" nullmsg="密码不能为空">
+				<input type="password" placeholder="密码" autocomplete="off" value="123123" class="input-text" datatype="*6-20" nullmsg="密码不能为空">
 			</div>
 			<div class="col-4"> </div>
 		</div>
@@ -60,31 +54,18 @@
 			</div>
 			<div class="col-4"> </div>
 		</div>
-		<div class="row cl">
-			<label class="form-label col-3"><span class="c-red">*</span>性别：</label>
-			<div class="formControls col-5 skin-minimal">
-				<div class="radio-box">
-					<input type="radio" id="sex-1" name="sex" datatype="*" nullmsg="请选择性别！">
-					<label for="sex-1">男</label>
-				</div>
-				<div class="radio-box">
-					<input type="radio" id="sex-2" name="sex">
-					<label for="sex-2">女</label>
-				</div>
-			</div>
-			<div class="col-4"> </div>
-		</div>
+
 		<div class="row cl">
 			<label class="form-label col-3"><span class="c-red">*</span>手机：</label>
 			<div class="formControls col-5">
-				<input type="text" class="input-text" value="" placeholder="" id="user-tel" name="user-tel"  datatype="m" nullmsg="手机不能为空">
+				<input type="text" class="input-text" value="13603560980" placeholder="" id="user-tel" name="user-tel"  datatype="m" nullmsg="手机不能为空">
 			</div>
 			<div class="col-4"> </div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-3"><span class="c-red">*</span>邮箱：</label>
 			<div class="formControls col-5">
-				<input type="text" class="input-text" placeholder="@" name="email" id="email" datatype="e" nullmsg="请输入邮箱！">
+				<input type="text" class="input-text" placeholder="848062514@qq.com" name="email" id="email" datatype="e" nullmsg="请输入邮箱！">
 			</div>
 			<div class="col-4"> </div>
 		</div>
@@ -92,25 +73,26 @@
 			<label class="form-label col-3">角色：</label>
 			<div class="formControls col-5">
 				<select class="select" name="admin-role" size="1">
-					<option value="0">超级管理员</option>
-					<option value="1">管理员a</option>
-					<option value="2">管理员b</option>
+					<option value="0">经纪人</option>
+					<option value="1">市场账户</option>
+					<option value="2">代理账户</option>
 				</select>
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-3">备注：</label>
+			<label class="form-label col-3">认证信息：</label>
 			<div class="formControls col-5">
-				<textarea name="" cols="" rows="" class="textarea"  placeholder="说点什么...100个字符以内" dragonfly="true" onKeyUp="textarealength(this,100)"></textarea>
-				<p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+				<h4>营业执照</h4>
+				<p>
+					<img src="img/184641.jpg">
+				</p>
 			</div>
-			<div class="col-4"> </div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-3">状态：</label>
 			<div class="formControls col-5">
-				<label><input name="Fruit" type="radio" value="" />正常 </label> 
-				<label><input name="Fruit" type="radio" value="" />冻结 </label> 
+				<label><input name="Fruit" type="radio" value="" />通过 </label> 
+				<label><input name="Fruit" type="radio" value="" />不通过 </label> 
 			</div>
 			<div class="col-4"> </div>
 		</div>
