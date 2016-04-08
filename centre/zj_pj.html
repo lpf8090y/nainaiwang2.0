@@ -23,13 +23,13 @@
 			<div class="nav-tit">
 				<ul class="nav-list">
 					<li>
-						<a href="user_index.html" class="cur">首页</a>
+						<a href="user_index.html">首页</a>
 					</li>
 					<li>
 						<a href="user_zh.html">账户信息</a>
 					</li>
 					<li>
-						<a href="user_zj.html">资金管理</a>
+						<a href="user_zj.html" class="cur">资金管理</a>
 					</li>
 					<li>
 						<a href="user_dd.html">交易管理</a>
@@ -49,14 +49,30 @@
 	</div>
 	<div class="user_body">
 		<div class="user_b">
+			<script type="text/javascript">
+				$(document).ready(function(){
+				  $(".btn1").click(function(){
+				  $(".zj_zh").slideToggle();
+				  });
+				});
+			</script>
+			<style type="text/css">
+				.btn1{cursor: pointer;}
+				.btn1:hover{background: #eee;}
+				.zj_zh{font-size: 12px;}
+			</style>
 			<!--start左侧导航-->	
 			<div class="user_l">
 				<div class="left_navigation">
 					<ul>
 						<li class="let_nav_tit"><h3>资金管理</h3></li>
-						<li><a href="user_zj.html" >代理账户管理</a></li>
-						<li><a href="zj_qy.html">签约账户管理</a></li>
-						<li><a href="zj_pj.html"class="cur">票据账户管理</a></li>
+						<li><a href="user_zj.html">开户信息管理</a></li>
+						<li class="btn1"><a>资金账户管理</a></li>
+						<ul class="zj_zh">								
+							<li><a href="zj_dl.html">市场代理账户</a></li>
+							<li><a href="zj_qy.html">银行签约账户</a></li>
+							<li><a href="zj_pj.html" class="cur">票据账户管理</a></li>
+						</ul>
 					</ul>
 				</div>
 			</div>

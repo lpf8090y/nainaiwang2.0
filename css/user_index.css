@@ -55,7 +55,7 @@ img{border:0px;}
 }
 .nav-list li a{
     display: block;
-    padding: 0 40px;
+    padding: 0 30px;
     color: #fff;
     font-size: 20px;
 }
@@ -205,10 +205,9 @@ background: #027cff;
 	min-height:450px;
 }
 .left_navigation ul li{
-	text-align:center;
-	height:40px;
 	line-height:40px;
 	border-bottom:1px solid #c0c0c0;
+      padding-left: 40px;
 }
 .left_navigation ul li a.cur{
 	color:#D61515;
