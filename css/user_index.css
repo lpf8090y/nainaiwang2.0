@@ -331,6 +331,11 @@ background: #027cff;
     font-size: 40px;
     color: #C50E0E;
 }
+.zj_gl .zj_l .state{
+    font-size: 16px;
+    color: red;
+    padding-left: 40px;
+}
 .zj_gl .zj_r .zj_price{
       text-align: center;
     font-size: 20px;
