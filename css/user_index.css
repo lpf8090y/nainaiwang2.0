@@ -34,16 +34,9 @@ img{border:0px;}
 	position: relative;
 	text-align: center;
 }
-.logo-box dt{
-  height: 35px;
-  line-height: 35px;
-}
-.logo-box a{
-  color: #fff;		
-}
-.logo-box .back-index{
-  border: 1px solid;
-  padding: 2px 10px;
+.logo-box a img{
+  width:auto;	
+  height:55px;
 }
 .nav-list li:hover{
 	background: #930d13;

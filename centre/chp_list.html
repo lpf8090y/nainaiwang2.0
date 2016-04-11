@@ -68,8 +68,8 @@
 						<li class="let_nav_tit"><h3>交易管理</h3></li>
 						<li class="btn1" id="btn1"><a>产品管理</a></li>								
 						<ul class="zj_zh" id="zj_zh1">
-							<li><a href="chp_lb.html" class="cur">产品分类列表</a></li>
-							<li><a href="chp_list.html">产品列表</a></li>
+							<li><a href="chp_lb.html">产品分类列表</a></li>
+							<li><a href="chp_list.html" class="cur">产品列表</a></li>
 						</ul>
 						<li class="btn1" id="btn2"><a>合同管理</a></li>
 						<ul class="zj_zh" id="zj_zh2">
@@ -85,7 +85,7 @@
 			<div class="user_c">
 				<div class="user_zhxi">
 					<div class="zhxi_tit">
-						<p><a>产品管理</a>><a>商品分类</a></p>
+						<p><a>产品管理</a>><a>产品列表</a></p>
 					</div>
 					<div class="chp_xx">
 						
@@ -94,20 +94,30 @@
 								<tr class="title">
 									<td><input onclick="selectAll1();" name="controlAll" style="controlAll" id="controlAll" type="checkbox"></td>
 									<td>序号</td>
-									<td>商品类别名称</td>
+									<td>商品名称</td>
+									<td>图片</td>
+									<td>规格</td>
+									<td>库存</td>
+									<td>定价</td>
 								</tr>
 								<tr>
 									<td><input name="controlAll" style="controlAll" id="controlAll" type="checkbox"></td>
-									<td>xxx</td>
-									<td>货名</td>
+									<td>GF012</td>
+									<td>品名</td>
+									<td>图片</td>
+									<td>规格</td>
+									<td>库存</td>
+									<td>定价</td>
 								</tr>
 							</table>
+
 						</div>
+						
 						<div class="tab_bt">
 							<div class="t_bt">
-								<a class="a_1 add" title="编辑"></a>
-								<a class="a_2 add" title="添加"></a>
-								<a class="a_3" title="删除"></a>
+								<a class="a_1" title="编辑" href="chp_fb.html"></a>
+								<a class="a_2" title="添加" href="chp_fb.html"></a>
+								<a class="a_3" title="删除" href="chp_fb.html"></a>
 							</div>
 						</div>
 						<div class="page_num">
@@ -120,32 +130,6 @@
 							<a><span class="style1">确定</span></a>
 						</div>
 					</div>
-					<!--start添加商品分类-->
-					<div class="add_fl">
-						<form>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>编号：</span>
-								<span><input class="text" type="text"></span>
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>类别名称:</span>
-								<span><input class="text" type="text"></span>
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>上级分类:</span>
-								<span>
-									<select>
-										<option>一级分类</option>
-									</select>
-								</span>
-							</div>
-							<div class="zhxi_con">	
-								<span><input class="submit" type="submit" value="提交"></span>
-								<span><input class="submit reset" type="reset" value="重置"></span>
-							</div>
-						</form>
-					</div>
-					<!--end添加商品分类-->
 				</div>
 				
 				
