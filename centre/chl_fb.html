@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>产品管理</title>
+  <meta name="keywords"/>
+  <meta name="description"/>
+  <meta charset="utf-8">
+  <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+  <script language="javascript" type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+  <script type="text/javascript" src="../js/regular.js"></script>
+</head>
+<body>
+<div class="header">
+		<div class="nav">
+            <div class="logo-box zn-l">
+                <a href="../index.html" alt="返回耐耐首页"><img src="../images/icon/nainaiwang.png"/></a></dd>
+            </div>
+			<div class="nav-tit">
+				<ul class="nav-list">
+                                                <li>
+                                                    <a href="user_index.html">首页</a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_zh.html">账户信息</a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_zj.html">资金管理</a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_dd.html" class="cur">交易管理</a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_cd.html">仓单管理</a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_chl.html">车辆管理</a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_gz.html">关注中心</a>
+                                                </li>
+                                            </ul>
+			</div>
+		</div>
+	</div>
+	<div class="user_body">
+		<div class="user_b">
+			<script type="text/javascript">
+                                    $(document).ready(function(){
+                                      $("#btn1").click(function(){
+                                      $("#zj_zh1").slideToggle();
+                                      });
+                                      $("#btn2").click(function(){
+                                      $("#zj_zh2").slideToggle();
+                                      });
+                                    });
+                                </script>
+                                <style type="text/css">
+                                    .btn1{cursor: pointer;}
+                                    .btn1:hover{background: #eee;}
+                                    .zj_zh{display: none;font-size: 12px;}
+                                    #zj_zh1{display: block;}
+                                </style>
+                                <!--start左侧导航-->    
+                                <div class="user_l">
+                                    <div class="left_navigation">
+                                        <ul>
+                                            <li class="let_nav_tit"><h3>交易管理</h3></li>
+                                            <li class="btn1" id="btn1"><a>产品管理</a></li>                             
+                                            <ul class="zj_zh" id="zj_zh1">
+                                                <li><a href="chp_lb.html">产品分类列表</a></li>
+                                                <li><a href="chp_list.html" class="cur">产品列表</a></li>
+                                            </ul>
+                                            <li class="btn1" id="btn2"><a>合同管理</a></li>
+                                            <ul class="zj_zh" id="zj_zh2">
+                                                <li><a href="user_dd.html">销售合同</a></li>
+                                                <li><a href="user_dd.html">购买合同</a></li>
+                                            </ul>
+                                            <li><a href="user_complaint.html">申诉管理</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+			<!--end左侧导航-->	
+			<!--start中间内容-->	
+			<div class="user_c">
+				<div class="user_zhxi">
+					<div class="zhxi_tit">
+						<p><a>产品管理</a>><a>产品发布</a></p>
+					</div>
+					<div class="center_tabl">
+                    <form action="" method="">
+						<table border="0">
+        					<tr>
+            					<th colspan="4">供求信息：</th>
+           					</tr>
+        					<tr>
+          						<td nowrap="nowrap"><span>*</span>供求类型：</td>
+            					<td><select name="type" id="type">
+									<option value="1">求购</option>
+									<option selected="" value="0">供应</option></select>
+                                </td>
+            					<td nowrap="nowrap"><span>*</span>发布时间：</td>
+            					<td><input name="addtime" id="addtime" disabled="" value="2016-01-26 14:05:40" type="text"></td>
+           				 	</tr>
+          					<tr>
+            				<td><span>*</span>商品类别：</td>
+            				<td>	
+                                <select name="classcode" id="classcode">
+                                    
+                                </select>
+							</td>
+                            <td>商品类型：</td>
+                            <td>	    
+                            	<select name="producttype" id="producttype">
+				
+                                <option selected="" value="0">有机</option>
+                                <option value="1">无机</option>
+								</select>
+							</td>
+           				 </tr>
+           				 <tr>
+           		 			<td><span>*</span>货名：</td>
+                            <td><input name="warename" id="warename" type="text">
+                                <input type="text" readonly="readonly" name="checkr" class="pub_ware_name"/>
+
+
+
+
+                            </td>
+
+
+
+
+
+
+
+                            <td>所属市场：</td>
+                            <td>
+                            <select name="producearea" id="producearea">
+	   				
+                                <option value="A">钢铁市场</option>
+                                <option value="B">建材市场</option>
+                                <option value="C">耐火市场</option>
+                                <option value="D">设备市场</option>
+                                <option value="E">冶金化工</option>
+                                <option value="F">其他市场</option>
+                            </select>
+                            </td>
+            			</tr>
+           		 		<tr>
+                            <td>交货时间：</td>
+                            <td>
+                            <input name="brandname" id="brandname" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" type="text">
+                            </td>
+                            <td><span>*</span>供货总量(单位)：</td>
+                            <td><input name="weight" id="weight" maxlength="7" type="text">
+                                <input type="text" readonly="readonly" name="checks" class="pub_weight"/>
+
+
+
+                            </td>
+                        </tr>
+           				<tr>
+                            <td>交货方式：</td>
+                            <td>
+                            <select name="gg" id="gg">
+                                <option value="A">承运</option>
+                                <option value="B">自提</option>
+                            </select>
+                           </td>
+                           <td>结算方式：</td>
+                            <td>
+                            <select name="grade" id="grade">
+                                
+                                <option value="A">电汇</option>
+                                <option value="B">承兑</option>
+                                <option value="C">现金</option>
+                            </select>
+                            </td>
+                        </tr>
+          				<tr>
+                            <td><span>*</span>单价(元)：</td>
+                            <td><input name="unit_price" id="price" maxlength="" type="text" name="realname"/>
+                                <input type="text" readonly="readonly" name="checko" class="unit_price"/>
+                            </td>
+
+                        
+
+
+
+
+
+                            
+                            <td class="text_left"><span>*</span>信息有效期：</td>
+                            <td><input name="endtime" class="Wdate" id="endtime" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>交货地点：</td>
+                            <td><input name="takeaddress" id="takeaddress" type="text"></td>
+                            <td>生产企业：</td>
+                            <td><input name="producecompany" id="producecompany" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>图片预览：</td>
+                            <td colspan="3">
+								<span class="zhs_img">
+								<img src="../images/banner/551b861eNe1c401dc.jpg"/>
+								<img src="../images/banner/551b861eNe1c401dc.jpg"/>
+								<img src="../images/banner/551b861eNe1c401dc.jpg"/>
+								<img src="../images/banner/551b861eNe1c401dc.jpg"/>
+							</span>
+                            </td>              
+                        </tr>
+          				<tr>
+                            <td>产品图片：</td>
+                            <td colspan="3">
+								<span>
+									<div>
+										<input id="doc" type="file">
+										<input type="submit" class="tj" value="上传">
+									</div>
+								</span> 
+               				 </td>
+           				 </tr>
+                         <tr>
+                             <td>产品是否投保：</td>
+                             <td colspan="3">
+                                 <INPUT type ="radio" name ="safe" checked="checked" style="width:auto;height:auto;"> 投保
+                                 <INPUT type ="radio" name ="safe" style="width:auto;height:auto;"> 不投保
+
+                             </td>
+                         </tr>
+                        <tr>
+                            <th colspan="4">联系方式:</th>
+                        </tr>
+                        <tr>
+                            <td>省份：</td>
+                            <td><select name="area" id="area">
+                                <option value="13">河北</option>
+                                <option value="14">山西</option>
+                                <option value="15">内蒙古</option>
+                                <option value="21">辽宁</option>
+                                <option value="22">吉林</option>
+                                <option value="23">黑龙江</option>
+                                <option value="31">上海</option>
+                                <option value="32">江苏</option>
+                                <option value="33">浙江</option>
+                                <option value="34">安徽</option>
+                                <option value="35">福建</option>
+                                <option value="36">江西</option>
+                                <option value="37">山东</option>
+                                <option value="41">河南</option>
+                                <option value="42">湖北</option>
+                                <option value="43">湖南</option>
+                                <option value="44">广东</option>
+                                <option value="45">广西</option>
+                                <option value="46">海南</option>
+                                <option value="50">重庆</option>
+                                <option value="51">四川</option>
+                                <option value="52">贵州</option>
+                                <option value="53">云南</option>
+                                <option value="54">西藏</option>
+                                <option value="61">陕西</option>
+                                <option value="62">甘肃</option>
+                                <option value="63">青海</option>
+                                <option value="64">宁夏</option>
+                                <option value="65">新疆</option>
+                                <option value="71">台湾</option>
+                                <option value="81">香港</option>
+                                <option value="82">澳门</option>
+                                <option value="83">北京</option>
+                                <option value="84">天津</option>
+                                </select>
+                               </td>
+                               <td>邮政编码：</td>
+                               <td><input name="zip_no" id="zip" type="text">
+                                <input type="text" readonly="readonly" name="checkq"  class="pub_zip_no"/>
+
+                               </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>公司名称：</td>
+                                <td><input name="company" id="company" type="text"></td>
+                                <td>公司地址：</td>
+                                <td><input name="companyaddress" id="companyaddress" type="text"></td>
+                             </tr>
+                             <tr>
+                                <td>联系人：</td>
+                                <td><input name="linkname" id="linkname" type="text"></td>
+                                <td><span>*</span>联系电话：</td>
+                                <td><input name="phone_no" id="linkphone" type="text">
+                                    <input type="text" readonly="readonly" name="checki"  class="pub_phone_no"/>
+
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>手机：</td>
+                                <td><input id="mobile" type="text" name="mobile_num"/>
+                                    <input type="text" readonly="readonly" name="checkt" class="mobile_num"/>
+                                </td>
+                                 
+
+
+
+
+
+                                <td>传真：</td>
+                                <td><input id="fax" type="text" name="fax_no"/>
+                                    <input type="text" readonly="readonly" name="checkp"  class="pub_fax_no" /> 
+                                </td>
+                            
+
+
+
+                            </tr>
+                            <tr>
+                                <td>QQ：</td>
+                                <td><input id="qq" type="text" name="qq_no"/>
+                                <input type="text" readonly="readonly" name="checkk"  class="pub_qq_no" />
+                                </td>
+
+
+
+
+
+                                <td>MSN：</td>
+                                <td><input name="msn" id="msn" type="text"></td>
+                            </tr>
+           					<tr>
+                            <td>产品描述:</td>
+                            <td colspan="3">
+            					<textarea></textarea>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td></td>
+                            <th colspan="3" class="btn">
+                                <a href="javascript:void(0);" onclick="checkform()">确 定</a>
+                                <a href="javascript:void(0);" onclick="res()">重 置</a>
+                            </th>
+                        </tr>
+                         
+                 </table>
+            	</form>
+						
+					</div>
+				</div>
+			</div>
+			<!--end中间内容-->	
+			<!--start右侧广告-->			
+			<div class="user_r">
+				<div class="wrap_con">
+					<div class="tit clearfix">
+						<h3>公告</h3>
+					</div>
+					<div class="con">
+						<div class="con_medal clearfix">
+							<ul>
+								<li><a>暂无勋章</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end右侧广告-->
+		</div>
+	</div>
+</body>
+</html>

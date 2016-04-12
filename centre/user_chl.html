@@ -13,12 +13,7 @@
 <div class="header">
 		<div class="nav">
 			<div class="logo-box zn-l">
-				<dl>
-					<dt><a href="" class="logo">
-						耐耐网
-					</a></dt>
-					<dd><a href="../index.html" class="back-index">返回耐耐首页</a></dd>
-				</dl>	
+				<a href="../index.html" alt="返回耐耐首页"><img src="../images/icon/nainaiwang.png"/></a></dd>
 			</div>
 			<div class="nav-tit">
 				<ul class="nav-list">
@@ -68,14 +63,48 @@
 					<div class="chp_xx">
 						
 						<div class="xx_center">
-							
+							<table border="0"  cellpadding="" cellspacing="">
+								<tr class="title">
+									<td><input onclick="selectAll1();" name="controlAll" style="controlAll" id="controlAll" type="checkbox"></td>
+									<td>序号</td>
+									<td>保险</td>
+									<td>车牌号</td>
+									<td>线路</td>
+									<td>载重</td>
+									<td>车型</td>
+									<td>状态</td>
+									<td>运费</td>
+									<td>详情</td>
+								</tr>
+								<tr>
+									<td><input name="controlAll" style="controlAll" id="controlAll" type="checkbox"></td>
+									<td>GF012</td>
+									<td>有保</td>
+									<td>鲁DG0906</td>
+									<td>太原——吕梁</td>
+									<td>40吨</td>
+									<td>半挂</td>
+									<td>闲</td>
+									<td>100元</td>
+									<td><a href="">查看</a></td>
+								</tr>
+							</table>
 						</div>
 						<div class="tab_bt">
 							<div class="t_bt">
-								<a class="a_1" title="编辑"></a>
-								<a class="a_2" title="添加" href="chp_fb.html"></a>
+								<a class="a_1" title="编辑" href="chl_fb.html"></a>
+								<a class="a_2" title="添加" href="chl_fb.html"></a>
 								<a class="a_3" title="删除"></a>
 							</div>
+						</div>
+						<div class="page_num">
+							共0条记录&nbsp;当前第<font color="#FF0000">1</font>/0页&nbsp;
+							<a href="#">第一页</a>&nbsp;
+							<a href="#">上一页</a>&nbsp;
+							<a href="#">下一页</a>&nbsp;
+							<a href="#">最后页</a>&nbsp; 
+							跳转到第 <input name="pagefind" id="pagefind" type="text" style="width:20px;font-size: 12px;" maxlength="5" value="1"> 页 
+							<a><span class="style1">确定</span></a>
 						</div>
 					</div>
 				</div>

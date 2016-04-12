@@ -13,14 +13,9 @@
 <body>
 <div class="header">
 		<div class="nav">
-			<div class="logo-box zn-l">
-				<dl>
-					<dt><a href="" class="logo">
-						耐耐网
-					</a></dt>
-					<dd><a href="../index.html" class="back-index">返回耐耐首页</a></dd>
-				</dl>	
-			</div>
+            <div class="logo-box zn-l">
+                <a href="../index.html" alt="返回耐耐首页"><img src="../images/icon/nainaiwang.png"/></a></dd>
+            </div>
 			<div class="nav-tit">
 				<ul class="nav-list">
                                                 <li>
@@ -50,29 +45,41 @@
 	</div>
 	<div class="user_body">
 		<div class="user_b">
-			<!--start左侧导航-->	
-			<div class="user_l">
-				<div class="left_navigation">
-                                                <ul>
-                                                    <li class="let_nav_tit"><h3>交易管理</h3></li>
-                                                    <li><a class="cur">产品管理</a></li>
-                                                    <li>                                
-                                                        <ul>
-                                                            <li><a href="user_dd.html">产品管理</a></li>
-                                                            <li><a href="">产品发布</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a class="cur">合同管理</a></li>
-                                                    <li>                                
-                                                        <ul>
-                                                            <li><a href="user_dd.html">销售合同</a></li>
-                                                            <li><a href="">购买合同</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a class="cur">申诉管理</a></li>
-                                                </ul>
-				</div>
-			</div>
+			<script type="text/javascript">
+                                    $(document).ready(function(){
+                                      $("#btn1").click(function(){
+                                      $("#zj_zh1").slideToggle();
+                                      });
+                                      $("#btn2").click(function(){
+                                      $("#zj_zh2").slideToggle();
+                                      });
+                                    });
+                                </script>
+                                <style type="text/css">
+                                    .btn1{cursor: pointer;}
+                                    .btn1:hover{background: #eee;}
+                                    .zj_zh{display: none;font-size: 12px;}
+                                    #zj_zh1{display: block;}
+                                </style>
+                                <!--start左侧导航-->    
+                                <div class="user_l">
+                                    <div class="left_navigation">
+                                        <ul>
+                                            <li class="let_nav_tit"><h3>交易管理</h3></li>
+                                            <li class="btn1" id="btn1"><a>产品管理</a></li>                             
+                                            <ul class="zj_zh" id="zj_zh1">
+                                                <li><a href="chp_lb.html">产品分类列表</a></li>
+                                                <li><a href="chp_list.html" class="cur">产品列表</a></li>
+                                            </ul>
+                                            <li class="btn1" id="btn2"><a>合同管理</a></li>
+                                            <ul class="zj_zh" id="zj_zh2">
+                                                <li><a href="user_dd.html">销售合同</a></li>
+                                                <li><a href="user_dd.html">购买合同</a></li>
+                                            </ul>
+                                            <li><a href="user_complaint.html">申诉管理</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
 			<!--end左侧导航-->	
 			<!--start中间内容-->	
 			<div class="user_c">
@@ -86,6 +93,18 @@
         					<tr>
             					<th colspan="4">供求信息：</th>
            					</tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>*</span>报盘类型：
+                                                        </td>
+                                                        <td colspan="3">
+                                                            <select>
+                                                                <option>保证金报盘</option>
+                                                                <option>自由报盘</option>
+                                                                <option>仓单报盘</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
         					<tr>
           						<td nowrap="nowrap"><span>*</span>供求类型：</td>
             					<td><select name="type" id="type">
@@ -299,7 +318,7 @@
 
 
 
-
+ 
 
                                 <td>传真：</td>
                                 <td><input id="fax" type="text" name="fax_no"/>
