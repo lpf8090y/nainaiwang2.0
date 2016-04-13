@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS+JS仿天猫侧边可折叠展开的网页菜单丨芯晴网页特效丨CsrCode.CN</title>
+
+
+        <script type="text/javascript" src="js/libs/jquery/1.6/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="min/b=CoreAdmin&f=css/reset.css,css/style.css,css/jqueryui/jqueryui.css,js/jwysiwyg/jquery.wysiwyg.old-school.css,js/zoombox/zoombox.css" />
+        <script type="text/javascript" src="min/b=CoreAdmin/js&f=cookie/jquery.cookie.js,jwysiwyg/jquery.wysiwyg.js,tooltipsy.min.js,iphone-style-checkboxes.js,excanvas.js,zoombox/zoombox.js,visualize.jQuery.js,jquery.uniform.min.js,main.js"></script>
+   
+
+</head>
+<body>
+	<table id="app">
+		<tr>
+			<td>权限码集合</td>
+			<td>操作</td>
+		</tr>
+	</table>
+		<select id="test">
+			<option value="超级管理员">超级管理员</option>
+			<option value="普通管理员">普通管理员</option>
+			<option value="肉鸡">肉鸡</option>
+		</select>
+		<button type="button" id="btn"><span>添加</span></button>
+
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ //获取Select选择的Text
+
+	$("#btn").click(function(){
+
+	var item=$("#test").find("option:selected").text();
+	  $("#app").append("<tr><td><input type='text' value="+item+"></td><td><button type='button' id='del'><span>删除</span></button></td></tr>");
+		
+		$("#del").click(function(){
+			$(this).parent("td").parent("tr").remove();
+		});
+
+	});
+
+});
+</script>
+</html>
+
