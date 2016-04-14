@@ -1,7 +1,8 @@
 body,dl,ul,ol,dd,h3,p ,table,tr,td{
 	padding: 0px;
 	margin: 0px;
-	font-size: 14px;
+	font-size: 12px;
+  color:#333;
 }
 ul,ol{
 	list-style-type: none;
@@ -48,7 +49,7 @@ img{border:0px;}
 }
 .nav-list li a{
     display: block;
-    padding: 0 30px;
+    padding: 0 20px;
     color: #fff;
     font-size: 20px;
 }
@@ -201,7 +202,9 @@ background: #027cff;
 	line-height:40px;
 	border-bottom:1px solid #c0c0c0;
       padding-left: 40px;
+      font-size: 14px;
 }
+.left_navigation .zj_zh li{font-size: 12px;}
 .left_navigation ul li a.cur{
 	color:#D61515;
 	font-weight:600;
