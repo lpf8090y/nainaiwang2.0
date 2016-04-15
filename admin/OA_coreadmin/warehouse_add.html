@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <title>仓库管理</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        
+        <!-- jQuery AND jQueryUI -->
+        <script type="text/javascript" src="js/libs/jquery/1.6/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+        
+        <!-- Compressed Version
+        <link type="text/css" rel="stylesheet" href="min/b=CoreAdmin&f=css/reset.css,css/style.css,css/jqueryui/jqueryui.css,js/jwysiwyg/jquery.wysiwyg.old-school.css,js/zoombox/zoombox.css" />
+        <script type="text/javascript" src="min/b=CoreAdmin/js&f=cookie/jquery.cookie.js,jwysiwyg/jquery.wysiwyg.js,tooltipsy.min.js,iphone-style-checkboxes.js,excanvas.js,zoombox/zoombox.js,visualize.jQuery.js,jquery.uniform.min.js,main.js"></script>
+        -->
+        <link rel="stylesheet" href="css/min.css" />
+        <script type="text/javascript" src="js/min.js"></script>
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/H-ui.min.css">
+    </head>
+    <body>
+            
+        <!--            
+              CONTENT 
+                        --> 
+        <div id="content" class="white">
+            <h1><img src="img/icons/dashboard.png" alt="" /> 添加仓库
+</h1>
+                
+<div class="bloc">
+    <div class="title">
+       仓库信息
+    </div>
+ <div class="pd-20">
+    <form action="" method="post" class="form form-horizontal" id="form-admin-add">
+         <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>仓库名称：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text"/>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>仓库类型：</label>
+            <div class="formControls col-5">
+                <input type="radio" name="storeBaseDTO.DPT_TYPE" /><label for="storeBaseDTO.DPT_TYPEA">正常仓库</label>
+                <input type="radio" name="storeBaseDTO.DPT_TYPE" /><label for="storeBaseDTO.DPT_TYPEB">监管仓库</label>
+                <font color="red">*</font>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>仓库简称：</label>
+            <div class="formControls col-5">
+                <input type="text"  class="input-text"/>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>地区：</label>
+            <div class="formControls col-5">
+               <select></select>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red"></span>地址：</label>
+            <div class="formControls col-5">
+                <input type="text"  class="input-text"/>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red"></span>联系人：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text"/>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">仓库服务点电话</label>
+            <div class="formControls col-5">
+                <input type="text"  class="input-text"/>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">仓库服务点电话</label>
+            <div class="formControls col-5">
+                <input type="text"  class="input-text"/>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">仓库服务点地址</label>
+            <div class="formControls col-5">
+                <input type="text"  class="input-text"/>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">图片上传</label>
+            <div class="formControls col-5">
+               <input type="file" name="file" id="file" style="height:22px">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">文件上传</label>
+            <div class="formControls col-5">
+               <input type="file" name="file" id="file" style="height:22px">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">备注</label>
+            <div class="formControls col-5">
+               <textarea  style="width:420px;height:150px"></textarea>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+
+</div>
+        
+        
+    </body>
+</html>

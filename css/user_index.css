@@ -96,6 +96,14 @@ img{border:0px;}
   margin: 0 12px;
  
 }
+.user_l .nav-first{
+  border-bottom: 1px solid #c0c0c0;
+  display: block;
+  padding-left: 40px;
+}
+.user_l .nav-first:hover{
+   background: #eee;
+}
 .user_l a:hover {
   color: #E20E22!important;
 }
@@ -194,15 +202,25 @@ background: #027cff;
 	color:#3966c7;
 }
 /*左侧导航栏*/
+.btn1{cursor: pointer;}
+/*控制二级菜单的展开样式*/
+.zj_zh{display: none;}
+#zj_zh1{display: block;}
+/*控制二级菜单的展开样式*/
 .left_navigation{
 	border:1px solid #c0c0c0;
 	min-height:450px;
 }
 .left_navigation ul li{
+  line-height:40px;
+  font-size: 16px;
+}
+.left_navigation ul li ul li{
 	line-height:40px;
 	border-bottom:1px solid #c0c0c0;
-      padding-left: 40px;
-      font-size: 14px;
+  font-size: 14px;
+  padding-left: 50px;
+
 }
 .left_navigation .zj_zh li{font-size: 12px;}
 .left_navigation ul li a.cur{
@@ -213,8 +231,10 @@ background: #027cff;
 	background:#D61515;
 }
 .left_navigation .let_nav_tit h3{
-	    padding: 4px 0px;
-		color:#fff;
+	padding: 4px 40px;
+  color:#fff;
+  font-size: 22px;
+  border-bottom: 1px solid #c0c0c0;
 }
 /*中间内容*/
 .user_zhxi,.user_pay,.user_pay_tx,.user_xqbz{
@@ -447,9 +467,63 @@ background: #027cff;
 	display:none;
 }
 /*产品发布*/
-.center_tabl table,.xx_center table{
-  margin:20px auto;
-  width: 725px;
+.lx_gg{
+  padding: 10px;
+}
+.class_jy {
+    padding: 0px 15px;
+    border-bottom: 1px solid #e3e3e3;
+    position: relative;
+}
+.class_jy .jy_title {
+    float: left;
+    line-height: 30px;
+    width: 65px;
+    text-align: right;
+}
+.class_jy ul {
+    width: 92%;
+    height: 30px;
+    line-height: 30px;
+}
+.class_jy ul li {
+    float: left;
+    width: auto;
+    text-align: center;
+    margin-left: 15px;
+}
+ .class_jy .sl_ext {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    overflow: hidden;
+    zoom: 1;
+}
+.class_jy .sl_ext .sl_e_more {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 0px 5px;
+    background: #fff;
+    visibility: hidden;
+    border: 1px solid #ccc;
+}
+ .class_jy .infoslider {
+    display: block;
+    padding: 0px 9px 0px 65px;
+    height: auto;
+    overflow: hidden;
+}
+.center_tabl{
+  margin: 10px 0;
+}
+.center_tabl table, .xx_center table{
+  width:100%;
 }
 .center_tabl  th {
     text-align: left;
@@ -461,47 +535,39 @@ background: #027cff;
     height: 26px;
     line-height: 26px;
 }
-.center_tabl td input, .center_tabl td select {
-    margin-left: 10px;
-    width: 224px;
-    border: 1px solid #CCC;
-    line-height: 24px;
-    height: 30px;
+.center_tabl td{
+  padding: 5px 0;
+}
+
+.center_tabl td .text{ 
+  width: 200px;
+    height: 20px;
 }
 .center_tabl td:first-child {
     width: 104px;
     height: 30px;
     text-align: right;
 }
-.center_tabl td:nth-child(3) {
-    width: 104px;
-    height: 30px;
-    text-align: right;
-}
-.center_tabl td:nth-child(2), .center_tabl td:nth-child(4) {
-    width: 224px;
-    height: 40px;
-    text-align: left;
-}
+
+
 .center_tabl td {
     font-size: 12px;
     font-family: "宋体";
     color: #666;
-    padding: 5px 0px;
     line-height: 30px;
 }
-.center_tabl td a {
+
+
+/*.center_tabl td a {
     padding: 6px 20px;
     background: #BF1D25 none repeat scroll 0% 0%;
     color: #FFF;
-}
-.center_tabl th a:nth-child(2) {
-    background: #CCC none repeat scroll 0% 0%;
-}
-.center_tabl th a {
+}*/
+
+.center_tabl td a {
     font-size: 18px;
     color: #FFF;
-    background: #BF1D25 none repeat scroll 0% 0%;
+    background: #d61515 none repeat scroll 0% 0%;
     padding: 10px 50px;
 }
 .center_tabl table tr td textarea{
@@ -512,6 +578,22 @@ background: #027cff;
 
 .center_tabl td span {
     color: #BF1D25;
+}
+#jian, #add {
+    width: 22px;
+    line-height: 20px;
+    background: #e8e8e8;
+    border: 1px solid #ddd;
+    color: #b4b4b4;
+}
+#num {
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 50px;
+    text-align: center;
+    height: 20px;
 }
 /*产品信息*/
 .chp_xx{
@@ -989,4 +1071,24 @@ line-height: 25px;
     font-weight: normal;
 }
 .user_zhxi .plaint_com .subclear a:hover{text-decoration: underline;}
->>>>>>> origin/master
+/*报盘首页样式*/
+.offer{
+  float: left;
+  width:33%;
+  padding: 10px 1px;
+}
+.offer_left,.offer_center,.offer_right{
+  text-align: center;
+}
+.of_title1{
+  padding: 10px 0 10px 15%;
+}
+.of_title2{
+  padding: 0 0 0 25%;
+}
+.offer .title1_a{
+ color: #333 ;
+}
+
+/*end报盘首页样式*/
+

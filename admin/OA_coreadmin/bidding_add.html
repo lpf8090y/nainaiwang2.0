@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+        <title>竞价管理</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        
+        <!-- jQuery AND jQueryUI -->
+        <script type="text/javascript" src="js/libs/jquery/1.6/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+        
+        <!-- Compressed Version
+        <link type="text/css" rel="stylesheet" href="min/b=CoreAdmin&f=css/reset.css,css/style.css,css/jqueryui/jqueryui.css,js/jwysiwyg/jquery.wysiwyg.old-school.css,js/zoombox/zoombox.css" />
+        <script type="text/javascript" src="min/b=CoreAdmin/js&f=cookie/jquery.cookie.js,jwysiwyg/jquery.wysiwyg.js,tooltipsy.min.js,iphone-style-checkboxes.js,excanvas.js,zoombox/zoombox.js,visualize.jQuery.js,jquery.uniform.min.js,main.js"></script>
+        -->
+        <link rel="stylesheet" href="css/min.css" />
+        <script type="text/javascript" src="js/min.js"></script>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/H-ui.min.css">
+    </head>
+    <body>
+            
+        <!--            
+              CONTENT 
+                        --> 
+        <div id="content" class="white">
+            <h1><img src="img/icons/dashboard.png" alt="" /> 添加竞价
+</h1>
+                
+<div class="bloc">
+    <div class="title">
+     竞价信息
+    </div>
+ <div class="pd-20">
+	<form action="" method="post" class="form form-horizontal" id="form-admin-add">
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>交易会名称：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+			
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>竞价类型：</label>
+			<div class="formControls col-5">
+				<select>
+					<option>请选择</option>
+					<option>竞买</option>
+					<option>竞卖</option>
+					<option>保底竞买</option>
+					<option>保底竞卖</option>
+				</select>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>开始日期：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>开始时间：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>会员参与方式</label>
+			<div class="formControls col-5">
+				<input type="radio" name="viespeDto.attend_type" id="viespeDto.attend_typeA" value="A"><label for="viespeDto.attend_typeA">会员组参与</label>
+				<input type="radio" name="viespeDto.attend_type" id="viespeDto.attend_typeB" checked="checked" value="B"><label for="viespeDto.attend_typeB">全部参与</label>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>最高/低限价类型：</label>
+			<div class="formControls col-5">
+				<input type="radio" name="viespeDto.attend_type" id="viespeDto.attend_typeA" value="A"><label for="viespeDto.attend_typeA">定量</label>
+				<input type="radio" name="viespeDto.attend_type" id="viespeDto.attend_typeB" checked="checked" value="B"><label for="viespeDto.attend_typeB">比例</label>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>最高/低限价范围（元）：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>最小竞价幅度（元）：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>最大竞价幅度（元）：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>合同履约期（天）：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>合同付款期（天）：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>委托费率设置：</label>
+			<div class="formControls col-5">
+				<select>
+				    <option value="">请选择</option>
+				    <option value="4">竞价交易</option>
+				    <option value="8">竞价交易比例</option>
+				    <option value="5">人保投保</option>
+				    <option value="1">套餐1</option>
+				    <option value="2">套餐2</option>
+				    <option value="3">套餐3</option>
+				    <option value="7">特殊比例</option>
+				    <option value="6">特殊的</option>
+				</select>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>普通交易费率设置：</label>
+			<div class="formControls col-5">
+				<select>
+				    <option value="">请选择</option>
+				    <option value="4">竞价交易</option>
+				    <option value="8">竞价交易比例</option>
+				    <option value="5">人保投保</option>
+				    <option value="1">套餐1</option>
+				    <option value="2">套餐2</option>
+				    <option value="3">套餐3</option>
+				    <option value="7">特殊比例</option>
+				    <option value="6">特殊的</option>
+				</select>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>特殊交易费率设置：</label>
+			<div class="formControls col-5">
+				<select>
+				    <option value="">请选择</option>
+				    <option value="4">竞价交易</option>
+				    <option value="8">竞价交易比例</option>
+				    <option value="5">人保投保</option>
+				    <option value="1">套餐1</option>
+				    <option value="2">套餐2</option>
+				    <option value="3">套餐3</option>
+				    <option value="7">特殊比例</option>
+				    <option value="6">特殊的</option>
+				</select>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>基本时段：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>倒计时段</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>重新倒计时段</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>交易节转换时段：</label>
+			<div class="formControls col-5">
+				<input type="text" class="input-text"/>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>交易会图片</label>
+			<div class="formControls col-5">
+				<input type="file" name="file" id="file"/>
+			</div>
+		</div>
+
+		<div class="row cl">
+			<div class="col-9 col-offset-3">
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">&nbsp;&nbsp;
+				<input type="reset"class="btn radius" value="&nbsp;&nbsp;重置&nbsp;&nbsp;"/>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+
+</div>
+        
+        
+    </body>
+</html>
