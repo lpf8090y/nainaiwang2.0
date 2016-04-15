@@ -99,6 +99,7 @@ img{border:0px;}
 .user_l .nav-first{
   border-bottom: 1px solid #c0c0c0;
   display: block;
+  padding-left: 40px;
 }
 .user_l .nav-first:hover{
    background: #eee;
@@ -213,12 +214,13 @@ background: #027cff;
 .left_navigation ul li{
   line-height:40px;
   font-size: 16px;
-  text-align: center;
 }
 .left_navigation ul li ul li{
 	line-height:40px;
 	border-bottom:1px solid #c0c0c0;
   font-size: 14px;
+  padding-left: 50px;
+
 }
 .left_navigation .zj_zh li{font-size: 12px;}
 .left_navigation ul li a.cur{
