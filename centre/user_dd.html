@@ -7,6 +7,9 @@
   <meta charset="utf-8">
   <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+  <script src="../js/center.js" type="text/javascript"></script>
+  <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  
    <!-- 头部控制 -->
   <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
   <script src="../js/topnav20141027.js" type="text/javascript"></script>
@@ -171,45 +174,34 @@
 	</div>
 	<div class="user_body">
 		<div class="user_b">
-			<script type="text/javascript">
-				$(document).ready(function(){
-				  $("#btn1").click(function(){
-				  $("#zj_zh1").slideToggle();
-				  });
-				  $("#btn2").click(function(){
-				  $("#zj_zh2").slideToggle();
-				  });
-				  $("#btn3").click(function(){
-				  $("#zj_zh3").slideToggle();
-				  });
-				});
-			</script>
-			<style type="text/css">
-				.btn1{cursor: pointer;}
-				.btn1:hover{background: #eee;}
-				.zj_zh{display: none;font-size: 12px;}
-                                    	#zj_zh1{display: block;}
-			</style>
 			<!--start左侧导航-->	
 			<div class="user_l">
 				<div class="left_navigation">
 					<ul>
-						<li class="let_nav_tit"><h3>交易管理</h3></li>
-						<li class="btn1" id="btn1"><a>产品管理</a></li>								
-						<ul class="zj_zh" id="zj_zh1">
-							<li><a href="chp_list.html" class="cur">产品列表</a></li>
-							<li><a href="chp_fb.html">发布产品</a></li>
-						</ul>
-						<li class="btn1" id="btn2"><a>合同管理</a></li>
-						<ul class="zj_zh" id="zj_zh2">
-							<li><a href="user_dd.html">销售合同</a></li>
-							<li><a href="user_dd.html">购买合同</a></li>
-						</ul>
-						<li id="btn3"><a>申诉管理</a></li>
-						<ul class="zj_zh" id="zj_zh3">
-							<li><a href="user_complaint.html">合同申诉</a></li>
-							<li><a href="user_complaint.html">提货申诉</a></li>
-						</ul>
+						<li class="let_nav_tit"><span class="line"></span><h3>交易管理</h3></li>
+						<li class="btn1" id="btn1">
+							<a class="nav-first">销售管理<i class="icon-caret-down"></i></a>
+							<ul class="zj_zh" id="zj_zh1">
+								<li><a href="chp_list.html">销售列表</a></li>
+								<li><a href="offer_index.html">发布产品</a></li>
+							</ul>
+						</li>								
+						
+						<li class="btn1" id="btn2">
+							<a class="nav-first">采购管理<i class="icon-caret-right"></i></a>
+							<ul class="zj_zh" id="zj_zh2">
+								<li><a href="user_dd.html">采购列表</a></li>
+								<li><a href="user_dd.html">发布采购</a></li>
+							</ul>
+						</li>
+							
+						<li class="btn1" id="btn3">
+							<a class="nav-first">合同管理<i class=" icon-caret-right"></i></a>
+							<ul class="zj_zh" id="zj_zh3">
+								<li><a href="user_complaint.html">销售合同</a></li>
+								<li><a href="user_complaint.html">购买合同</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -218,7 +210,7 @@
 			<div class="user_c">
 				<div class="user_zhxi">
 					<div class="zhxi_tit">
-						<p><a>交易管理</a>><a>订单管理</a></p>
+						<p><a>产品管理</a>><a>产品发布</a></p>
 					</div>
 					<div class="chp_xx">
 						<div class="xx_top">
