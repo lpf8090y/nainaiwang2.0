@@ -7,6 +7,8 @@
   <meta charset="utf-8">
   <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+  <script src="../js/center.js" type="text/javascript"></script>
+  <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
    <!-- 头部控制 -->
   <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
   <script src="../js/topnav20141027.js" type="text/javascript"></script>
@@ -171,38 +173,28 @@
 	</div>
 	<div class="user_body">
 		<div class="user_b">
-			<script type="text/javascript">
-				$(document).ready(function(){
-				  $("#btn1").click(function(){
-				  $("#zj_zh1").slideToggle();
-				  });
-				  $("#btn2").click(function(){
-				  $("#zj_zh2").slideToggle();
-				  });
-				});
-			</script>
-			<style type="text/css">
-				.btn1{cursor: pointer;}
-				.btn1:hover{background: #eee;}
-				.zj_zh{display: none;font-size: 12px;}
-                                    	#zj_zh2{display: block;}
-			</style>
 			<!--start左侧导航-->	
 			<div class="user_l">
 				<div class="left_navigation">
 					<ul>
 						<li class="let_nav_tit"><h3>交易管理</h3></li>
-						<li class="btn1" id="btn1"><a>产品管理</a></li>								
-						<ul class="zj_zh" id="zj_zh1">
+						<li class="btn1" id="btn1">
+							<a class="nav-first"><i class="icon-caret-right"></i>产品管理</a>
+							<ul class="zj_zh" id="zj_zh1">
 							<li><a href="chp_lb.html">产品分类列表</a></li>
 							<li><a href="chp_list.html">产品列表</a></li>
 						</ul>
-						<li class="btn1" id="btn2"><a>合同管理</a></li>
-						<ul class="zj_zh" id="zj_zh2">
-							<li><a href="user_dd.html">销售合同</a></li>
-							<li><a href="user_dd.html" class="cur">购买合同</a></li>
-						</ul>
-						<li><a href="user_complaint.html">申诉管理</a></li>
+						</li>								
+						
+						<li class="btn1" id="btn2">
+							<a class="nav-first"><i class="icon-caret-right"></i>合同管理</a>
+							<ul class="zj_zh" id="zj_zh2">
+								<li><a href="user_dd.html">销售合同</a></li>
+								<li><a href="user_dd.html" class="cur">购买合同</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="user_complaint.html" class="nav-first">申诉管理</a></li>
 					</ul>
 				</div>
 			</div>
