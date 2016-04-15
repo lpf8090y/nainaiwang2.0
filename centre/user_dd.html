@@ -179,13 +179,16 @@
 				  $("#btn2").click(function(){
 				  $("#zj_zh2").slideToggle();
 				  });
+				  $("#btn3").click(function(){
+				  $("#zj_zh3").slideToggle();
+				  });
 				});
 			</script>
 			<style type="text/css">
 				.btn1{cursor: pointer;}
 				.btn1:hover{background: #eee;}
 				.zj_zh{display: none;font-size: 12px;}
-                                    #zj_zh2{display: block;}
+                                    	#zj_zh1{display: block;}
 			</style>
 			<!--start左侧导航-->	
 			<div class="user_l">
@@ -194,15 +197,19 @@
 						<li class="let_nav_tit"><h3>交易管理</h3></li>
 						<li class="btn1" id="btn1"><a>产品管理</a></li>								
 						<ul class="zj_zh" id="zj_zh1">
-							<li><a href="chp_lb.html">产品分类管理</a></li>
-							<li><a href="chp_list.html">产品列表</a></li>
+							<li><a href="chp_list.html" class="cur">产品列表</a></li>
+							<li><a href="chp_fb.html">发布产品</a></li>
 						</ul>
 						<li class="btn1" id="btn2"><a>合同管理</a></li>
 						<ul class="zj_zh" id="zj_zh2">
 							<li><a href="user_dd.html">销售合同</a></li>
-							<li><a href="user_dd.html" class="cur">购买合同</a></li>
+							<li><a href="user_dd.html">购买合同</a></li>
 						</ul>
-						<li><a href="user_complaint.html">申诉管理</a></li>
+						<li id="btn3"><a>申诉管理</a></li>
+						<ul class="zj_zh" id="zj_zh3">
+							<li><a href="user_complaint.html">合同申诉</a></li>
+							<li><a href="user_complaint.html">提货申诉</a></li>
+						</ul>
 					</ul>
 				</div>
 			</div>
@@ -249,7 +256,7 @@
 									<!-- <td>是否审核</td>-->
 									<td>2015-09-02 13:25:12</td>
 									<td>待审核</td>
-									<td><a class="ck">删除</a> <a class="ck" href="dd_detail.html">查看</a></td>	
+									<td><a class="ck">删除</a> <a class="ck" href="../submit_order-2.html">查看</a></td>	
 								</tr>
 							</table>
 						</div>
