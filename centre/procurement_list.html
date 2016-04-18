@@ -1,14 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>资金管理</title>
+  <title>产品管理</title>
   <meta name="keywords"/>
   <meta name="description"/>
   <meta charset="utf-8">
   <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="../js/user_index.js"></script>
    <script src="../js/center.js" type="text/javascript"></script>
   <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
    <!-- 头部控制 -->
   <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
   <script src="../js/topnav20141027.js" type="text/javascript"></script>
@@ -153,10 +155,10 @@
 						<a href="user_zh.html">账户信息</a>
 					</li>
 					<li>
-						<a href="user_zj.html" class="cur">资金管理</a>
+						<a href="user_zj.html">资金管理</a>
 					</li>
 					<li>
-						<a href="user_dd.html">交易管理</a>
+						<a href="user_dd.html" class="cur">交易管理</a>
 					</li>
 					<li>
 						<a href="user_cd.html">仓单管理</a>
@@ -173,21 +175,41 @@
 	</div>
 	<div class="user_body">
 		<div class="user_b">
-		
+			
 			<!--start左侧导航-->	
 			<div class="user_l">
 				<div class="left_navigation">
 					<ul>
-						<li class="let_nav_tit"><h3>资金管理</h3></li>
-						<li><a class="nav-first" href="user_zj.html">开户信息管理</a></li>
-						<li class="btn1"><a class="nav-first">资金账户管理<i class="icon-caret-down"></i></a>
-                            <ul class="zj_zh" id="zj_zh1">                           
-                                <li><a href="zj_dl.html">市场代理账户</a></li>
-                                <li><a href="zj_qy.html">银行签约账户</a></li>
-                                <li><a href="zj_pj.html" class="cur">票据账户管理</a></li>
+						<li class="let_nav_tit"><span class="line"></span><h3>交易管理</h3></li>
+						<li class="btn1" id="btn1">
+							<a class="nav-first">销售管理<i class="icon-caret-right"></i></a>
+							<ul class="zj_zh" id="zj_zh2">
+								<li><a href="user_dd.html">销售列表</a></li>
+								<li><a href="offer_index.html">发布产品</a></li>
+							</ul>
+						</li>								
+						
+						<li class="btn1" id="btn2">
+							<a class="nav-first">采购管理<i class="icon-caret-down"></i></a>
+							<ul class="zj_zh" id="zj_zh1">
+								<li><a class="cur" href="procurement_list.html">采购列表</a></li>
+                                <li><a href="procurement_cg.html">发布采购</a></li>
+							</ul>
+						</li>
+							
+						<li class="btn1" id="btn3">
+							<a class="nav-first">合同管理<i class=" icon-caret-right"></i></a>
+							<ul class="zj_zh" id="zj_zh3">
+								<li><a href="user_complaint.html">销售合同</a></li>
+								<li><a href="user_complaint.html">购买合同</a></li>
+							</ul>
+						</li>
+						<li  class="btn1"><a class="nav-first">申诉管理<i class=" icon-caret-right"></i></a>
+                            <ul class="zj_zh">
+                                <li><a href="user_complaint.html">合同申诉</a></li>
+                                <li><a href="user_complaint.html">提货申诉</a></li>
                             </ul>
                         </li>
-						
 					</ul>
 				</div>
 			</div>
@@ -196,10 +218,58 @@
 			<div class="user_c">
 				<div class="user_zhxi">
 					<div class="zhxi_tit">
-						<p><a>资金管理</a>><a>票据账户管理</a></p>
+						<p><a>采购管理</a>><a>采购列表</a></p>
 					</div>
-					<div style="margin:10px;"></div>
+					<div class="chp_xx">
+						<div class="xx_center">
+							<table border="0"  cellpadding="" cellspacing="">
+								<tr class="title">
+									<td><input onclick="selectAll1();" name="controlAll" style="controlAll" id="controlAll" type="checkbox"></td>
+									<td>序号</td>
+									<td>名称</td>
+									<td>市场分类</td>
+									<td>数量</td>
+									<td>规格</td>
+									<td>价位</td>
+									<td>发布状态</td>
+									<td>报价</td>
+									<td>操作</td>
+								</tr>
+								<tr>
+									<td><input name="controlAll" style="controlAll" id="controlAll" type="checkbox"></td>
+									<td>GF012</td>
+									<td>图片</td>
+									<td>耐火</td>
+									<td>100（吨）</td>
+									<td>90%</td>
+									<td>100-120</td>
+									<td>发布成功</td>
+									<td>12家</td>
+									<td><a href="procurement_cg.html">查看</a></td>
+								</tr>
+							</table>
+
+						</div>
+						
+						<div class="tab_bt">
+							<div class="t_bt">
+								<a class="a_1" title="编辑" href="chp_fb.html"></a>
+								<a class="a_2" title="添加" href="chp_fb.html"></a>
+								<a class="a_3" title="删除" href="chp_fb.html"></a>
+							</div>
+						</div>
+						<div class="page_num">
+							共0条记录&nbsp;当前第<font color="#FF0000">1</font>/0页&nbsp;
+							<a href="#">第一页</a>&nbsp;
+							<a href="#">上一页</a>&nbsp;
+							<a href="#">下一页</a>&nbsp;
+							<a href="#">最后页</a>&nbsp; 
+							跳转到第 <input name="pagefind" id="pagefind" type="text" style="width:20px;font-size: 12px;" maxlength="5" value="1"> 页 
+							<a><span class="style1">确定</span></a>
+						</div>
+					</div>
 				</div>
+
 			</div>
 			<!--end中间内容-->	
 			<!--start右侧广告-->			
@@ -221,4 +291,5 @@
 		</div>
 	</div>
 </body>
+</html>
 </html>

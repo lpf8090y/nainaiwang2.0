@@ -40,5 +40,32 @@ $("#jian").click(function(){
   $("#num").val(num);
   });
 });
+//企业认证切换
+$(document).ready(function(){
+  $(".rz_ul .rz").click(function(){
+    $(".rz_ul .rz_li").removeClass("cur");
+    $(".re_xx").show();
+    $(".yz_img").hide();
+    $(".sh_jg").hide();
+    $(this).parents(".rz_li").addClass("cur");
 
+  });
+  $(".rz_ul .yz").click(function(){
+    $(".rz_ul .rz_li").removeClass("cur");
+    $(".yz_img").show();
+    $(".re_xx").hide();
+    $(".sh_jg").hide();
+    $(this).parents(".rz_li").addClass("cur");
+
+  });
+  $(".rz_ul .shjg").click(function(){
+    $(".rz_ul .rz_li").removeClass("cur");
+    $(".sh_jg").show();
+    $(".yz_img").hide();
+    $(".re_xx").hide();
+    $(this).parents(".rz_li").addClass("cur");
+
+  });
+});
+//end企业认证切换
 
