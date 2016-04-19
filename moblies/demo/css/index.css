@@ -330,3 +330,87 @@
 	float: left;
 	font-size: 12px;
 }
+/* 耐材市场 */
+.m_baoliao  .naishi_title {
+	text-align: center;
+	color: #FFFFFF;
+	background: #c81623;
+	width: 100%;
+	height: 62px;
+	overflow: hidden;
+	position: relative;
+}
+.m_baoliao  .naishi_title .nais_tit{width: 156px; margin: 0 auto; height: 62px;}
+.m_baoliao  .naishi_title .nais_tit em{ font-style: normal; display: block;font-size: 48px;
+	font-family: 宋体;width: 28px;line-height: 62px;}
+.m_baoliao  .naishi_title .nais_tit .ntit_left{float: left;}
+.m_baoliao  .naishi_title .nais_tit .ntit_right{float: left;}
+.m_baoliao .naishi_title .nais_tit span {
+    font-size: 24px;
+    display:block;
+    text-align: -webkit-center;
+    float: left;
+    height: 57px;
+    padding-top: 5px;
+}
+.m_baoliao  .naishi_title .nais_tit span p{font-size: 16px;     margin: 0;}
+.m_baoliao  .naishi_title p a {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    font-size: 16px;
+}
+.m_baoliao .naishi_total{height: auto; overflow: hidden; margin: 0 auto;border-left: #8b8b8b 1px solid;
+                        border-right:#8b8b8b 1px solid;  }
+.m_baoliao .naishi_total .naishi_lft{
+	margin-right: 5px;
+    float: left;
+    width: 29%;
+    padding: 6px 2px 6px 8px;
+}
+.m_baoliao .naishi_total .naishi_lft .nais_poto{
+    /* height: 12%; */
+    width: 98%;
+    text-align: center;
+    border: #c6c6c6 1px solid;
+    height: auto;
+    overflow: hidden;
+}
+.m_baoliao .naishi_total .naishi_lft .nais_poto img{
+    width: 86px;
+    height: 68px;
+}
+.m_baoliao .naishi_total .naishi_lft ul{
+    width: 103%;
+    padding: 10px 2px;
+    overflow: hidden;
+}
+.m_baoliao .naishi_total .naishi_lft ul li {
+	height: 22px;
+    float: left;
+    font-size: 12px;
+    color: #2a2c21;
+    width: 53px;
+}
+.m_baoliao .naishi_total .naishi_rgt{width: 66%;float: left;}
+.m_baoliao .naishi_total .naishi_rgt ul{ border-left: #cecece 1px solid;float: left;}
+.m_baoliao .naishi_total .naishi_rgt ul li{
+    padding: 5px 3px 20px 5px;
+    border-top: #c6c6c6 1px solid;
+    height: auto;
+    overflow: auto;
+}
+.m_baoliao .naishi_total .naishi_rgt ul a{text-decoration: none; color: #9b9b9b;font-size: 12px;}
+.m_baoliao .naishi_total .naishi_rgt ul a p{
+    color: #525252;
+    font-size: 14px;
+    display: inline;
+}
+.m_baoliao .naishi_total .naishi_rgt ul li .cai_lft{width: 35%;float: left;}
+.m_baoliao .naishi_total .naishi_rgt ul li .cai_cen{width: 26%;float: left; text-align: center;}
+.m_baoliao .naishi_total .naishi_rgt ul li .cai_cen span{font-size: 13px;line-height: 22px;}
+.m_baoliao .naishi_total .naishi_rgt ul li .cai_rgt p{ font-size: 14px; color: #bd0000;} 
+.m_baoliao .naishi_total .naishi_rgt ul li.border_none{border: none;}

@@ -388,7 +388,7 @@
     width: 53px;
 }
 .m_baoliao .naishi_total .naishi_rgt{width: 66%;float: left;}
-.m_baoliao .naishi_total .naishi_rgt ul{ border-left: #cecece 1px solid;float: left;}
+.m_baoliao .naishi_total .naishi_rgt ul{ border-left: #cecece 1px solid;float: left; width: 100%;}
 .m_baoliao .naishi_total .naishi_rgt ul li{
     padding: 5px 3px 20px 5px;
     border-top: #c6c6c6 1px solid;
