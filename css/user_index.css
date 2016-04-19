@@ -275,13 +275,14 @@ background: #027cff;
     width: 200px;
 }
 .zhxi_con .submit{
-	margin: 0 180px;
-    width: 120px;
-    height: 35px;
-    background: #DA0A0A;
-    border: 0px;
-    color: #fff;
-    font-size: 20px;
+	width: 120px;
+  height: 35px;
+  background: #027dff;
+  border: 0px;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  left: 340px;
 }
 .zhxi_con  .select{
 	height: 31px;
@@ -289,7 +290,8 @@ background: #027cff;
 }
 .zhxi_upimg{
 	float:left;
-	margin:40px 0;
+	margin:40px;
+  position: relative;
 }
 .zhxi_upimg .up_img{
 	border:1px solid #c0c0c0;
@@ -297,7 +299,7 @@ background: #027cff;
 	height:180px;
     margin: 10px auto;
 }
-#doc{
+#doc,.doc{
 	width: 180px;
     border: 1px solid #ccc;
 }
@@ -564,7 +566,7 @@ background: #027cff;
     color: #FFF;
 }*/
 
-.center_tabl td a {
+.center_tabl td a.button {
     font-size: 18px;
     color: #FFF;
     background: #d61515 none repeat scroll 0% 0%;
@@ -576,7 +578,7 @@ background: #027cff;
     margin-top: 12px;
 }
 
-.center_tabl td span {
+.center_tabl td span.font_color {
     color: #BF1D25;
 }
 #jian, #add {
@@ -1085,7 +1087,7 @@ line-height: 25px;
 }
 
 /*end报盘首页样式*/
-/*报盘成功样式*/
+/*报盘成功样式，显示身份认证审核结果*/
 .success_text{
   margin: 30px auto;
 }
@@ -1100,27 +1102,92 @@ line-height: 25px;
 .success_text p .a_color{
   color: #9fb5ee;
 }
-/*end报盘成功样式*/
+.success_text p .look{
+background: #027dff;
+border: 0px;
+color: #fff;
+font-size: 14px;
+padding: 8px 15px;
+}
+/*end报盘成功样式，显示身份认证审核结果*/
 
 /*嵌套表格css*/
-.center_tabl table .table2{
+.center_tabl  .table2{
    width: 80%;
     margin: 0 5%;
-   
 }
-.center_tabl table .table2 tr td:first-child{
-  border-right:0px; 
-}
-.center_tabl table .table2 tr td{
+
+.center_tabl  .table2 tr td{
   text-align: left;
   padding-left: 10px;
   border: 1px solid #ccc;
+}
+.center_tabl  .table2 tr td.spmx_title{
+  background: #f6f7f9;
+
+}
+.center_tabl  .table2  .cg_fb{
+  background:#d61515;
+  color: #fff;
+  border: 1px solid #d61515;
+  font-size: 20px;
+  padding: 8px 30px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+  /*审核状态字体颜色*/
+ .col12aa07{
+  color: #12aa07;
+ }
+ .colaa0707{
+  color: #aa0707;
+ }
+ .colaa7e07{
+  color: #aa7e07;
+ }
+ .col000000{
+  color: #000000;
+ }
+
+ /*身份认证_企业认证*/
+ .rz_title{
+  height: 40px;
+  margin:10px 0;
+ }
+ .rz_title .rz_ul{
+  height: 40px;
+  line-height: 40px;
+  
+ }
+
+.rz_title .rz_ul li{
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin: 5px 0;
+  padding: 0 12px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.rz_title .rz_ul li.cur{
+  border:1px solid #ccc;
   border-bottom: 0px;
 }
-.center_tabl table .table2 tr td.spmx_title{
-  background: #f6f7f9;
+ .rz_title .rz_ul li.rz_start{
+ width: 100px;
+ }
+  .rz_title .rz_ul li.rz_end{
+ width: 358px;
+ }
+/*营业执照*/
+.sh_jg,.yz_img{
+  display: none
 }
-.center_tabl table .table2 tr td.end_td{
-    border-bottom:1px solid #ccc;
+.zhxi_con .font-color{
+  padding: 0 85px;
+color: #CD2121;
 }
-   
+ /*end身份认证*/
+
