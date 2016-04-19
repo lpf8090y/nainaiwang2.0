@@ -1196,4 +1196,16 @@ padding: 8px 15px;
 color: #CD2121;
 }
  /*end身份认证*/
+ /*下载按钮*/
+ .download{
+      background:#144EBB;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+ }
+ .download:hover{
+  background:#1C5BD0; 
+   text-decoration:none;
+ }
 

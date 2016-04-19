@@ -149,7 +149,7 @@
 			<div class="nav-tit">
 				<ul class="nav-list">
 					<li>
-						<a href="user_index.html">首页</a>
+						<a href="user_index.html">会员中心</a>
 					</li>
 					<li>
 						<a href="user_zh.html">账户信息</a>
@@ -222,7 +222,25 @@
 						<p><a>产品管理</a>><a>产品列表</a></p>
 					</div>
 					<div class="chp_xx">
-						
+						<div class="xx_top">
+							<form action="" method="" name="">
+								<ul>
+									<li>名称：<input id="warename" name="warename" value="" type="text"></li>
+									<li>发布状态：
+									<select id="classcode" name="classcode">
+									<option value="">--全部--</option>
+									<option value="">审核中</option>
+									<option value="">发布成功</option>
+									<option value="">被驳回</option>
+									<option value="">已过期</option>
+									</select></li>
+									<li>时间：<input class="Wdate" type="text" onclick="WdatePicker()"> <span style="position: relative;left: -3px;">—</span><input class="Wdate" type="text" onclick="WdatePicker()">
+									</li>
+									<li> <a class="chaz">查找</a></li>
+								</ul>
+							</form>
+							<div style="clear:both;"></div>
+						</div>
 						<div class="xx_center">
 							<table border="0"  cellpadding="" cellspacing="">
 								<tr class="title">
