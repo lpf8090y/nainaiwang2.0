@@ -690,12 +690,6 @@ border: #FFC3AC 1px solid;
 background: #FEE9E0;
 color: #000;
 }
-.page_num a:link, .page_num a:visited, .page_num a:active {
-padding: 2px 6px;
-border: #FFC3AC 1px solid;
-background: #FEE9E0;
-color: #000;
-}
 .page_num a:hover {
 padding: 2px 6px;
 border: #666 1px solid;
