@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>产品管理</title>
+  <title>仓单审核</title>
   <meta name="keywords"/>
   <meta name="description"/>
   <meta charset="utf-8">
@@ -179,30 +179,10 @@
             <div class="user_l">
                 <div class="left_navigation">
                     <ul>
-                        <li class="let_nav_tit"><span class="line"></span><h3>交易管理</h3></li>
-                        <li class="btn1" id="btn1">
-                            <a class="nav-first">销售管理<i class="icon-caret-down"></i></a>
-                            <ul class="zj_zh" id="zj_zh1">
-                                <li><a href="../chp_list.html">销售列表</a></li>
-                                <li><a href="../offer_index.html" class="cur">发布产品</a></li>
-                            </ul>
-                        </li>                               
-                        
-                        <li class="btn1" id="btn2">
-                            <a class="nav-first">采购管理<i class="icon-caret-right"></i></a>
-                            <ul class="zj_zh" id="zj_zh2">
-                                <li><a href="../user_dd.html">采购列表</a></li>
-                                <li><a href="../user_dd.html">发布采购</a></li>
-                            </ul>
-                        </li>
-                            
-                        <li class="btn1" id="btn3">
-                            <a class="nav-first">合同管理<i class=" icon-caret-right"></i></a>
-                            <ul class="zj_zh" id="zj_zh3">
-                                <li><a href="../user_complaint.html">销售合同</a></li>
-                                <li><a href="../user_complaint.html">购买合同</a></li>
-                            </ul>
-                        </li>
+                       <li class="let_nav_tit"><h3>仓单管理</h3></li>
+                       <li class="btn1"><a href="../cd_list.html" class="nav-first">仓单管理</a></li> 
+                                     <li class="btn1"><a href="cd_add.html" class="nav-first">仓单申请</a></li>
+                       <li><a href="cd_add1.html" class="nav-first cur">仓单审核</a></li>
                     </ul>
                 </div>
             </div>
@@ -211,11 +191,11 @@
 			<div class="user_c">
 				<div class="user_zhxi">
 					<div class="zhxi_tit">
-						<p><a>产品管理</a>><a>商品分类</a></p>
+						<p><a>仓单管理</a>><a>仓单审核</a></p>
 					</div>
 					<div class="center_tabl">
                     <div class="lx_gg">
-                        <b>选择仓库</b>
+                        <b>商品类型和规格</b>
                     </div>
                     
                     
@@ -308,60 +288,24 @@
     								</span> 
                    				 </td>
                				 </tr>
-                         <tr>
-                             <th colspan="3"><b>详细信息</b></th>
+                       
+                        <tr>
+                             <th colspan="3"><b>选择仓库</b></th>
                         </tr>
                         <tr>
-                            <td nowrap="nowrap"><span></span>商品标题：</td>
+                            <td nowrap="nowrap"><span></span>选择仓库:</td>
                             <td colspan="2"> 
-                                <input class="text" type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>产地:</td>
-                            <td colspan="2">
-                                <select name="area" id="area">
-                                    <option value="13">河北</option>
-                                
+                                <select>
+                                    <option>耐耐网一号库</option>
                                 </select>
-                                <select name="area" id="area">
-                                    <option value="13">河北</option>
-                                
-                                </select>
-                                <select name="area" id="area">
-                                    <option value="13">河北</option>
-                                
-                                </select>
-                            </td>
-                         
-                        </tr>
-                          <tr>
-                            <td>交货地：</td>
-                            <td colspan="2">
-                                <select name="area" id="area">
-                                <option value="13">耐耐网一号库</option>
-                                
-                                </select>
-                            </td>
-                              <tr>
-                            <td>是否投保：</td>
-                            <td colspan="2">
-                                <input type ="radio" name ="safe" checked="checked" style="width:auto;height:auto;">投保
-                                    <input type ="radio" name ="safe" style="width:auto;height:auto;"> 不投保
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>产品描述：</td>
-                            <td colspan="2">
-                                <textarea></textarea>
                             </td>
                         </tr>
 
                         <tr>
                             <td></td>
                             <td colspan="2" class="btn">
+                                <a href="offer_success.html" onclick="checkform()">修改</a> 
                                 <a href="offer_success.html" onclick="checkform()">提交审核</a> 
-                                <span class="color">审核将收取N元/条的人工费用，请仔细填写</span>
                                 
                             </td>
                         </tr>
