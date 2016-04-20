@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>仓单申请</title>
+  <title>仓单审核</title>
   <meta name="keywords"/>
   <meta name="description"/>
   <meta charset="utf-8">
@@ -181,8 +181,8 @@
                     <ul>
                        <li class="let_nav_tit"><h3>仓单管理</h3></li>
                        <li class="btn1"><a href="../cd_list.html" class="nav-first">仓单管理</a></li> 
-                        <li class="btn1"><a href="cd_add.html" class="nav-first cur">仓单申请</a></li>
-                       <li><a href="cd_add1.html" class="nav-first">仓单审核</a></li>
+                        <li class="btn1"><a href="cd_add.html" class="nav-first">仓单申请</a></li>
+                       <li><a href="../cd_list.html" class="nav-first cur">仓单审核</a></li>
                     </ul>
                 </div>
             </div>
@@ -191,53 +191,14 @@
 			<div class="user_c">
 				<div class="user_zhxi">
 					<div class="zhxi_tit">
-						<p><a>仓单管理</a>><a>申请入仓</a></p>
+						<p><a>仓单管理</a>><a>仓单审核</a></p>
 					</div>
 					<div class="center_tabl">
                     <div class="lx_gg">
                         <b>商品类型和规格</b>
                     </div>
-                   <!-- 分类 start -->
-                   <div class="pro_classify">
                    
-                    <div class="class_jy tlist_0">
-                        <span class="jy_title ">交易类型：</span>
-                        <ul>
-                            <li class="a_choose">
-                                <a  > 不限</a>
-                            </li>
 
-                            <li>
-                                <a >供应</a>
-                            </li>
-
-                            <li>
-                                <a >求购</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="class_jy tlist_1">
-                        <span class="jy_title">报盘类型：</span>
-                        <ul>
-                            <li class="a_choose">
-                                <a > 不限</a>
-                            </li>
-
-                            <li>
-                                <a >自由</a>
-                            </li>
-
-                            <li>
-                                <a >保证金</a>
-                            </li>
-
-                            <li>
-                                <a >仓单</a>
-                            </li>
-
-                        </ul>
-                    </div>
                     <div id="DIV_Splx" class="class_jy">
                         <span class="jy_title">市场类型：</span>
                         <ul>
@@ -850,7 +811,8 @@
                         <tr>
                             <td></td>
                             <td colspan="2" class="btn">
-                                <a class="for_storage" href="add_success.html" onclick="checkform()">申请入仓</a> 
+                                <a href="#" onclick="checkform()">修改</a> 
+                                <a class="for_storage" href="cd_add1.html" onclick="checkform()">申请入仓</a> 
                                 <!-- <span class="color">审核将收取N元/条的人工费用，请仔细填写</span> -->
                                 
                             </td>

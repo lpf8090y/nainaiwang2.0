@@ -486,7 +486,7 @@ background: #027cff;
 .class_jy ul {
     width: 92%;
     height: 30px;
-    line-height: 30px;
+    line-height: 30px;word-wrap: break-word;
 }
 .class_jy ul li {
     float: left;
@@ -1305,3 +1305,49 @@ padding: 8px 25px;
 margin: 0 10px;
 }
 /*弹出窗css end*/
+.pro_classify .class_jy ul .a_choose a {
+    display: block;
+    color: #c81623;
+}
+.for_storage 
+{
+  background:#d61515;
+  color: #fff;
+  border: 1px solid #d61515;
+  font-size: 20px;
+  padding: 8px 30px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+
+a.for_storage:hover,a.for_storage:active{
+  text-decoration:none;
+}
+.list_names span {
+    font-size: 13px;
+    font-family: 宋体;
+    color: rgb(102, 102, 102);
+    margin-right: 18px;
+}
+.list_names{
+    padding: 5px 5px 8px 19px;
+    margin-left: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 330px;
+}
+.shezheig{height: 25px; margin-right: 20px;}
+input.Wdate.addw{width: 200px;}
+.for_cangdan{
+  background:#d61515;
+  color: #fff;
+  border: 1px solid #d61515;
+  font-size: 20px;
+  padding: 8px 30px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+a.for_cangdan:hover,a.for_cangdan:active{
+  text-decoration:none;
+}
