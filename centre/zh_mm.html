@@ -201,39 +201,50 @@
 						<p><a>账号管理</a>><a>修改密码</a></p>
 					</div>
 					<div style="float:left">
-						<div class="zhxi_con">
+						<form>
 						
 							<div class="zhxi_con">
 								<span class="con_tit"><i>*</i>用户账号：</span>
-								<span><input class="text" type="text" name="username"/>
-									<input type="text" readonly="readonly" name="checkb" class="user_names"/></span>
-							</div>
+								<span><input class="text" type="text"disabled="disabled" value="sfsdfdf" name="username"/></span>
+                            </div>
 
-                   
+                            <div class="zhxi_con">
+                                <span class="con_tit"><i></i>手机号码：</span>
+                                <span><input class="text" placeholder="请输入手机" type="text" name="mobile_no"> </span>
+                                <div><input type="text" readonly="readonly" name="checkh" class="mobile_no"></div>
+                               
+                            </div>
+                            <div class="zhxi_con">
+                                <span class="con_tit"><i></i>短信验证码：</span>
+                                <span><input type="text" id="phone" class="infos text" placeholder="请输入验证码"></span><a href="javascript:;" class="send1" onclick="sends.send();">免费获取短信验证码</a>
+                            </div>
 							<div class="zhxi_con">
 								<span class="con_tit"><i>*</i>原始密码：</span>
-								<span><input class="text" type="text" name="origin_password"/>
-									<input type="text" readonly="readonly" name="checkc" class="origin_password"/></span>
+								<span><input class="text"placeholder="请输入密码"  type="text" name="origin_password"/>
+									</span>
+                                <div><input type="text" readonly="readonly" name="checkc" class="origin_password"/></div>
 							</div>
 
 	
 							<div class="zhxi_con">
 								<span class="con_tit"><i>*</i>新密码：</span>
 								<span><input class="text" type="text" name="new_password"/>
-									<input type="text" readonly="readonly" name="checkd" class="new_password"/></span>
+									</span>
+                                <div><input type="text" readonly="readonly" name="checkd" class="new_password"/></div>
 							</div>
                           
 
 							<div class="zhxi_con">
 								<span class="con_tit"><i>*</i>确认新密码：</span>
 								<span><input class="text" type="text" name="firm_password"/>
-									<input type="text" readonly="readonly" name="checke" class="firm_password"/></span>
+									</span>
+                                <div><input type="text" readonly="readonly" name="checke" class="firm_password"/></div>
 							</div>
 							
 							<div class="zhxi_con">
 								<span><input class="submit" type="submit" value="保存"/></span>
 							</div>
-						</div>
+						</form>
 						<div style="clear:both;"></div>
 					</div>
 				</form>

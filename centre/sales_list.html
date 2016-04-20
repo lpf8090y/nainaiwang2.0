@@ -1,17 +1,17 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>资金管理</title>
+  <title>产品管理</title>
   <meta name="keywords"/>
   <meta name="description"/>
   <meta charset="utf-8">
   <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="../js/user_index.js"></script>
-  <script language="javascript" type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
    <script src="../js/center.js" type="text/javascript"></script>
   <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <!-- 头部控制 -->
+
+   <!-- 头部控制 -->
   <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
   <script src="../js/topnav20141027.js" type="text/javascript"></script>
     <!-- 头部控制 -->
@@ -141,7 +141,7 @@
 </div>
 <div class="clearfix"></div>
 <!-- 公用头部控件 -->
-	<div class="header">
+<div class="header">
 		<div class="nav">
 			<div class="logo-box zn-l">
 				<a href="../index.html" alt="返回耐耐首页"><img src="../images/icon/nainaiwang.png"/></a></dd>
@@ -149,16 +149,16 @@
 			<div class="nav-tit">
 				<ul class="nav-list">
 					<li>
-						<a href="user_index.html">首页</a>
+						<a href="user_index.html">会员中心</a>
 					</li>
 					<li>
 						<a href="user_zh.html">账户信息</a>
 					</li>
 					<li>
-						<a href="user_zj.html" class="cur">资金管理</a>
+						<a href="user_zj.html">资金管理</a>
 					</li>
 					<li>
-						<a href="user_dd.html">交易管理</a>
+						<a href="user_dd.html" class="cur">交易管理</a>
 					</li>
 					<li>
 						<a href="user_cd.html">仓单管理</a>
@@ -176,104 +176,144 @@
 	<div class="user_body">
 		<div class="user_b">
 			
-		
 			<!--start左侧导航-->	
 			<div class="user_l">
 				<div class="left_navigation">
 					<ul>
-						<li class="let_nav_tit"><h3>资金管理</h3></li>
-						<li><a href="user_zj.html" class="nav-first cur">开户信息管理</a></li>
-						<li class="btn1">
-							<a class="nav-first">资金账户管理<i class="icon-caret-right"></i></a>
-							<ul class="zj_zh">								
-								<li><a href="zj_dl.html">市场代理账户</a></li>
-								<li><a href="zj_qy.html">银行签约账户</a></li>
-								<li><a href="zj_pj.html">票据账户管理</a></li>
+						<li class="let_nav_tit"><span class="line"></span><h3>交易管理</h3></li>
+						<li class="btn1" id="btn1">
+							<a class="nav-first">销售管理<i class="icon-caret-down"></i></a>
+							<ul class="zj_zh">
+								<li><a href="chp_list.html">销售列表</a></li>
+								<li><a href="offer_index.html">发布产品</a></li>
+							</ul>
+						</li>								
+						
+						<li class="btn1" id="btn2">
+							<a class="nav-first">采购管理<i class="icon-caret-right"></i></a>
+							<ul class="zj_zh" id="zj_zh2">
+								<li><a href="procurement_list.html">采购列表</a></li>
+                                <li><a href="procurement_fb.html">发布采购</a></li>
 							</ul>
 						</li>
+							
+						<li class="btn1" id="btn3">
+							<a class="nav-first">合同管理<i class=" icon-caret-right"></i></a>
+							<ul class="zj_zh" id="zj_zh1">
+								<li><a class="cur" href="sales_list.html">销售合同</a></li>
+								<li><a href="#">购买合同</a></li>
+							</ul>
+
+						</li>
+						<li  class="btn1"><a class="nav-first">申诉管理<i class=" icon-caret-right"></i></a>
+                            <ul class="zj_zh">
+                                <li><a href="user_complaint.html">合同申诉</a></li>
+                                <li><a href="user_complaint.html">提货申诉</a></li>
+                            </ul>
+                        </li>
 					</ul>
 				</div>
 			</div>
 			<!--end左侧导航-->	
 			<!--start中间内容-->	
-			
-			<div class="user_c">
+			<div class="user_c_list">
 				<div class="user_zhxi">
 					<div class="zhxi_tit">
-						<p><a>资金管理</a>><a>开户信息管理</a></p>
+						<p><a>产品管理</a>><a>产品列表</a></p>
 					</div>
-					<div>
-						<form>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>开户银行：</span>
-								<span><input class="text" type="text" name="username"></span>
-								<div><input type="text" readonly="readonly" name="checkb" class="username"></div>
-									
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>银行卡类型：</span>
-								<span><input class="text" type="text" name="tran_saction"></span>
-								<div><input type="text" readonly="readonly" name="checkee" class="tran_saction"></div>
+					<div class="chp_xx">
+						<div class="xx_top">
+							<form action="" method="" name="">
+								<ul>
+									<li>名称：<input id="warename" name="warename" value="" type="text"></li>
+									<li>发布状态：
+									<select id="classcode" name="classcode">
+									<option value="">--全部--</option>
+									<option value="">审核中</option>
+									<option value="">发布成功</option>
+									<option value="">被驳回</option>
+									<option value="">已过期</option>
+									</select></li>
+									<li>时间：<input class="Wdate" type="text" onclick="WdatePicker()"> <span style="position: relative;left: -3px;">—</span><input class="Wdate" type="text" onclick="WdatePicker()">
+									</li>
+									<li> <a class="chaz">查找</a></li>
+								</ul>
+							</form>
+							<div style="clear:both;"></div>
+						</div>
+						<div class="xx_center">
+							<table border="0"  cellpadding="" cellspacing="">
+								<tr class="title">
+									<td width="80px"><input onclick="selectAll1();" name="controlAll" style="controlAll" id="controlAll" type="checkbox">全选
+									</td>
+									<td width="150px">产品详情</td>
+									<td>金额及付款方式</td>
+									<td>主要指标</td>
+									<td>卖家\买家信息</td>
+									<td>交易操作</td>
+								</tr>
+                                <tr class="title">
+									<td colspan="6">&nbsp;</td>
+								</tr>
+                                <tr class="title">
+									<td colspan="2">
+										<input id="controlAll" type="checkbox">
+										单号:<span class="col2517EF">140106199010</span>
+									</td>
+									<td>
+										<span class="colaa0707">合同审核中</span>
+									</td>
+									<td colspan="3"><i class=""></i><b>生成厂家：北京东峰兴达耐火材料有线公司</b></td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<img src="../images/banner/551b861eNe1c401dc.jpg" align="left" width="100px" height="130px"/>
+										<p>供应一级高铝砖</p>
+										<p>是否含税：是</p>
+										<p>是否含保险：是</p>
+										<p>所在地：耐耐网一号库</p>
+									</td>
+									<td>
+										<p>合同总额：￥100.00</p>
+										<p>等级折扣：￥10.00</p>
+										<hr/>
+										<p>保证金支付（30%）</p>
+
+									</td>
+									<td>
+										<p><b>规格：230*114*65</b></p>
+										<p><b>材质：高铝质</b></p>
+										<p>数量：100吨</p>
+									</td>
+									<td>
+										<p>李三</p>
+									</td>
+									<td>
+										<p><a><b>确认订购<b></a></p>
+									</td>
+								</tr>
 								
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>姓名：</span>
-								<span><input class="text" type="text" name="tran_saction"></span>
-								<div><input type="text" readonly="readonly" name="checkee" class="tran_saction"></div>
-								
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>证件：</span>
-								<span><select>
-									  <option value ="身份证">身份证</option>
-									  <option value ="军人证">军人证</option>
-									</select>
-									<input class="text" type="text" name="tran_saction"></span>
-									<div><input type="text" readonly="readonly" name="checkee" class="tran_saction"></div>
-								
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>银行卡号：</span>
-								<span><input class="text" type="text" name="tran_saction"></span>
-								<div><input type="text" readonly="readonly" name="checkee" class="tran_saction"></div>
-								
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>打款凭证： </span>
-								<span>
-									<input type="file">
-								</span>
-								<p class="con_tishi">请向上海公司总部账户打款0.1元并上传打款凭证</p>
-							</div>
-							<div class="zhxi_con">	
-								<span><input class="submit_zz" type="submit" value="提交"></span>
-								<span><input class="submit_zz reset_zz" type="reset" value="重置"></span>
-							</div>
-						</form>
-					</div>
-					
-				
-					<div style="clear:both;"></div>
-				</div>
-			</div>
-	<!--end中间内容-->		
-	<!--start右侧广告-->			
-			<div class="user_r">
-				<div class="wrap_con">
-					<div class="tit clearfix">
-						<h3>公告</h3>
-					</div>
-					<div class="con">
-						<div class="con_medal clearfix">
-							<ul>
-								<li><a>暂无勋章</a></li>
-							</ul>
+							</table>
+
+						</div>
+						
+						<div class="page_num">
+							共0条记录&nbsp;当前第<font color="#FF0000">1</font>/0页&nbsp;
+							<a href="#">第一页</a>&nbsp;
+							<a href="#">上一页</a>&nbsp;
+							<a href="#">下一页</a>&nbsp;
+							<a href="#">最后页</a>&nbsp; 
+							跳转到第 <input name="pagefind" id="pagefind" type="text" style="width:20px;font-size: 12px;" maxlength="5" value="1"> 页 
+							<a><span class="style1">确定</span></a>
 						</div>
 					</div>
 				</div>
+				
+				
 			</div>
-			<!--end右侧广告-->
+			<!--end中间内容-->	
 		</div>
 	</div>
 </body>
+</html>
 </html>

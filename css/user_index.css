@@ -272,17 +272,29 @@ background: #027cff;
 }
 .zhxi_con .text{
 	height: 25px;
-    width: 200px;
+  width: 240px;
 }
 .zhxi_con .submit{
 	width: 120px;
   height: 35px;
-  background: #027dff;
+  background: #0088dd;
   border: 0px;
   color: #fff;
   font-size: 20px;
   position: relative;
   left: 340px;
+  cursor: pointer;
+}
+.zhxi_con .submit_edit{
+  width: 120px;
+height: 35px;
+background: #Fff;
+color: #E51212;
+font-size: 20px;
+position: relative;
+left: 340px;
+cursor: pointer;
+border: 1px solid;
 }
 .zhxi_con  .select{
 	height: 31px;
@@ -812,22 +824,23 @@ line-height: 25px;
 }*/
 
 
-
-.username{border-width:0px;color:red;width:300px;position: absolute;top: 85px;left: 170px;cursor: default;}
-.tran_saction{border-width:0px;color:red;width:300px;position: absolute;top: 145px;left: 170px;cursor: default;}
-.name_china{border-width:0px;color:red;width:300px;position: absolute;top: 204px;left: 170px;cursor: default;}
-.name_eng{border-width:0px;color:red;width:300px;position: absolute;top: 264px;left: 170px;cursor: default;}
-.email{border-width:0px;color:red;width:300px;position: absolute;top: 563px;left: 170px;cursor: default;}
-.mobile_no{border-width:0px;color:red;width:300px;position: absolute;top: 623px;left: 170px;cursor: default;}
-.phone_no{border-width:0px;color:red;width:300px;position: absolute;top: 683px;left: 170px;cursor: default;}
-.age_no{border-width:0px;color:red;width:300px;position: absolute;top: 743px;left: 170px;cursor: default;}
-.qq_no{border-width:0px;color:red;width:300px;position: absolute;top: 1103px;left: 170px;cursor: default;}
-.zhxi_con .realname, .zhxi_con .emaill{border-width:0px;color:red;width:300px;cursor: default;}
-.real_name{border-width:0px;color:red;width: 160px;cursor: default;}
-.user_names{border-width:0px;color:red;width:366px;cursor: default;}
-.origin_password{border-width:0px;color:red;width:366px;cursor: default;}
-.new_password{border-width:0px;color:red;width:366px;cursor: default;}
-.firm_password{border-width:0px;color:red;width:366px;cursor: default;}
+/*正则表达式*/
+.username{border-width:0px;color:red;width:300px;position: absolute;/*top: 85px;*/left: 170px;cursor: default;}
+.tran_saction{border-width:0px;color:red;width:300px;position: absolute;/*top: 145px;*/left: 170px;cursor: default;}
+.name_china{border-width:0px;color:red;width:300px;position: absolute;/*top: 204px;*/left: 170px;cursor: default;}
+.name_eng{border-width:0px;color:red;width:300px;position: absolute;/*top: 264px;*/left: 170px;cursor: default;}
+.email{border-width:0px;color:red;width:300px;position: absolute;/*top: 563px;*/left: 170px;cursor: default;}
+.mobile_no{border-width:0px;color:red;width:365px;position: absolute;/*top: 623px;*/left: 170px;cursor: default;}
+.phone_no{border-width:0px;color:red;width:300px;position: absolute;/*top: 683px;*/left: 170px;cursor: default;}
+.age_no{border-width:0px;color:red;width:300px;position: absolute;/*top: 743px;*/left: 170px;cursor: default;}
+.qq_no{border-width:0px;color:red;width:300px;position: absolute;/*top: 1103px;*/left: 170px;cursor: default;}
+.zhxi_con .realname, .zhxi_con .emaill{position: absolute;left: 170px; border-width:0px;color:red;width:300px;cursor: default;}
+.real_name{border-width:0px;color:red;width: 160px;cursor: default; position: absolute;left: 170px;}
+.user_names{border-width:0px;color:red;width:366px;cursor: default;position: absolute;left: 170px;}
+.origin_password{border-width:0px;color:red;width:366px;cursor: default;position: absolute;left: 170px;}
+.new_password{border-width:0px;color:red;width:366px;cursor: default;position: absolute;left: 170px;}
+.firm_password{border-width:0px;color:red;width:366px;cursor: default;position: absolute;left: 170px;}
+/*正则表达式*/
 /* 产品发布样式 */
 .center_tabl .unit_price{
   color: red;
@@ -1148,6 +1161,9 @@ padding: 8px 15px;
  .col000000{
   color: #000000;
  }
+ .col2517EF{
+  color: #2517EF;
+ }
 
  /*身份认证_企业认证*/
  .rz_title{
@@ -1305,3 +1321,44 @@ padding: 8px 25px;
 margin: 0 10px;
 }
 /*弹出窗css end*/
+/*修改手机号，密码进度css*/
+.jd_img{
+  text-align: center;
+}
+/*验证码*/
+.gradient{
+  display: inline-block;
+  height: 35px;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.mycode {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  vertical-align: middle;
+  border: solid #999999 1px;
+  box-shadow: #000000 inset 0px 0px 2px;
+}
+.yzm_submit{
+  height: 32px;
+width: 80px;
+color: #fff;
+background: #cd5c5c;
+border: 0;
+}
+.send1{
+  padding: 8px 10px;
+border: 1px solid #c0c0c0;
+margin-left: 5px;
+}
+/*修改手机号，密码进度css end*/
+/*去掉右侧广告*/
+.user_c_list{
+  float: left;
+  margin: 0 0px 10px 20px;
+text-align: center;
+width: 81%;
+border: 1px solid #c0c0c0;
+}
+

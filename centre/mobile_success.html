@@ -1,20 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>资金管理</title>
+  <title>账号管理</title>
   <meta name="keywords"/>
   <meta name="description"/>
   <meta charset="utf-8">
   <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="../js/user_index.js"></script>
-  <script language="javascript" type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
-   <script src="../js/center.js" type="text/javascript"></script>
+ <!--  上传图片js 
+  <script type="text/javascript" src="../js/UploadImages.js"></script>-->
+  <script src="../js/center.js" type="text/javascript"></script>
   <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <!-- 头部控制 -->
+
+  <script src="../js/yzm/js.KinerCode.js" type="text/javascript"></script>
+   <!-- 头部控制 -->
   <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
   <script src="../js/topnav20141027.js" type="text/javascript"></script>
     <!-- 头部控制 -->
+   
+
 </head>
 <body>
 <!-- 	公用头部控件 -->
@@ -149,13 +153,13 @@
 			<div class="nav-tit">
 				<ul class="nav-list">
 					<li>
-						<a href="user_index.html">首页</a>
+						<a href="user_index.html">会员中心</a>
 					</li>
 					<li>
-						<a href="user_zh.html">账户信息</a>
+						<a href="user_zh.html" class="cur">账户信息</a>
 					</li>
 					<li>
-						<a href="user_zj.html" class="cur">资金管理</a>
+						<a href="user_zj.html">资金管理</a>
 					</li>
 					<li>
 						<a href="user_dd.html">交易管理</a>
@@ -175,89 +179,45 @@
 	</div>
 	<div class="user_body">
 		<div class="user_b">
-			
-		
-			<!--start左侧导航-->	
 			<div class="user_l">
 				<div class="left_navigation">
 					<ul>
-						<li class="let_nav_tit"><h3>资金管理</h3></li>
-						<li><a href="user_zj.html" class="nav-first cur">开户信息管理</a></li>
-						<li class="btn1">
-							<a class="nav-first">资金账户管理<i class="icon-caret-right"></i></a>
-							<ul class="zj_zh">								
-								<li><a href="zj_dl.html">市场代理账户</a></li>
-								<li><a href="zj_qy.html">银行签约账户</a></li>
-								<li><a href="zj_pj.html">票据账户管理</a></li>
+						<li class="let_nav_tit"><h3>账户管理</h3></li>
+						<li><a href="user_zh.html" class="nav-first cur">基本信息</a></li>
+						<li><a class="nav-first" href="zh_mm.html">修改密码</a></li>
+						<li class="btn1" id="btn2">
+							<a class="nav-first">身份认证<i class="icon-caret-right"></i></a>
+							<ul class="zj_zh" id="zj_zh2">
+								<li><a href="identity/zh_rez.html">企业认证</a></li>
+								<li><a href="identity/wl_rez.html">物流认证</a></li>
+								<li><a href="identity/cg_rez.html">仓管认证</a></li>
 							</ul>
 						</li>
+						
+						<li><a class="nav-first" href="user_zz.html">子账户管理</a></li>
+						<li><a class="nav-first" href="user_fp.html">开盘信息管理</a></li>
 					</ul>
 				</div>
 			</div>
-			<!--end左侧导航-->	
-			<!--start中间内容-->	
-			
 			<div class="user_c">
 				<div class="user_zhxi">
 					<div class="zhxi_tit">
-						<p><a>资金管理</a>><a>开户信息管理</a></p>
+						<p><a>账号管理</a>><a>基本信息</a></p>
 					</div>
 					<div>
 						<form>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>开户银行：</span>
-								<span><input class="text" type="text" name="username"></span>
-								<div><input type="text" readonly="readonly" name="checkb" class="username"></div>
-									
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>银行卡类型：</span>
-								<span><input class="text" type="text" name="tran_saction"></span>
-								<div><input type="text" readonly="readonly" name="checkee" class="tran_saction"></div>
-								
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>姓名：</span>
-								<span><input class="text" type="text" name="tran_saction"></span>
-								<div><input type="text" readonly="readonly" name="checkee" class="tran_saction"></div>
-								
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>证件：</span>
-								<span><select>
-									  <option value ="身份证">身份证</option>
-									  <option value ="军人证">军人证</option>
-									</select>
-									<input class="text" type="text" name="tran_saction"></span>
-									<div><input type="text" readonly="readonly" name="checkee" class="tran_saction"></div>
-								
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>银行卡号：</span>
-								<span><input class="text" type="text" name="tran_saction"></span>
-								<div><input type="text" readonly="readonly" name="checkee" class="tran_saction"></div>
-								
-							</div>
-							<div class="zhxi_con">
-								<span class="con_tit"><i>*</i>打款凭证： </span>
-								<span>
-									<input type="file">
-								</span>
-								<p class="con_tishi">请向上海公司总部账户打款0.1元并上传打款凭证</p>
-							</div>
-							<div class="zhxi_con">	
-								<span><input class="submit_zz" type="submit" value="提交"></span>
-								<span><input class="submit_zz reset_zz" type="reset" value="重置"></span>
-							</div>
+                        <div class="jd_img"><img src="../images/center/yz_jd3.jpg"></div>
+						<div class="success_text">
+                            <p style="text-align:center"><b class="b_size">修改新手机号：13900xxxx</b></p>
+                        </div>
+						<div class="zhxi_con">
+							<span><a href="user_index.html"><input class="submit" type="button" value="返回首页"/></a></span>
+						</div>
 						</form>
 					</div>
-					
-				
 					<div style="clear:both;"></div>
 				</div>
 			</div>
-	<!--end中间内容-->		
-	<!--start右侧广告-->			
 			<div class="user_r">
 				<div class="wrap_con">
 					<div class="tit clearfix">
@@ -272,7 +232,6 @@
 					</div>
 				</div>
 			</div>
-			<!--end右侧广告-->
 		</div>
 	</div>
 </body>
