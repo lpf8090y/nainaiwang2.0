@@ -537,10 +537,6 @@ background: #027cff;
     height: 26px;
     line-height: 26px;
 }
-.center_tabl td{
-  padding: 5px 0;
-}
-
 .center_tabl td .text{ 
   width: 200px;
     height: 20px;
@@ -553,10 +549,13 @@ background: #027cff;
 
 
 .center_tabl td {
+   padding: 5px 0;
     font-size: 12px;
     font-family: "宋体";
     color: #666;
     line-height: 30px;
+    position: relative;
+
 }
 
 
