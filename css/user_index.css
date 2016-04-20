@@ -836,7 +836,7 @@ line-height: 25px;
     border-width: 0px;
     height: 15px;
     position: absolute;
-    top: 390px;
+    top: 320px;
     left: 125px;
     line-height: 15px;
     cursor: default;
@@ -1221,7 +1221,7 @@ color: #CD2121;
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(94, 110, 141, 0.9);
+    background-color: rgba(171, 171, 171, 0.4);
 }
 
 .cd-popup-container{
@@ -1229,7 +1229,7 @@ color: #CD2121;
   width: 90%;
   max-width: 400px;
   max-height: 488px;
-  margin: 4em auto;
+  margin: 15% auto;
   background: #FFF;
   -webkit-transform: translateY(-40px);
   -moz-transform: translateY(-40px);
@@ -1283,7 +1283,7 @@ color: #CD2121;
   font-size: 15px;
 }
 .cd-popup p .font-css{
-    color: #562BF2;
+    color: #c81623;
     padding: 0 10px;
 }
 .cd-popup .cd_an{
@@ -1291,14 +1291,14 @@ color: #CD2121;
   text-align: center;
 }
 .cd-popup .cd_an .cd_yes{
-  background: #340DC3;
+  background: #c81623;
 padding: 8px 25px;
 color: #fff;
 margin: 0 10px;
 text-decoration: none;
 }
 .cd-popup .cd_an .cd_yes:hover{
-  background: #3D0EEC;
+  background: #c81623;
 }
 .cd-popup .cd_an .cd_no{
 background: #DFDEE4;
