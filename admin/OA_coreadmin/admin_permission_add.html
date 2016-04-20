@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="css/min.css" />
         <script type="text/javascript" src="js/min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/H-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="css/admin.css">
+        <script type="text/javascript" src="js/admin.js"></script>
     </head>
     <body>
         
@@ -41,31 +43,67 @@
 		<div class="row cl">
 			<label class="form-label col-3"><span class="c-red">*</span>权限名称：</label>
 			<div class="formControls col-5">
-				<input type="text" class="input-text" value="" placeholder="" id="user-name" name="user-name" datatype="*2-16" nullmsg="用户名不能为空">
+				<input type="text" class="input-text"/>
 			</div>
 			<div class="col-4"> </div>
 		</div>
-                        <div class="row cl">
-                            <label class="form-label col-3"><span class="c-red">*</span>权限码集合：</label>
-                            <div class="formControls col-5">
-                                <input type="button" class="btn btn-danger radius" value="&nbsp;&nbsp;删除&nbsp;&nbsp;">
-                                <input type="text" autocomplete="off" value="" class="input-text">
-                            </div>
-                            <div class="col-4"> </div>
-                        </div>
-                        <div class="row cl">
-                            <label class="form-label col-3"><span class="c-red">*</span>字段名：</label>
-                            <div class="formControls col-5">
-                                <input type="password" placeholder="密码" autocomplete="off" value="" class="input-text" datatype="*6-20" nullmsg="密码不能为空">
-                            </div>
-                            <div class="col-4"> </div>
-                        </div>
 
-		<div class="row cl">
-			<div class="col-9 col-offset-3">
-				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
-			</div>
-		</div>
+       
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>权限码集合：</label>
+            <div class="formControls col-5">
+                <ul class="quxian" id="app">
+                    <li class="qxm"><b>权限码</b></li>
+                    <li class="cz"><b>操作</b></li>
+                  
+                </ul>
+                <ul class="quxian">
+                      <li  class="qxm"><input type="text" class="text" /></li>
+                    <li class="cz"><a class="del"><img src="css/img/icon_x.jpg"/></a></li>
+                </ul>
+
+                <!-- <table id="app" class="table table-border table-bordered table-bg">
+                    <tr>
+                        <th>权限码</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <th><input type="text"/></th>
+                        <th><a><i class="icon-remove"></i></a></th>
+                    </tr>
+                </tbale> -->
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>添加权限码</label>
+            <div class="formControls col-5">
+                <ul class="add_qx">
+                    <li>
+                        <select id="test" style="width:60%">
+                                <option>请选择。。</option>
+                                <option>site/index</option>
+                                <option>site/index</option>
+                        </select>
+                    </li>
+                    
+                    <li>
+                        <input id="btn" class="btn btn-primary radius" type="button" value="&nbsp;&nbsp;添加&nbsp;&nbsp;">
+                    </li>            
+                 </ul>
+                
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                 <input class="btn btn-warning radius" type="submit" value="&nbsp;&nbsp;保存&nbsp;&nbsp;">
+            </div>
+        </div>
+
+
+		
 	</form>
 </div>
 </div>
