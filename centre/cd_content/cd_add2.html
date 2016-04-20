@@ -218,71 +218,91 @@
                         <b>选择仓库</b>
                     </div>
                     
-                    
+                    <div class="list_names">
+                        <span>仓库名称</span>
+                        <span>耐耐网一号库</span>
+                        <span>仓库编号&nbsp;&nbsp;001</span>
+                    </div>
                      
                     <form action="" method="">
 						<table border="0">
                             <tr>
-              					<td nowrap="nowrap"><span></span>生成厂家：</td>
+              					<td nowrap="nowrap"><span></span>库位：</td>
                 				<td colspan="2"> 
                                     <input class="text" type="text">
                                 </td>
            				 	</tr>
                             <tr>
-                                <td nowrap="nowrap"><span></span>生产日期:</td>
+                                <td nowrap="nowrap"><span></span>仓位：</td>
                                 <td colspan="2"> 
-                                    <input name="brandname" id="brandname" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" type="text">
+                                    <input class="text" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="nowrap"><span></span>入库日期：</td>
+                                <td colspan="2"> 
+                                    <input name="brandname" id="brandname" class="Wdate addw" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" type="text">
+                                </td>
+                            </tr>
+                             <tr>
+                                <td nowrap="nowrap"><span></span>租库日期：</td>
+                                <td colspan="2"> 
+                                    <input name="brandname" id="brandname" class="Wdate addw" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" type="text">
                                 </td>
                             </tr>
                             <tr >
-                                <td nowrap="nowrap"><span></span>长度（m）:</td>
+                                <td nowrap="nowrap"><span></span>检测机构：</td>
                                 <td colspan="2"> 
                                     <input class="text" type="text">
                                 </td>
                             </tr>
-                            <tr>
-                                <td nowrap="nowrap"><span></span>宽度（mm）:</td>
+                            <tr >
+                                <td nowrap="nowrap"><span></span>质检证书编号：</td>
                                 <td colspan="2"> 
                                     <input class="text" type="text">
                                 </td>
                             </tr>
+                            
+                             <tr>
+                            <td>是否包装：</td>
+                            <td colspan="2">
+                                <select name="area" id="area" class="shezheig">
+                                    <option value="13">是</option>
+                                    <option value="13">否</option>
+
+                                
+                                </select>
+                                <span>称重方式：</span>
+  
+                                <select name="area" id="area" class="shezheig">
+                                    <option value="13">过磅</option>
+                                
+                                </select>
+                                
+                            </td>
+                         
+                        </tr>
+                            
+                        
                             <tr>
-                                <td nowrap="nowrap"><span></span>厚度（mm）:</td>
-                                <td colspan="2"> 
-                                    <input class="text" type="text">
-                                </td>
-                            </tr>
-                            <tr>
-                               <th colspan="3">基本挂牌信息</th>
-                            </tr>
-                            <tr>
-                                <td nowrap="nowrap"><span></span>商品单价:</td>
+                                <td nowrap="nowrap"><span></span>计量单位：</td>
                                 <td> 
-                                    <input class="text" type="text">
-                                    
-                                </td>
-                                <td> 
-                                    
-                                </td>
-                            </tr>
-                            <tr>
-                                <td nowrap="nowrap"><span></span>挂牌数量:</td>
-                                <td> 
-                                    <input class="text" type="text">(吨)
+                                    <input class="text" type="text">(件)
                                 </td>
                                 <td> 
                                    
                                 </td>
                             </tr>
-                            <tr>
-                                <td nowrap="nowrap"><span></span>最小起订量:</td>
-                                <td> 
-                                    <input class="text" type="text">（吨）
-                                    
+                             <tr>
+                                <td nowrap="nowrap"><span></span>仓单总数量：</td>
+                                <td colspan="2"> 
+                                    <input class="text" type="text">
                                 </td>
-                                <td> 
-                                    <span>*</span>
-                                    最小起订量即为最小起增量，最小设为1，不填写规则为不可拆分
+                            </tr>
+                             <tr>
+                                <td nowrap="nowrap"><span></span>总重量：</td>
+                                <td colspan="2"> 
+                                    <input class="text" type="text">
                                 </td>
                             </tr>
           					
@@ -308,60 +328,13 @@
     								</span> 
                    				 </td>
                				 </tr>
-                         <tr>
-                             <th colspan="3"><b>详细信息</b></th>
-                        </tr>
-                        <tr>
-                            <td nowrap="nowrap"><span></span>商品标题：</td>
-                            <td colspan="2"> 
-                                <input class="text" type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>产地:</td>
-                            <td colspan="2">
-                                <select name="area" id="area">
-                                    <option value="13">河北</option>
-                                
-                                </select>
-                                <select name="area" id="area">
-                                    <option value="13">河北</option>
-                                
-                                </select>
-                                <select name="area" id="area">
-                                    <option value="13">河北</option>
-                                
-                                </select>
-                            </td>
                          
-                        </tr>
-                          <tr>
-                            <td>交货地：</td>
-                            <td colspan="2">
-                                <select name="area" id="area">
-                                <option value="13">耐耐网一号库</option>
-                                
-                                </select>
-                            </td>
-                              <tr>
-                            <td>是否投保：</td>
-                            <td colspan="2">
-                                <input type ="radio" name ="safe" checked="checked" style="width:auto;height:auto;">投保
-                                    <input type ="radio" name ="safe" style="width:auto;height:auto;"> 不投保
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>产品描述：</td>
-                            <td colspan="2">
-                                <textarea></textarea>
-                            </td>
-                        </tr>
-
+                        
                         <tr>
                             <td></td>
                             <td colspan="2" class="btn">
-                                <a href="offer_success.html" onclick="checkform()">提交审核</a> 
-                                <span class="color">审核将收取N元/条的人工费用，请仔细填写</span>
+                                <a href="offer_success.html" onclick="checkform()" class="for_cangdan">申请仓单</a> 
+                                <!-- <span class="color">审核将收取N元/条的人工费用，请仔细填写</span> -->
                                 
                             </td>
                         </tr>
