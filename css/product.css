@@ -60,6 +60,7 @@ text-align: right;
     padding: 0px 9px 0px 90px;
     height: auto;
     overflow: hidden;
+    width: 86%;
 }
 .pro_classify .class_jy ul li{
 	float: left;

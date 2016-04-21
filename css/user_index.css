@@ -484,6 +484,17 @@ border: 1px solid;
 .lx_gg{
   padding: 10px;
 }
+.lx_gg.setreapt{
+    padding: 0px;
+    text-align: left;
+    background: #FFF0F0 none repeat scroll 0% 0%;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+}
 .class_jy {
     padding: 0px 15px;
     border-bottom: 1px solid #e3e3e3;
@@ -498,7 +509,7 @@ border: 1px solid;
 .class_jy ul {
     width: 92%;
     height: 30px;
-    line-height: 30px;
+    line-height: 30px;word-wrap: break-word;
 }
 .class_jy ul li {
     float: left;
@@ -851,7 +862,7 @@ line-height: 25px;
     border-width: 0px;
     height: 15px;
     position: absolute;
-    top: 390px;
+    top: 320px;
     left: 125px;
     line-height: 15px;
     cursor: default;
@@ -1141,7 +1152,7 @@ padding: 8px 15px;
   background: #f6f7f9;
 
 }
-.center_tabl  .table2  .cg_fb{
+.center_tabl  .table2  .cg_fb,.center_tabl .btn a{
   background:#d61515;
   color: #fff;
   border: 1px solid #d61515;
@@ -1241,7 +1252,7 @@ color: #CD2121;
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(94, 110, 141, 0.9);
+    background-color: rgba(171, 171, 171, 0.4);
 }
 
 .cd-popup-container{
@@ -1249,7 +1260,7 @@ color: #CD2121;
   width: 90%;
   max-width: 400px;
   max-height: 488px;
-  margin: 4em auto;
+  margin: 15% auto;
   background: #FFF;
   -webkit-transform: translateY(-40px);
   -moz-transform: translateY(-40px);
@@ -1303,7 +1314,7 @@ color: #CD2121;
   font-size: 15px;
 }
 .cd-popup p .font-css{
-    color: #562BF2;
+    color: #c81623;
     padding: 0 10px;
 }
 .cd-popup .cd_an{
@@ -1311,14 +1322,14 @@ color: #CD2121;
   text-align: center;
 }
 .cd-popup .cd_an .cd_yes{
-  background: #340DC3;
+  background: #c81623;
 padding: 8px 25px;
 color: #fff;
 margin: 0 10px;
 text-decoration: none;
 }
 .cd-popup .cd_an .cd_yes:hover{
-  background: #3D0EEC;
+  background: #c81623;
 }
 .cd-popup .cd_an .cd_no{
 background: #DFDEE4;
@@ -1326,6 +1337,7 @@ padding: 8px 25px;
 margin: 0 10px;
 }
 /*弹出窗css end*/
+
 /*修改手机号，密码进度css*/
 .jd_img{
   text-align: center;
@@ -1402,3 +1414,49 @@ border: 1px solid #c0c0c0;
 }
 /*去掉右侧广告 表格样式(合同列表)end*/
 
+.pro_classify .class_jy ul .a_choose a {
+    display: block;
+    color: #c81623;
+}
+.for_storage 
+{
+  background:#d61515;
+  color: #fff;
+  border: 1px solid #d61515;
+  font-size: 20px;
+  padding: 8px 30px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+
+a.for_storage:hover,a.for_storage:active{
+  text-decoration:none;
+}
+.list_names span {
+    font-size: 13px;
+    font-family: 宋体;
+    color: rgb(102, 102, 102);
+    margin-right: 18px;
+}
+.list_names{
+    padding: 5px 5px 8px 19px;
+    margin-left: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 330px;
+}
+.shezheig{height: 25px; margin-right: 20px;}
+input.Wdate.addw{width: 200px;}
+.for_cangdan{
+  background:#d61515;
+  color: #fff;
+  border: 1px solid #d61515;
+  font-size: 20px;
+  padding: 8px 30px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+a.for_cangdan:hover,a.for_cangdan:active{
+  text-decoration:none;
+}
