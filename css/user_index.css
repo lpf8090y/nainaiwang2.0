@@ -472,6 +472,17 @@ background: #027cff;
 .lx_gg{
   padding: 10px;
 }
+.lx_gg.setreapt{
+    padding: 0px;
+    text-align: left;
+    background: #FFF0F0 none repeat scroll 0% 0%;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+}
 .class_jy {
     padding: 0px 15px;
     border-bottom: 1px solid #e3e3e3;
