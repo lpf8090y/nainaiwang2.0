@@ -630,10 +630,10 @@ background: #A0A0A0;
 margin: 0 10px;
 color: #fff;
 }
-.chp_xx .xx_center tr{
-	height:30px;
-	line-height:30px;
-}
+/*.chp_xx .xx_center tr{
+	height:35px;
+	line-height:35px;
+}*/
 .chp_xx .xx_center table{
 	border-collapse: collapse;
 	text-align:center;
@@ -646,6 +646,9 @@ color: #fff;
 }
 .chp_xx .xx_center tr{
 	 border-bottom: 1px solid #CCC;
+}
+.chp_xx .xx_center tr td{
+  padding: 8px 0px;
 }
 .xx_center td .ck:hover{
   color: #CD0C0C;
@@ -1164,7 +1167,9 @@ padding: 8px 15px;
  .col2517EF{
   color: #2517EF;
  }
-
+.colA39F9F{
+  color: #A39F9F;
+}
  /*身份认证_企业认证*/
  .rz_title{
   height: 40px;
@@ -1351,9 +1356,10 @@ border: 0;
   padding: 8px 10px;
 border: 1px solid #c0c0c0;
 margin-left: 5px;
+background:#F4F1F1;
 }
 /*修改手机号，密码进度css end*/
-/*去掉右侧广告*/
+/*去掉右侧广告 表格样式(合同列表)*/
 .user_c_list{
   float: left;
   margin: 0 0px 10px 20px;
@@ -1361,4 +1367,38 @@ text-align: center;
 width: 81%;
 border: 1px solid #c0c0c0;
 }
+.xx_center table.sales_table{
+  margin-bottom: 10px;
+}
+.xx_center table.sales_table tr.title{
+  background: #F4F2F2;
+}
+.xx_center table.sales_table tr.first_tr th{
+  color: #000;
+}
+.xx_center table.sales_table tr td{
+   text-align: left;
+   padding: 8px 0; 
+}
+.xx_center table.sales_table tr td:first-child{
+  padding-left: 10px
+}
+.xx_center table.sales_table tr .ht_padd{
+  padding: 0 40px 0 20px
+}
+.xx_center table.sales_table tr .middle_img{
+  vertical-align: middle;
+}
+.xx_center table.sales_table tr td .div_height{
+  padding: 5px 10px;
+}
+.xx_center table.sales_table tr td .div_heights{
+  padding: 5px 0;
+  text-align: center;
+}
+.hr{
+  border-bottom: 1px solid #c0c0c0;
+  margin: 0 15%;
+}
+/*去掉右侧广告 表格样式(合同列表)end*/
 
