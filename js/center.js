@@ -89,5 +89,17 @@ jQuery(document).ready(function($){
         $('.cd-popup').removeClass('is-visible');
       }
     });
+  //报盘弹出信息end
+
+  //合同列表用户信息显示。
+      $(".Place").mouseover(function () {
+          $(this).find(".prompt-01").css("display", "block");
+      });
+      $(".Place").mouseout(function () {
+          $(this).find(".prompt-01").css("display", "none");
+      });
+      
+    //合同列表用户信息显示end
+        
 });
 

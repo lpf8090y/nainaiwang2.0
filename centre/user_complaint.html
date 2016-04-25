@@ -181,7 +181,7 @@
           <ul>
             <li class="let_nav_tit"><span class="line"></span><h3>交易管理</h3></li>
             <li class="btn1" id="btn1">
-              <a class="nav-first">销售管理<i class="icon-caret-down"></i></a>
+              <a class="nav-first">销售管理<i class="icon-caret-right"></i></a>
               <ul class="zj_zh" id="zj_zh3">
                 <li><a href="chp_list.html" >销售列表</a></li>
                 <li><a href="offer_index.html">发布产品</a></li>
@@ -205,7 +205,7 @@
               </ul>
 
             </li>
-            <li  class="btn1"><a class="nav-first">申诉管理<i class=" icon-caret-right"></i></a>
+            <li  class="btn1"><a class="nav-first">申诉管理<i class=" icon-caret-down"></i></a>
                   <ul class="zj_zh" id="zj_zh1">
                     <li><a class="cur" href="user_complaint.html">合同申诉</a></li>
                     <li><a href="user_complaint.html">提货申诉</a></li>
@@ -217,79 +217,124 @@
       <!--end左侧导航-->  
 			<!--end左侧导航-->	
 			<!--start中间内容-->	
-			<div class="user_c">
+			<div class="user_c_list">
 				<div class="user_zhxi">
 					<div class="zhxi_tit add">
 						<p><a>交易管理</a>><a>订单管理</a></p>
+
 						<p class="backg_red">我要申诉</p>
 					</div>
-					
-                 <div class="plaint_com">
-                 	<form action="" method="post">
-                   <span>申诉原因<i>*</i>：</span>
-                         <div class="nav_plaint" id="nav_plaint">
-                             <p class="set_plaint">请选择申诉原因</p>
-                            <ul class="new_plaint">
-                   		        <li>卖家发错货</li>
-                   		        <li>假冒品牌</li>
-                   		       <li>不喜欢</li>
-                   		       <li>做工瑕疵问题</li>
-                   		       <li>材质问题</li>
-                   		       <li>收到商品少件/破损等</li>
-                   		       <li>尺寸问题</li>
-                   		       <li>其他</li>
-                           	</ul>
-                          </div>  
-                  
-                  <span>申诉金额<i>*</i>： <input class="amount" type="text" value="1000">元</span>
+					<div class="chp_xx">
+						<div class="xx_center">
+							<table class="sales_table" border="0"  cellpadding="0" cellspacing="0">
+								<tr class="first_tr">
+								  <th>合同编号</th>
+								  <th width="180px">产品名</th>
+								  <th>价格</th>
+								  <th>规格/数量</td>
+								  <th>用户</th>
+								  <th>买/卖方联系方式</th>
+								</tr>
+								<tr>
+								  <td colspan="6">&nbsp;</td>
+								</tr>
+								<tr class="title">
+								  <td colspan="6">
+									单号:<span class="col2517EF">140106199010</span>
+									<span class="colaa0707 ht_padd">合同审核中</span>
+									<span><img class="middle_img" src="../images/center/ico_cj.jpg">生产厂家：北京东峰兴达耐火材料有线公司</span>
+									<span class="ht_padd">
+									  <img class="middle_img" src="../images/center/ico_kf.png">  客服
+									</span>
+								  </td>
+								  
+								  <td colspan="3"></td>
+								</tr>
+								<tr>
+									<td><div class="div_heights">H2343424</div></td>
+									<td>
+										<div class="div_heights">
+										<img class="middle_img" src="../images/banner/551b861eNe1c401dc.jpg" align="left" width="50px" style="position:relative;left:20px"/>
+										 <p style="line-height:50px">耐火材料</p>
+										</div>
+									</td>
+									<td>
+										<div class="div_heights colaa0707">合同总额：￥100.00</div>
+										<div class="div_heights colA39F9F">等级折扣：￥10.00</div>
+										<div class="hr"></div>
+										<div class="div_heights">保证金支付（30%）</div>
 
-                   <span class="explain">申诉说明：<p>（0/200字）</p></span> 
-                   <textarea name="" cols="" rows=""></textarea>
+									</td>
+									<td>
+										<div class="div_heights">规格：230*114*65</div>
+										<div class="div_heights">材质：高铝质</div>
+										<div class="div_heights">数量：100吨</div>
+									</td>
+									<td>
+										<div class="div_heights Place"><span>李三</span> 
+											<i class="icon-user-md "></i>
+											<div class="prompt-01 prompt-02" style="">
+		                        				<div class="pc">
+		                           				 <strong>李三</strong>
+	                                	          <p>山西阳泉市郊区开发区义白路耐材质量检验中心</p>
+	                                	          <p>187****3539</p>
+		                        				</div>
+		                       					 <div class="p-arrow p-arrow-left"></div>
+		                    				</div>
+										</div>
+										
+									</td>
+									<td>
+										<div class="div_heights"><a><b>187****3539<b></a></div>
+									</td>
+								</tr>
+							</table>
+							<div class="plaint_com">
+								<form action="" method="post">
+							   <span>申诉原因<i>*</i>：</span>
+									 <div class="nav_plaint" id="nav_plaint">
+										 <p class="set_plaint">请选择申诉原因</p>
+										<ul class="new_plaint">
+											<li>卖家发错货</li>
+											<li>假冒品牌</li>
+										   <li>不喜欢</li>
+										   <li>做工瑕疵问题</li>
+										   <li>材质问题</li>
+										   <li>收到商品少件/破损等</li>
+										   <li>尺寸问题</li>
+										   <li>其他</li>
+										</ul>
+									  </div>  
+							  
+							  <span>申诉金额<i>*</i>： <input class="amount" type="text" value="1000">元</span>
 
-                        
-                  <span class="upload_img">上传凭证：</span>  
-                     <div class="choose_img">
-                       <input type="file"  name="file" id="doc" multiple onChange="javascript:setImagePreviews();" accept="image/*" />
-                       <div id="dd" class="upload_box"></div>
-                      </div>
-                  <input class="uplod_botn" name="upload" type="image" value="" src="../images/icon/upload_03.jpg">
+							   <span class="explain">申诉说明：<p>（0/200字）</p></span> 
+							   <textarea name="" cols="" rows=""></textarea>
 
-                    <div class="subclear"><input name="" type="submit" value="提交申请">
-                    	<a href="#">取消并返回</a>
-                    	</div>
-                       	 
-                 	
+									
+							  <span class="upload_img">上传凭证：</span>  
+								 <div class="choose_img">
+								   <input type="file"  name="file" id="doc" multiple onChange="javascript:setImagePreviews();" accept="image/*" />
+								   <div id="dd" class="upload_box"></div>
+								  </div>
+							  <input class="uplod_botn" name="upload" type="image" value="" src="../images/icon/upload_03.jpg">
 
-
-
-
-                 	</form>
+								<div class="subclear"><input name="" type="submit" value="提交申请">
+									<a href="#">取消并返回</a>
+									</div>
+									 
+								
 
 
 
-                 </div>
 
-
-
-				</div>
-			</div>
-			<!--end中间内容-->	
-			<!--start右侧广告-->			
-			<div class="user_r">
-				<div class="wrap_con">
-					<div class="tit clearfix">
-						<h3>公告</h3>
-					</div>
-					<div class="con">
-						<div class="con_medal clearfix">
-							<ul>
-								<li><a>暂无勋章</a></li>
-							</ul>
+								</form>
+							 </div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--end右侧广告-->
+			<!--end中间内容-->	
 		</div>
 	</div>
 </body>

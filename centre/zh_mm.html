@@ -10,6 +10,9 @@
   <script type="text/javascript" src="../js/regular.js"></script>
   <script src="../js/center.js" type="text/javascript"></script>
   <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!--   短信验证js -->
+  <script type="text/javascript" src="../js/yzm/mobileyz.js"></script>
+<!-- end短信验证js -->
    <!-- 头部控制 -->
   <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
   <script src="../js/topnav20141027.js" type="text/javascript"></script>
@@ -190,7 +193,7 @@
                         </li>
                         
                         <li><a class="nav-first" href="user_zz.html">子账户管理</a></li>
-                        <li><a class="nav-first" href="user_fp.html">开盘信息管理</a></li>
+                        <li><a class="nav-first" href="user_fp.html">开票信息管理</a></li>
                     </ul>
 				</div>
 			</div>
@@ -216,7 +219,7 @@
                             </div>
                             <div class="zhxi_con">
                                 <span class="con_tit"><i></i>短信验证码：</span>
-                                <span><input type="text" id="phone" class="infos text" placeholder="请输入验证码"></span><a href="javascript:;" class="send1" onclick="sends.send();">免费获取短信验证码</a>
+                                <span><input type="text" id="phone" class="infos text" placeholder="请输入验证码"/></span><input class="send1" id="btnSendCode" type="button" value="免费获取短信验证码" onClick="sendMessage()" />
                             </div>
 							<div class="zhxi_con">
 								<span class="con_tit"><i>*</i>原始密码：</span>
