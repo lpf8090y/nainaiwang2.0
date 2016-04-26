@@ -9,6 +9,8 @@
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="../js/user_index.js"></script>
   <script language="javascript" type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+  <script src="../js/center.js" type="text/javascript"></script>
+  <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <!-- 头部控制 -->
   <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
   <script src="../js/topnav20141027.js" type="text/javascript"></script>
@@ -179,16 +181,15 @@
 				<div class="left_navigation">
 					<ul>
 						<li class="let_nav_tit"><h3>资金管理</h3></li>
-						<li><a class="nav-first" href="user_zj.html">开户信息管理</a></li>
+						<li><a href="user_zj.html" class="nav-first">开户信息管理</a></li>
 						<li class="btn1">
-							<a class="nav-first"><i class="icon-caret-right"></i>资金账户管理</a>
-							<ul class="zj_zh">								
-							<li><a href="zj_dl.html" class="cur">市场代理账户</a></li>
-							<li><a href="zj_qy.html">银行签约账户</a></li>
-							<li><a href="zj_pj.html">票据账户管理</a></li>
-						</ul>
+							<a class="nav-first">资金账户管理<i class="icon-caret-down"></i></a>
+							<ul class="zj_zh" id="zj_zh1">								
+								<li><a class="cur" href="zj_dl.html">市场代理账户</a></li>
+								<li><a href="zj_qy.html">银行签约账户</a></li>
+								<li><a href="zj_pj.html">票据账户管理</a></li>
+							</ul>
 						</li>
-						
 					</ul>
 				</div>
 			</div>
@@ -203,8 +204,8 @@
 					<div>
 						<div class="zj_gl">
 							<div class="zj_l">
-								<a class="zj_a cz">充值</a>
-								<a class="zj_a tx">提现</a>	
+								<a href="zj_cz.html" class="zj_a cz">充值</a>
+								<a href="zj_tx.html" class="zj_a tx">提现</a>	
 								<p class="re_t">结算账号资金总额</p>
 								<h1 class="rental">￥0.00</h1>
 								<p class="state">该账户被挂起</p>
@@ -243,15 +244,15 @@
                     </div>
 					<div class="jy_xq">
                     <table cellpadding="0" cellspacing="0">
-				                        <tr>
-				                        	<th>序号</th>
-				                   		<th>交易时间</th>
-				                            <th>收支金额</th>
-				                            <th>账户余额</th>
-				                            <th>交易方</th>
-				                            <th>摘要备注</th>
-				                            <th>状态</th>
-				                        </tr>
+				        <tr>
+				            <th>序号</th>
+				            <th>交易时间</th>
+				            <th>收支金额</th>
+				            <th>账户余额</th>
+				            <th>交易方</th>
+				            <th>摘要备注</th>
+				            <th>状态</th>
+				        </tr>
 						<tr>
 							<td>0913809830</td>
 							<td>2016-01-25 <span style="color:#666;">16:44</span></td>
@@ -265,109 +266,6 @@
 					</div>
 				</form>
 				</div>
-				<!--start代理账户充值-->
-				<div class="user_pay">
-				<form>
-					<div class="zhxi_tit">
-						<p><a>资金管理</a>><a>代理账户管理</a>><a>充值</a>
-						</p>
-					</div>
-					<div class="pay_cot">
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>账户余额：</span>
-							<span>￥0.00</span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>姓名：</span>
-							<span><input class="text" type="text"/></span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>银行卡号：</span>
-							<span><input class="text" type="text"/></span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>充值金额：</span>
-							<span><input class="text" type="text"/></span>
-						</div>
-						<div class="zhxi_con">
-							<span><input class="submit" type="submit" value="充值"/></span>
-						</div>
-					</div>
-				</form>
-				</div>
-				<!--start代理账户体现-->
-				<div class="user_pay_tx">
-				<form>
-					<div class="zhxi_tit">
-						<p><a>资金管理</a>><a>代理账户管理</a>><a>提现</a>
-						</p>
-					</div>
-					<div class="pay_cot">
-						
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>姓名：</span>
-							<span><input class="text" type="text"/></span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>银行卡号：</span>
-							<span><input class="text" type="text"/></span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>提现金额：</span>
-							<span><input class="text" type="text"/></span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>到帐时间：</span>
-							<span>2个工作日内</span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>提现说明：</span>
-							<span><input class="text" type="text"/></span>
-						</div>
-						
-						<div class="zhxi_con">
-							<span><input class="submit" type="submit" value="提现"/></span>
-						</div>
-					</div>
-				</form>
-				</div>
-				<!--start详情、备注-->
-				<div class="user_xqbz">
-				<form>
-					<div class="zhxi_tit">
-						<p><a>资金管理</a>><a>代理账户管理</a>><a>详情</a>
-						</p>
-					</div>
-					<div>
-						<div class="zhxi_con">
-							<span class="con_tit">交易时间：</span>
-							<span>2016-01-25 10:51:04</span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit">交易内容：</span>
-							<span> xxx公司购买xxx公司产品200件，总价为￥1900</span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit">交易方式：</span>
-							<span>银行卡号为0987697978989支付￥1900</span>
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit">交易状态：</span>
-							<span>待发货</span>
-						</div>
-					</div>
-					<div class="user_bz">
-						<span style="position: relative;top: -50px;">备注：</span>
-						<textarea style="width:90%;height:60px">
-							
-						</textarea>
-						<div class="zhxi_con">
-							<span><input class="submit" type="submit" value="保存"/></span>
-						</div>
-					</div>
-				</form>
-				</div>
-				<!--end详情、备注-->
 			</div>
 			
 	<!--end中间内容-->		
