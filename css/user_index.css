@@ -188,7 +188,14 @@ text-align: left;
 .user_nrz .nrz_dd table.hy_info td{
   padding: 10px 10px;
 }
-
+.dj li{ 
+  float: left;     
+  line-height: 25px; 
+}
+.dj:after{
+  content: "";
+  clear:both;
+}
 .user_nrz .nrz_dd table.hy_info td .font-size{
   font-size: 30px;
 }
