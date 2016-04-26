@@ -186,13 +186,9 @@ background: #027cff;
 text-align: left;
 }
 .user_nrz .nrz_dd table.hy_info td{
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
-.user_nrz .nrz_dd table.hy_info td .rz_role{
-  height: 50px;
-font-size: 16px;
-line-height: 25px;
-}
+
 .user_nrz .nrz_dd table.hy_info td .font-size{
   font-size: 30px;
 }
@@ -200,13 +196,12 @@ line-height: 25px;
   padding-top: 10px;
 }
 .user_nrz .nrz_dd table.hy_info td .icon_rz span{
-  line-height: 25px;
-padding: 0px 3px;
+  line-height: 30px;
+  padding: 0px 3px;
+  font-size: 15px;
 }
-.user_nrz .nrz_dd table.hy_info td .rz_an_index{
-  padding-left: 15%;
-}
-/*首页中间css*/
+
+/*首页中间css end*/
 .user_nrz .nrz_tit .gengduo{
 	float:right;
 }
@@ -343,11 +338,11 @@ border: 1px solid;
 }
 .zj_gl  .zj_l{
     width: 331px;
-    border-right: 1px solid #ECE8E8;
+    border-right: 1px solid #D2CACA;
     padding: 25px 10px;
 }
 .zj_gl .zj_r{
-  border-left: 1px solid #D2CACA;
+  /*border-left: 1px solid #D2CACA;*/
   margin-left: 0px;
 }
 .zj_a{
@@ -685,7 +680,7 @@ color: #fff;
 }
 .chp_xx .xx_center tr:first-child{
     font-weight: bold;
-    background: #EEE none repeat scroll 0% 0%;
+    background: #F9F7F7;
    
     color: #666;
 }
