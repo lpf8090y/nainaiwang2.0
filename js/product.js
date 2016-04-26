@@ -52,7 +52,7 @@ jQuery(document).ready(function($){
         }
     });
     /*订单弹出层 end*/
-       /*合同弹出层*/
+       /*合同弹出层
         //open popup
     $('.pro_ht').on('click', function(event){
         event.preventDefault();
