@@ -1522,3 +1522,7 @@ a.for_cangdan:hover,a.for_cangdan:active{
   text-decoration:none;
 }
 
+.user_c .user_zhxi .zhxi_con .con_title{
+  margin-left: 100px;
+  color: red;
+}
