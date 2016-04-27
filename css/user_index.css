@@ -115,15 +115,18 @@ img{border:0px;}
   color: #E20E22!important;
 }
 .user_b .user_l .per_collection {
-padding: 6px 0 6px 25px;
+padding: 6px 0 6px 5px;
+text-align: center;
 border-top: 1px solid #d2d2d2;
 
 }
 .user_b .user_l .per_collection p.collection_padding{
-  height: 20px;
-  line-height: 20px;
+  padding: 5px 0px;
 }
-
+.per_font{
+  font-size: 15px;
+  color: #0ABA20;
+}
 
 .wrap_con .tit {
 padding: 5px 0;
@@ -199,9 +202,7 @@ text-align: left;
 .user_nrz .nrz_dd table.hy_info td .font-size{
   font-size: 30px;
 }
-.user_nrz .nrz_dd table.hy_info td .icon_rz{
-  padding-top: 10px;
-}
+
 .user_nrz .nrz_dd table.hy_info td .icon_rz span{
   line-height: 30px;
   padding: 0px 3px;
@@ -283,6 +284,10 @@ text-align: left;
     text-align: right;
     float: left;
 	line-height:30px;
+}
+.zhxi_con span.zhxi_addre select{
+  width: 80px;
+  height: 30px;
 }
 .zhxi_con .text{
 	height: 25px;
