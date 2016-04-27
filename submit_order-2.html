@@ -427,23 +427,17 @@ body{_padding-top:30px;}
                                     <td width="150px">手续费</td>
                                   </tr>
                                   
-                                  
-                                  
                                   <tr>
                                     <td>建材市场/五金产品/垫圈、挡圈</td>
                                  <!--   <td></td> --> 
                                     <td>多方位仓库</td>
                                     <td>
-                                        
-                                        
                                             <label class="" id="d_price_1">
                                                 5.00 
                                             </label> 元/吨
                                          
-                                    
                                     </td>
                                     <td>
-                                
                                     --
                                 </td>
                                     <td>10
@@ -455,7 +449,6 @@ body{_padding-top:30px;}
                                         50.00
                                     </label>
                                 
-                                
                                 </label></td>
                                 <td><label class="">
                                 
@@ -464,12 +457,9 @@ body{_padding-top:30px;}
                                         0.00
                                     </label>
                                 
-                                
                                 </label></td>
                                   </tr>
                                   
-                                  
-                                   
                                 </tbody></table>
                         </td>
                       </tr>
@@ -498,11 +488,11 @@ body{_padding-top:30px;}
                    <div class="yListr">
                        <form>
                            <ul>
-                               <li><em class="yListrclickem">全款支付<i></i></em> <em>保证金支付<i></i></em></li>
+                               <li><em class="yListrclickem quank">全款支付<i></i></em> <em class="baozj">保证金支付<i></i></em></li>
                               
                            </ul>
                            <ul>
-                               <li><em class="yListrclickem">线上支付<i></i></em> <em>线下支付<i></i></em>  </li>
+                               <li><em class="yListrclickem xians">线上支付<i></i></em> <em class="xianx">线下支付<i></i></em>  </li>
                                
                            </ul>
                         
@@ -516,20 +506,231 @@ body{_padding-top:30px;}
                  })
              </script>
             
-          
+        <h5 class="jiesuandd">订单结算</h5>
+
+             <div class="bank_zhangh" style="display:none;">   
+           <div id="xxzf" class="" style="">
+
+                <table class="pay_tab" style="border-left: 0px solid #ccc; border-right: 0px solid #ccc; border-top: 0px solid #ccc;" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <th class="tc"> 账户名称 </th>
+                    <th class="tc" colspan="2"> 开户银行 </th>
+                    <th class="tc"> 银行账号 </th>
+                </tr>
+                <tr>
+                    <td class="tc">耐耐云商科技有限公司</td>
+                    <td class="tc vm"><img src="/rtp/plugins/core/stand/images/pinganyh.jpg" class="vm"></td>
+                    <td class="tc">平安银行上海金沙江支行</td>
+                    <td class="tc">11014773371002</td>
+                </tr>
+            </tbody></table>
+            </div>
+
+            <div class="htbh" style="border-left: 1px solid rgb(191, 191, 191); border-right: 1px solid rgb(191, 191, 191);" id="pz">
+                    <div class="fl">
+                       <label for="" class="ul_form_label w80 pr5"><span class="star_red">*</span><span id="inoutMoney">付款人银行</span></label>
+                       <input id="PAY_BANK" name="PAY_BANK" class="date_search_input230 pl5" onkeyup="if(this.value.length>30){this.value=this.value.substring(0,30);$.zd.alert(&quot;&quot;,&quot;长度必须小于30个字符！&quot;);}">
+                   </div>
+                   <div class="fl">
+                       <label for="" class="ul_form_label w80 pr5"><span class="star_red">*</span><span id="inoutMoney">付款单位</span></label>
+                       <input id="PAY_MAN" name="PAY_MAN" class="date_search_input230 pl5" value="" onkeyup="if(this.value.length>30){this.value=this.value.substring(0,30);$.zd.alert(&quot;&quot;,&quot;长度必须小于30个字符！&quot;);}"> 
+                   </div>
+                   <div class="fl">
+                       <label for="" class="ul_form_label w120 pr5"><span class="star_red">*</span><span id="inoutMoney">付款人银行账号</span></label>
+                       <input id="payNo" name="PAY_NO" class="date_search_input186 pl5" maxlength="30"> 
+                   </div>
+                </div>
+              
+               <div style="border-bottom: 1px solid #BFBFBF; border-left: 1px solid #BFBFBF; border-right: 1px solid #BFBFBF; height: 20px;"> </div>
+              </div> 
+
            <div class="zhif_type" >
-             <h5>订单结算</h5>
-           
-          <div class="js_show">市场代理账户 <span>+</span></div>
-          <div class="mar_cotent" style="display:none">yeagrkjwgfh</div>
-          <div class="js_show">银行签约账户 <span>+</span></div>
-          <div class="mar_cotent" style="display:none">yeagrkjwgfh</div>
-          <div class="js_show">票据账户管理 <span>+</span></div>
-          <div class="mar_cotent" style="display:none">yeagrkjwgfh</div>
-        
+                    <!-- 合并支付的总额提示数据  开始 -->
+                    <div class="tj_div">
+                        <table id="showMoneyArea" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody><tr>
+                                <td align="right" width="100">合并支付总金额：</td>
+                                <td align="right">
+                                    <span class="orange price02">￥</span><span class="orange" id="hb_zf_id">
+                                        50.00
+                                        </span>
+                                </td>
+                            </tr>
+                            
+                            <!-- 是否使用票据支付 -->
+                                
+                                <tr>
+                                    <td align="right">票据支付：<input id="zf_pj_money" value="0.00" type="hidden"></td>
+                                    <td align="right"><span class="orange price02">￥</span><span class="orange" id="pj_zf_id">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">票据余额支付：</td>
+                                    <td align="right"><span class="orange price02">￥</span><span class="orange" id="piao_zf_id">0.00</span></td>
+                                </tr>
+                                
+                            
+                            
+                            <tr>
+                                <td align="right">信用支付：</td>
+                                <td align="right"><span class="orange price02">￥</span><span class="orange" id="xy_zf_id">0.00</span></td>
+                            </tr>
+                            <tr>
+                                <td align="right">账户余额支付：</td>
+                                <td align="right"><span class="orange price02">￥</span><span class="orange" id="xj_zf_id">0.00</span></td>
+                            </tr>
+                            <tr>
+                                <td align="right">应付金额：<input id="yf_sy_money" value="50.00" type="hidden"></td>
+                                <td align="right"><span class="orange price02 fb">￥</span><span class="orange fb" id="yf_xs_sy">50.00</span></td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                   
+                    <div style="clear:both;"> </div>
+            <!-- 合并支付的总额提示数据  结束 -->
+             
+          <div class="total_three"> 
+              <div class="js_show">市场代理账户 <span>+</span></div>
+             
+                 <!--市场内容start  -->
+                  <div class="mar_cotent F1_div" style="display:none"> 
+                   <table border="0" width="100%" cellspacing="0" cellpadding="0" class="mt10" id="py_1">
+                                            <tbody><tr>
+                                                <td width="70px;" align="left"><span class="fb">本次使用</span></td>
+                                                <td width="200px;" class="pl5">
+                                                    
+                                                        <span class="orange price02">￥</span><span class="orange benciuse" hiddenid="977AY52">0.00</span>
+                                                    
+                                                </td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="" class="">
+                                                
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="7" style=""><div class="div_hr"> </div></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="7" style="">
+                                                    <div class="div_sy">账户余额：<span class="price02">￥</span>0.00</div>
+                                                        <input type="hidden" value="0.00" id="rmb_977AY52">
+
+                                                    <input type="hidden" id="type_977AY52" value="Y5">
+                                                    <input type="hidden" id="zf_type_977AY52" value="977|Y5|" class="input1">
+                                                    <input type="hidden" id="rmb_yky_977AY52" value="0.00" class="input1">
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <table border="0" width="100%" cellspacing="0" cellpadding="0" class="mt10" style="display: none;" id="py_2">
+                                            <tbody><tr>
+                                                <td width="320px">
+                                                    <span style="">本次使用票据余额支付</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="orange price02">￥</span><span class="orange" id="py_sy_money"></span>
+                                                </td>
+                                                <td width="151px;">&nbsp;</td>
+                                                <td colspan=""><a onclick="py_sy('py_qx','977AY52');" style="cursor: pointer; color:#4D4DFF;">取消使用</a></td>
+                                            </tr>                       
+                                        </tbody></table>
+                                        
+                                    </div>
+                 <!--市场内容end  -->
+              <div class="js_show">银行签约账户 <span>+</span></div>
+              
+              <!--银行签约start  -->
+              <div class="mar_cotent F1_div" style="display:none"> 
+                   <table border="0" width="100%" cellspacing="0" cellpadding="0" class="mt10" id="py_1">
+                                            <tbody><tr>
+                                                <td width="70px;" align="left"><span class="fb">本次使用</span></td>
+                                                <td width="200px;" class="pl5">
+                                                    
+                                                        <span class="orange price02">￥</span><span class="orange benciuse" hiddenid="977AY52">0.00</span>
+                                                    
+                                                </td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="" class="">
+                                                
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="7" style=""><div class="div_hr"> </div></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="7" style="">
+                                                    <div class="div_sy">账户余额：<span class="price02">￥</span>0.00</div>
+                                                        <input type="hidden" value="0.00" id="rmb_977AY52">
+
+                                                    <input type="hidden" id="type_977AY52" value="Y5">
+                                                    <input type="hidden" id="zf_type_977AY52" value="977|Y5|" class="input1">
+                                                    <input type="hidden" id="rmb_yky_977AY52" value="0.00" class="input1">
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <table border="0" width="100%" cellspacing="0" cellpadding="0" class="mt10" style="display: none;" id="py_2">
+                                            <tbody><tr>
+                                                <td width="320px">
+                                                    <span style="">本次使用票据余额支付</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="orange price02">￥</span><span class="orange" id="py_sy_money"></span>
+                                                </td>
+                                                <td width="151px;">&nbsp;</td>
+                                                <td colspan=""><a onclick="py_sy('py_qx','977AY52');" style="cursor: pointer; color:#4D4DFF;">取消使用</a></td>
+                                            </tr>                       
+                                        </tbody></table>
+                                        
+                                    </div>
+                 <!--银行签约end  -->
+              <div class="js_show">票据账户管理 <span>+</span></div>
+             
+              <!--票据账户管理 start  -->
+              <div class="mar_cotent F1_div" style="display:none"> 
+                   <table border="0" width="100%" cellspacing="0" cellpadding="0" class="mt10" id="py_1">
+                                            <tbody><tr>
+                                                <td width="70px;" align="left"><span class="fb">本次使用</span></td>
+                                                <td width="200px;" class="pl5">
+                                                    
+                                                        <span class="orange price02">￥</span><span class="orange benciuse" hiddenid="977AY52">0.00</span>
+                                                    
+                                                </td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="100px;">&nbsp;</td>
+                                                <td width="" class="">
+                                                
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="7" style=""><div class="div_hr"> </div></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="7" style="">
+                                                    <div class="div_sy">账户余额：<span class="price02">￥</span>0.00</div>
+                                                        <input type="hidden" value="0.00" id="rmb_977AY52">
+
+                                                    <input type="hidden" id="type_977AY52" value="Y5">
+                                                    <input type="hidden" id="zf_type_977AY52" value="977|Y5|" class="input1">
+                                                    <input type="hidden" id="rmb_yky_977AY52" value="0.00" class="input1">
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <table border="0" width="100%" cellspacing="0" cellpadding="0" class="mt10" style="display: none;" id="py_2">
+                                            <tbody><tr>
+                                                <td width="320px">
+                                                    <span style="">本次使用票据余额支付</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="orange price02">￥</span><span class="orange" id="py_sy_money"></span>
+                                                </td>
+                                                <td width="151px;">&nbsp;</td>
+                                                <td colspan=""><a onclick="py_sy('py_qx','977AY52');" style="cursor: pointer; color:#4D4DFF;">取消使用</a></td>
+                                            </tr>                       
+                                        </tbody></table>
+                                        
+                                    </div>
+                 <!--票据账户管理 end  -->
+          </div>
 
           <script type="text/javascript">
-            
+            $(function(){
             $('.js_show').click(function(){
                 if($(this).next('div').is(":hidden"))
                 {
@@ -541,6 +742,18 @@ body{_padding-top:30px;}
                     $(this).next('div').hide();
                     $(this).find('span').html('+');
                 }
+            });
+        
+          $(".xianx").click(function(){ 
+            $(".bank_zhangh").css('display','block')
+            $(".zhif_type").css('display','none') 
+             });
+
+          $(".xians").click(function(){ 
+            $(".bank_zhangh").css('display','none')
+            $(".zhif_type").css('display','block') 
+             });
+         
             })
           </script>
            

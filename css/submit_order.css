@@ -337,16 +337,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     clear: both;
     display: block;
     border: 1px solid rgb(181, 191, 180);
-    padding: 16px 25px 2px 12px;
+    padding: 35px 15px 29px 12px;
     bottom: 22px;
     height: auto;
     overflow: auto;
+    position: relative;
+    margin-top: 20px;
+    color: #666;
 }
-.zhif_type h5 {
-    color: #7B7070;
-    font-size: 12px;
-    line-height: 15px;
-    margin-bottom: 8px;
+h5.jiesuandd {
+    font-size: 13px;
+    color: #666;
+    font-weight: bold;
+    padding-left: 10px;
+    height: 38px;
+    clear: both;
+    line-height: 38px;
+    background-color: #eee;
+    margin-top: -8px;
+    border-top: 1px solid #BFBFBF;
+    border-left: 1px solid #BFBFBF;
+    border-right: 1px solid #BFBFBF;
+}
+ .pay_title {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    padding-left: 10px;
+    height: 40px;
+    clear: both;
+    line-height: 40px;
+    background-color: #eee;
+    margin-top: 20px;
+    border-top: 1px solid #BFBFBF;
+    border-left: 1px solid #BFBFBF;
+    border-right: 1px solid #BFBFBF;
 }
 .zhif_type ul li {
     float: left;
@@ -995,4 +1020,117 @@ table {
 }
 .mar_cotent{
     padding-left: 25px;
+}
+.pay_tab {
+    width: 100%;
+    height: auto;
+}
+.pay_tab th {
+    height: 40px;
+    font: bold 14px/40px "宋体";
+    background-color: #EEEEEE;
+    border: 1px solid #D5D5D5;
+    color: #000;
+}
+.pay_tab td {
+    border: 1px solid #D5D5D5;
+    color: #000;
+    border-collapse: collapse;
+    line-height: 35px;
+    color: #666666;
+    padding: 0 5px;
+}
+.tc {
+    text-align: center;
+}
+.vm {
+    vertical-align: middle;
+}
+.tc.vm img{
+    width: 139px;
+    height: 42px;
+}
+.htbh {
+    padding: 10px 0;
+    vertical-align: top;
+    font-family: tahoma, 宋体, 黑体, "Hei", sans-serif;
+    min-height: 28px;
+    clear: both;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.htbh .ul_form_label {
+    float: left;
+    min-height: 28px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+    color: #4D4D4D;
+}
+.pr5 {
+    padding-right: 5px;
+}
+.w80 {
+    width: 80px;
+}
+.pl5 {
+    padding-left: 5px;
+}
+.date_search_input230 {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px #EBF3FA;
+    font-size: 12px;
+    width: 230px;
+    height: 27px;
+    line-height: 27px;
+}
+.w120 {
+    width: 120px;
+}
+.date_search_input186 {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px #EBF3FA;
+    font-size: 12px;
+    width: 186px;
+    height: 27px;
+    line-height: 27px;
+}
+.F1_div {
+    border: 1px solid #b0ced9;
+    width: 60%;
+    background-color: #effaff;
+    margin-left: 23px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    position: relative;
+}
+.F1_div .div_sy {
+    margin-top: 5px;
+}
+.div_hr {
+    border-top: 1px dashed #b0ced9;
+    height: 1px;
+    margin-top: 8px;
+}
+.price02 {
+    font-family: "Microsoft Yahei";
+}
+.fb {
+    font-weight: bold;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.zhif_type .tj_div {
+    position: absolute;
+    z-index: 99999;
+    bottom: 10px;
+    right: 15px;
+    float: right;
 }
