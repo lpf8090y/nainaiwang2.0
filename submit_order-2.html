@@ -398,42 +398,151 @@ body{_padding-top:30px;}
             
                  
               
-             <hr color="#fff" size="2px" />
-             <form action="" method="post">
-                <span class="zhiffs"><b>支付方式</b><h3 class="addwidth"><input name="aa1" id="inputr1" type="radio" value="" /><span id="inputspan">在线支付</span> <a href="javascript:;"><img class="zhifb" id="curimg1" src="images/order/zhifb.jpg"  alt="支付宝" /></a>
-             <!--<a class="xuanzzf" href="javascript:;">选择其他支付方式<i></i></a>-->
              
-          <!--  -->   
-           <div class="xuanzzf">选择其他支付方式<i class="styleqita"></i></div> 
-           <div class="zhif_type" style="display:none">
-             <h5>第三方平台支付</h5>
-           
-           <ul> <li>
-                <input name="aa" type="radio" value="在线支付" />
-                <img src="images/order/zhifb.jpg" width="190" height="36" alt="支付宝" /> 
-                <p>快捷支付，轻松支付</p>             
-                
-                
-                
-                
-                
-                  </li>
-                  
-                  <li>
-                <input name="aa" type="radio" value="线下支付" />
-                <img src="images/order/xianx.jpg" width="190" height="36" alt="支付宝" /> 
-                <p>线下支付，安全有保障</p>             
-                
-                
-                
-                
-                
-                  </li>
+
+            <table class="detail_tab" border="1" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody><tr class="detail_title">
+                            <td colspan="9"><strong>订单详情</strong></td>
+                          </tr>
+                          <tr style="line-height: 30px;">
+                            <td style="background-color: #F7F7F7;" width="100px">订单号</td>
+                            <td colspan="2" width="230px">DBBD26014</td>
+                            <td style="background-color: #F7F7F7;" width="100px">订单日期</td>
+                            <td colspan="2" width="230px">2016-04-26 16:54:28</td>
+                            <td style="background-color: #F7F7F7;" width="100px">过期时间</td>
+                            <td colspan="2" style="color: red;" width="230px"><span id="countDown3085">剩余58分12秒</span></td>
+                          </tr>
+                          <tr>
+                            <td style="background-color: #F7F7F7; padding-top: 5px;" valign="top" width="100px">商品信息</td>
+                            <td colspan="8" style="padding-left: 0px;">
+                                <table style="line-height: 30px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody><tr style="border-bottom:1px dashed #BFBFBF;">
+                                    <td width="180px">品名</td>
+                                    <!-- <td width="130px">生产厂家</td> -->
+                                    <td width="180px">仓库</td>
+                                    <td width="120px">单价</td>
+                                    <td width="100px">数量</td>
+                                    <td width="110px">重量</td>
+                                    <td width="150px">小计</td>
+                                    <td width="150px">手续费</td>
+                                  </tr>
+                                  
+                                  
+                                  
+                                  <tr>
+                                    <td>建材市场/五金产品/垫圈、挡圈</td>
+                                 <!--   <td></td> --> 
+                                    <td>多方位仓库</td>
+                                    <td>
+                                        
+                                        
+                                            <label class="" id="d_price_1">
+                                                5.00 
+                                            </label> 元/吨
+                                         
+                                    
+                                    </td>
+                                    <td>
+                                
+                                    --
+                                </td>
+                                    <td>10
+                                    吨</td>
+                                    <td><label class="">
+                                
+                                    <label class="price02">￥</label>
+                                    <label class="" id="d_sum_money_1">
+                                        50.00
+                                    </label>
+                                
+                                
+                                </label></td>
+                                <td><label class="">
+                                
+                                    <label class="price02">￥</label>
+                                    <label class="" id="d_sum_comm_1">
+                                        0.00
+                                    </label>
+                                
+                                
+                                </label></td>
+                                  </tr>
+                                  
+                                  
+                                   
+                                </tbody></table>
+                        </td>
+                      </tr>
+                      <tr style="line-height: 35px;">
+                        <td style="background-color: #F7F7F7;" width="100px">合同</td>
+                        <td colspan="5" width=""><a href="contract.html" style="color:blue;">合同预览</a></td>
+                        <td style="background-color: #F7F7F7;" width="100px">合计金额</td>
+                        <td colspan="2" width="">
+                            
+                                <span class="orange price02" style="font-size:18px; text-decoration: none; list-style: none;">￥</span>
+                                <span class="orange" style="font-size:18px; text-decoration: none; list-style: none;" id="b_o_q">
+                                    50.00
+                                </span>
+                                 
+                                
+                        </td>
+                      </tr>
+                    </tbody></table>
+
+
+        
+
+             <form action="" method="post">
+                <span class="zhiffs"><b>支付方式</b><h3 class="addwidth">
+
+                   <div class="yListr">
+                       <form>
+                           <ul>
+                               <li><em class="yListrclickem">全款支付<i></i></em> <em>保证金支付<i></i></em></li>
+                              
+                           </ul>
+                           <ul>
+                               <li><em class="yListrclickem">线上支付<i></i></em> <em>线下支付<i></i></em>  </li>
+                               
+                           </ul>
+                        
+                       </form>
+                   </div> 
+             <script type="text/javascript">
+                 $(function() {
+                     $(".yListr ul li em").click(function() {
+                         $(this).addClass("yListrclickem").siblings().removeClass("yListrclickem");
+                     })
+                 })
+             </script>
+            
           
-          
+           <div class="zhif_type" >
+             <h5>订单结算</h5>
            
-           
-           </ul>
+          <div class="js_show">市场代理账户 <span>+</span></div>
+          <div class="mar_cotent" style="display:none">yeagrkjwgfh</div>
+          <div class="js_show">银行签约账户 <span>+</span></div>
+          <div class="mar_cotent" style="display:none">yeagrkjwgfh</div>
+          <div class="js_show">票据账户管理 <span>+</span></div>
+          <div class="mar_cotent" style="display:none">yeagrkjwgfh</div>
+        
+
+          <script type="text/javascript">
+            
+            $('.js_show').click(function(){
+                if($(this).next('div').is(":hidden"))
+                {
+                    $(this).next('div').show();
+                    $(this).find('span').html('-');
+                }
+                else
+                {
+                    $(this).next('div').hide();
+                    $(this).find('span').html('+');
+                }
+            })
+          </script>
            
            
            
@@ -441,26 +550,7 @@ body{_padding-top:30px;}
            
                  </div>
 
-          <script type="text/javascript">
-	        $(document).ready(function(){
-	         $('.xuanzzf').click(function(){
-		     if($(this).next('div').is(":hidden"))
-		       {
-			 $(this).next('div').show();
-			
-		       }
-		    else
-		       {
-			 $(this).next('div').hide();
-			
-		       }
-		
-	        $("i").toggleClass("qitastyle")
-			$("h3").toggleClass("add_width")		
-
-	      });
-	   });
-	
+         
            </script>
   
              

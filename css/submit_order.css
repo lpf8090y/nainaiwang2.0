@@ -322,7 +322,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-size: 12px;
     font-weight: normal;
     color: #333333;
-    height: 40px;
+   
     line-height: 40px;
 }
 .add_width{
@@ -334,10 +334,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-right: 3px;
 }
 .zhif_type {
+    clear: both;
     display: block;
     border: 1px solid rgb(181, 191, 180);
-    padding: 16px 25px 2px 25px;
-    position: relative;
+    padding: 16px 25px 2px 12px;
     bottom: 22px;
     height: auto;
     overflow: auto;
@@ -346,7 +346,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: #7B7070;
     font-size: 12px;
     line-height: 15px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .zhif_type ul li {
     float: left;
@@ -855,3 +855,144 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .deal_succeed .botons_box a:hover{text-decoration: none;}
 .page_width .margin_bottom{ margin-bottom: 200px;}
+.detail_title {
+    font-size: 14px;
+    color: #666;
+    background-color: #eee;
+    line-height: 40px;
+    padding-left: 10px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.detail_tab td {
+    padding-left: 10px;
+    color: #666;
+    /*border: 1px solid #BFBFBF;*/
+}
+.detail_tab {
+    border: 1px solid #BFBFBF;
+        margin: 12px auto;
+}                         
+.orange {
+    color: #f38201;
+    font-family: "Microsoft Yahei";
+}
+.price02 {
+    font-family: "Microsoft Yahei";
+}
+
+.yListr {
+    overflow: hidden;
+    font-family: "微软雅黑";
+    margin:0 auto;
+}
+
+.yListr ul {
+    clear: both;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+}
+
+.yListr ul li {
+    height: 36px;
+    margin-bottom: 8px;
+    float: left;
+}
+
+.yListr ul li span {
+    color: #000000;
+    font-size: 14px;
+    line-height: 36px;
+    display: inline-block;
+    width: 42px;
+    padding-left: 4px;
+}
+
+.yListr ul li em {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #666666;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 10px;
+    font-style: normal;
+    border: 1px solid #dcdcdc;
+    line-height: 32px;
+    height: 32px;
+     width: 100px;
+    text-align: center;
+}
+
+.yListr ul li em.yListrclickem {
+    line-height: 30px;
+    border: 2px solid #c81624;
+    height: 30px;
+    position: relative;
+    padding: 0 9px;
+    width: 100px;
+    text-align: center;
+}
+
+.yListr ul li em.yListrclickem i {
+    display: block;
+    width: 15px;
+    height: 14px;
+    background: url(../images/order/righbt.png) no-repeat 0 0; 
+    right: -1px;
+    bottom: -1px;
+    position: absolute;
+}
+
+.yListr .colorp00 {
+    color: #333333;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.yListr .colorp00 span {
+    color: #ed610c;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.yListr .colorp00 em {
+    font-style: normal;
+}
+
+.yListr form input, .yListr form select {
+    outline: none;
+    border: 1px solid #dcdcdc;
+    width: 86px;
+    height: 34px;
+    font-size: 14px;
+    color: #333333;
+    padding-left: 8px;
+}
+
+.yListr form select {
+    height: 36px;
+}
+
+.yListr form .YImmediatelyininstallment {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    width: 332px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 3px;
+    background: #e9630a;
+    margin-top: 42px;
+}
+.js_show{
+    color: blue;
+    line-height: 25px;
+    padding-left: 25px;
+    width: 90px;
+}
+.mar_cotent{
+    padding-left: 25px;
+}
