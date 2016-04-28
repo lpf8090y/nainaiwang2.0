@@ -203,15 +203,114 @@
 						</p>
 					</div>
 					<div class="pay_cot">
-						<div class="zhxi_con">
+						<div class="zhxi_con font_set">
 							<span class="con_tit">账户余额：</span>
-							<span>￥0.00</span>
+							<span><i>￥</i><i class="bold">10.00</i></span>
 						</div>
-						<div class="zhxi_con">
+						<div class="zhxi_con font_set">
 							<span class="con_tit">充值金额：</span>
-							<span><input class="text" type="text"/></span>
+							<span><input class="text potwt" type="text"/>元</span>
 						</div>
-						<div class="zhxi_con">
+		<!--TAB切换start  -->
+            <div class="tabs_total">
+
+                <div class="tabPanel">
+            		<ul>
+            			<li class="hit">支付宝支付</li>
+            			<li>银行在线支付</li>
+            			<li>线下支付</li>
+            		</ul>
+            		<div class="panes">
+            			<div class="pane" style="display:block;">
+            				<div class="zhxi_con">
+            					<span class="con_tit">充值方式一：</span>
+            					<span>支付宝</span>
+            				</div>
+            				<div class="zhxi_con">
+            					<span class="con_tit"><i></i></span>
+            					<label><input name="zfb" type="radio" value="" /> 
+            						<img src="../images/center/zhifu.jpg">
+            					</label> 
+            					<p class="zf_an"><input class="zf_button" type="button" value="立即支付"/></p>
+
+            				</div>
+            			</div>
+            			<div class="pane">
+            				<div class="zhxi_con">
+            					<span class="con_tit">充值方式二：</span>
+            					<span>银行在线支付</span>
+            				</div>
+            				<div class="zhxi_con">
+            					<span class="con_tit">选择银行类型：</span>
+            					<span>
+            						<input name="zf" type="radio" value="" checked="true" />  个人网上银行支付
+            						<input name="zf" type="radio" value="" /> 企业网上银行支付
+            					</span>
+            				</div>
+            				<div class="zhxi_con">
+            					<span class="con_tit">选择支付银行：</span>
+            					<div class="zf_two">
+            						<span>
+            							<input name="zhifu" type="radio" value="" checked="true" /> <img src="../images/center/g_bank.jpg"/>
+            						</span>
+            						<span>
+            							<input name="zhifu" type="radio" value=""/> <img src="../images/center/n_bank.jpg"/>
+            						</span>
+            						<span>
+            							<input name="zhifu" type="radio" value=""/> <img src="../images/center/j_bank.jpg"/>
+            						</span>
+            						<span>
+            							<input name="zhifu" type="radio" value=""/> <img src="../images/center/j_bank.jpg"/>
+            						</span>
+            						<span>
+            							<input name="zhifu" type="radio" value=""/> <img src="../images/center/j_bank.jpg"/>
+            						</span>
+            					</div>
+            				</div>
+            				<div class="zhxi_con">
+            					<span><input class="submit" type="submit" value="下一步"/></span>
+            				</div>
+            			</div>
+            			<div class="pane">
+            				<div class="zhxi_con">
+            					<span class="con_tit">充值方式三：</span>
+            					<span>转账汇款</span>
+            				</div>
+            				<div class="zhxi_con">
+            					<p class="zf_an">开户名：xxx科技有限公司</p>
+            					<p class="zf_an">开户银行：中国建设银行</p>
+            					<p class="zf_an">账号：2902 20222 2200 4433 6767</p>
+            				</div>
+
+            				<!-- 单据上传start -->
+            				<div class="huikod">
+            				  <div id="preview">
+            				      
+            				  </div>
+            				  <label for="female">上传汇款单据</label>
+            				  <input type="file" onchange="previewImage(this)" />
+            				 </div> 
+            				<!-- 单据上传end -->
+            				<div class="zhxi_con">
+            					<span><input class="submit" type="submit" value="下一步"/></span>
+            				</div>
+            			</div>
+            		</div>
+                </div>
+
+            </div>  
+
+           <script type="text/javascript">
+           $(function(){	
+           	$('.tabPanel ul li').click(function(){
+           		$(this).addClass('hit').siblings().removeClass('hit');
+           		$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
+           	})
+           })
+           </script>
+
+		<!--TAB切换end  -->
+						<!-- <div class="zhxi_con">
 							<span class="con_tit">充值方式一：</span>
 							<span>支付宝</span>
 						</div>
@@ -220,7 +319,7 @@
 							<label><input name="ol_charge" type="radio" value="" /> 
 								<img src="../images/center/zhifu.jpg">
 							</label> 
-							<!-- <p class="zf_an"><input class="zf_button" type="button" value="立即支付"/></p> -->
+							
 
 						</div>
 						<div class="zhxi_con">
@@ -255,6 +354,11 @@
 							</div>
 						</div>
 						<div class="zhxi_con">
+
+							<span><input class="submit" type="submit" value="下一步"/></span>
+						</div>
+						<div class="zhxi_con">
+
 							<span class="con_tit">充值方式三：</span>
 							<span>转账汇款</span>
 						</div>
@@ -262,6 +366,7 @@
 							<p class="zf_an">开户名：耐耐云商科技有限公司</p>
 							<p class="zf_an">开户银行：中国平安银行</p>
 							<p class="zf_an">账号：2902 20222 2200 4433 6767</p>
+
 							<p class="zf_an">								
     									<span>上传汇款单据：</span>	
     									<input id="doc" type="file">
@@ -271,6 +376,9 @@
 						<div class="zhxi_con">
 							<span><input class="submit" type="submit" value="下一步"/></span>
 						</div>
+
+						</div>  -->
+
 						
 
 						
