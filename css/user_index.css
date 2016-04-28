@@ -306,7 +306,7 @@ div.zhxi_con.font_set span i.bold{
   color: #fff;
   font-size: 14px;
   position: relative;
-  left: 340px;
+  left: 200px;
   cursor: pointer;
   border-radius: 3px;
 }
@@ -497,7 +497,7 @@ border: 1px solid;
   margin: 10px 0px;
 }
 .zf_an{
-  padding-left:200px; 
+  padding-left:100px; 
 }
 .zf_an .zf_button{    
     margin-top: 15px;
