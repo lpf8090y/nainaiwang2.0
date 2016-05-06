@@ -333,3 +333,14 @@ input.hilight1 {
 .bottom_navs ul li div p.red{
 	color: #bc1018;
 }
+/*轮播CSS开始*/
+.kePublic{background:#FFF;}
+.keBottom{color:#FFF; padding-top:25px; line-height:28px; text-align:center; font-family:'微软雅黑'; background:url(../images/bodyBg2.jpg) repeat-x top left; padding-bottom:25px}
+.keTxtP{font-size:16px; color:#ffffff;}
+.keUrl{color:#FFF; font-size:30px;}
+.keUrl:hover{ text-decoration: underline; color: #FFF; }
+.mKeBanner,.mKeBanner div{text-align:center;}
+.slider{display:none}
+.focus span{width:8px;height:8px;margin-right:10px;border-radius:50%;background:#f5f5f5;font-size:0;margin-top: 8px; opacity: 0.5;}
+.focus span.current{background:#fff; opacity: 1;}
+/* 轮播效果CSS结束 */
