@@ -33,172 +33,202 @@ $(document).ready(function(){
 
 <body>
 <div class="mobile">
-	<div class="header">
+	<!-- <div class="header">
     	<div class="m_logo"><a href="#"><img src="images/m-index_02.png"></a></div>
         <div class="m_search"><a href="#"><img src="images/m-index_05.png" width="40"></a></div>
+    </div> -->
+   <!-- search kaishi-->
+    <div class="search_total">
+        <div class="search_back" style="opacity: 0;"></div>
+      
+        <div class="search_content">
+            <div class="search_border"><i></i>
+              <input type="text" maxlength="20" autocomplete="off" id="index_newkeyword" name="keyword" value="100万件超级爆品疯抢！"  class="hilight1">
+            </div> 
+            <div class="search_xiox"><a href="#"><i></i></a></div>
+        </div>  
+
     </div>
+    <script>
+    $(function(){
+            $(window).scroll(function(){
+                var h = $("body").scrollTop();
+                if(h > 0 && h < 500){
+                    $(".search_back").css("opacity","0.5");
+                }else if(h >= 500){ 
+                    $(".search_back").css("opacity","0.85");
+                }else if(h == 0){  
+                    $(".search_back").css("opacity","0");
+                }
+            })
+        });
+      </script>
+   <!-- search jieshu-->
+
 	<div class="top w">
    	<div class="m_banner" id="owl">
             <a href="#" class="item"><img src="images/10250290397.png"></a>
             <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
+            <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
+            <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
+            <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
+            <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
       </div>
         <div class="m_nav">
-        	<a href="http://m.178hui.com/mall/index.html"><img src="images/m-index_10.png"><span>商城返利</span></a>
-            <a href="http://m.178hui.com/baoliao/index.html"><img src="images/m-index_12.png"><span>优惠爆料</span></a>
-            <a href="http://m.178hui.com/taobao/index.html"><img src="images/m-index_14.png"><span>淘宝返利</span></a>
-            <a href="http://m.178hui.com/article/index.html"><img src="images/m-index_16.png"><span>购物资讯</span></a>
-            <a href="javascript:void(0);" id="msg_bijia"><img src="images/m-index_22.png"><span>比价网</span></a>
-            <a href="http://m.178hui.com/qiandao/index.html"><img src="images/m-index_24.png"><span>有奖签到</span></a>
-            <a href="http://m.178hui.com/order/index.html"><img src="images/m-index_26.png"><span>订单管理</span></a>
-            <a href="http://m.178hui.com/user/index.html"><img src="images/m-index_27.png"><span>会员中心</span></a>
+        	<a href="http://m.178hui.com/mall/index.html"><img src="images/jiaoyizhongxin.png"><span>交易中心</span></a>
+            <a href="http://m.178hui.com/baoliao/index.html"><img src="images/shujuzhongxin.png"><span>数据中心</span></a>
+            <a href="http://m.178hui.com/taobao/index.html"><img src="images/zhaobiaotoubiao.png"><span>招标投标</span></a>
+            <a href="http://m.178hui.com/article/index.html"><img src="images/pinpaishangjia.png"><span>品牌商户</span></a>
+            <a href="javascript:void(0);" id="msg_bijia"><img src="images/wuliuxinxi.png"><span>物流信息</span></a>
+            <a href="http://m.178hui.com/qiandao/index.html"><img src="images/dindanguanli.png"><span>订单管理</span></a>
+            <a href="http://m.178hui.com/order/index.html"><img src="images/nainaishequ.png"><span>耐耐社区</span></a>
+            <a href="http://m.178hui.com/user/index.html"><img src="images/huiyuanzhongxin.png"><span>会员中心</span></a>
         </div>
   </div>
-  <div class="m_mall w">
-  	<div class="mall_title"><span>热门商城</span><em><a href="#">更多</a></em></div>
-    <div class="mall_list">
-   	  <a href="#" class="mall"><div class="mall_logo"><img src="http://www.178hui.com/upload/mall_logo/www.jd.com.png" /></div><span>最高返 <i>2.8%</i></span></a>
-        <a href="#" class="mall"><div class="mall_logo"><img src="http://www.178hui.com/upload/2014/1110/14542624089.jd" /></div><span>最高返 <i>2.8%</i></span></a>
-        <a href="#" class="mall"><div class="mall_logo"><img src="http://www.178hui.com/upload/mall_logo/www.amazon.cn.png" /></div><span>最高返 <i>2.8%</i></span></a>
-        <a href="#" class="mall"><div class="mall_logo"><img src="http://www.178hui.com/upload/2014/0427/16595789629.gif" /></div><span>最高返 <i>2.8%</i></span></a>
-        <a href="#" class="mall"><div class="mall_logo"><img src="http://www.178hui.com/upload/2015/0506/17143913934.png" /></div><span>最高返 <i>2.8%</i></span></a>
-        <a href="#" class="mall"><div class="mall_logo"><img src="http://www.178hui.com/upload/mall_logo/www.gome.com.cn.png" /></div><span>最高返 <i>2.8%</i></span></a>
-        <a href="#" class="mall"><div class="mall_logo"><img src="http://www.178hui.com/upload/2015/0211/16471979498.png" /></div><span>最高返 <i>2.8%</i></span></a>
-        <a href="#" class="mall"><div class="mall_logo"><img src="http://www.178hui.com/upload/2014/0427/17020977409.gif" /></div><span>最高返 <i>2.8%</i></span></a>
-    </div>
-  </div>
-  <div class="m_baoliao w">
-  	<div class="baoliao_title"><span>最新爆料</span><em><a href="#"><img src="images/iconfont-shuaxin.png"></a></em></div>
-    <div class="baoliao_list">
-    	<a href="baoliao_view.html">
-        <div class="baoliao_content">
-            <div class="bl_img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg" /></div>
-            <div class="bl_right">
-                <div class="bl_title">韩国现代（HYUNDAI) BD-YS2003 多功能养生壶 煎药壶2.0L</div>
-                <div class="bl_note">手机端：99元包邮</div>
-                <div class="bl_tag">
-                    <div class="bl_price">￥99.00</div>
-                    <div class="bl_oprice">￥138.00</div>
-                    <div class="bl_time">07-10 12:33</div>
-                    <div class="bl_mall">京东商城</div>
-                </div>
-            </div>
-        </div> 
-        </a>
-        <a href="#">
-        <div class="baoliao_content">
-            <div class="bl_img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg" /></div>
-            <div class="bl_right">
-                <div class="bl_title">韩国现代（HYUNDAI) BD-YS2003 多功能养生壶 煎药壶2.0L</div>
-                <div class="bl_note">手机端：99元包邮</div>
-                <div class="bl_tag">
-                    <div class="bl_price">￥99.00</div>
-                    <div class="bl_oprice">￥138.00</div>
-                    <div class="bl_time">07-10 12:33</div>
-                    <div class="bl_mall">京东商城</div>
-                </div>
-            </div>
-        </div> 
-        </a>
-        <a href="#">
-        <div class="baoliao_content">
-            <div class="bl_img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg" /></div>
-            <div class="bl_right">
-                <div class="bl_title">韩国现代（HYUNDAI) BD-YS2003 多功能养生壶 煎药壶2.0L韩国现代（HYUNDAI) BD-YS2003 多功能养生壶 煎药壶2.0L</div>
-                <div class="bl_note">手机端：99元包邮</div>
-                <div class="bl_tag">
-                    <div class="bl_price">￥99.00</div>
-                    <div class="bl_oprice">￥138.00</div>
-                    <div class="bl_time">07-10 12:33</div>
-                    <div class="bl_mall">京东商城</div>
-                </div>
-            </div>
-        </div> 
-        </a>
-        <a href="#">
-        <div class="baoliao_content">
-            <div class="bl_img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg" /></div>
-            <div class="bl_right">
-                <div class="bl_title">韩国现代（HYUNDAI) BD-YS2003 多功能养生壶 煎药壶2.0L</div>
-                <div class="bl_note">手机端：99元包邮</div>
-                <div class="bl_tag">
-                    <div class="bl_price">￥99.00</div>
-                    <div class="bl_oprice">￥138.00</div>
-                    <div class="bl_time">07-10 12:33</div>
-                    <div class="bl_mall">京东商城</div>
-                </div>
-            </div>
-        </div> 
-        </a>
-    </div>
-    <div class="bl_more"><a href="#">加载更多</a></div>
-  </div>
-
-<!-- 耐材市场start -->
-<div class="m_baoliao w">
-    <div class="naishi_title">
-      <div class="nais_tit"><em class="ntit_left">{</em><span>耐材市场<p>Refractories</p></span><em class="ntit_right">}</em></div> 
-      <p><a href="#">更多>></a></p> 
-    </div>
-
-    <div class="naishi_total">
+  <!-- 广告start -->
+   <div class="first_ad">
        
-          <div class="naishi_lft">
-                <div class="nais_poto"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg" /></div>
-                <ul>
-                    <a href="#"><li>化工原料</li></a>
-                    <a href="#"><li>化工原料</li></a>
-                    <a href="#"><li>化工原料</li></a>
-                    <a href="#"><li>化工原料</li></a>
-                    <a href="#"><li>化工原料</li></a>
-                    <a href="#"><li>化工原料</li></a>
-                    <a href="#"><li>化工原料</li></a>
-                    <a href="#"><li>化工原料</li></a>
-                    <a href="#"><li>化工原料</li></a>             
-              </ul>
-          </div>
+     <div class="ad_img_one">
+         <a href=""><img src="images/bangwozhao.png" alt=""></a>
+     </div>
+
+   </div>
+ <!-- 广告end -->
+ <!-- 市场列表start -->
+   <div class="products_total">
+       <ul>
+           <li style="border-right: 1px solid #e9e9e9;">
+               <a href=""><div class="pro_word_lt">
+                   <h3>耐火市场</h3>
+                   <p>高铝质<br> 非氧化物</p>
+               </div>
+               <div class="pro_word_rt">
+                 <img src="images/naihuoshichang.png" alt="">  
+               </div></a>
+           </li>
+           <li>
+                <a href=""><div class="pro_word_lt">
+                   <h3>钢铁市场</h3>
+                   <p>热卷<br> 冷轧涂镀</p>
+               </div>
+               <div class="pro_word_rt">
+                 <img src="images/gangtieshichang.png" alt="">  
+               </div></a>
+           </li>
+           
+       </ul>
+         <ul>
+           <li style="border-right: 1px solid #e9e9e9;">
+               <a href=""><div class="pro_word_lt">
+                   <h3>建材市场</h3>
+                   <p>玻璃<br> 陶瓷</p>
+               </div>
+               <div class="pro_word_rt">
+                 <img src="images/jiancaishichang.png" alt="">  
+               </div></a>
+           </li>
+           <li>
+                <a href=""><div class="pro_word_lt">
+                   <h3>设备市场</h3>
+                   <p>筛分设备<br> 破碎设备</p>
+               </div>
+               <div class="pro_word_rt">
+                 <img src="images/shebeishichang.png" alt="">  
+               </div></a>
+           </li>
+           
+       </ul>
+        <ul>
+           <li style="border-right: 1px solid #e9e9e9;">
+               <a href=""><div class="pro_word_lt">
+                   <h3>冶金化工市场</h3>
+                   <p>冶金溶剂<br> 脱硫剂</p>
+               </div>
+               <div class="pro_word_rt">
+                 <img src="images/yejinhuagongshichang.png" alt="">  
+               </div></a>
+           </li>
+           <li>
+                <a href=""><div class="pro_word_lt">
+                   <h3>其他市场</h3>
+                   <p>矿石<br> 能源</p>
+               </div>
+               <div class="pro_word_rt">
+                 <img src="images/qitashichang.png" alt="">  
+               </div></a>
+           </li>
+           
+       </ul>
+
+
+
+
+   </div>
+ <!-- 市场列表end -->
+  
+<!-- 广告start -->
+   <div class="first_ad">
+       
+     <div class="ad_img_one">
+         <a href=""><img src="images/guanggao1.png" alt=""></a>
+     </div>
+
+   </div>
+ <!-- 广告end -->
+<!-- 耐材市场start -->
+    <div class="naishi_title">
+      <h3><i></i> 关注的成交记录  </h3>
+      <span><a href="#"><b>更多</b><img src="images/more.png" alt=""></a></span> 
+    </div>
+<div class="m_baoliao w">
+   
+    <div class="naishi_total">
 
          <div class="naishi_rgt">
             <ul>
-               <a href="#"><li class="border_none">
-                <div class="cai_lft"><p>高铝砖</p> <span>上海&nbsp;尚兴</span>
-                    <span>耐耐网一号库&nbsp;4.74吨</span>                   
+              <li> 
+                <div class="cai_lft">
+                  <a href="#"><p>青岛恒瑞广泰</p>
+                    <span>耐耐网一号库&nbsp;4.74吨</span>
+                  </a>                   
                 </div>
-                <div class="cai_cen">
-                    <span>AL203<br>70%</span>
-                </div>
+                
                 <div class="cai_rgt">
-                     <span>40分钟前发布</span>
-                    <p>￥<b>1900</b></p>
+                  <a href="#"><span>40分钟前发布</span>
+                   <p>￥<b>1900/T</b></p>
+                   <img src="images/decline.png" alt="">
+                  </a>
                 </div>               
-                  </li></a>
-
-                <a href="#"><li>
-                <div class="cai_lft"><p>高铝砖</p> <span>上海&nbsp;尚兴</span>
-                    <span>耐耐网一号库&nbsp;4.74吨</span>                   
+              </li>
+               <li> 
+                <div class="cai_lft">
+                  <a href="#"><p>青岛恒瑞广泰</p>
+                    <span>耐耐网一号库&nbsp;4.74吨</span>
+                  </a>                   
                 </div>
-                <div class="cai_cen">
-                    <span>AL203<br>70%</span>
-                </div>
+                
                 <div class="cai_rgt">
-                     <span>40分钟前发布</span>
-                    <p>￥<b>1900</b></p>
+                  <a href="#"><span>40分钟前发布</span>
+                   <p>￥<b>1900/T</b></p>
+                   <img src="images/goup.png" alt="">
+                  </a>
                 </div>               
-                  </li></a>
-
-                 <a href="#"><li>
-                <div class="cai_lft"><p>高铝砖</p> <span>上海&nbsp;尚兴</span>
-                    <span>耐耐网一号库&nbsp;4.74吨</span>                   
+              </li>
+               <li> 
+                <div class="cai_lft">
+                  <a href="#"><p>青岛恒瑞广泰</p>
+                    <span>耐耐网一号库&nbsp;4.74吨</span>
+                  </a>                   
                 </div>
-                <div class="cai_cen">
-                    <span>AL203<br>70%</span>
-                </div>
+                
                 <div class="cai_rgt">
-                     <span>40分钟前发布</span>
-                    <p>￥<b>1900</b></p>
+                  <a href="#"><span>40分钟前发布</span>
+                   <p>￥<b>1900/T</b></p>
+                   <img class="keep" src="images/keep.png" alt="">
+                  </a>
                 </div>               
-                  </li></a>
-
-                 
+              </li>
+        
             </ul>
 
 
@@ -207,21 +237,9 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
     </div>
   
-   
-
-
-
-
-
-
-
+ 
   <!-- <div class="bl_more"><a href="#">加载更多</a></div>-->
 </div> 
  
@@ -242,7 +260,38 @@ $(document).ready(function(){
   <div class="copyright">Copyright © 2012-2015 耐耐网 m.178hui.com 版权所有</div>
 </div>
 <div class="gotop backtop" style="display:none;"></div>
+<!-- bottom-nav start -->
+ <div class="bottom_navs">
+  <ul>
+    <li>
+      <div>
+        <img src="images/home2.png" alt="">
+        <p class="red">首页</p>
+      </div>
+    </li>
+     <li>
+      <div>
+        <img src="images/classify1.png" alt="">
+        <p>分类</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <img src="images/indent1.png" alt="">
+        <p>订单</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <img src="images/me1.png" alt="">
+        <p>我的</p>
+      </div>
+    </li>
 
+
+  </ul>
+ </div>
+<!-- bottom-nav end -->
 </body>
 </html>
 <script type="text/javascript">

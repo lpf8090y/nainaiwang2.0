@@ -21,11 +21,10 @@
 }
 
 .top .m_banner {
-	padding: 5px;
+	padding: 0px;
 
 }
 .top .m_nav {
-	margin-top: 10px;
 	float: left;
 	width: 100%;
 }
@@ -331,13 +330,7 @@
 	font-size: 12px;
 }
 /* 耐材市场 */
-.m_baoliao  .naishi_title {
-	color: #FFFFFF;
-	background: #c81623;
-	width: 100%;
-	height: 62px;
-	position: relative;
-}
+
 .m_baoliao  .naishi_title .nais_tit{width: 155px; margin: 0 auto;}
 .m_baoliao  .naishi_title .nais_tit em{ font-style: normal; display: block;font-size: 48px;
 	font-family: -webkit-pictograph;width: 28px;}
@@ -346,17 +339,8 @@
 .m_baoliao  .naishi_title .nais_tit span{font-size:24px;display: inline-block;margin-top: 5px;
     text-align: -webkit-center;}
 .m_baoliao  .naishi_title .nais_tit span p{font-size: 16px;    display: table-cell;}
-.m_baoliao  .naishi_title p a {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    color: #FFFFFF;
-    text-decoration: none;
-    letter-spacing: 0.2em;
-    font-size: 16px;
-}
-.m_baoliao .naishi_total{height: auto; overflow: hidden; margin: 0 auto;border-left: #8b8b8b 1px solid;
-                        border-right:#8b8b8b 1px solid;  }
+
+.m_baoliao .naishi_total{height: auto; overflow: hidden; margin: 0 auto;}
 .m_baoliao .naishi_total .naishi_lft{
 	margin-right: 5px;
     float: left;
@@ -387,13 +371,13 @@
     color: #2a2c21;
     width: 53px;
 }
-.m_baoliao .naishi_total .naishi_rgt{width: 66%;float: left;}
-.m_baoliao .naishi_total .naishi_rgt ul{ border-left: #cecece 1px solid;float: left; width: 100%;}
+.m_baoliao .naishi_total .naishi_rgt{width: 100%;float: left;}
+.m_baoliao .naishi_total .naishi_rgt ul{ float: left; width: 100%;}
 .m_baoliao .naishi_total .naishi_rgt ul li{
-    padding: 5px 3px 20px 5px;
-    border-top: #c6c6c6 1px solid;
+    padding: 8px 5% 8px 5%;
     height: auto;
     overflow: auto;
+    border-bottom: 1px solid #e9e9e9;
 }
 .m_baoliao .naishi_total .naishi_rgt ul a{text-decoration: none; color: #9b9b9b;font-size: 12px;}
 .m_baoliao .naishi_total .naishi_rgt ul a p{
@@ -401,8 +385,23 @@
     font-size: 14px;
     display: inline;
 }
-.m_baoliao .naishi_total .naishi_rgt ul li .cai_lft{width: 35%;float: left;}
+.m_baoliao .naishi_total .naishi_rgt ul a span{
+	   display: block;
+       word-break:keep-all;
+       white-space:nowrap;
+       overflow:hidden;
+       text-overflow:ellipsis;
+}
+.naishi_rgt ul li .cai_rgt p+img {
+    width: 10px;
+    height: 12px;
+}
+.naishi_rgt ul li .cai_rgt p+img.keep{
+    width: 10px;
+    height: 5px;
+}
+.m_baoliao .naishi_total .naishi_rgt ul li .cai_lft{width: 62%;float: left;}
+.m_baoliao .naishi_total .naishi_rgt ul li .cai_rgt{float: right;position: relative;text-align: right;}
 .m_baoliao .naishi_total .naishi_rgt ul li .cai_cen{width: 26%;float: left; text-align: center;}
 .m_baoliao .naishi_total .naishi_rgt ul li .cai_cen span{font-size: 13px;line-height: 22px;}
 .m_baoliao .naishi_total .naishi_rgt ul li .cai_rgt p{ font-size: 14px; color: #bd0000;} 
-.m_baoliao .naishi_total .naishi_rgt ul li.border_none{border: none;}
