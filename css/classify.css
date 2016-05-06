@@ -73,10 +73,16 @@ a:hover,a:active { text-decoration:underline; }
 .all-sort-list .item h3 { height:45px; line-height:24px; border:1px 0px; font-size:12px; font-weight:normal; width:136px; overflow:hidden; float: left;}
 .all-sort-list .hover h3 { position:relative; z-index:13; background:#FFF; border-color:#DDD; border-width:0px; border-style:solid; }
 .all-sort-list .item span { padding:0px 5px; color:#A40000; font-family:"\5B8B\4F53"; } 
-.all-sort-list .item a {color:#bbb; text-decoration:none; }
+.all-sort-list .item a {color:#FFF; text-decoration:none; }
 .all-sort-list .item a:hover { font-weight:bold; color:#c81623; }
-
-
+div.item:hover p.fenlei a{
+	color: #666;
+}
+div.item h3 p.fenlei a:hover{
+	color: #c81623;
+	/*font-weight: normal;*/
+	text-decoration: underline;
+}
 .all-sort-list .item-list { 
 	display:none;
 	position:absolute;
