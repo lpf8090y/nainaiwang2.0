@@ -11,6 +11,8 @@
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="layer/layer.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/yxMobileSlider.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -49,31 +51,28 @@ $(document).ready(function(){
         </div>  
 
     </div>
-    <script>
-    $(function(){
-            $(window).scroll(function(){
-                var h = $("body").scrollTop();
-                if(h > 0 && h < 500){
-                    $(".search_back").css("opacity","0.5");
-                }else if(h >= 500){ 
-                    $(".search_back").css("opacity","0.85");
-                }else if(h == 0){  
-                    $(".search_back").css("opacity","0");
-                }
-            })
-        });
-      </script>
    <!-- search jieshu-->
 
 	<div class="top w">
-   	<div class="m_banner" id="owl">
-            <a href="#" class="item"><img src="images/10250290397.png"></a>
-            <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
-            <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
-            <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
-            <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
-            <a href="http://www.178hui.com" class="item"><img src="images/10225357963.jpg"></a>
+      <!-- 轮播开始 -->
+      <div class="kePublic">
+      <!--效果html开始-->
+        <div class="slider">
+          <ul>
+            <li><a href="#" target="_blank"><img src="images/4.jpg" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="images/5.jpg" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="images/6.jpg" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="images/10250290397.png" alt=""></a></li>
+            <li><a href="#" target="_blank"><img src="images/10225357963.jpg" alt=""></a></li> 
+          </ul>
+        </div>
+
+        <script>
+          $(".slider").yxMobileSlider({width:640,height:320,during:3000})
+        </script>
+      <!--效果html结束-->
       </div>
+      <!-- 轮播结束 -->
         <div class="m_nav">
         	<a href="http://m.178hui.com/mall/index.html"><img src="images/jiaoyizhongxin.png"><span>交易中心</span></a>
             <a href="http://m.178hui.com/baoliao/index.html"><img src="images/shujuzhongxin.png"><span>数据中心</span></a>
