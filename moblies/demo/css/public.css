@@ -3,7 +3,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family:Helvetica,"Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family:"Hiragino Sans GB W3";
 	background-color: #f5f5f5;
 	-webkit-text-size-adjust: none 
 }
@@ -191,7 +191,7 @@ a, div, header, span {
 	border-bottom-style: none;
 	border-left-style: none;
 	outline: none;
-	font-family:Helvetica, "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family:"Hiragino Sans GB W3";
 	font-size: 13px;
 	color: #666666;
 	background-image: url(../images/iconfont-sousuo.png);
@@ -213,7 +213,7 @@ a, div, header, span {
 	border-bottom-style: none;
 	border-left-style: none;
 	outline: none;
-	font-family:Helvetica, "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family:"Hiragino Sans GB W3";
 	font-size: 14px;
 	line-height: 37px;
 	color: #FFFFFF;
@@ -226,7 +226,7 @@ a, div, header, span {
 	font-size: 15px;
 	color: #333333;
 	height: 40px;
-	font-family: Helvetica, "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family: "Hiragino Sans GB W3";
 	border: 1px solid #D7D7D7;
 	margin: 1.5%;
 	outline: none;

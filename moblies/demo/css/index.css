@@ -46,7 +46,7 @@
 	line-height: 40px;
 	font-size: 14px;
 	color: #666666;
-	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family: "Hiragino Sans GB W3";
 }
 
 .m_mall .mall_title {
@@ -166,7 +166,7 @@
 	border-bottom-style: none;
 	border-left-style: none;
 	outline: none;
-	font-family:Helvetica, "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family:"Hiragino Sans GB W3";
 	font-size: 13px;
 	color: #666666;
 	background-image: url(../images/iconfont-sousuo.png);
@@ -191,7 +191,7 @@
 	border-bottom-style: none;
 	border-left-style: none;
 	outline: none;
-	font-family:Helvetica, "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family:"Hiragino Sans GB W3";
 	font-size: 14px;
 	line-height: 46px;
 	color: #FFFFFF;
