@@ -1,24 +1,28 @@
 @charset "utf-8";
 
 /*header*/
-.header{ height:44px; background:#4eabe8;position: relative;z-index: 10;}
+.header{ height:44px; background:#fff;position: relative;z-index: 10;border-bottom: 1px solid #e9e9e9;}
 /* CSS Document */
-
+/*
 .main {
 	padding-top: 15px;
+	
 	padding-bottom: 15px;
-}
+}*/
 .main #frm_login {
 	padding-right: 15px;
 	padding-left: 15px;
 }
 
 .main .item {
-	margin-bottom: 15px;
+	/*margin-bottom: 15px;
 	position: relative;
 	width: 100%;
-	margin-top: 15px;
+	margin-top: 15px;*/
+	position: relative;
+	border-bottom: 1px solid #e9e9e9;
 }
+
 .main .item .txt-username,
 .main .item .txt-password,
 .main .item .txt-password_PwdTwo,
@@ -31,12 +35,12 @@
 .main .item .txt-phone {text-indent:80px;}
 .main .item .txt-input {
 	background: none repeat scroll 0 0 #fff;
-	border: 1px solid #D1D1D1;
-	border-radius:5px;
+	border: 0px;
 	color: #252525;
-	font-size: 14px;
-	height: 44px;
-	width: 100%;
+	font-size: 16px;
+	height: 50px;
+	padding-left:10px;
+	outline:none; 
 }
 .main .item-username .input-close {right: 7px;}
 .main .item .input-close {
@@ -53,7 +57,7 @@
 	background-size: 25px;
 }
 .main .item-password .btn-off {background: url("../images/u_s1.png") no-repeat scroll 0 0 / 51px 35px;}
-.main .item-password .tp-btn {cursor: pointer;display: block;height: 35px;position: absolute; right: 10px;top: 8px; width: 51px; z-index: 1;}
+.main .item-password .tp-btn {cursor: pointer;display: block;height: 35px;position: absolute; right: 10px;top: 11px; width: 51px; z-index: 1;}
 .main .item-password .btn-on {background: url("../images/u_s2.png") no-repeat scroll 0 0 / 51px 35px;}
 .main .item-password .btn-off_PwdTwo {background: url("../images/u_s1.png") no-repeat scroll 0 0 / 51px 35px;}
 .main .item-password .tp-btn_PwdTwo {cursor: pointer;display: block;height: 35px;position: absolute; right: 10px;top: 8px; width: 51px; z-index: 1;}
@@ -96,7 +100,7 @@
 .main .item-login-other dd .qq {width: 20%;}
 .main .item-login-other dd a {float: left;}
 .main .item-login-other dd a span {display:block;height: 40px;overflow: hidden; width: 40px;}
-.ui-btn-wrap { padding-top:5px; padding-bottom:10px;}
+.ui-btn-wrap {/* padding-top:5px; padding-bottom:10px;*/ padding: 10px 15px;}
 .ui-btn-lg {
 	cursor:pointer;
 	border-radius:5px;
@@ -110,8 +114,8 @@
 }
 .ui-btn-primary {
 	background-clip: padding-box;
-	background-color: #4eabe8;
-	border-color: #4eabe8;
+	background-color: #bd1016;
+	border-color: #bd1016;
 	color: #fff;
 	text-decoration: none;
 }
@@ -131,17 +135,18 @@
 	text-decoration: none;
 }
 .register_verify {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding: 20px 0px;
 	text-align: center;
+	background: #fff;
 }
+
 .register_verify .ok_iocn {
 }
 .register_verify h1 {
 	font-size: 20px;
 	line-height: 30px;
 	font-weight: bold;
-	color: #f23436;
+	/*color: #f23436;*/
 	margin-top: 20px;
 }
 

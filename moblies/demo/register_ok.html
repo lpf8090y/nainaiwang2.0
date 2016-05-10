@@ -5,7 +5,6 @@
 <meta name="applicable-device" content="mobile" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <title>注册成功 — 耐耐网·触摸版</title>
-<link href="frozenui/css/frozen.css" rel="stylesheet" type="text/css">
 <link href="css/public.css" rel="stylesheet" type="text/css" />
 <link href="css/login.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-1.8.3.min.js"></script>
@@ -15,6 +14,12 @@ $(window).load(function() {
 	$("#preloader").delay(350).fadeOut("slow");
 })
 </script>
+<script type="text/javascript" src="js/mobile_reg.js"></script>
+<style type="text/css">
+  body{
+   background: #fff;
+  }
+</style>
 </head>
 
 <body>
@@ -28,27 +33,71 @@ $(window).load(function() {
   <!--页面加载 结束--> 
   <!--header 开始-->
   <header>
-    <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="images/iconfont-fanhui.png"></span> </a>
-      <h2>注册成功</h2>
+    <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="images/iconfont-fanhui-black.png"></span> </a>
+      <h2>注册</h2>
       </div>
   </header>
   <!--header 结束-->
   
-  <div class="w main">
+  <div class="main">
   	<div class="register_verify">
     	<div class="ok_iocn"><img src="images/iconfont-iconxianluyudingchenggong.png" height="80"></div>
-        <h1>恭喜您！已成功注册耐耐网！</h1>
-        <h2>邮箱激活验证已经发送到您的邮箱，请尽快验证！</h2>
+        <h1>恭喜你注册成功</h1>
+       <!--  <h2>邮箱激活验证已经发送到您的邮箱，请尽快验证！</h2>
         <h3>如果您没收到邮件，请查看垃圾邮件箱或点击<br/></h3>
-        <h3><a href="#"><img src="images/cxfsjhyj.png" height="40"></a></h3>
+        <h3><a href="#"><img src="images/cxfsjhyj.png" height="40"></a></h3> -->
+    </div>
+    <div class="reg_ok">
+        <fieldset class="atention_tit">
+          <legend>点击添加关注</legend>
+        </fieldset>
+        <div class="atention_cont">
+          <ul class="cont_ul">
+            <li>
+              <a class="li_a cur_a">耐火市场<i class="cur_hide cur_i"></i></a>
+            </li>
+            <li>
+              <a class="li_a">建材市场<i class="cur_hide"></i></a>
+            </li>
+            <li>
+              <a class="li_a">高铝质<i class="cur_hide"></i></a>
+            </li>
+            <li>
+              <a class="li_a">热卷<i class="cur_hide"></i></a>
+            </li>
+            <li>
+              <a class="li_a">玻璃<i class="cur_hide"></i></a>
+            </li>
+            <li>
+              <a class="li_a">陶瓷<i class="cur_hide"></i></a>
+            </li>
+            <li>
+              <a class="li_a">能源<i class="cur_hide"></i></a>
+            </li>
+            <li>
+              <a class="li_a">筛分设备<i class="cur_hide"></i></a>
+            </li>
+            <li>
+              <a class="li_a">矿石<i class="cur_hide"></i></a>
+            </li>
+            <li>
+              <a class="li_a">冶金化工 <i class="cur_hide"></i></a>
+            </li>
+            <li>
+              <a class="li_a">更多<i class="cur_hide"></i></a>
+            </li>
+          </ul>
+        </div>
     </div>
   </div>
-  <div class="footer w">
+   <div class="ui-btn-wrap"> <a class="ui-btn-lg ui-btn-primary" href="#">开启掌中耐耐之路</a> </div>
+
+ <!--  <div class="footer w">
   	<a href="#"><div class="ico_img"><img src="images/178hui-app.png"></div><span style="color:#00bb9c">客户端</span></a>
     <a href="index.html"><div class="ico_img"><img src="images/178hui-shouji.png"></div><span style="color:#eb4f38">触摸版</span></a>
     <a href="#"><div class="ico_img"><img src="images/178hui-diannao.png"></div><span>电脑版</span></a>
   </div>
-  <div class="copyright">Copyright © 2012-2015 耐耐网 m.178hui.com 版权所有</div>
+  <div class="copyright">Copyright © 2012-2015 耐耐网 m.178hui.com 版权所有</div> -->
 </div>
 </body>
 </html>
