@@ -335,7 +335,7 @@ input.hilight1 {
 }
 /*轮播CSS开始*/
 .kePublic{background:#FFF;}
-.keBottom{color:#FFF; padding-top:25px; line-height:28px; text-align:center; font-family:'微软雅黑'; background:url(../images/bodyBg2.jpg) repeat-x top left; padding-bottom:25px}
+.keBottom{color:#FFF; padding-top:25px; line-height:28px; text-align:center; font-family:'Hiragino Sans GB W3'; background:url(../images/bodyBg2.jpg) repeat-x top left; padding-bottom:25px}
 .keTxtP{font-size:16px; color:#ffffff;}
 .keUrl{color:#FFF; font-size:30px;}
 .keUrl:hover{ text-decoration: underline; color: #FFF; }
