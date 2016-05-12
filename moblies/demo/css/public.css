@@ -4,7 +4,6 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family:Helvetica,"Microsoft YaHei", Arial, Helvetica, sans-serif;
-	background-color: #eff3f6;
 	-webkit-text-size-adjust: none 
 }
 ul, li {
@@ -41,7 +40,7 @@ a, div, header, span {
 	float: left;
 	min-width: 320px;
 	width: 100%;
-	margin: 25px 0px;
+	margin:0px;
 }
 .m_user {
 	line-height: 40px;
@@ -349,13 +348,26 @@ a, div, header, span {
 .reg_top .cur{
 	border-bottom: 3px solid #bd0f18;
 }
-.main .item lable.item_tit{
+.main .item .item_tit{
 	height: 50px;
 	line-height: 50px;
 	display: block;
 	float: left;
 	font-size: 18px;
 	width: 60px;
+}
+.main .item .item_log{
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	float: left;
+	font-size: 18px;
+	width: 30px;
+}
+.main .item .item_log img{
+	height: 30px;
+	width: 25px;
+	margin-top: 10px;
 }
 .send1{
 	background: #fff;
