@@ -1,21 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>个人中心</title>
+  <title>账号管理</title>
   <meta name="keywords"/>
   <meta name="description"/>
   <meta charset="utf-8">
   <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
-
-  <!-- 头部控制 -->
+ <!--  上传图片js 
+  <script type="text/javascript" src="../js/UploadImages.js"></script>-->
+   <!--正则表达-->
+   <script type="text/javascript" src="../js/regular.js"></script>
+  <script src="../js/center.js" type="text/javascript"></script>
+  <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+   <!-- 头部控制 -->
   <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
   <script src="../js/topnav20141027.js" type="text/javascript"></script>
     <!-- 头部控制 -->
-    <!--  右侧浮动客服 -->
-    <link href="../css/broadside.css" rel="stylesheet" type="text/css">
-    <script src="../js/broadside.js" type="text/javascript"></script>
-    <!--  右侧浮动客服end -->
 </head>
 <body>
 <!-- 	公用头部控件 -->
@@ -150,10 +151,10 @@
 			<div class="nav-tit">
 				<ul class="nav-list">
 					<li>
-						<a href="user_index.html" class="cur">会员中心</a>
+						<a href="user_index.html">会员中心</a>
 					</li>
 					<li>
-						<a href="user_zh.html">账户信息</a>
+						<a href="user_zh.html" class="cur">账户信息</a>
 					</li>
 					<li>
 						<a href="user_zj.html">资金管理</a>
@@ -177,63 +178,113 @@
 	<div class="user_body">
 		<div class="user_b">
 			<div class="user_l">
-				<div class="wrap_con">
-					<div class="personal_data">
-						<div class="head_portrait">
-							<a href="#">
-								<img src="../images/icon/head_portrait.jpg">				
-							</a>
-						</div>
-						<div class="per_username">
-							<p class="username_p"><b>上午好，用户名</b></p>
-							<p class="username_p"><img src="../images/center/icon_jp.jpg">金牌企业会员</p>
-							<p class="username_p">消息提醒：<b class="colaa0707">24</b></p>
-							<p class="username_p"><a class="padding_right" href="">去认证</a><a class="col1734b1" href="">仓储管理</a></p>
-						</div>
-						<div class="per_function">
-							<a href="user_zh.html">基本信息设置</a>
-							<a href="zh_mm.html">修改密码</a>
-						</div>
-						<div class="per_collection">
-							<p class="collection_padding col1734b1">信誉保证金有什么好处</p>
-							<p class="collection_padding">
-								<img src="../images/center/icon_bzj2.jpg" align="left"/>
-								
-								<b class="per_font">已签署消费者保障协议</b>
-								<span>已缴纳<b class="colaa0707" >10000元</b>保证金</span>
-								
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="wrap_con">
-					<div class="tit clearfix">
-						<h3>我的勋章</h3>
-					</div>
-					<div class="con">
-						<div class="con_medal clearfix">
-							<ul>
-								<li><a>暂无勋章</a></li>
+				<div class="left_navigation">
+					<ul>
+						<li class="let_nav_tit"><h3>账户管理</h3></li>
+						<li><a href="user_zh.html" class="nav-first cur">基本信息</a></li>
+						<li><a class="nav-first" href="zh_mm.html">修改密码</a></li>
+						<li class="btn1" id="btn2">
+							<a class="nav-first">身份认证<i class="icon-caret-right"></i></a>
+							<ul class="zj_zh" id="zj_zh2">
+								<li><a href="identity/zh_rez.html">企业认证</a></li>
+								<li><a href="identity/wl_rez.html">物流认证</a></li>
+								<li><a href="identity/cg_rez.html">仓管认证</a></li>
 							</ul>
-						</div>
-					</div>
+						</li>
+						
+						<li><a class="nav-first" href="user_zz.html">子账户管理</a></li>
+						<li><a class="nav-first" href="user_fp.html">开盘信息管理</a></li>
+					</ul>
 				</div>
 			</div>
-			<!-- start 依据条件显示HTML-->
 			<div class="user_c">
-				<!-- start 是否选择去认证 -->
-				<div class="check-approve">
-					<img src="../images/icon/check-approve.jpg">
-					<p class="p-title zn-f18">您的基本资料未填写完成</p>
-					<p class="p-con  zn-f14">请完善您的基本资料并申请正式会员，享受更多会员服务</p>
-					<p class="p-btn">
-						<a href="identity/zh_rez.html" class="zn-f16 go-now">资质认证</a>
-						<a href="user_rz.html" class="zn-f16 not-go">暂不认证</a>
-					</p>
-				</div> <!--  end 是否选择去认证	 -->
-		
+				<div class="user_zhxi">
+					<div class="zhxi_tit">
+						<p><a>账号管理</a>><a>企业信息编辑</a></p>
+					</div>
+					<div style="float:left">
+						<form>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i>*</i>用户名：</span>
+                            <span><input class="text" type="text" value="ssfdsf" disabled="disabled"  name="username"/></span> 
+                        </div>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i></i>手机号码：</span>
+                            <span><input class="text" disabled="disabled" value="13728904567" type="text" name="mobile_no"/>
+                            <a href="mobile_edit.html"><i class="icon-info-sign"></i>点击修改手机号码</a></span> 
+                            <!-- <input type="text" readonly="readonly" name="checkh" class="mobile_no"/></span> -->
+                        </div>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i>*</i>电子邮箱：</span>
+                            <span><input class="text" type="text" name="email"/> </span>    
+                        </div>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i>*</i>公司名：</span>
+                            <span><input class="text" type="text" value="ssfdsf" name="username"/></span> 
+                        </div>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i>*</i>地址：</span>
+                            <span class="zhxi_addre"> 
+                                <select>
+                                    <option>山西省</option>
+                                </select>
+                                <select>
+                                    <option>xxx</option>
+                                </select>
+                                <select>
+                                    <option>xxxx</option>
+                                </select>
+                           </span> 
+                        </div>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i>*</i>法人：</span>
+                            <span><input class="text"  type="text" value="张三"/></span> 
+                        </div>
+
+                       <div class="zhxi_con">
+                            <span class="con_tit"><i>*</i>注册资金：</span>
+                            <span class="zhxi_addre">
+                                <select>
+                                    <option>10万-20万</option>
+                                </select>
+                            </span>
+                            <span><i>*</i>企业类型：</span>
+                            <span class="zhxi_addre">
+                                <select>
+                                    <option>钢材</option>
+                                </select>
+                            </span> 
+                             <span><i>*</i>企业性质：</span>
+                            <span class="zhxi_addre">
+                                <select>
+                                    <option>国有</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i>*</i>联系人姓名：</span>
+                            <span><input class="text"  type="text"value="李四"/></span> 
+                        </div>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i>*</i>电话：</span>
+                            <span><input class="text" type="text"value="13526783567"/></span> 
+                        </div>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i></i>职务：</span>
+                            <span><input class="text"type="text"value="负责人"/></span> 
+                        </div>
+                        <div class="zhxi_con">
+                            <span class="con_tit"><i></i>选择代理商：</span>
+                            <span><input class="text" type="text"value=""/></span> 
+                        </div>
+                        <div class="zhxi_con">
+                            <span><a href="user_zh.html"><input class="submit" type="button" value="保存"/></a></span>
+                        </div>
+                        </form>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
 			</div>
-			<!-- start 依据条件显示HTML-->
 			<div class="user_r">
 				<div class="wrap_con">
 					<div class="tit clearfix">
@@ -249,36 +300,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
-
-    <!-- 右侧代码部分begin -->
-<div class="QQ_S">
-  <div class="Q_top" onclick="HideFoot()"> <span class="signi"></span>收起</div>
-  <div class="Q_botm">
-    <div class="Q_pic">
-      <div class="Q_pic_hide"> <a href="http://wpa.qq.com/msgrd?v=3&uin=123456789&site=qq&menu=yes" target="_blank" title="企业QQ交谈" rel="nofollow"><span class="hide_pic"></span>企业QQ交谈 </a> </div>
-    </div>
-    <!-- <div class="Q_anser">
-      <div class="Q_anser_hide"> <a href="javascript:void(0)" title="提交有问必答"><span class="hide_pic1"></span>提交有问必答 </a> </div>
-    </div> -->
-    <div class="Q_sign">
-      <div class="Q_sign_hide" onclick="backToTop();"><a href="javascript:void(0)" title="返回顶部"><span class="hide_pic2"></span>返回顶部 </a></div>
-    </div>
-  </div>
-</div>
-<div class="QQ_S1">
-  <div class="Q_top1" onclick="ShowFoot()"> <span class="signj"></span>展开</div>
-  <div class="Q_botm1">
-    <div class="Q_pic1">
-      <div class="Q_pic1_hide"> <a href="http://wpa.qq.com/msgrd?v=3&uin=123456789&site=qq&menu=yes" rel="nofollow"><span class="hide_pic3"></span>QQ交谈</a></div>
-    </div>
-    <div class="Q_sign1">
-      <div class="Q_sign1_hide" onclick="backToTop();"><a href="javascript:void(0)">返回顶部</a></div>
-    </div>
-  </div>
-</div>
-
-<!-- 右侧代码部分end -->
 </body>
 </html>

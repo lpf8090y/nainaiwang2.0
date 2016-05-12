@@ -33,7 +33,7 @@ a, div, header, span {
   -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 .mobile {
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 	min-width: 320px;
 }
 .w {
@@ -41,6 +41,7 @@ a, div, header, span {
 	float: left;
 	min-width: 320px;
 	width: 100%;
+	margin: 25px 0px;
 }
 .m_user {
 	line-height: 40px;
@@ -141,13 +142,12 @@ a, div, header, span {
 }
 
 .header h2 {
-	color: #fff;
-	font-size: 16px;
-	font-weight: normal;
+	color: #2e2e2e;
+	font-size: 20px;
 	height: 44px;
 	line-height: 44px;
 	text-align: center;
-	font-weight:bold;
+	
 }
 .header .header_right {
 	position: absolute;
@@ -324,3 +324,117 @@ a, div, header, span {
 	border-bottom-style: dashed;
 	border-bottom-color: #EEEEEE;
 }
+
+/*修改注册页样式*/
+.reg_top:after{
+	content: "."; 
+    display: block;
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.reg_top {
+	
+	border-bottom: 1px solid #e9e9e9;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	font-size: 18px;
+}
+.reg_top .reg_title{
+ float: left;
+ width: 50%;
+ text-align: center;
+}
+.reg_top .cur{
+	border-bottom: 3px solid #bd0f18;
+}
+.main .item lable.item_tit{
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	float: left;
+	font-size: 18px;
+	width: 60px;
+}
+.send1{
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #bd1016;
+	color: #bd1016;
+	border-radius: 5px;
+	position: absolute;
+	right: 10px;
+	top: 11px;
+}
+.item-captcha{
+	padding-left: 15px;
+}
+.item-captcha .checkbox{
+	float: left;
+	width: 18px;
+	height: 18px;
+	border:1px solid #bd1016;
+	margin-right: 10px;
+}
+.item-captcha .check_background{
+	background: url(../images/icon_y.png) no-repeat center;
+}
+.item-captcha  .err-tips{
+	line-height: 22px;
+}
+.item-captcha .user_xy{
+	text-decoration: none;
+	color: #bd1016;
+}
+.company{
+	display: none;
+}
+
+.atention_tit{
+	border: 0px;
+	border-top: 1px solid #e9e9e9;
+	text-align: center;
+	color: #e9e9e9;
+}
+.atention_tit legend{
+	padding: 0 10px;
+}
+.cont_ul:after{
+	content: "."; 
+    display: block;
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.cont_ul{
+	margin: 0 15px;
+}
+.cont_ul li{
+	float: left;
+	margin:8px 9px;
+	/*width: 24%;*/
+	position: relative;
+}
+.cont_ul li .li_a{
+	border: 1px solid #e9e9e9;
+	padding: 5px;
+	font-size: 13px;
+	position: relative;
+	display: block;
+}
+.cont_ul li .li_a.cur_a{
+	border:1px solid #bd1016;
+}
+.cont_ul li .cur_i{
+	content: "";
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: -11px;
+	right: -7px;
+    background: url(../images/icon_qd.png) no-repeat;
+}
+
+/*修改注册页样式 end*/
