@@ -41,7 +41,7 @@ a, div, header, span {
 	float: left;
 	min-width: 320px;
 	width: 100%;
-	margin: 25px 0px;
+	margin: 0px;
 }
 .m_user {
 	line-height: 40px;
