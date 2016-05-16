@@ -5,7 +5,7 @@ body {
 	padding: 0px;
 	/*font-family:Helvetica,"Microsoft YaHei", Arial, Helvetica, sans-serif;*/
 	font-family: Hiragino Sans GB W3;
-	background-color: #eff3f6;
+	background-color: #f5f5f5;
 	-webkit-text-size-adjust: none 
 }
 ul, li,p,h1,h2{
@@ -42,7 +42,7 @@ a, div, header, span {
 	float: left;
 	min-width: 320px;
 	width: 100%;
-	margin: 25px 0px;
+	margin:0px;
 }
 .m_user {
 	line-height: 40px;
@@ -193,7 +193,7 @@ a, div, header, span {
 	border-bottom-style: none;
 	border-left-style: none;
 	outline: none;
-	font-family:Helvetica, "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family:"Hiragino Sans GB W3";
 	font-size: 13px;
 	color: #666666;
 	background-image: url(../images/iconfont-sousuo.png);
@@ -215,7 +215,7 @@ a, div, header, span {
 	border-bottom-style: none;
 	border-left-style: none;
 	outline: none;
-	font-family:Helvetica, "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family:"Hiragino Sans GB W3";
 	font-size: 14px;
 	line-height: 37px;
 	color: #FFFFFF;
@@ -228,7 +228,7 @@ a, div, header, span {
 	font-size: 15px;
 	color: #333333;
 	height: 40px;
-	font-family: Helvetica, "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-family: "Hiragino Sans GB W3";
 	border: 1px solid #D7D7D7;
 	margin: 1.5%;
 	outline: none;
@@ -351,13 +351,26 @@ a, div, header, span {
 .reg_top .cur{
 	border-bottom: 3px solid #bd0f18;
 }
-.main .item lable.item_tit{
+.main .item .item_tit{
 	height: 50px;
 	line-height: 50px;
 	display: block;
 	float: left;
 	font-size: 18px;
 	width: 60px;
+}
+.main .item .item_log{
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	float: left;
+	font-size: 18px;
+	width: 30px;
+}
+.main .item .item_log img{
+	height: 30px;
+	width: 25px;
+	margin-top: 10px;
 }
 .send1{
 	background: #fff;
