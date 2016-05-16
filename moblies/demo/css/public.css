@@ -8,7 +8,7 @@ body {
 	background-color: #eff3f6;
 	-webkit-text-size-adjust: none 
 }
-ul, li {
+ul, li,p,h1,h2{
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
@@ -118,9 +118,10 @@ a, div, header, span {
 /*header*/
 .header{
 	height:44px;
-	background:#ff8200;
+	background:#fff;
 	position: relative;
 	z-index: 10;
+	border-bottom: 2px solid #eff3f6; 
 }
 .new-a-back {
 	height: 40px;
