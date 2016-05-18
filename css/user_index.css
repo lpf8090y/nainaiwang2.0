@@ -1545,7 +1545,7 @@ border: 1px solid #c0c0c0;
 .xx_center table.sales_table tr .middle_img{
   vertical-align: middle;
 }
-.xx_center .title td{
+.xx_center .title_head td{
   font-size: 16px;
 }
 .xx_center .title_head th{
