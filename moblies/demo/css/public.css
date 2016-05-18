@@ -29,10 +29,24 @@ form {
 	margin: 0px;
 	padding: 0px;
 }
-
+a{
+	text-decoration: none;
+	color: #000;
+}
 a, div, header, span {
   -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
+/*字体颜色*/
+.colab{
+	color: #ababab;
+}
+.colbd1016{
+	color: #bd1016 !important;
+}
+.colfff{
+	color: #fff;
+}
+/*字体颜色 end*/
 .mobile {
 	/*background-color: #FFFFFF;*/
 	min-width: 320px;
@@ -357,7 +371,7 @@ a, div, header, span {
 	display: block;
 	float: left;
 	font-size: 18px;
-	width: 60px;
+	width: 80px;
 }
 .main .item .item_log{
 	height: 50px;
@@ -453,3 +467,46 @@ a, div, header, span {
 }
 
 /*修改注册页样式 end*/
+
+/*增加地址css*/
+.main .default_tit{
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	float: left;
+	font-size: 18px;
+}
+.main .default{
+margin-top: 10px;
+}
+.main .item .adder_right:before {
+content: ' ';
+position: absolute;
+border: #999 solid;
+border-width: 2px 0 0 2px;
+width: 13px;
+height: 13px;
+-webkit-transform: rotate(-225deg);
+-moz-transform: rotate(-225deg);
+right: 10px;
+position: absolute;
+top: 16px;
+}
+.main .default .btn-off {background: url("../images/u_s1.png") no-repeat scroll 0 0 / 51px 35px;}
+.main .default .tp-btn {cursor: pointer;display: block;height: 35px;position: absolute; right: 10px;top: 11px; width: 51px; z-index: 1;}
+.main .default .btn-on {background: url("../images/u_s2.png") no-repeat scroll 0 0 / 51px 35px;}
+.address_save{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+.address_save .button_save{
+	display: block;
+	background: #bd1016;
+	color: #fff;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	text-decoration: none;
+}
+/*增加地址css end*/

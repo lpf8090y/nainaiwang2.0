@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>收货地址——耐耐网·触摸版</title>
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/address.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/address.js"></script>
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+
+</head>
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+	<div id="preloader">
+	    <div id="status">
+	      <p class="center-text"><span>拼命加载中···</span></p>
+	    </div>
+	</div>
+	  <!--页面加载 结束--> 
+	  <!--header 开始-->
+	<header>
+	  	<div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="images/iconfont-fanhui-black.png"></span> </a>
+	      <h2>收货地址</h2>
+	    </div>
+	</header>
+	  <!--header 结束-->
+	 <div class="content">
+		<div class="address_main">
+			<div class="ads_m">
+				<p class="name_mobile">
+					<a class="nm_a">
+						<span>张三</span>
+						<span>1865265789</span>
+					</a>
+				</p>
+				<p class="ads_cont colab">
+					北京市大兴区大兴亦庄开发区文化园高兴街道34号
+				</p>
+			</div>
+			<div class="mr_address colab">
+				<label>
+					<div class="radio der_col"><div class="radio_click radio_check"></div></div>
+					设为默认地址
+				</label>
+				<div class="do_right">
+					<span><i class="icon-edit"></i>编辑</span>&nbsp;
+					<span><i class="icon-trash"></i>删除</span>
+				</div>
+			</div>
+		</div>
+		<div class="address_main">
+			<div class="ads_m">
+				<p class="name_mobile">
+					<a class="nm_a colbd1016">
+						<span>张三</span>
+						<span>1865265789</span>
+					</a>
+				</p>
+				<p class="ads_cont colab">
+					北京市大兴区大兴亦庄开发区文化园高兴街道34号
+				</p>
+			</div>
+			<div class="mr_address colab">
+				<label>
+					<div class="radio"><div class="radio_click"></div></div>
+					设为默认地址
+				</label>
+				<div class="do_right">
+					<a class="colab" href=""><i class="icon-edit"></i>编辑</a>&nbsp;
+					<a class="colab" href=""><i class="icon-trash"></i>删除</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="address_save">
+        <a class="button_save" href="address_add.html">新增收货地址</a>
+    </div>
+</div>
+ <body>
+ </html>
