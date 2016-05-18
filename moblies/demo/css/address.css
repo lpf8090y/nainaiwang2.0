@@ -1,0 +1,47 @@
+a{
+	text-decoration: none;
+}
+/*收货地址列表 strat*/
+.address_main{
+	background: #fff;
+}
+.ads_m{
+	padding:15px;
+}
+.ads_m p{
+	line-height: 25px;
+}
+
+a.nm_a {color: #000}	
+
+.mr_address{
+	padding: 10px 15px;
+	border-bottom: 2px solid #eff3f6;
+	border-top: 2px solid #eff3f6;
+	position: relative;
+}
+.mr_address .radio{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #bd1016;
+	-moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari 和 Chrome */
+  	border-radius: 10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+  	margin: 3px 5px 0 0 ;
+}
+.mr_address .radio .radio_check{
+	width: 6px;
+	height: 6px;
+	border: 1px solid #bd1016;
+	-moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari 和 Chrome */
+  	border-radius: 10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+  	margin: 1px auto;
+  	background: #bd1016;
+}
+.mr_address .do_right{
+	float: right;
+}
+
+/*收货地址列表 end*/

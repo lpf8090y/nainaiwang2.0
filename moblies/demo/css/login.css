@@ -10,7 +10,7 @@
 	padding-bottom: 15px;
 }*/
 .main #frm_login {
-	background: #f8f9fa;padding-top: 40px;
+	background: #f8f9fa;padding-top: 20px;
 }
 
 .main .item {
@@ -40,7 +40,7 @@
 	color: #252525;
 	font-size: 16px;
 	height: 50px;
-	padding-left:10px;
+	padding-left:5px;
 	outline:none; 
 }
 .main .item-username .input-close {right: 7px;}
