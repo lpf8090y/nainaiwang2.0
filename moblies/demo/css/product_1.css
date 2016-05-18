@@ -1,0 +1,371 @@
+body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
+{margin:0;padding:0;font-style:normal;font:100% "Hiragino Sans GB W3",Arial, Helvetica,sans-serif}  
+ol, ul ,li{list-style: none;} 
+img {border: 0; vertical-align:middle;} 
+body{color:#000000;background:#FFF; text-align:center;} 
+.clear{clear:both;height:1px;width:100%; overflow:hidden; margin-top:-1px;} 
+a{color:#000000;text-decoration:none; }  
+i{font-style: normal;}
+.red{color: #bc1018;}
+.header_position{
+	position: relative;
+	width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.header{
+	width: 100%;
+	height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 99999999;
+    position: fixed;
+    background:#FFF;
+}
+.header_search{
+    padding: 10px 0;
+    height: auto;
+    overflow: hidden;
+}
+.header_search .h-left{
+	 display: block;
+    background: url(../images/product/pr_fan.png) no-repeat left center;
+    height: 36px;
+    width: 5%;
+    background-size: 14px 22px;
+    margin: 1px 5%;
+    float: left;
+}
+.header_search .search_border {
+    background: #f6f6f6;
+    border-radius: 6px;
+    height: 36px;
+    overflow: hidden;
+    width: 66%;
+    margin-left: 15%;
+    position: fixed;
+    z-index: 99999999;
+    float: left;
+}
+.header_search .search_border i {
+    display: block;
+    background: url(../images/product/pr_serch.png) no-repeat left center;
+    height: 28px;
+    width: 28px;
+    background-size: 22px;
+    margin: 3px 10px;
+}
+.header_search input.hilight1 {
+    border: 0;
+    display: inline-block;
+    background: 0;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB W3";
+    line-height: 1.2em;
+    height: 1.2em;
+    width: 80%;
+    vertical-align: middle;
+    color: #9e9e9e;
+    position: absolute;
+    left: 20%;
+    top: 9px;
+}
+.header_search .change_right{
+    width: 13%;
+    float: right;
+    margin-top: 4px;
+}
+.header_search .change_right .img_tab{
+    display: block;
+    background: url(../images/product/pr_qie.png) no-repeat left center;
+    height: 28px;
+    width: 28px;
+    background-size: 28px 28px;
+}
+.header_search .change_right #qiehuan{
+    display: block;
+    width: 44%;
+}
+
+
+.header_search .change_right .img_tab_b{
+    display: block;
+    background: url(../images/product/pr_qie_b.png) no-repeat left center;
+    height: 28px;
+    width: 28px;
+    background-size: 28px 28px;
+}
+.head_nav{
+    height: auto;
+    overflow: hidden;
+    font-family: "Hiragino Sans GB W3";
+    font-size: 14px;
+    color: #111111;
+    padding: 13px 0;
+    border-top: 1px #e9e9e9 solid;
+    border-bottom: 1px #dedede solid;
+}
+.head_nav.border_top{
+    margin-top: -1px;
+}
+.head_nav ul{
+    width: 100%;
+}
+.head_nav ul li{
+    float: left;
+    width: 32%;
+}
+.head_nav.border_top ul li{
+    float: left;
+    width: 25%;
+}
+.head_nav ul li a.up_down   {
+    display: block;
+    background: url(../images/product/pr_sx.png) no-repeat 63px 2px;
+    height: 16px;
+    width: 90%;
+    float: right;
+    position: relative;
+    left: 7%;
+    top: 0px;
+    clear: both;
+    text-align: left;
+}
+.up_active {
+    display: block;
+    background: url(../images/product/pr_sx.png) no-repeat 63px -35px;
+    height: 16px;
+    width: 90%;
+    float: right;
+    position: relative;
+    left: 7%;
+    top: 0px;
+    clear: both;
+    text-align: left;
+}
+.down_active{
+   display: block;
+    background: url(../images/product/pr_sx.png) no-repeat 63px -85px;
+    height: 16px;
+    width: 90%;
+    float: right;
+    position: relative;
+    left: 7%;
+    top: 0px;
+    clear: both;
+    text-align: left;
+}
+.head_nav ul li div {
+    border-radius: 3px;
+    padding: 8px 12px 8px 3px;
+    width: 62px;
+    font-size: 13px;
+    margin: -5px auto;
+    text-align: left;
+    background: #F5F5F9;
+}
+div.clear.height{
+	height: 151px;
+}
+.pro_lists{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;	
+}
+.pro_lists ul{
+
+}
+.pro_lists ul li{
+   width: 100%;
+   overflow: hidden;
+   padding: 10px 3%;
+   border-bottom: 1px #dedede solid; 	
+}
+.pro_lists ul li .item_left{
+	clear: both;
+	float: left;
+	width: 40%;
+}
+.pro_lists ul li .item_left img{
+    max-width: 100%;
+    max-height: 105px;
+}
+.pro_lists ul li .item_right{
+    float: left;
+    width: 51%;
+    padding-left: 3%;
+}
+.pro_lists ul li .item_right dl{
+        float: left;
+    text-align: left;
+    width: 100%;
+}
+.pro_lists ul li .item_right dl dt{
+    color: #111111;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+.pro_lists ul li .item_right dl dt span{
+    color:  #a5a5a5;
+}
+.pro_lists ul li .item_right dl dd{
+    color: #a5a5a5;
+    font-size: 13px;
+    line-height: 1.8em;
+}
+.pro_lists ul li .item_right dl dd:last-child{
+    position: relative;
+    top: 3px;
+}
+.pro_lists ul li .item_right dl dd:last-child img{
+    float: left;
+    height: 20px;
+    width: 10%;
+    margin-right: 3px;
+}
+.pro_lists ul li .item_right dl dd:last-child span p {
+    float: right;
+    margin: 0;
+    margin-right: 12%;
+}
+.pro_lists ul li .item_right dl dd:last-child span{
+    display: block;
+    width: 80%;
+    float: right;
+    text-align: right;
+}
+.pro_lists ul li .item_right dl dd:last-child span a{
+    display: block;
+    float: right;
+    color: #bc1018;
+    padding: 0px 8px;
+    text-align: center;
+    border: 1px solid #bc1018;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+.pro_lists_again{
+    background: #fafafa;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: left;
+}
+.pro_lists_again ul {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.pro_lists_again ul li{
+    display: inline-block;
+    width: 47%;
+    text-align: center;
+    background: #FFF;
+    margin-top: 8px;
+    float: left;
+    margin-left: 2%;
+}
+.again_total .again_top{
+    width: 100%;
+    text-align: center;
+}
+.again_total .again_top img{
+    max-width: 100%;
+}
+.again_total{
+    width: 96%;
+    margin-left: 2%;
+}
+.again_total .again_down {
+    text-align: left;
+    padding: 8px 5px;
+}
+.again_total .again_down dl dt {
+    color: #111111;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+.again_total .again_down dl dt span {
+    color: #a5a5a5;
+}
+.again_total .again_down dl dd {
+    color: #a5a5a5;
+    font-size: 13px;
+    line-height: 1.8em;
+}
+.again_total .again_down dl dd:last-child {
+    position: relative;
+    top: 3px;
+}
+.again_total .again_down dl dd:last-child img {
+    float: left;
+    height: 20px;
+    width: 12%;
+    margin-right: 3px;
+}
+.again_total .again_down dl dd:last-child span {
+    display: block;
+    width: 80%;
+    float: right;
+    text-align: right;
+}
+.again_total .again_down dl dd:last-child span a {
+    display: block;
+    float: right;
+    color: #bc1018;
+    padding: 0px 8px;
+    text-align: center;
+    border: 1px solid #bc1018;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+.again_total .again_down dl dd:last-child span p {
+    float: right;
+    margin: 0;
+    margin-right: 12%;
+}
+
+/*下拉选择框*/
+.dropdiv {
+    width: 118%;
+    border: none;
+    background: #F5F5F9 url(../images/product/pr_sx_b.png) no-repeat 56px 5px;
+}
+.dropdiv_b {
+    width: 118%;
+    border: none;
+    background: #F5F5F9 url(../images/product/pr_sx_b.png) no-repeat 56px -88px;
+}
+.head_nav ul li div.chooseItems{
+background: #FFF;
+margin-bottom: -10px;
+margin-top: 5px;
+}
+.chooseItems .chooseItem{
+    width: 360%;
+    background: #FFF;
+font-size: 13px;
+padding: 5px;
+}
+.chooseItems .chooseItem:last-child{
+    background: #FFF;
+border-bottom:none;
+}
+.chooseItems .chooseItem:hover{
+background: #FFF;
+}
+.mask_layer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #dcd8d8;
+    opacity: 0.5;
+    z-index: 1000;
+    bottom: 0;
+    top: 0;
+    display: none;
+}
