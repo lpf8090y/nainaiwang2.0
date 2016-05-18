@@ -2,7 +2,8 @@ body,dl,ul,ol,dd,h3,p ,table,tr,td{
 	padding: 0px;
 	margin: 0px;
 	font-size: 12px;
-  color:#333;
+  color:#333;border:0;
+  border-collapse:collapse;
 }
 ul,ol{
 	list-style-type: none;
@@ -721,6 +722,14 @@ color: #fff;
 .chp_xx .xx_center tr td{
   padding: 8px 0px;
 }
+.chp_xx .xx_center tr td .thjs_input{
+  border: 1px solid #dfe5eb;
+  width: 52px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #616a70;
+}
 .xx_center td .ck:hover{
   color: #CD0C0C;
 }
@@ -869,6 +878,7 @@ line-height: 25px;
 .sjxx{
   margin:10px 0px;
   border: 1px solid #ccc;
+  width: 100%;
 }
 .sjxx p{
   line-height: 30px;
@@ -889,7 +899,17 @@ line-height: 25px;
   float: left;
   text-align: center;
 }
-
+/*提货*/
+.sjxx .sj_detal td,.sjxx .sj_detal th{
+  text-align: center;
+  border:1px solid #ccc;
+  border-spacing: 0;
+}
+.sjxx .sj_detal .sj_ti_tit{
+  height: 34px;
+  line-height: 34px; 
+  background: #F2F2F2;
+}
 /*.user_r.posio{
     float: right;
     position: relative;
