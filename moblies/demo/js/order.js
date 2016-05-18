@@ -1,5 +1,5 @@
 $(function(){
-    //个人注册和企业注册的切换
+    //确认订单页面地址有无的切换
     $(".con_order .no_adderss").click(function(){
 
         $(".show_adderss").css({'display':'block'});
@@ -9,5 +9,5 @@ $(function(){
         $(".show_adderss").css({'display':'none'});
         $(".no_adderss").css({'display':'block'}); 
     });
-      //个人注册和企业注册的切换end
+      //确认订单页面地址有无的切换end
 });
