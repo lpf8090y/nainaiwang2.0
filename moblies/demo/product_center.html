@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>交易中心产品页一</title>
+	<link href="css/product_1.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/product_center_js.js"></script>
+	<script type="text/javascript" src="js/sort_product.js"></script>
+    
+	 
+
+</head>
+<body>
+	 <div class="header_position">
+		   <div class="header">
+		   	   <div class="header_search">
+		   	   	 <div class="h-left"><a href="javascript:history.go(-1);" title="返回"></a></div>    
+			   	 <div class="search_border"><i></i>
+			        <input type="text" maxlength="15" autocomplete="off" id="index_newkeyword" name="keyword" value="请输入搜索内容"  class="hilight1">
+			     </div> 
+			     <div class="change_right">
+			     	<a id="qiehuan" href="javascript:;">
+			     		<span class="img_tab"></span>
+			     	</a>
+			     </div>
+	           </div>
+	           <div class="head_nav" id="fil_first" >
+	           	<ul>
+	           		<li><a href="">默认排序</a></li>
+	           		<li><a href="" class="up_down">商品单价</a></li>
+	           		<li><a href="" class="up_down">发布时间</a></li>	
+	           	</ul>
+	           </div>
+	           <div class="head_nav border_top">
+	           	<ul>
+	           		<li>
+	                     <div class="dropmiandiv" quest ="select1">
+	                     <input type="text" readonly id ="select1" displayMember="-1" valueMember ="交易分类" class="dropdiv" value="交易分类"/>
+	                     </div>
+	                     <div class="chooseItems" answer ="select1" style="display:none; ">
+	                     <div class="chooseItem" displayMember="0" valueMember ="供应供应">供应供应</div>
+	                     <div class="chooseItem" displayMember="1" valueMember ="求购求购">求购求购</div>
+	                     <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+                    </li>
+	           		<li>
+	           			<div class="dropmiandiv" quest ="select2">
+	                     <input type="text" readonly id ="select2" displayMember="-1" valueMember ="报盘分类" class="dropdiv" value="报盘分类"/>
+	                     </div>
+	                     <div class="chooseItems" answer ="select2" style="display:none; ">
+	                     <div class="chooseItem" displayMember="0" valueMember ="供应供应">供应供应</div>
+	                     <div class="chooseItem" displayMember="1" valueMember ="求购求购">求购求购</div>
+	                     <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+	           		</li>
+	           		<li>
+       					 <div class="dropmiandiv" quest ="select3">
+       			          <input type="text" readonly id ="select3" displayMember="-1" valueMember ="市场分类" class="dropdiv" value="市场分类"/>
+       			          </div>
+       			          <div class="chooseItems" answer ="select3" style="display:none; ">
+       			          <div class="chooseItem" displayMember="0" valueMember ="供应">供应供应</div>
+       			          <div class="chooseItem" displayMember="1" valueMember ="求购">求购求购</div>
+       			          <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+	           		</li>
+	           		<li>
+       					 <div class="dropmiandiv" quest ="select4">
+       			          <input type="text" readonly id ="select4" displayMember="-1" valueMember ="商品产地" class="dropdiv" value="商品产地"/>
+       			          </div>
+       			          <div class="chooseItems" answer ="select4" style="display:none; ">
+       			          <div class="chooseItem" displayMember="0" valueMember ="供应供应">供应供应</div>
+       			          <div class="chooseItem" displayMember="1" valueMember ="求购求购">求购求购</div>
+       			          <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+	           		</li>	
+	           	</ul>
+	           </div>
+		   </div>
+	 </div>
+
+	 <!-- 遮罩层开始 -->
+	 <div class="mask_layer"></div>
+	 <!-- 遮罩层结束 -->
+
+	 <div class="clear height">	</div>
+
+	 <div class="pro_lists" id="pro_lists" style="display:block;">
+	 	<ul>
+	 		<li>
+	 			<div class="item_left">
+	 				<a href=""><img src="images/product/pr_letter.png" alt=""></a>
+	 			</div>
+	 			<div class="item_right">
+	 				<dl>
+	 				<a href=""><dt>螺纹钢<span>10*9000</span></dt></a>
+	 				<dd>材质：HRB400</dd>
+	 				<dd>产地：福冈</dd>
+	 				<dd>
+	 					<a href=""><img src="images/product/pr_qq.png" alt=""></a>
+	 					<span>
+	 						<a href="">购买</a>
+		 					<p class="red">￥<i>1900</i></p>
+                        </span>
+	 				</dd>
+	 				</dl>
+
+	 			</div>
+	 		</li>
+	 		<li>
+	 			<div class="item_left">
+	 				<a href=""><img src="images/product/pr_letter.png" alt=""></a>
+	 			</div>
+	 			<div class="item_right">
+	 				<dl>
+	 				<a href=""><dt>螺纹钢<span>10*9000</span></dt></a>
+	 				<dd>材质：HRB400</dd>
+	 				<dd>产地：福冈</dd>
+	 				<dd>
+	 					<a href=""><img src="images/product/pr_qq.png" alt=""></a>
+	 					<span>
+	 						<a href="">报价</a>
+		 					<p class="red">￥<i>1900</i></p>
+                        </span>
+	 				</dd>
+	 				</dl>
+
+	 			</div>
+	 		</li>
+	 		
+	 	</ul>
+
+	 </div>
+	 <div class="pro_lists_again" id="pro_lists_again" style="display:none;">
+	 	<ul>
+	 		<li>
+	 		<div class="again_total"> 	
+	 			<div class="again_top">
+	 				<a href=""><img src="images/product/pr_big.png" alt=""></a>
+	 			</div>
+	 			<div class="again_down">
+	 				<dl>
+	 				<a href=""><dt>螺纹钢<span>10*9000</span></dt></a>
+	 				<dd>材质：HRB400</dd>
+	 				<dd>产地：福冈</dd>
+	 				<dd>
+	 					<a href=""><img src="images/product/pr_qq.png" alt=""></a>
+	 					<span>
+	 						<a href="">购买</a>
+		 					<p class="red">￥<i>1900</i></p>
+                        </span>
+	 				</dd>
+	 				</dl>
+
+	 			</div>
+	 		</div>	
+	 		</li>
+	 		<li>  
+	 			<div class="again_total"> 
+		 			<div class="again_top">
+		 				<a href=""><img src="images/product/pr_big.png" alt=""></a>
+		 			</div>
+		 			<div class="again_down">
+		 				<dl>
+		 				<a href=""><dt>螺纹钢<span>10*9000</span></dt></a>
+		 				<dd>材质：HRB400</dd>
+		 				<dd>产地：福冈</dd>
+		 				<dd>
+		 					<a href=""><img src="images/product/pr_qq.png" alt=""></a>
+		 					<span>
+		 						<a href="">报价</a>
+			 					<p class="red">￥<i>1900</i></p>
+	                        </span>
+		 				</dd>
+		 				</dl>
+                     </div>
+		 		 </div>
+	 		</li>
+	 		<li>  
+	 			<div class="again_total"> 
+		 			<div class="again_top">
+		 				<a href=""><img src="images/product/pr_big.png" alt=""></a>
+		 			</div>
+		 			<div class="again_down">
+		 				<dl>
+		 				<a href=""><dt>螺纹钢<span>10*9000</span></dt></a>
+		 				<dd>材质：HRB400</dd>
+		 				<dd>产地：福冈</dd>
+		 				<dd>
+		 					<a href=""><img src="images/product/pr_qq.png" alt=""></a>
+		 					<span>
+		 						<a href="">报价</a>
+			 					<p class="red">￥<i>1900</i></p>
+	                        </span>
+		 				</dd>
+		 				</dl>
+                     </div>
+		 		 </div>
+	 		</li>
+	 	</ul>	
+	 </div>
+
+</body>  
+</html>
