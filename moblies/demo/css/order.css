@@ -1,0 +1,139 @@
+
+body{
+	background-color:#fff;
+}
+.con_order{
+	border-bottom:2px solid #eff3f6; 
+	background: #fff;
+}
+.con_order .no_adderss{
+	text-align: center;
+	padding: 20px 10px;
+	background: url(../images/line.jpg.) no-repeat 0 bottom #fff;
+	position: relative;
+	background-repeat: repeat-x;
+}
+.no_adderss .adder_p{
+	line-height: 25px;
+}
+.con_order .no_adder_img{
+	position: absolute;
+	right: 20px;
+}
+.adder_img:before{
+	content: ' ';
+	position: absolute;
+	border: #999 solid;
+	border-width: 2px 0 0 2px;
+	width: 13px;
+	height: 13px;
+	-webkit-transform: rotate(-225deg);
+	-moz-transform: rotate(-225deg);
+	right: 10px;
+	margin-top: 15px;
+}
+.adder_img{
+	display: block;
+}
+.con_order:after,.order_detail_a:after,.a_right:after,.adder_img:after{
+	content: "";
+	display:block;
+	clear: both;
+}
+.con_order .order_detail_a{
+	display: block;
+	padding: 10px 10px;
+}
+.order_detail_a  .detail_tit{
+	padding: 10px 10px 0 10px;
+}
+ .pre_right{
+	float: right;
+}
+.zf_tit{
+	padding:15px 25px 15px 10px;
+}
+.tit_right{
+	text-align: right;
+	padding: 12px 10px;;
+}
+.order_bottom{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+.order_bottom .fix_bom{
+	float: left;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+}
+.order_bottom .bag_bd{
+	background: #bd1016;
+	color: #fff;
+	text-align: center;
+}
+.order_bottom  .bom_right{
+	text-align: right;
+}
+.show_adderss{
+	background: url(../images/line.jpg.) no-repeat 0 bottom #fff;
+	background-repeat: repeat-x;
+}
+.show_adderss .adder_height{
+	padding: 20px;
+}
+.show_adderss .s_adder_p{
+ line-height: 25px;
+padding: 0px 20px;
+}
+.bag_p{
+	background: url(../images/icon_ads.jpg) no-repeat;
+}
+.tj_order{
+	text-decoration: none;
+	display: block;
+}
+
+/*立即支付页面 strat*/
+.order_num{
+	padding: 15px 10px;
+}
+.an_height{
+	line-height: 40px;
+}
+.pay_blank{
+	width: 100%;
+}
+.flo_left{
+	float: left;
+	padding: 10px;
+}
+.pay_blank:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.width_center p{
+	line-height: 25px;
+}
+.butt_radio{
+	text-align: right;
+	padding: 0 10px;
+	position: relative;
+	top: 25px;
+}
+.size_pay{
+	font-size: 13px;
+}
+
+/*立即支付页面 end*/
+/*支付成功 strat*/
+.pay_deal{
+	padding: 40px 0px;
+}
+.deal_tex{
+	padding: 0 10px;
+	line-height: 25px;
+}
+/*支付成功 end*/

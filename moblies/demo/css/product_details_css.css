@@ -100,9 +100,10 @@ i{font-style: normal;}
     text-align: center;
     pointer-events: none;
     right: 6%;
-    background: #f5f5f5;
+    background: #000;
     border-radius: 50%;
     height: 50px;
+    opacity: 0.5;
 }
 .scroll_pic_view ol li{
     display: inline-block;

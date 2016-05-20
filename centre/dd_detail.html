@@ -213,7 +213,7 @@
 			</div>
 			<!--end左侧导航-->	
 			<!--start中间内容-->	
-			<div class="user_c">
+			<div class="user_c_list">
 				<div class="user_zhxi">
 					<div class="zhxi_tit">
 						<p><a>交易管理</a>><a>合同详情</a></p>
@@ -231,7 +231,9 @@
 							</div>
 							<div class="detail_chj">
 								<input class="qx_butt" type="button" value="取消订单"/>
-								<input class="fk_butt" type="button" value="立即付款"/>
+								<input class="fk_butt" type="button" value="支付保证金" onclick="javascript:window.location.href='pay_sure.html'"/>
+								<input class="fk_butt" type="button" value="支付尾款" onclick="javascript:window.location.href='pay_last.html'"/>
+								<input class="fk_butt" type="button" value="申请提货" onclick="javascript:window.location.href='dd_detail-2.html'"/>
 							</div>
 						</div>
 						<div class="sjxx">
@@ -286,7 +288,7 @@
 									<td>90</td>
 									<td>2吨</td>
 									<td>2000</td>
-									<td>未发货</td>
+									<td>提货20%</td>
 
 								</tr>
 							</tbody></table>
@@ -295,7 +297,7 @@
 				</div>
 			</div>
 			<!--end中间内容-->	
-			<!--start右侧广告-->			
+			<!--start右侧广告			
 			<div class="user_r">
 				<div class="wrap_con">
 					<div class="tit clearfix">

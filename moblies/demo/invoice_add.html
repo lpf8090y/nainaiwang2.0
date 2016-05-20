@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>新增发票抬头 — 耐耐网·触摸版</title>
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/address.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/address.js"></script>
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+</head>
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> 
+      <a class="new-a-back" href="javascript:history.back();"> <span><img src="images/iconfont-fanhui-black.png"></span> </a>
+      <h2>新增发票抬头</h2>
+    </div>
+  </header>
+  <!--header 结束-->
+  <!-- 开发票 -->
+  <div class="invoice-top-add">
+      <p class="inv-top">发票抬头</p>
+      <form  method="get" action="">
+        <input type="text" class="text-top" placeholder="请输入个人或公司名称"/>
+      </form>
+  </div>
+  <div class="address_save">
+        <a class="button_save" href="invoice_list.html">保存</a>
+    </div>
+</div>
+
+  
+</body>
+</html>
+   
