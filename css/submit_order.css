@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 *{ margin:0; padding:0; font-style:normal;}
+body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
+{margin:0;padding:0;font-style:normal;font:100% "Hiragino Sans GB W3",Arial, Helvetica,sans-serif;}
 
 .submit{ width:1190px; margin:0 auto; height:auto; overflow:hidden;}
 .submit_word{ margin:20px auto; width:800px; height:auto; overflow:hidden;}
@@ -11,7 +13,6 @@
     text-align: center;
     line-height: 30px;
     font-size: 18px;
-    font-family: 微软雅黑;
     color: #747474;
 }
 .submit_photo{ margin:20px auto; width:830px; height:auto; overflow:hidden;}
@@ -246,7 +247,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	width: 24px;
 	height: 27px;
 	border: none;
-	font-family: Arial;
 	color: #ffffff;
 	padding: 0px
 }
@@ -618,21 +618,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 {
     margin: 12px 0 10px 120px;
     font-size: 24px;
-    font-family: 微软雅黑;
     color: #696969;
     font-weight: normal;
 }
 .alreaor h1{
     margin: 40px 0 20px 120px;
     font-size: 24px;
-    font-family: 微软雅黑;
     color: #696969;
     font-weight: normal;
 }
 .bormin {
     padding: 35px 75px;
     font-size: 14px;
-    font-family: 微软雅黑;
     color: #696969;
     border: #CCC 1px solid;
     height: auto;
@@ -802,7 +799,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .deal_succeed .scsd_img img{ width: 180px; height: 180px; float: left;}
 .deal_succeed .scsd_img h3{
     font-size: 42px;
-    font-family: 微软雅黑;
     font-weight: normal;
     color: #c41e1e;
     display: block;
@@ -823,7 +819,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .deal_succeed .scsd_word p{
     font-size: 16px;
     line-height: 28px;
-    font-family: 微软雅黑;
 }
 .deal_succeed .scsd_word p b{ font-weight: normal;}
 .deal_succeed .scsd_word p i{ font-size: 18px; color: #bc1b1b;margin: 0 5px;}
@@ -877,15 +872,12 @@ table {
 }                         
 .orange {
     color: #f38201;
-    font-family: "Microsoft Yahei";
 }
 .price02 {
-    font-family: "Microsoft Yahei";
 }
 
 .yListr {
     overflow: hidden;
-    font-family: "微软雅黑";
     margin:0 auto;
 }
 

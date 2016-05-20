@@ -1,14 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>合同详情</title>
+  <title>缴纳保证金成功</title>
   <meta name="keywords"/>
   <meta name="description"/>
   <meta charset="utf-8">
   <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
-  <script src="../js/center.js" type="text/javascript"></script>
+  <script type="text/javascript" src="../js/user_index.js"></script>
+   <script src="../js/center.js" type="text/javascript"></script>
   <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="../css/pay_ment.css" rel="stylesheet" type="text/css" /> 
+  <script src="../js/pay_ment.js" type="text/javascript"></script>
+
    <!-- 头部控制 -->
   <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
   <script src="../js/topnav20141027.js" type="text/javascript"></script>
@@ -139,7 +143,7 @@
 </div>
 <div class="clearfix"></div>
 <!-- 公用头部控件 -->
-	<div class="header">
+<div class="header">
 		<div class="nav">
 			<div class="logo-box zn-l">
 				<a href="../index.html" alt="返回耐耐首页"><img src="../images/icon/nainaiwang.png"/></a></dd>
@@ -173,6 +177,7 @@
 	</div>
 	<div class="user_body">
 		<div class="user_b">
+			
 			<!--start左侧导航-->	
 			<div class="user_l">
 				<div class="left_navigation">
@@ -180,7 +185,7 @@
 						<li class="let_nav_tit"><span class="line"></span><h3>交易管理</h3></li>
 						<li class="btn1" id="btn1">
 							<a class="nav-first">销售管理<i class="icon-caret-down"></i></a>
-							<ul class="zj_zh" id="zj_zh1">
+							<ul class="zj_zh">
 								<li><a href="chp_list.html">销售列表</a></li>
 								<li><a href="offer_index.html">发布产品</a></li>
 							</ul>
@@ -190,15 +195,15 @@
 							<a class="nav-first">采购管理<i class="icon-caret-right"></i></a>
 							<ul class="zj_zh" id="zj_zh2">
 								<li><a href="procurement_list.html">采购列表</a></li>
-                                						<li><a href="procurement_fb.html">发布采购</a></li>
+                                <li><a href="procurement_fb.html">发布采购</a></li>
 							</ul>
 						</li>
 							
 						<li class="btn1" id="btn3">
 							<a class="nav-first">合同管理<i class=" icon-caret-right"></i></a>
-							<ul class="zj_zh" id="zj_zh3">
+							<ul class="zj_zh" id="zj_zh1">
 								<li><a href="sales_list.html">销售合同</a></li>
-								<li><a href="dd_detail.html" class="cur">购买合同</a></li>
+								<li><a class="cur" href="buy_list.html">购买合同</a></li>
 							</ul>
 
 						</li>
@@ -211,119 +216,39 @@
 					</ul>
 				</div>
 			</div>
-			<!--end左侧导航-->	
+			<!--end左侧导航-->
 			<!--start中间内容-->	
-			<div class="user_c_list">
+			<div class="user_c_list no_bor">
 				<div class="user_zhxi">
-					<div class="zhxi_tit">
-						<p><a>交易管理</a>><a>合同详情</a></p>
-					</div>
-					<div class="chp_xx">
-						
-						<div class="xx_center">
-							<table border="0" cellpadding="" cellspacing="">
-								<tbody>
-								<tr class="title_head">
-									<td align="left" colspan="7">&nbsp;商品清单</td>
-								</tr>
-								<tr class="title_head">
-									<th>图片</th>
-									<th>商品名称</th>
-									<th>商品数量</th>
-									<th>可提数量</th>
-									<th>提货数量</th>
-									<th>仓库</th>
-								</tr>
-								<tr>
-									<td><img src="../images/banner/551b861eNe1c401dc.jpg"/></td>
-									<td>耐火材料</td>
-									<td>100吨</td>
-									<td>80吨</td>
-									<!-- 判断系统参数是否支持多次开单 如果单次开单则不能修改开单数量-->
-									<td><input type="text" class="thjs_input"></td>
-									<td>德旭</td>
 
-								</tr>
-							</tbody></table>
-						</div>
-						<ul class="methed">
-							<li class="clearfix">
-				                        		<label>预计提货日期：</label>
-					                        <div>
-					                        
-					                        
-					                        <input name="date_start" id="date_start" type="text" class="Wdate gyctht_input" value="2016-04-01">
-						                        	
-						                        	记重方式：过磅  
-						                             <input type="hidden" id="weight_type" value="A">
-						                        	
-						                        	
-					                        
-					                        </div>
-				                        	</li>
-				                        	<li class="clearfix">
-				                        		<label>交易商：</label>
-				                        		<div>jing</div>
-				                        	</li>
-				                        	<li class="clearfix">
-				                        		<label>提货人：</label>
-				                        		<div>
-				                        			<input type="text" value="">
-				                        		</div>
-				                        	</li>
-				                        	<li class="clearfix">
-				                        		<label>身份证号码：</label>
-				                        		<div>
-				                        			<input type="text" value="">
-				                        		</div>
-				                        	</li>
-				                        	<li class="clearfix">
-				                        		<label>联系电话：</label>
-				                        		<div>
-				                        			<input type="text" value="">
-				                        		</div>
-				                        	</li>
-				                        	<li class="clearfix">
-				                        		<label>车牌号：</label>
-				                        		<div>
-				                        				<textarea id="truck_num" name="truck_num" maxlength="500" style="width: 153px; height: 50px;"></textarea> <span style="color:red;">* 多个以逗号分隔</span>
-				                        		</div>
-				                        	</li>
-				                        		
-				                        	<li class="clearfix">
-				                        		<label>备注：</label>
-				                        		<div>
-								         <textarea name="" cols="" rows="" id="REMARK" class="bz" maxlength="200">gaegag</textarea>最多输入200个字符
-								     
-								</div>
-				                        	</li>
-						</ul>
-						<div class="zhxi_con">	
-							<span><input class="submit_zz" type="submit" value="提交"></span>
-							<span><input class="submit_zz reset_zz" type="reset" value="返回"></span>
-						</div>
-						<!-- <div class="sjxx">
-							<p>支付配送</p>
-							<div class="sj_detal">
-								<b class="sj_de_tit">收货人：</b>
-								<span>&nbsp;laijjj</span>
-							</div>
-							<div class="sj_detal">
-								<b class="sj_de_tit">地址：</b>
-								<span>&nbsp;山西省晋中市xxx县</span>
-							</div>
-							<div class="sj_detal">
-								<b class="sj_de_tit">邮编：</b>
-								<span>&nbsp;045000</span>
-							</div>
-						</div> -->
-					</div>
-				</div>
+
+					<div class="deal_succeed">
+                                      <div class="scsd_img">
+                                          <img src="../images/order/oder_01.jpg" alt="对勾">
+                                          <h3>支付成功</h3>
+                                        </div> 
+                                     
+                                      <div class="scsd_word">
+                                          <h5>订单状态：卖家已支付保证金</h5>
+                                          <p>请等待买家支付尾款，申请提货~</p>
+                                          
+                                        </div>
+                                      
+                     
+
+                                   </div>
+                  
+
+
+               
+
+				</div>				
+				
 			</div>
 			<!--end中间内容-->	
-			
+					
 		</div>
-		
 	</div>
 </body>
+</html>
 </html>
