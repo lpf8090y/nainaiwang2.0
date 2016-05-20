@@ -32,7 +32,8 @@ table {
 .detail_tab td {
     padding-left: 10px;
     color: #666;
-    /*border: 1px solid #BFBFBF;*/
+    border: 1px solid #BFBFBF;
+    border-collapse: collapse;
 }
 .detail_tab {
     border: 1px solid #BFBFBF;
@@ -230,7 +231,7 @@ table {
     padding: 12px 10px;
     text-align: center;
     font-size: 13px;
-    color: #333333;
+    color: #fff;
     background: #D61515;
     display: block;
     width: 108px;
