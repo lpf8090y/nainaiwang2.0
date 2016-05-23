@@ -1,0 +1,50 @@
+body {
+    background: #fff;
+}
+.invoice-top-no {
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+}
+.header .mess_edit {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+/*显示消息 strat*/
+/*.show_message .new_xs{
+	border-bottom: 1px solid #eff3f6;
+	padding: 10px 15px;
+}
+.show_message .new_xs .ntle{
+	height: 25px;
+}
+
+*/
+.list-ul {
+    overflow: hidden
+}
+.list-li {
+	line-height: 25px;
+    border-bottom: 1px solid #eff3f6;
+    position: relative;
+    padding: 10px 15px;
+    color: #666;
+    -webkit-transform: translateX(0px);
+}
+
+.con .new_time{
+	float: right;
+}
+.btn {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    text-align: center;
+    background: #ffcb20;
+    color: #fff;
+    width: 60px;
+	line-height: 71px;
+}
+/*显示消息 end*/
