@@ -1,9 +1,12 @@
 
-body{
-	background-color:#fff;
-}
+
 .con_order{
-	border-bottom:2px solid #eff3f6; 
+	border-bottom:1px solid #eff3f6; 
+	background: #fff;
+}
+.con-main{
+	margin-top: 10px;
+	padding-bottom: 20px;
 	background: #fff;
 }
 .con_order .no_adderss{
@@ -52,6 +55,7 @@ body{
 }
 .zf_tit{
 	padding:15px 25px 15px 10px;
+	position: relative;
 }
 .tit_right{
 	text-align: right;
@@ -104,10 +108,15 @@ padding: 0px 20px;
 }
 .pay_blank{
 	width: 100%;
+	padding: 10px 0px;
+	border-bottom:1px solid #eff3f6; 
+}
+.botm_tit{
+	border-bottom:1px solid #eff3f6;
 }
 .flo_left{
 	float: left;
-	padding: 10px;
+	/*padding-left: 10px;*/
 }
 .pay_blank:after{
 	content: "";
@@ -137,3 +146,43 @@ padding: 0px 20px;
 	line-height: 25px;
 }
 /*支付成功 end*/
+/*线下支付 strat*/
+.pay_offline{
+	padding: 20px 10px; 
+}
+.pay_offline:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.add_pzimg{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border: dashed #ddd 1px;
+	font-weight: bold;
+	color: #d1d1d1;
+	line-height: 20px;
+	text-align: center;
+	overflow: hidden;
+	text-decoration: none;
+	position: absolute;
+	right: 20px;
+	top: 13px;
+}
+.pz_img{
+	border-top: 1px solid #eff3f6
+}
+.pz_img .pz_show_img{
+	padding: 10px 10px;
+	text-align: center;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 10 auto;
+	border: 1px solid #ddd;
+	/*background: url(../images/bag_pz.jpg) no-repeat center;*/
+}
+
+/*线下支付 end*/

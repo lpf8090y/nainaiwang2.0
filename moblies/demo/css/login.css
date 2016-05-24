@@ -9,9 +9,9 @@
 	
 	padding-bottom: 15px;
 }*/
-.main #frm_login {
+/*.main #frm_login {
 	background: #f8f9fa;padding-top: 20px;
-}
+}*/
 
 .main .item {
 	/*margin-bottom: 15px;
@@ -189,3 +189,14 @@
   	-moz-box-shadow:0 0 10px rgba(150, 150, 150, .5);  
   	box-shadow:0 0 10px rgba(150, 150, 150, .5); 
 }
+
+/*忘记密码 strat*/
+.pas_ts{
+	padding: 15px 15px 0px 15px;
+	line-height: 25px;
+	color: #b6b6b6;
+}
+.botm{
+	margin-top: 30px;
+}
+/*忘记密码 end*/

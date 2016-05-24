@@ -52,11 +52,11 @@ a, div, header, span {
 	min-width: 320px;
 }
 .w {
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 	float: left;
 	min-width: 320px;
 	width: 100%;
-	margin:0px;
+	margin: 15px 0px;
 }
 .m_user {
 	line-height: 40px;

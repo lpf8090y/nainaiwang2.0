@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>消息 — 耐耐网·触摸版</title>
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/message.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<!-- 滑动删除 -->
+<script type="text/javascript" src="js/message.js"></script>
+<!-- 滑动删除 end-->
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+</head>
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> 
+      <a class="new-a-back" href="javascript:history.back();"> <span><img src="images/iconfont-fanhui-black.png"></span> </a>
+      <h2>消息</h2>
+      <a class="mess_edit" href="message_edit.html"> 
+        <span>编辑</span> 
+      </a>
+    </div>
+  </header>
+  <!--header 结束-->
+  <!-- 没有信息显示 开始-->
+  <div class="invoice-top-no" style="display:none;">
+      <img src="images/fap_no.jpg"/>
+      <p>暂无信息</p>
+  </div>
+  <!-- 没有信息 结束-->
+  <!-- 有信息显示 开始-->
+
+<section class="list">
+    <ul class="list-ul">
+        <li id="li" class="list-li">
+            <div class="ba_img"></div>
+            <div class="con">
+                <b class="">【耐耐网】</b>
+                <span class="new_time">05-18 10:22</span>
+                <div class="new_con">认证已通过，现在您可以进行交易了~</div>
+            </div>
+            <div class="btn">删除</div>
+        </li>
+        <li  class="list-li">
+           <div class=""></div>
+            <div class="con">
+                <b class="">【耐耐网】</b>
+                <span class="new_time">05-18 10:22</span>
+                <div class="new_con">认证已通过，现在您可以进行交易了~</div>
+            </div>
+            <div class="btn">删除</div>
+        </li>
+    </ul>
+</section>
+  <!-- <div class="show_message" data-role="content">
+    <div class="swipe-delete new_xs no_read" data-role="listview" >
+      <div class="ntle">
+        <div class="behind">
+            <a href="#" class="ui-btn delete-btn">Delete</a>
+        </div>
+        <b class="new_tit">【耐耐网】</b>
+        <span class="new_time colab">05-18 10:22</span>
+      </div>
+      <div>认证已通过，现在您可以进行交易了~</div>
+    </div>
+  </div> -->
+  <!-- 有信息显示 结束-->
+</div>
+</body>
+</html>
