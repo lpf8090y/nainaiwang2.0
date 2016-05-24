@@ -12,16 +12,6 @@ body {
     right: 10px;
     top: 13px;
 }
-/*显示消息 strat*/
-/*.show_message .new_xs{
-	border-bottom: 1px solid #eff3f6;
-	padding: 10px 15px;
-}
-.show_message .new_xs .ntle{
-	height: 25px;
-}
-
-*/
 .list-ul {
     overflow: hidden
 }
@@ -42,9 +32,57 @@ body {
     top: 0;
     right: -60px;
     text-align: center;
-    background: #ffcb20;
+    background: #bd1016;
     color: #fff;
     width: 60px;
 	line-height: 71px;
 }
+ .ba_img{
+    /*background: url(../images/no_read.jpg) no-repeat 7 16px;*/
+  float: left;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background: #bd1016;
+    margin: 10px 0px;
+ }
+ .radio{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ddd;
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari 和 Chrome */
+    border-radius: 10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    margin: 20px 10px 0 0;
+}
+.der_col{
+    border: 2px solid #bd1016;
+}
+.radio .radio_check{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #bd1016;
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari 和 Chrome */
+    border-radius: 10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    margin: 1px auto;
+    background: #bd1016;
+}
+.msed{
+    position: fixed;
+    bottom: 0px;
+    background: #f7f7f7;
+    width: 100%;
+    line-height: 45px;
+    border-top: 1px solid #eff3f6;
+}
+.msed .msed_t{
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: #bd1016
+}
 /*显示消息 end*/
+

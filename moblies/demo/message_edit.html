@@ -8,9 +8,7 @@
 <link href="css/public.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/message.css">
 <script src="js/jquery-1.8.3.min.js"></script>
-<!-- 滑动删除 -->
 <script type="text/javascript" src="js/message.js"></script>
-<!-- 滑动删除 end-->
 <script>
 $(window).load(function() {
 	$("#status").fadeOut();
@@ -32,8 +30,8 @@ $(window).load(function() {
     <div class="header"> 
       <a class="new-a-back" href="javascript:history.back();"> <span><img src="images/iconfont-fanhui-black.png"></span> </a>
       <h2>消息</h2>
-      <a class="mess_edit" href="message_edit.html"> 
-        <span>编辑</span> 
+      <a class="mess_edit" href="message.html"> 
+        <span>取消</span> 
       </a>
     </div>
   </header>
@@ -49,6 +47,7 @@ $(window).load(function() {
 <section class="list">
     <ul class="list-ul">
         <li id="li" class="list-li">
+            <div class="radio der_col"><div class="radio_click radio_check"></div></div>
             <div class="ba_img"></div>
             <div class="con">
                 <b class="">【耐耐网】</b>
@@ -58,7 +57,8 @@ $(window).load(function() {
             <div class="btn">删除</div>
         </li>
         <li  class="list-li">
-           <div class=""></div>
+            <div class="radio"><div class="radio_click"></div></div>
+            <div class=""></div>
             <div class="con">
                 <b class="">【耐耐网】</b>
                 <span class="new_time">05-18 10:22</span>
@@ -68,19 +68,11 @@ $(window).load(function() {
         </li>
     </ul>
 </section>
-  <!-- <div class="show_message" data-role="content">
-    <div class="swipe-delete new_xs no_read" data-role="listview" >
-      <div class="ntle">
-        <div class="behind">
-            <a href="#" class="ui-btn delete-btn">Delete</a>
-        </div>
-        <b class="new_tit">【耐耐网】</b>
-        <span class="new_time colab">05-18 10:22</span>
-      </div>
-      <div>认证已通过，现在您可以进行交易了~</div>
-    </div>
-  </div> -->
-  <!-- 有信息显示 结束-->
+  <div style="height:100px;"></div>
+  <div class="msed">
+    <a class="msed_t">删除所选</a>
+    <a class="msed_t">标记已读</a>
+  </div>
 </div>
 </body>
 </html>
