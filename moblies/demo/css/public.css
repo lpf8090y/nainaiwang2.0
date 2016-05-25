@@ -371,7 +371,7 @@ a, div, header, span {
 	display: block;
 	float: left;
 	font-size: 18px;
-	width: 80px;
+	width: 85px;
 }
 .main .item .item_log{
 	height: 50px;
@@ -510,3 +510,23 @@ top: 16px;
 	text-decoration: none;
 }
 /*增加地址css end*/
+
+/*找货助手*/
+.guige{
+	margin: 10px 0px;
+}
+.guige .select_zl{
+	position: absolute;
+	right: 10px;
+	top:15px;
+}
+.guige .select_zl select.zhl{
+background: #f7f7f7;
+padding: 3px 5px;
+border: 0px;
+}
+#textarea { 
+	overflow: hidden; 
+	padding: 15px 10px 10px 10px;
+}
+/*找货助手 end*/
