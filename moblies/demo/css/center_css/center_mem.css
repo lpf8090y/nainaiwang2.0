@@ -544,8 +544,8 @@ div.mobsuc_containt{
 }
 .edit_name textarea{
     border: 1px solid #e0e0e0;
-    padding: 10px 0 12px 5%;
-    width: 95%;
+    padding: 10px 5% 12px 5%;
+    width: 90%;
     border-radius: 3px;
     color: #b1b1b1;
     font-size: 16px;
