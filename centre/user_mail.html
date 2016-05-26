@@ -27,23 +27,11 @@
     <div class="topnav_width">
         <div class="topnav_left">
             <div class="login_link" id="toploginbox">
-                <a rel="external nofollow" href="login.html" target="_blank" class="topnav_login">登录</a>
-                <div class="login_box" id="login_boxMain" style="display: none;">
-                    <input name="gtxh_LoginMobile" type="text" id="gtxh_LoginMobile" class="txt_topnav" value="手机号码" maxlength="11">
-                    <br>
-                    <input type="text" id="gtxh_importpwd" class="txt_topnav" value="登录密码" maxlength="11">
-                    <input name="gtxh_LoginPwd" type="password" id="gtxh_LoginPwd" maxlength="20" style=" display:none;">
-                    <br>
-                    <input type="button" value="登录" id="gtxh_btnLogin" class="btn_topnav_login" onclick="javascript:_utaq.push(['trackEvent','btn-log']);">
-                    &nbsp;
-                    <input name="gtxh_autoLogin" type="checkbox" id="gtxh_autoLogin" style="vertical-align: middle" checked="checked">
-                    <label for="checkbox">两周内自动登录</label>
-                    <br>
-                    <a href="PasswordReset.html" target="_blank">忘记密码</a> <a href="register.html" target="_blank">立即注册</a>
-                </div>
-                <div class="topnav_regsiter" style=" float:right;">
-                    <a rel="external nofollow" href="register.html" target="_blank">免费注册</a>
-                </div>
+                <a rel="external nofollow" href="user_index.html" target="_blank" >放学后音乐会</a>
+                <span><img src="../images/rank_03.png" style="width:15px;vertical-align: middle;"/></span>
+                <a class="pa-zy">退出</a>
+                <a href="user_mail.html">消息（1）</a>
+                
             </div>
             <div class="topnav_login_in" id="userCenterbox" style="display: none;">
                 您好，<label class="icon_topnav_loginin" id="gtxh_uame"></label>
@@ -184,171 +172,137 @@
 				<div class="left_navigation">
 					<ul>
 						<li class="let_nav_tit"><h3>消息管理</h3></li>
-						<li><a href="user_zh.html" class="nav-first cur">系统消息</a></li>
+						<li><a href="user_mail.html" class="nav-first cur">系统消息</a></li>
                         <li><a class="nav-first" href="zh_mm.html">订单消息</a></li>
                         <li><a class="nav-first" href="zh_mm.html">账号消息</a></li>
                         <li><a class="nav-first" href="zh_mm.html">其他消息</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="user_c">
-				<div class="user_zhxi">
-					<div class="zhxi_tit">
-						<p><a>消息管理</a>><a>系统消息</a></p>
-					</div>
-					<div>
-						<form>
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>用户名：</span>
-							<span><input class="text" type="text" value="ssfdsf" disabled="disabled"  name="username"/></span>
-						</div>
-
-						<div class="zhxi_con">
-							<span class="con_tit"><i></i>手机号码：</span>
-							<span><input class="text" disabled="disabled" value="13728904567" type="text" name="mobile_no"/>
-							<a href="mobile_edit.html"><i class="icon-info-sign"></i>点击修改手机号码</a></span>
-							<!-- <input type="text" readonly="readonly" name="checkh" class="mobile_no"/></span> -->
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit"><i></i>固话：</span>
-							<span><input class="text" disabled="disabled" type="text" name="phone_no"/></span>
-						</div>
-
-						<div class="zhxi_con">
-							<span class="con_tit"><i>*</i>电子邮箱：</span>
-							<span><input class="text" type="text" disabled="disabled" name="email"/></span>
-						</div>
-
-						<div class="zhxi_con">
-							<span class="con_tit"><i></i>QQ：</span>
-							<span><input class="text" disabled="disabled" type="text" name="qq_no"/></span>
-								<!-- <input type="text" readonly="readonly" name="checkk"  class="qq_no" /></span> -->
-						</div>
-						<div class="zhxi_con">
-							<span class="con_tit"><i></i>传真：</span>
-							<span><input class="text" disabled="disabled" type="text"/></span>
-						</div>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i>*</i>真实姓名：</span>
-                            <span><input class="text" type="text" value="ssfdsf" disabled="disabled" value="王五" name="username"/></span>
-                        </div>
-						<div class="zhxi_con">
-							<span><a href="zh_edit.html"><input class="submit_edit" type="button" value="修改"/></a></span>
-						</div>
-						</form>
-					</div>
-
-					<div style="clear:both;"></div>
-				</div>
-               <!--  企业基本信息（根据登录者信息显示企业或者个人基本信息） -->
+            <!-- 中间内容strat -->
+			<div class="user_c_list">
                 <div class="user_zhxi">
                     <div class="zhxi_tit">
-                        <p><a>账号管理</a>><a>企业基本信息</a></p>
+                        <p><a>采购管理</a>><a>采购列表</a></p>
                     </div>
-                    <div>
-                        <form>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i>*</i>用户名：</span>
-                            <span><input class="text" type="text" value="ssfdsf" disabled="disabled"  name="username"/></span>
-                        </div>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i></i>手机号码：</span>
-                            <span><input class="text" disabled="disabled" value="13728904567" type="text" name="mobile_no"/>
-                            <a href="mobile_edit.html"><i class="icon-info-sign"></i>点击修改手机号码</a>
-                            </span>
-                            <!-- <input type="text" readonly="readonly" name="checkh" class="mobile_no"/></span> -->
-                        </div>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i>*</i>电子邮箱：</span>
-                            <span>
-                                <input class="text" type="text" disabled="disabled" name="email"/>    
-                            </span>
-                        </div>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i>*</i>公司名：</span>
-                            <span><input class="text" type="text" value="ssfdsf" disabled="disabled"  name="username"/></span>
-                        </div>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i>*</i>地址：</span>
-                            <span class="zhxi_addre">
-                                <select disabled="disabled">
-                                    <option>山西省</option>
-                                </select>
-                                <select disabled="disabled">
-                                    <option>xxx</option>
-                                </select>
-                                <select disabled="disabled">
-                                    <option>xxxx</option>
-                                </select>
-                            </span>
-                            <!-- <input type="text" readonly="readonly" name="checkh" class="mobile_no"/></span> -->
-                        </div>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i>*</i>法人：</span>
-                            <span><input class="text" disabled="disabled" type="text" value="张三"/></span>
-                        </div>
+                    <div class="chp_xx">
+                        <div class="xx_center">
+                            <table class="mail_table" border="0"  cellpadding="" cellspacing="">
+                                <tr class="title">
+                                    <td width="80px">
+                                        <input id="controlAll" type="checkbox" class="check"/>
+                                        <span>全选</span>
+                                    </td>
+                                    <td>
+                                        <span class="colab">标记已读</span>
+                                        |
+                                        <span class="colab">批量删除</span>
+                                    </td>
+                                    <td width="150px">
+                                        <div style="text-align:center;">
+                                        <span class="col50">当前页未读消息</span>
+                                        <span class="cold6">8</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="data">
+                                            <p class="data_year">1016-05</p>
+                                            <p class="data_day"><b>04</b></p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tact">
+                                            <input type="checkbox"/>
+                                            <span>19:22:34</span>
+                                            <img src="../images/center/show_mail.png"/>
+                                            <span class="colab">系统消息</span>
+                                            <span>我的小船翻不翻？扫二维码立刻开始游戏</span>
+                                            <a class="colab right-a">点击查看详情</a>
+                                        </div>
+                                    </td>
+                                    <td><a class="cz-tab" title="删除"><i class="icon-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top">
+                                        <div class="data">
+                                            <p class="data_year">1016-05</p>
+                                            <p class="data_day"><b>04</b></p>
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <div class="tact">
+                                            <input type="checkbox"/>
+                                            <span>19:22:34</span>
+                                            <img src="../images/center/show_mail.png"/>
+                                            <span class="colab">系统消息</span>
+                                            <p class="mail_cont">我的小船翻不翻？扫二维码立刻开始游戏我的小船翻不翻？扫二维码立刻开始游戏我的小船翻不翻？扫二维码立刻开始游戏我的小船翻不翻？扫二维码立刻开始游戏
+                                            <a class="up_jt"><i class="icon-double-angle-up"></i></a>
+                                            </p>
 
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i>*</i>注册资金：</span>
-                            <span class="zhxi_addre">
-                                <select disabled="disabled">
-                                    <option>10万-20万</option>
-                                </select>
-                            </span>
-                            <span><i>*</i>企业类型：</span>
-                            <span class="zhxi_addre">
-                                <select disabled="disabled">
-                                    <option>钢材</option>
-                                </select>
-                            </span> 
-                             <span><i>*</i>企业性质：</span>
-                            <span class="zhxi_addre">
-                                <select disabled="disabled">
-                                    <option>国有</option>
-                                </select>
-                            </span>
-                        </div>
+                                            <a class="colab right-a">点击查看详情</a>
 
-                    
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i>*</i>联系人姓名：</span>
-                            <span><input class="text" disabled="disabled" type="text"value="李四"/></span>
+                                        </div>
+                                       
+                                    </td>
+                                    <td><a class="cz-tab" title="删除"><i class="icon-trash"></i></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="data">
+                                            <p class="data_year">1016-05</p>
+                                            <p class="data_day"><b>04</b></p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tact">
+                                            <input type="checkbox"/>
+                                            <span>19:22:34</span>
+                                            <img src="../images/center/no_mail.png"/>
+                                            <span class="colab">系统消息</span>
+                                            <a class="cold6 right-a">点击查看详情</a>
+                                        </div>
+                                    </td>
+                                    <td><a class="cz-tab" title="删除"><i class="icon-trash"></i></a></td>
+                                </tr>
+                                
+                            </table>
+
                         </div>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i>*</i>电话：</span>
-                            <span><input class="text" disabled="disabled" type="text"value="13526783567"/></span>
+                        
+                        
+                        <div class="page_num">
+                            共0条记录&nbsp;当前第<font color="#FF0000">1</font>/0页&nbsp;
+                            <a href="#">第一页</a>&nbsp;
+                            <a href="#">上一页</a>&nbsp;
+                            <a href="#">下一页</a>&nbsp;
+                            <a href="#">最后页</a>&nbsp; 
+                            跳转到第 <input name="pagefind" id="pagefind" type="text" style="width:20px;font-size: 12px;" maxlength="5" value="1"> 页 
+                            <a><span class="style1">确定</span></a>
                         </div>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i></i>职务：</span>
-                            <span><input class="text" disabled="disabled" type="text"value="负责人"/></span>
-                        </div>
-                        <div class="zhxi_con">
-                            <span class="con_tit"><i></i>选择代理商：</span>
-                            <span><input class="text" disabled="disabled" type="text"value=""/></span>
-                        </div>
-                        <div class="zhxi_con">
-                            <span><a href="qy_edit.html"><input class="submit_edit" type="button" value="修改"/></a></span>
-                        </div>
-                        </form>
                     </div>
-
-                    <div style="clear:both;"></div>
                 </div>
-			</div>
-			<div class="user_r">
-				<div class="wrap_con">
-					<div class="tit clearfix">
-						<h3>公告</h3>
-					</div>
-					<div class="con">
-						<div class="con_medal clearfix">
-							<ul>
-								<li><a>暂无勋章</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+
+            </div>
+            <!--end中间内容-->
+            <!--start右侧广告-->            
+            <!-- <div class="user_r">
+                <div class="wrap_con">
+                    <div class="tit clearfix">
+                        <h3>公告</h3>
+                    </div>
+                    <div class="con">
+                        <div class="con_medal clearfix">
+                            <ul>
+                                <li><a>暂无勋章</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!--end右侧广告-->
 		</div>
 	</div>
  <!-- 右侧代码部分begin -->

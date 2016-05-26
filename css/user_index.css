@@ -753,6 +753,7 @@ color: #fff;
 }
 .chp_xx .xx_center tr td{
   padding: 8px 0px;
+  position: relative;
 }
 .chp_xx .xx_center tr td .thjs_input{
   border: 1px solid #dfe5eb;
@@ -1323,6 +1324,15 @@ padding: 8px 15px;
 .col1734b1{
   color: #1734b1;
 }
+.colab{
+  color: #ababab;
+}
+.cold6{
+ color: #D61515;
+}
+.col50{
+  color: #50a6d3;
+}
  /*身份认证_企业认证*/
  .rz_title{
   height: 40px;
@@ -1592,6 +1602,7 @@ background-position: -7px 0;
 }
 /*去掉右侧广告 表格样式(合同列表)end*/
 
+
 .pro_classify .class_jy ul .a_choose a {
     display: block;
     color: #c81623;
@@ -1684,3 +1695,64 @@ a.for_cangdan:hover,a.for_cangdan:active{
   margin: 0 auto;
   text-align: center;
 }
+
+/*消息管理 strat*/
+.mail_table{
+  margin-bottom: 20px;
+}
+.mail_table a:hover {
+text-decoration:none;
+}
+.mail_table .tact{
+  margin: 17px 30px 0 30px;
+  line-height: 25px;
+}
+.mail_table .tact .right-a{
+ position: absolute;
+ top:20px;
+ right: 10px;
+}
+.mail_table .cz-tab{
+  position: relative;
+  top: 17px;
+}
+.mail_table .data{
+  border: 1px solid #D61515;
+  margin: 0 10px;
+  border-radius: 10px;
+  width: 60px;
+}
+.mail_table .data .data_year{
+  line-height: 25px;
+  background: #D61515;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+.mail_table .data .data_day{
+  font-size: 20px;
+line-height: 30px;
+}
+.mail_table tr td{
+  vertical-align: top;
+}
+.mail_table tr td:nth-child(2){
+  text-align: left;
+  padding-left: 10px;
+}
+.mail_table tr td:nth-child(3){
+  text-align: right;
+  padding-right: 10px;
+}
+
+.mail_table .mail_cont{
+  padding: 25px 0 10px 10px;
+}
+.mail_table .mail_cont .up_jt{
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+.pa-zy{
+  padding:0 10px; 
+}
+/*消息管理 end*/
