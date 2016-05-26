@@ -4,8 +4,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<title>会员中心</title>
-	<title>产品详情</title>
+	<script type="text/javascript" src="../js/center_js/jquery-1.6.2.min.js.js"></script>
 	<link href="../css/center_css/center_mem.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../js/center_js/upload_headimg.js"></script>
 </head>
 <body>
 	<!-- top-start -->
@@ -26,8 +27,24 @@
    <!-- top-end -->
 
    <div class="conmit_for">
-	   	<div class="for_img">
-	   		<a href=""><img src="../images/center_img/photo.png" alt=""></a>
+   	    <div class="border_outside">
+   	       <div class="img_out">	
+		   		<!-- <a href=""><img src="../images/center_img/photo.png" alt=""></a> -->
+         
+ 
+		    <div id="note">图片大小必须小于200K</div>
+		    <form name="form0" id="form0" >
+		    <input type="file" name="file0" id="file0" style="display:none" accept="image/jpeg,image/png,image/gif,image/bmp" /><br>
+		    <div class="img"><img class="show_img" src="" id="img0">
+		    <a href="javascript:;" class="add" onClick="file0.click()">
+		    	<img class="click_img" src="../images/center_img/photo.png" alt=""> 
+		    </a>
+		    </div>
+		    </form>
+	    </div>
+ 
+
+		   
 	   	</div>
 	   	<div class="for_info">
 	   		<p>15789879809</p>
@@ -39,6 +56,8 @@
 	   		<a href=""><img src="../images/center_img/comit.png" alt=""></a>
 	   	</div>
    </div>
+
+
    <div style="clear:both; height:15px;"></div>
    
    <div class="set_total">

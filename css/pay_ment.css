@@ -2,7 +2,7 @@
 /* CSS Document */
 *{ margin:0; padding:0; font-style:normal;}
 body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
-{margin:0;padding:0;font-style:normal;font:100% "Hiragino Sans GB W3",Arial, Helvetica,sans-serif;}
+{margin:0;padding:0;font-style:normal;font-family:"Hiragino Sans GB W3",Arial, Helvetica,sans-serif;}
 
 
 
@@ -206,7 +206,7 @@ table {
      line-height: 35px;
 }
 .sty_offline ul li input.uplod{
-    background: url(../images/order/righbt.png) no-repeat 0 0; 
+    
     width: 170px;
 }
 .sty_offline ul li span{

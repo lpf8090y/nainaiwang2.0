@@ -14,15 +14,19 @@ $(function(){
     });
 
 // 搜索框点击为空
-window.onload = function() {
-    var keyWord = document.getElementsByName('keyword')[0];   //搜索name为keyWord的DOM对象
-    keyWord.onfocus = function() {
-        keyWord.value = '';
-    };
-    keyWord.onblur = function() {
-        keyWord.value = '搜索您感兴趣的资源';
-    };
-};
+$(function(){
+   $("#index_newkeyword").focus(function(){ 
+     var txt_value = $(this).val();
+     if(txt_value==this.defaultValue){
+        $(this).val("");
+    } });
+   $("#index_newkeyword").blur(function(){
+     var txt_value = $(this).val();
+     if(txt_value==""){
+        $(this).val(this.defaultValue);
+     } });
+   
+ });
 
 
 
