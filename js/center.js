@@ -161,4 +161,16 @@ jQuery(document).ready(function($){
             param.top = Math.round((maxHeight - param.height) / 2);
             return param;
         }
-    
+
+/*控制消息页面中详情显示和隐藏*/
+$(document).ready(function(){
+  $(".tact .right-a").click(function(){
+    $(this).parents(".tact").find(".mail_cont").show();
+  });
+   $(".tact .mail_cont .up_jt").click(function(){
+    $(this).parents(".mail_cont").hide();
+  });
+});
+
+
+/*控制消息页面中详情显示和隐藏 end*/
