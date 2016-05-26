@@ -174,9 +174,8 @@ background: #027cff;
 }
 /*暂不认证*/
 
-.user_nrz {
-	
-	margin-bottom:20px;
+.user_nrz {	
+	margin-bottom:10px;
 }
 .user_nrz .nrz_tit{
 	text-align: left;
@@ -682,7 +681,7 @@ visibility: hidden;
 }
 /*产品信息*/
 .chp_xx{
-	margin:10px;
+	/*margin:10px;*/
 }
 .chp_xx label{
     display: block;
