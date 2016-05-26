@@ -172,5 +172,5 @@ $(document).ready(function(){
   });
 });
 
+
 /*控制消息页面中详情显示和隐藏 end*/
-    
