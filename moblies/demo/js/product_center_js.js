@@ -57,14 +57,6 @@ window.onload=function(){
             } 
         };
 
-// 搜索框点击为空
-    var keyWord = document.getElementsByName('keyword')[0];   //搜索name为keyWord的DOM对象
-    keyWord.onfocus = function() {
-        keyWord.value = '';
-    };
-    keyWord.onblur = function() {
-        keyWord.value = '输入价格';
-    };
 
 };
 
@@ -78,6 +70,20 @@ $(function(){
 });
  
 
+// 搜索框点击为空
+   $(function(){
+   $("#index_newkeyword").focus(function(){ 
+     var txt_value = $(this).val();
+     if(txt_value==this.defaultValue){
+        $(this).val("");
+    } });
+   $("#index_newkeyword").blur(function(){
+     var txt_value = $(this).val();
+     if(txt_value==""){
+        $(this).val(this.defaultValue);
+     } });
+   
+ });
 
 
  

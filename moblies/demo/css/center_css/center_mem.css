@@ -118,28 +118,46 @@ div.clear.height{
 	height: auto;
 	overflow: hidden;
 	padding: 15px 0;
+    position: relative;
 	border-bottom: 1px solid #e9e9e9;
 }
-.conmit_for .for_img{
+.conmit_for .border_outside {
     width: 25%;
     float: left;
-    background: url(../../images/center_img/bgimg.png) no-repeat left center;
-    background-size: 80px 80px;
-    margin-left: 3%;
-    height: 110px;
-    position: relative;
+    padding-left: 3%;
+    text-align: center;
+    margin-top: 12px;
 }
-.conmit_for .for_img img{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 28px;
-    left: 14px;
+.img_out .click_img {
+    width: 75px;
+    height: 75px;
+    color: #000;
+    position: relative;
+    border-radius: 75px;
+    border: 1px solid #f0f0f0;
+}
+.img_out .show_img {
+    color: #000;
+    position: relative;
+    border-radius: 75px;
+    border: 1px solid #f0f0f0;
+}
+.border_outside .img_out {
+    height: 82px;
+    width: 82px;
+    color: #000;
+    box-shadow: 0px 0 20px #f0f0f0;
+    border-radius: 82px;
+    text-align: center;
+    position: relative; 
+    line-height: 3px;
 }
 .conmit_for .for_info{
     width: 33%;
     float: left;
     margin: 30px 5px 30px 1px;
+    position: relative;
+    left: 1%;
 }
 .conmit_for .for_info p{
 	padding: 0;
@@ -170,6 +188,7 @@ div.clear.height{
     margin-left: 20%;
 }
 .set_total{
+    background: #FFF;
      margin: 0 auto;
      height: auto;
      overflow: hidden;
@@ -194,8 +213,9 @@ div.clear.height{
 	height: 40px; 
 }
 .sets_list .sets_info{
-	float: left;
-	width: 22%;
+    float: left;
+    width: 33%;
+    text-align: left;
 }
 .sets_list .sets_info h3{
 	 line-height: 44px; 
@@ -213,16 +233,532 @@ div.clear.height{
     height: 24px;
 }
 .logg_out{
-    width: 89%;
-    height: auto;
-    overflow: hidden;
-    padding: 12px 3%;
-    background: #bc1018;
+    width: 92%;
     margin: 50px auto 100px auto;
-    border-radius: 3px;
-    text-align: center;
 }
  .logg_out a{
     color: #fff;
     font-size: 16px;
+    height: auto;
+    overflow: hidden;
+    width: 94%;
+    padding: 12px 3%;
+    background: #bc1018;
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+}
+
+/*提交认证css start*/
+.set_total .sets_tit{
+    width: 94%;
+    margin: 0 auto;
+    background: #FFF;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 3%;
+    border-top: 1px solid #e9e9e9;
+    position: relative;
+}
+.set_total .sets_tit h3{
+    color:#b3b3b3;
+    font-size: 14px;
+
+}
+.sets_list .sets_enter img.add_pho{
+    height: 24px;
+    width: 24px;
+}
+
+.mengbanimg {
+            position: absolute;
+            top: 22%;
+            width: 80%;
+            height: 36%;
+            background: #fff;
+            z-index: 9999999999;
+            opacity: 1;
+            left: 10%;
+        }
+.mengban {
+    background: rgba(206, 206, 206,0.6)!important;
+    filter: Alpha(opacity=60);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-Index: 999999999;
+    background-color: #e9e9e9;
+}
+ .removebox {
+    display: none;
+    width: 65%;
+    float: right;
+    border-top: 1px solid #e9e9e9;
+    padding: 3px 2% 3px 20%;
+    position: relative;
+}
+.removebox .upload_img {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #e9e9e9;
+}     
+.removebox .delete_img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 2%;
+    top: 45px;
+}
+#note{position:absolute;width:80%;padding:20px;background:#eee;border:1px solid #ccc;z-index:9999;display:none;}  
+
+/*认证成功*/
+.suc_containt  {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.suc_containt .tuwenhp img{
+    width: 100px;
+    height: 100px;
+}
+.suc_containt .tuwenhp h3{
+    color: #2e2e2e;
+    line-height: 45px;
+    font-size: 18px;
+}
+.suc_containt .tuwenhp p {
+    color: #bcbcbc;
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+}
+.suc_containt .fale_huiyu{
+      margin-top: 75px;  
+}
+.suc_containt .fale_huiyu a{
+    display: block;
+    border: 1px solid #bc1018;
+    padding: 12px;
+    text-align: center;
+    border-radius: 3px;
+    color: #bc1018;
+    font-size: 14px;
+}
+
+
+/*我的账户*/
+.account_list{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #FFF;
+    margin: 0 auto;
+}
+.account_list ul li {
+    text-align: center;
+    border-bottom: 1px solid #e9e9e9;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    padding: 14px 5%;
+    font-size: 13px;
+}
+.account_list ul li .acco_left{
+    float: left;
+    width: 23%;
+    color: #b1b1b1;
+    text-align: left;
+}
+.account_list ul li .acco_right{
+    float: right;
+    width: 6%;
+    line-height: 26px;
+    text-align: right;
+    position: relative;
+}
+.account_list ul li .acco_right img{
+    width: 12px;
+    height: 22px;
+    position: absolute;
+    top: -3px;
+}
+.account_list ul li .acco_center{
+    float: left;
+    width: 71%;
+    color: #2e2e2e;
+    text-align: right;
+}
+.account_list ul li.jiange{
+    background: #fafafa;
+    padding: 5px 5%;
+}
+.account_list ul li .acco_center.address{
+    text-align: left;
+}
+
+
+/*修改手机号*/
+div.mob_jiange{
+    height: 18px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.mobile_list{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #FFF;
+    margin: 0 auto;
+}
+.mobile_list ul{
+    width: 90%;
+    padding: 0 5%;
+}
+.mobile_list ul li {
+    text-align: center;
+    border-bottom: 1px solid #e9e9e9;
+    height: auto;
+    overflow: hidden;
+    padding: 14px 0;
+    font-size: 14px;
+    width: 100%;
+}
+.mobile_list ul li div input{
+    border: 0 none;
+    font-size: 14px;
+    color: #d1d1d1;
+}
+.mobile_list ul li .mob_left{
+    float: left;
+    width: 28%;
+    color: #2e2e2e;
+    text-align: left;
+}
+.mobile_list ul li .mob_right{
+    float: right;
+    width: 35%;
+    text-align: right;
+    position: relative;
+}
+.mobile_list ul li .mob_center{
+    float: left;
+    width: 40%;
+    color: #2e2e2e;
+    text-align: left;
+}
+.mobile_list ul li.jiange{
+    background: #fafafa;
+    padding: 5px 5%;
+}
+.mobile_list ul li .mob_right input{
+    padding: 6px 8px;
+    border: 1px solid #bc1018;
+    color: #bc1018;
+    background: #FFF;
+    border-radius: 3px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    font-size: 13px;
+}
+
+/*手机号修改成功*/
+div.mobsuc_containt{
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+.mobsuc_containt .mob_info img {
+    width: 100px;
+    height: 100px;
+}
+.mobsuc_containt .mob_info h3 {
+    color: #2e2e2e;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.mobsuc_containt .mob_info p{
+    color: #bcbcbc;
+    text-align: left;
+    font-size: 16px;
+    line-height: 32px;
+    margin: 0;
+    padding-left: 8%;
+}
+.edit_name{
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px 5%;
+}
+.edit_name h3{
+    color: #2e2e2e;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.edit_name input{
+    border: 1px solid #e0e0e0;
+    padding: 10px 0 12px 5%;
+    width: 95%;
+    border-radius: 3px;
+    color: #b1b1b1;
+    font-size: 16px;
+}
+.save_info{
+    width: 100%;
+    height: 42px;
+    position: relative;
+}
+.save_info a{
+    display: block;
+    height: 45px;
+    background: #bc1018;
+    color: #FFF;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+}
+.edit_name textarea{
+    border: 1px solid #e0e0e0;
+    padding: 10px 0 12px 5%;
+    width: 95%;
+    border-radius: 3px;
+    color: #b1b1b1;
+    font-size: 16px;
+}
+.mobsuc_containt .mob_info p.new_paswod{
+    text-align: center;
+    padding-left:0;
+}
+
+.contra_word{
+    width: 65%;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    margin-top: 70px;
+}
+.contra_word p{
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 25px;
+}
+.edit_name textarea.look_word{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+/*会员俱乐部*/
+.club_total{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #FFF;
+    margin: 0 auto;
+}
+.club_total .club_top{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #2f2f2f;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 0;
+    height: 77px;
+}
+.club_top .vip_left {
+    width: 32%;
+    float: left;
+    line-height: 77px;
+}
+.club_top .vip_left i{
+    color: #ff8400;
+}
+
+.club_top .vip_center {
+    width: 36%;
+    float: left;
+}
+.club_top .vip_center img {
+    width: 75px;
+    height: 75px;
+    color: #000;
+    position: relative;
+    border-radius: 75px;
+    border: 1px solid #f0f0f0;
+}
+.club_top .vip_right {
+    width: 32%;
+    float: left;
+    line-height: 77px;
+    position: relative;
+    left: 3%;
+}
+.club_top .vip_right img {
+    width: 20px;
+    height: 18px;
+    float: left;
+    position: relative;
+    top: 30px;
+}
+.club_top .vip_right h5{
+    padding: 0;
+    margin: 0;
+    float: left;
+    font-weight: normal;
+    font-size: 14px;
+}
+.club_total .club_center{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    color: #2f2f2f;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 0;
+    height: auto;
+}
+.club_center h3{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    width: 140px;
+    padding: 2% 3%;
+}
+.club_center h4{
+    color: #c45344;
+    font-size: 13px;
+    margin-top: 18px;
+}
+.club_total .club_bottom{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: #2f2f2f;
+    font-size: 14px;
+    overflow: hidden;
+    background: #c45344;
+    padding: 12px 0;
+    height: auto;
+}
+.club_bottom .bott_left{
+    overflow: hidden;
+    float: left;
+    width: 49%;
+    text-align: center;
+    border-right: 1px solid #b24032;
+}
+.club_bottom .bott_left h4{
+    color: #FFF;
+    font-size: 14px;
+    margin: 0;
+}
+.club_bottom .bott_left h5{
+    color: #FFF;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.club_bottom .bott_right{
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.club_bottom .bott_right h4{
+    color: #FFF;
+    font-size: 14px;
+    margin: 0;
+}
+.club_bottom .bott_right h5{
+    color: #FFF;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+}
+.my_tequan{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #FFF;
+    margin: 0 auto;
+    border-top: 1px solid #e9e9e9;
+}
+.my_tequan ul li{
+    width: 90%;
+    border-bottom: 1px solid #e9e9e9;
+    color: #cacaca;
+    padding: 10px 5%;
+    float: left;
+    clear: both;
+}
+.my_tequan .tequan_tit{
+    padding: 12px 5%;
+}
+.tequan_tit .tequan_left{
+    color: #2e2e2e;
+    font-size: 16px;
+    width: 24%;
+    float: left;
+}
+.tequan_tit .tequan_right{
+    color: #2e2e2e;
+    font-size: 14px;
+    width: 25%;
+    float: right;
+    position: relative;
+    text-align: right;
+}
+.tequan_tit .tequan_right h5 {
+    margin: 0;
+    padding: 0;
+    color: #cacaca;
+    float: right;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 8px;
+}
+.tequan_tit .tequan_right img{
+    height: 18px;
+    width: 10px;
+    position: absolute;
+    top: 0px;
+}
+.my_tequan .tqitem_left{
+    width: 18%;
+    float: left;
+}
+.my_tequan .tqitem_left img{
+    width: 45px;
+}
+.my_tequan .tqitem_center{
+    width: 35%;
+    float: left;
+}
+.my_tequan .tqitem_center h3 {
+    font-size: 14px;
+    color: #b6b6b6;
+    line-height: 35px;
 }
