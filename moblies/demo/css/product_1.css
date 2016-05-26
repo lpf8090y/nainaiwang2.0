@@ -32,10 +32,18 @@ i{font-style: normal;}
 	 display: block;
     background: url(../images/product/pr_fan.png) no-repeat left center;
     height: 36px;
-    width: 5%;
+    width: 6%;
     background-size: 14px 22px;
     margin: 1px 5%;
     float: left;
+	position: relative;
+}
+.header_search .h-left a{
+    display: block;
+    width: 8%;
+    height: 35px;
+    position: fixed;
+    z-index: 999999999999;
 }
 .header_search .search_border {
     background: #f6f6f6;

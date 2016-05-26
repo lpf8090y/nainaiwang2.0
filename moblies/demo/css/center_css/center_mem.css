@@ -36,10 +36,18 @@ i{font-style: normal;}
 	 display: block;
     background: url(../../images/product/pr_fan.png) no-repeat left center;
     height: 36px;
-    width: 5%;
+    width: 6%;
     background-size: 14px 22px;
     margin: 1px 8%;
     float: left;
+    position: relative;
+}
+.header_tit .h-left a{
+    display: block;
+    width: 8%;
+    height: 35px;
+    position: fixed;
+    z-index: 999999999999;
 }
 .header_tit .tit_center {
     overflow: hidden;
@@ -103,6 +111,7 @@ div.clear.height{
     padding: 0;
     margin: 0;
     margin-top: 3px;
+    color: #757575;
 }
 .bottom_navs ul li div p.red{
 	color: #bc1018;
@@ -535,8 +544,8 @@ div.mobsuc_containt{
 }
 .edit_name textarea{
     border: 1px solid #e0e0e0;
-    padding: 10px 0 12px 5%;
-    width: 95%;
+    padding: 10px 5% 12px 5%;
+    width: 90%;
     border-radius: 3px;
     color: #b1b1b1;
     font-size: 16px;
