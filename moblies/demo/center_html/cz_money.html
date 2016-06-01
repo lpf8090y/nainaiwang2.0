@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>资金充值</title>
     <link href="../css/center_css/center_mem.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../js/center_js/mit_upload.js"></script>
+    <script type="text/javascript" src="../js/center_js/jquery-1.6.2.min.js.js"></script>
+    <script type="text/javascript" src="../js/center_js/recharge.js"></script>
 </head>
 
 <body style="background:#FFF;">
@@ -26,79 +27,58 @@
  <div class="clear height"></div>
  <!-- top-end -->
 
- <div style="clear:both; height:15px;"></div>
+<div class="account_tota">
+    <h3 class="account_yue">账户余额：</h3> 
+    <h4>￥<i>0.1100</i></h4>
+</div>
+<div class="line_border"></div>
+<div class="recharge_list">
+    <ul>
+        <li class="chooice_tit">选择充值方式</li>
+        <li>
+            <div class="recharge_left">
+                <a href=""><img src="../images/center_img/zj_zfb.png" alt=""></a>
+            </div>
+            <div class="recharge_center">
+                <h3>支付宝支付</h3>
+                <h4>支付宝安全支付</h4>
+            </div>
+            <div class="recharge_right">
+                <i></i>
+            </div>
+        </li>
+        <li>
+            <div class="recharge_left">
+                <a href=""><img src="../images/center_img/zj_ylzx.png" alt=""></a>
+            </div>
+            <div class="recharge_center">
+                <h3>银联在线支付</h3>
+                <h4>使用银联在线支付</h4>
+            </div>
+            <div class="recharge_right">
+                <i></i>
+            </div>
+        </li>
+        <li>
+            <div class="recharge_left">
+                <a href=""><img src="../images/center_img/zj_xxzf.png" alt=""></a>
+            </div>
+            <div class="recharge_center">
+                <h3>线下支付</h3>
+                <h4>线下去支付</h4>
+            </div>
+            <div class="recharge_right">
+                <i></i>
+            </div>
+        </li>
+    </ul>
 
- <div class="set_total">
-    <div class="sets_list">
-        <div class="sets_img">
-            <a href="" ><img src="../images/center_img/yyzz.png" alt=""></a>
-        </div>
-        <div class="sets_info">
-            <a href=""><h3>营业执照</h3></a>
-        </div>
-        <div class="sets_enter">
-            <a class="uploadimga" imgid="img_01" removeboxid="removebox_01" removeid="remove_01" >
-              <img id="imguploadbtn" class="add_pho" src="../images/center_img/add_pho.png" alt="">
-            </a>
-        </div>
-    </div>
-    <div  class="removebox" id="removebox_01">
-        <img class="upload_img" id="img_01">
-        <img class="delete_img" src="../images/center_img/delete.png" id="remove_01">
-    </div>
-    <div class="sets_list">
-        <div class="sets_img">
-            <a  ><img src="../images/center_img/zzjgdmz.png" alt=""></a>
-        </div>
-        <div class="sets_info">
-            <a href=""><h3>组织机构代码证</h3></a>
-        </div>
-        <div class="sets_enter">
-            <a class="uploadimga" imgid="img_02" removeboxid="removebox_02" removeid="remove_02">
-              <img class="add_pho" src="../images/center_img/add_pho.png" alt=""></a>
-        </div>
-    </div>
-    <div class="removebox" id="removebox_02">
-        <img class="upload_img" id="img_02">
-        <img class="delete_img" src="../images/center_img/delete.png" id="remove_02">
-    </div>
-    <div class="sets_list">
-        <div class="sets_img">
-            <a href=""><img src="../images/center_img/swdjz.png" alt=""></a>
-        </div>
-        <div class="sets_info">
-            <a href=""><h3>税务登记证</h3></a>
-        </div>
-        <div class="sets_enter">
-            <a class="uploadimga" imgid="img_03" removeboxid="removebox_03" removeid="remove_03">
-              <img class="add_pho" src="../images/center_img/add_pho.png" alt=""></a>
-        </div>
-    </div>
-    <div class="removebox" id="removebox_03">
-        <img class="upload_img" id="img_03">
-        <img class="delete_img" src="../images/center_img/delete.png" id="remove_03">
-    </div>
-    <div class="sets_list">
-        <div class="sets_img">
-            <a href=""><img src="../images/center_img/khxkz.png" alt=""></a>
-        </div>
-        <div class="sets_info">
-            <a href=""><h3>开户许可证</h3></a>
-        </div>
-        <div class="sets_enter">
-            <a class="uploadimga" imgid="img_04" removeboxid="removebox_04" removeid="remove_04">
-              <img class="add_pho" src="../images/center_img/add_pho.png" alt=""></a>
-        </div>
-    </div>
-    <div class="removebox" id="removebox_04">
-        <img class="upload_img" id="img_04">
-        <img class="delete_img" src="../images/center_img/delete.png" id="remove_04">
-    </div>
 </div>
 
-<div class="logg_out">
-    <a href="">确认提交</a>
-</div>
+
+ <div class="save_info">
+    <a href="">充值</a>
+  </div>
 
 
 </body>
