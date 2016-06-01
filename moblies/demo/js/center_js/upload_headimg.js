@@ -41,7 +41,7 @@ var objUrl = getObjectURL(this.files[0]) ;
 var obj_file = document.getElementById("file0");
 filesize = obj_file.files[0].size;
 if(filesize>1024*200){
-$('#note').css({display:'block', top:'-100px'}).animate({top: '+100'}, 500, function(){
+$('#note').css({display:'block', top:'-100px'}).animate({top: '+3'}, 500, function(){
 setTimeout(out, 3000);
 });
 function out(){
