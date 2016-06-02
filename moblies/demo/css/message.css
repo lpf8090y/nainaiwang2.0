@@ -24,9 +24,22 @@ body {
     color: #666;
     -webkit-transform: translateX(0px);
 }
-
+/*消息滑动列表*/
+.line-scroll-wrappers {
+    height: 75px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.line-scroll-wrappers .mes_c{
+    margin: 0 15px;
+    line-height: 28px;
+    position: relative;
+}
+.line-scroll-wrappers .line-btn-delete{
+    width: 65px;
+}
 .con .new_time{
-	float: right;
+	position: absolute;
+    right: 0px;
 }
 .btn {
     position: absolute;
@@ -140,10 +153,10 @@ body {
 }
 .line-normal-wrapper { 
     display: inline-block;
-    line-height: 100px; 
+   /* line-height: 100px; */
     float: left; 
     padding-top: 10px; 
-    padding-bottom: 10px; 
+/*    padding-bottom: 10px;*/ 
  
 }
 .line-normal-avatar-wrapper { 

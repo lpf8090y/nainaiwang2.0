@@ -1,71 +1,83 @@
-/*滑动删除*/
-    window.addEventListener('load',function(){
-        var initX;//触摸位置
-        var moveX;//滑动时的位置
-        var X = 0;//移动距离
-        var objX = 0;//目标对象位置
-        window.addEventListener('touchstart',function(event){
-            event.preventDefault();
-            var obj = event.target.parentNode;
-            if(obj.className == "list-li"){
-                initX = event.targetTouches[0].pageX;
-                objX =(obj.style.WebkitTransform.replace(/translateX\(/g,"").replace(/px\)/g,""))*1;
-            }
-            if( objX == 0){
-                window.addEventListener('touchmove',function(event) {
-                    event.preventDefault();
-                    var obj = event.target.parentNode;
-                    if (obj.className == "list-li") {
-                        moveX = event.targetTouches[0].pageX;
-                        X = moveX - initX;
-                        if (X > 0) {
-                            obj.style.WebkitTransform = "translateX(" + 0 + "px)";
-                        }
-                        else if (X < 0) {
-                            var l = Math.abs(X);
-                            obj.style.WebkitTransform = "translateX(" + -l + "px)";
-                            if(l>60){
-                                l=60;
-                                obj.style.WebkitTransform = "translateX(" + -l + "px)";
-                            }
-                        }
-                    }
-                });
-            }
-            else if(objX<0){
-                window.addEventListener('touchmove',function(event) {
-                    event.preventDefault();
-                    var obj = event.target.parentNode;
-                    if (obj.className == "list-li") {
-                        moveX = event.targetTouches[0].pageX;
-                        X = moveX - initX;
-                        if (X > 0) {
-                            var r = -60 + Math.abs(X);
-                            obj.style.WebkitTransform = "translateX(" + r + "px)";
-                            if(r>0){
-                                r=0;
-                                obj.style.WebkitTransform = "translateX(" + r + "px)";
-                            }
-                        }
-                        else {     //向左滑动
-                            obj.style.WebkitTransform = "translateX(" + -60 + "px)";
-                        }
-                    }
-                });
-            }
+$(document).ready(function(e) {
+    // 设定每一行的宽度=屏幕宽度+按钮宽度
+    $(".line-scroll-wrappers").width($(".line-wrapper").width() + $(".line-btn-delete").width());
+    // 设定常规信息区域宽度=屏幕宽度
+    $(".line-normal-wrapper").width($(".line-wrapper").width());
+    // 设定文字部分宽度（为了实现文字过长时在末尾显示...）
+    $(".new_con").width($(".line-normal-wrapper").width());
 
-        })
-        window.addEventListener('touchend',function(event){
-            event.preventDefault();
-            var obj = event.target.parentNode;
-            if(obj.className == "list-li"){
-                objX =(obj.style.WebkitTransform.replace(/translateX\(/g,"").replace(/px\)/g,""))*1;
-                if(objX>-40){
-                    obj.style.WebkitTransform = "translateX(" + 0 + "px)";
-                }else{
-                    obj.style.WebkitTransform = "translateX(" + -60 + "px)";
-                }
-            }
-         })
+    // 获取所有行，对每一行设置监听
+    var lines = $(".line-normal-wrapper");
+    var len = lines.length; 
+    var lastX, lastXForMobile;
 
-    })
+    // 用于记录被按下的对象
+    var pressedObj;  // 当前左滑的对象
+    var lastLeftObj; // 上一个左滑的对象
+
+    // 用于记录按下的点
+    var start;
+
+    // 网页在移动端运行时的监听
+    for (var i = 0; i < len; ++i) {
+        lines[i].addEventListener('touchstart', function(e){
+            lastXForMobile = e.changedTouches[0].pageX;
+            pressedObj = this; // 记录被按下的对象 
+
+            // 记录开始按下时的点
+            var touches = event.touches[0];
+            start = { 
+                x: touches.pageX, // 横坐标
+                y: touches.pageY  // 纵坐标
+            };
+        });
+
+        lines[i].addEventListener('touchmove',function(e){
+            // 计算划动过程中x和y的变化量
+            var touches = event.touches[0];
+            delta = {
+                x: touches.pageX - start.x,
+                y: touches.pageY - start.y
+            };
+
+            // 横向位移大于纵向位移，阻止纵向滚动
+            if (Math.abs(delta.x) > Math.abs(delta.y)) {
+                event.preventDefault();
+            }
+        });
+
+        lines[i].addEventListener('touchend', function(e){
+            var diffX = e.changedTouches[0].pageX - lastXForMobile;
+            if (diffX < -150) {
+                $(pressedObj).animate({marginLeft:"-65px"}, 500); // 左滑
+                lastLeftObj && lastLeftObj != pressedObj && 
+                    $(lastLeftObj).animate({marginLeft:"0"}, 500); // 已经左滑状态的按钮右滑
+                lastLeftObj = pressedObj; // 记录上一个左滑的对象
+            } else if (diffX > 150) {
+                $(pressedObj).animate({marginLeft:"0"}, 500); // 右滑
+                lastLeftObj = null; // 清空上一个左滑的对象
+            }
+        });
+    }
+
+    // 网页在PC浏览器中运行时的监听
+    for (var i = 0; i < len; ++i) {
+        $(lines[i]).bind('mousedown', function(e){
+            lastX = e.clientX;
+            pressedObj = this; // 记录被按下的对象
+        });
+
+        $(lines[i]).bind('mouseup', function(e){
+            var diffX = e.clientX - lastX;
+            if (diffX < -150) {
+                $(pressedObj).animate({marginLeft:"-65px"}, 500); // 左滑
+                lastLeftObj && lastLeftObj != pressedObj && 
+                    $(lastLeftObj).animate({marginLeft:"0"}, 500); // 已经左滑状态的按钮右滑
+                lastLeftObj = pressedObj; // 记录上一个左滑的对象
+            } else if (diffX > 150) {
+                $(pressedObj).animate({marginLeft:"0"}, 500); // 右滑
+                lastLeftObj = null; // 清空上一个左滑的对象
+            }
+        });
+    }
+});
