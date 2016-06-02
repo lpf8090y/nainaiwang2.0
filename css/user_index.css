@@ -147,7 +147,7 @@ text-indent: 1em;
 }
 /*中心内容*/
 .user_c{
-   margin: 0 20px 10px 20px;
+   margin: 0 19px 10px 20px;
     width: 748px;
     text-align: center;
     border: 1px solid #c0c0c0;
@@ -360,9 +360,10 @@ border: 1px solid;
   float: left;
 }
 .zj_gl  .zj_l{
-    width: 331px;
+    width: 300px;
     border-right: 1px solid #D2CACA;
     padding: 25px 10px;
+    margin-right: 30px;
 }
 .zj_gl .zj_r{
   /*border-left: 1px solid #D2CACA;*/
@@ -400,6 +401,17 @@ border: 1px solid;
       text-align: center;
     font-size: 20px;
     margin: 25px 0;
+}
+.zj_gl .zj_r .zj_column span{
+    display: inline-block;
+    height: 50px;
+    float: right;
+}
+.zj_gl .zj_r .zj_column .column_yes{
+    background: #ccc;
+}
+.zj_gl .zj_r .zj_column .column_no{
+    background: #F7C305;
 }
 .zj_r  .price{
     text-align: center;
