@@ -37,11 +37,20 @@ body {
 .line-scroll-wrappers .line-btn-delete{
     width: 65px;
 }
+.con .new_con{
+    height: 28px; 
+    line-height: 28px;
+    display:block;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    
+}
 .con .new_time{
 	position: absolute;
     right: 0px;
 }
-.btn {
+/*.btn {
     position: absolute;
     top: 0;
     right: -60px;
@@ -50,7 +59,7 @@ body {
     color: #fff;
     width: 60px;
 	line-height: 71px;
-}
+}*/
  .ba_img{
     /*background: url(../images/no_read.jpg) no-repeat 7 16px;*/
   float: left;

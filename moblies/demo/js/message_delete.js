@@ -4,7 +4,7 @@ $(document).ready(function(e) {
     // 设定常规信息区域宽度=屏幕宽度
     $(".line-normal-wrapper").width($(".line-wrapper").width());
     // 设定文字部分宽度（为了实现文字过长时在末尾显示...）
-    $(".new_con").width($(".line-normal-wrapper").width());
+    $(".new_con").width($(".line-normal-wrapper").width()-25);
 
     // 获取所有行，对每一行设置监听
     var lines = $(".line-normal-wrapper");
