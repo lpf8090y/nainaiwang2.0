@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>我的关注 — 耐耐网·触摸版</title>
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/message.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/attention.js"></script>
+<!-- 滑动删除 -->
+<script type="text/javascript" src="js/slide_delete.js"></script>
+<!-- 滑动删除 end-->
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+</head>
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> 
+      <a class="new-a-back" href="javascript:history.back();"> <span><img src="images/iconfont-fanhui-black.png"></span> </a>
+      <h2>编辑关注</h2>
+    </div>
+  </header>
+  <!--header 结束-->
+  <div class="reg_top">
+      <div class="reg_title reg_left" onClick="location.href='attention.html'">关注的商品</a></div>
+      <div class="reg_title reg_right cur" onClick="location.href='attention_market.html'">关注的市场</div>
+  </div>
+  <!--  关注商品列表 strat -->
+  <div class="gzmak_cont">
+    <div class="cla_fl zx">
+        <div class="fl-img">
+          <img src="images/fl/nh.jpg">
+        </div>
+        <div class="cla_tit">
+          <p><b>耐火市场</b></p>
+          <p class="colab"><span>高铝质 </span><span>非氧化物 </span></p>
+        </div>
+        <a class="gzbutt bt_bj1">已关注</a>
+      </div>
+      <div class="cla_fl">
+        <div class="fl-img">
+          <img src="images/fl/jc.jpg">
+        </div>
+        <div class="cla_tit">
+          <p><b>建材市场</b></p>
+          <p class="colab"><span>玻璃 </span><span>陶瓷 </span></p>
+        </div>
+        <a class="gzbutt bt_bj2">关注</a>
+      </div>
+      <div class="cla_fl">
+        <div class="fl-img">
+          <img src="images/fl/hg.jpg">
+        </div>
+        <div class="cla_tit">
+          <p><b>冶金化工市场</b></p>
+          <p class="colab"><span>冶金溶剂 </span><span>脱硫剂 </span></p>
+        </div>
+      </div>
+  </div>
+<!-- 关注商品列表 end -->
+</div>
+</body>
+</html>

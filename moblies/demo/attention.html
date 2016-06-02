@@ -1,0 +1,169 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>我的关注 — 耐耐网·触摸版</title>
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/message.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/attention.js"></script>
+<!-- 滑动删除 -->
+<script type="text/javascript" src="js/slide_delete.js"></script>
+<!-- 滑动删除 end-->
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+</head>
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> 
+      <a class="new-a-back" href="javascript:history.back();"> <span><img src="images/iconfont-fanhui-black.png"></span> </a>
+      <h2>我的关注</h2>
+      <a class="mess_edit" href="attentionsp_edit.html"> 
+        <span>编辑</span> 
+      </a>
+    </div>
+  </header>
+  <!--header 结束-->
+  <div class="reg_top">
+     <div class="reg_title reg_left cur" onClick="location.href='attention.html'">关注的商品</a></div>
+      <div class="reg_title reg_right" onClick="location.href='attention_market.html'">关注的市场</div>
+  </div>
+  <div class="gz_sp">
+    <ul class="select_lx">
+      <li><a class="colbd1016 sp_a_bg">全部商品</a></li>
+      <li><a class="sp_a_bg">降价商品</a></li>
+      <li><a class="sp_a_bg">失效商品</a></li>
+    </ul>
+  </div>
+  <!--  关注商品列表 strat -->
+  <div class="sp_cont">
+    <div class="line-wrapper">
+      <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
+          <div class="line-normal-left-wrapper">
+            <div class="line-normal-avatar-wrapper">
+              <img  src="images/yejinhuagongshichang.png" />
+            </div>
+            <div class="line-normal-info-wrapper">
+              <div class="line-normal-user-name">
+                <b>螺纹钢</b>
+                <span class="colab">10*9000</span>
+              </div>
+              <div class="line-normal-msg">
+                <span class="colab">材质：HRB400</span>
+              </div>
+              <div class="line-normal-time"><span class="colab">产地：福冈</span></div>
+              <div class="jg-right">
+                <span class="colbd1016">￥1900</span>
+                <a class="gzsp_butt colbd1016">购买</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-btn-delete"><button>删除</button></div>
+      </div>
+    </div>
+    <div class="line-wrapper">
+      <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
+          <div class="line-normal-left-wrapper">
+            <div class="line-normal-avatar-wrapper">
+              <img  src="images/yejinhuagongshichang.png" />
+            </div>
+            <div class="line-normal-info-wrapper">
+              <div class="line-normal-user-name">
+                <b>螺纹钢</b>
+                <span class="colab">10*9000</span>
+              </div>
+              <div class="line-normal-msg">
+                <span class="colab">材质：HRB400</span>
+              </div>
+              <div class="line-normal-time"><span class="colab">产地：福冈</span></div>
+              <div class="jg-right">
+                <span class="colbd1016">￥1900</span>
+                <a class="gzsp_butt colbd1016">报价</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-btn-delete"><button>删除</button></div>
+      </div>
+    </div>
+    <div class="line-wrapper">
+      <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
+          <div class="line-normal-left-wrapper">
+            <div class="line-normal-avatar-wrapper">
+              <img  src="images/yejinhuagongshichang.png" />
+            </div>
+            <div class="line-normal-info-wrapper">
+              <div class="line-normal-user-name">
+                <b>螺纹钢</b>
+                <span class="colab">10*9000</span>
+              </div>
+              <div class="line-normal-msg">
+                <span class="colab">材质：HRB400</span>
+              </div>
+              <div class="line-normal-time"><span class="colab">产地：福冈</span></div>
+              <div class="bj">
+                <a class="gzbibj gzbj1">降价</a>
+              </div>
+              <div class="jg-right">
+                <span class="colbd1016">￥1900</span>
+                <a class="gzsp_butt colbd1016">购买</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-btn-delete"><button>删除</button></div>
+      </div>
+    </div>
+    <div class="line-wrapper">
+      <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
+          <div class="line-normal-left-wrapper">
+            <div class="line-normal-avatar-wrapper">
+              <img  src="images/yejinhuagongshichang.png" />
+            </div>
+            <div class="line-normal-info-wrapper">
+              <div class="line-normal-user-name">
+                <b>螺纹钢</b>
+                <span class="colab">10*9000</span>
+              </div>
+              <div class="line-normal-msg">
+                <span class="colab">材质：HRB400</span>
+              </div>
+              <div class="line-normal-time"><span class="colab">产地：福冈</span></div>
+              <div class="bj">
+                <a class="gzbibj gzbj2">失效</a>
+              </div>
+              <div class="jg-right">
+                <span class="colbd1016">￥1900</span>
+                <a class="gzspsx_butt colab">购买</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-btn-delete"><button>删除</button></div>
+      </div>
+    </div>
+</div>
+<!-- 关注商品列表 end -->
+</div>
+</body>
+</html>
