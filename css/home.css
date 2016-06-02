@@ -34,8 +34,8 @@ button.button{height:40px;padding:0 10px;line-height:normal;}
 .banner-show .cell .con{position:relative;height:600px;background-repeat:no-repeat;background-position:center top;}
 .bns-01{background-image:url(../images/mid_banner/banner_01_repeat.png?v=201406241538);}
 .bns-01 .con{background-image:url(../images/mid_banner/banner_01.png?v=201406241538);}
-.bns-02{background-image:url(../images/mid_banner/banner_02_repeat.gif?v=201406241538);}
-.bns-02 .con{background-image:url(../images/mid_banner/banner_02.gif?v=201406241538);}
+.bns-02{background-image:url(../images/mid_banner/banner_02_repeat.png?v=201406241538);}
+.bns-02 .con{background-image:url(../images/mid_banner/banner_02.png?v=201406241538);}
 .bns-03{background-image:url(../images/mid_banner/banner_03_repeat.png?v=201406241538);}
 .bns-03 .con{background-image:url(../images/mid_banner/banner_03.png?v=201406241538);}
 .banner-link{position:absolute;top:100px;left:50%;width:400px;height:400px;margin-left:-430px;}
