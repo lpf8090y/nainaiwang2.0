@@ -188,7 +188,14 @@ body {
     height: 28px;
     line-height: 28px;
 }
-.jg-right .gzsp_butt{
+.jg-rights{
+    position: relative;
+    right: 95px;
+    top: 85px;
+    height: 28px;
+    line-height: 28px;
+}
+.jg-right .gzsp_butt,.jg-rights .gzsp_butt{
     padding: 2px 5px;
     border: 1px solid #bd1016;
     border-radius: 5px;
