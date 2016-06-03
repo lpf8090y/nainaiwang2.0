@@ -980,7 +980,9 @@ line-height: 25px;
 
 /*正则表达式*/
 .username{border-width:0px;color:red;width:300px;position: absolute;/*top: 85px;*/left: 170px;cursor: default;}
+input.username.childnum{left: 428px;top: 50px;height: 20px;}
 .tran_saction{border-width:0px;color:red;width:300px;position: absolute;/*top: 145px;*/left: 170px;cursor: default;}
+input.tran_saction.childnum{left: 428px;top: 99px;height: 20px;}
 .name_china{border-width:0px;color:red;width:300px;position: absolute;/*top: 204px;*/left: 170px;cursor: default;}
 .name_eng{border-width:0px;color:red;width:300px;position: absolute;/*top: 264px;*/left: 170px;cursor: default;}
 .email{border-width:0px;color:red;width:300px;position: absolute;/*top: 563px;*/left: 170px;cursor: default;}
