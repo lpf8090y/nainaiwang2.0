@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>耐耐网·触摸版</title>
+<link href="../css/login.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/buyer/buyer.css">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/buyer/buyer.js"></script>
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+
+</head>
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="../images/iconfont-fanhui-black.png"></span> </a>
+      <h2>添加提货人</h2>
+      </div>
+  </header>
+  <!--header 结束-->
+ 	<!-- 订单详情 strat-->
+ 	<div class="con-center">
+ 		<div class="bill">
+      <form>
+ 			<div class="kthd">
+        <span class="kthd-t">提货人</span>
+        <span><input class="txt-input" type="text" placeholder="输入提货人姓名" value=""/></span>
+      </div>
+      <div class="kthd">
+        <span class="kthd-t">联系方式</span>
+        <span><input class="txt-input" type="text" placeholder="输入联系方式" value=""/></span>
+      </div>
+      <div class="kthd">
+        <span class="kthd-t">车牌号</span>
+        <span><input class="txt-input" type="text" placeholder="输入您的车牌号码" value=""/></span>
+      </div>
+      </form>
+    </div>
+    <div class="bill">
+      <div class="htsc">
+        <span class="kthd-t">身份证</span>
+        <form name="form0" id="form0">
+        <input type="file" name="file0" id="file0" multiple="multiple" style="display:none" accept="image/jpeg,image/png,image/gif,image/bmp">
+        <div class="img">
+          <a href="javascript:;" class="add add_pzimg" onclick="file0.click()">+</a>
+         </div>
+      </form>
+      </div>
+      <div class="img-wz">
+        <div class="an-dele"><i class="icon-trash"></i></div>
+       <div class="img-css"><img  src="../images/jiancaishichang.png"/></div> 
+        
+      </div>
+    </div>
+ 	</div>
+ 	<!-- 订单详情 end-->
+  <div style="height:50px;"></div>
+  <div class="order_bottom">
+    <div class="bag_bd fix_bom"><a class="colfff tj_order" href="pick_goods_list.html">保存</a></div>
+  </div>
+
+ </div>
+ <body>
+ </html>

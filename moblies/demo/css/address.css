@@ -121,3 +121,8 @@ a.nm_a {color: #000}
 	width: 80%;
 }
 /*发票页面css end*/
+
+/*提货人*/
+.god-right{
+	float: right;
+}

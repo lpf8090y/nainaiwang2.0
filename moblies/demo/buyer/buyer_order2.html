@@ -38,16 +38,15 @@ $(window).load(function() {
   <div class="dh">
     <p class="dh-num">
       <b>订单号：140106199010</b>
-      <span class="zt-right colbd1016">待质量确认</span>
+      <span class="zt-right colbd1016">等待付款</span>
     </p>
-    <p class="dh-th colab">提货码：TBD07006</p>
   </div>
-  <div class="dh">
+  <!-- <div class="dh">
     <a class="ddth" href="play_order.html">
       <img class="ddth-img" src="../images/buyer/che.jpg"/>
       <span class="ddth-con">您的订单在【xx仓库中心】提货30%</span>
     </a>
-  </div>
+  </div> -->
   <!-- 订单号 end-->
 
  	<!-- 订单详情 strat-->
@@ -109,8 +108,8 @@ $(window).load(function() {
     <!-- 发票信息 end -->
     <div class="oder">
       <div class="order-an an-height">
-        <a class="a-button1">合同申诉</a>
-        <a class="a-button2 colbd1016 cd-popup-trigger">协商一致</a>
+        <a class="a-button1 cd-popup-trigger">取消订单</a>
+        <a class="a-button2 colbd1016">立即支付</a>
       </div>
     </div>
  	</div>
@@ -120,13 +119,31 @@ $(window).load(function() {
  <!-- 订单弹出层 -->
 <div class="cd-popup_d" role="alert">
     <div class="cd-popup-container_d">
-       <div class="tc-con">
-         <span class="">请确认是否协商一致。<span>
+       <div class="popup-tit">
+         <span class="colab">请选择取消订单的原因<span>
+       </div>
+       <div class="popup-conter">
+        <div class="xz1">
+          <div class="radio no_radio der_col"><div class="radio_click radio_check"></div></div>
+          <span class="">选择错了</span>
+        </div>
+         <div class="xz2">
+          <div class="radio"><div class="radio_click"></div></div>
+          <span class="">我不想买了</span>
+        </div>
+         <div class="xz3">
+          <div class="radio"><div class="radio_click"></div></div>
+          <span class="">信息填写错误，重新拍</span>
+        </div>
+         <div class="xz4">
+          <div class="radio"><div class="radio_click"></div></div>
+          <span class="">其他原因</span>
+        </div>
        </div>
        <div class="an">
         <ul class="an-ul">
           <li><a class="an1">我再想想</a></li>
-          <li><a class="an2">确认一致</a></li>
+          <li><a class="an2">确认取消</a></li>
         </ul>
        </div>
     </div>

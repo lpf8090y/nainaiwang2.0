@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>耐耐网·触摸版</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/buyer/buyer.css">
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/buyer/buyer.js"></script>
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+
+</head>
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="../images/iconfont-fanhui-black.png"></span> </a>
+      <h2>开提货单</h2>
+      </div>
+  </header>
+  <!--header 结束-->
+ 	<!-- 订单详情 strat-->
+ 	<div class="con-center">
+    <div class="bill">
+      <div class="kthd">
+        <span class="kthd-t">产品名称</span>
+        <span>玻璃市场/绿玻璃</span>
+      </div>
+      <div class="kthd">
+        <span class="kthd-t">可提数量</span>
+        <span>100块</span>
+      </div>
+      <div class="kthd">
+        <span class="kthd-t">所在仓库</span>
+        <span>xxx仓库</span>
+      </div>
+    </div>
+ 		<div class="bill">
+      <form>
+ 			<div class="kthd">
+        <span class="kthd-t">提货数量</span>
+        <span><input class="txt-input" type="text" placeholder="输入您要提货的数量" value=""/></span>
+      </div>
+      <a class="kthd a-jt">
+        <span class="kthd-t">提货日期</span>
+        <span><input class="txt-input" type="text" placeholder="选择您预计提货日期" value=""/></span>
+      </a>
+      <a class="kthd a-jt" href="pick_goods_add.html">
+        <span class="kthd-t">提货人</span>
+        <span><input class="txt-input" type="text" placeholder="添加提货人" value=""/></span>
+      </a>
+      </form>
+    </div>
+ 	</div>
+ 	<!-- 订单详情 end-->
+  <div style="height:50px;"></div>
+  <div class="order_bottom">
+    <div class="bag_bd fix_bom"><a class="colfff tj_order">提交</a></div>
+  </div>
+ </div>
+ <body>
+ </html>
