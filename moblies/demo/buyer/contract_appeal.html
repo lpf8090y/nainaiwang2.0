@@ -67,16 +67,15 @@ $(window).load(function() {
       <div class="htsc">
         <span class="kthd-t">上传凭证</span>
         <form name="form0" id="form0">
-        <input type="file" name="file0" id="file0" multiple="multiple" style="display:none" accept="image/jpeg,image/png,image/gif,image/bmp">
+        <input type="file" name="file0" id="file0" multiple="multiple"  accept="image/jpeg,image/png,image/gif,image/bmp" onchange="previewImage(this)">
         <div class="img">
-          <a href="javascript:;" class="add add_pzimg" onclick="file0.click()">+</a>
+          <a href="javascript:;" class="add add_pzimg" >+</a>
          </div>
       </form>
       </div>
       <div class="img-wz">
         <div class="an-dele"><i class="icon-trash"></i></div>
-       <div class="img-css"><img  src="../images/jiancaishichang.png"/></div> 
-        
+       <div id="preview" class="img-css"><img id="imghead" border="0"  src="../images/jiancaishichang.png"/></div> 
       </div>
     </div>
  	</div>

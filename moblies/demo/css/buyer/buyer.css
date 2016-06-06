@@ -426,3 +426,12 @@ top: 13px;
 .popup-conter .xz1,.popup-conter .xz2,.popup-conter .xz3,.popup-conter .xz4{
 	padding: 10px 20px;
 }
+
+#file0{
+opacity: 0;
+position: absolute;
+right: 0px;
+width: 70px;
+top: 14px;
+z-index: 10;
+}
