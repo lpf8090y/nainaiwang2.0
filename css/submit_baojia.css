@@ -173,6 +173,7 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
 .qujies i{ font-style:normal; color:#7e7e7e;margin-left: 20px;}
 .bezel .input_box{ color: #818181;
     clear: both;
+    padding-left: 25px;
 }
 .bezel .input_box.price{
     margin-top: 35px;
@@ -180,7 +181,7 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
 }
 .bezel .input_box label{
     color: #818181;
-    margin:0 5px 0 35px;
+    margin:0 5px 0 0px;
 }
 .bezel .baoxian span i{
         margin-left: 6px;
@@ -199,7 +200,7 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
     height: 19px;width: 19px;
 }
 .bezel .baoxian{
-    margin: 10px 35px;
+    margin: 10px 25px;
     color: #818181;
 }
 .bezel .baoxian span{
