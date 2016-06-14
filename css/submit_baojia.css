@@ -55,21 +55,36 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
 }
 .wor_list .amount{
     float: right;
-    margin-right: 100px;
+    margin-right: 110px;
 }
 .wor_list .price{
-    float: right;
-    margin-right: 90px;
+    float: left;
+    margin-left: 360px;
 }
 .wor_list span{ float:left;}
-.wor_list .goods{margin-left: 260px;}
-.wor_list .number{margin-left: 270px;}
+.wor_list .goods{margin-left: 48px;}
+.wor_list .number{margin-left: 240px;}
 
 .module {
     padding: 20px;
     float: left;
     width: 1188px;
 	border-bottom:#dddddd 1px solid;
+    position: relative;
+}
+.module .accont_total{
+    position: absolute;
+    right: 70px;
+    bottom: 16px;
+    font-weight: bold;
+    color: #4f4f4f;
+}
+.module .accont_total b{
+    color: #ff0000;
+}
+.module .accont_total i{
+    font-size: 14px;
+    color: #ff0000;
 }
 .module input {
     width: 16px;
@@ -79,7 +94,7 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
 }
 .module img{ float:left; width:80px; height:80px; margin-right:15px;}
 .module_word{
-    width: 415px;
+    width: 265px;
     float: left;
 }
 .module_word h5{
@@ -92,23 +107,28 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
 .module .danjia {
 	text-align: center;
     font-size: 14px;
-    font-weight: bold;
     color: #ff0000;
     display: block;
-    width: 120px;
+    width: 150px;
     height: 35px;
     float: left;
-    margin: 0 10px 0 180px;
+    margin: 0 10px 0 10px;
+}
+.module .danjia span{
+    color: #626262;
+}
+.module .danjia b{
+    font-weight: normal;
 }
 .module .jine i {
     font-size: 15px;
     font-style: normal;
-    color: #ff0000;
+    color: #626262;
     width: 105px;
     display: block;
     float: left;
     text-align: center;
-    margin-left: 22px;
+    margin-left: 136px;
 }
 .module .shanchu{
     width: 18px;
@@ -117,8 +137,13 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
 }
 .module .delet{
     font-style: normal;
-    color: #3399ee;
+    color: #626262;
     font-size: 13px;
+    display: block;
+    width: 220px;
+    float: left;
+    margin-left: 136px;
+    text-align: center;
 }
 .module a:hover{text-decoration:none;}
 .kogbai{
@@ -145,7 +170,48 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
 }
 .qujies a:hover{text-decoration:none;}
 .qujies .juhuag{ color:#ff7700;}
-.qujies i{ font-style:normal; color:#3399ee;}
+.qujies i{ font-style:normal; color:#7e7e7e;margin-left: 20px;}
+.bezel .input_box{ color: #818181;
+    clear: both;
+}
+.bezel .input_box.price{
+    margin-top: 35px;
+    padding-left: 26px;
+}
+.bezel .input_box label{
+    color: #818181;
+    margin:0 5px 0 35px;
+}
+.bezel .baoxian span i{
+        margin-left: 6px;
+    line-height: 17px;
+}
+.bezel .baoxian span .haves{
+    float: left;
+    display: block;
+    background: url(../images/order/baoh_no.png) no-repeat left center;
+    height: 19px;width: 19px;
+    background-size: 18px 18px;
+}
+.bezel .baoxian span .haves.clu_active{
+    display: block;
+    background: url(../images/order/baoh.png) no-repeat left center;
+    height: 19px;width: 19px;
+}
+.bezel .baoxian{
+    margin: 10px 35px;
+    color: #818181;
+}
+.bezel .baoxian span{
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.bezel .input_box input{
+    height: 28px;margin: 15px 3px;
+    width: 230px;
+}
 .qujies .jijian{
     color: red;
     font-size: 14px;
@@ -160,13 +226,27 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
 .accounts_to{
     display: block;
     float: right;
-    height: 42px;
-    width: 130px;
-    line-height: 42px;
+    height: 35px;
+    width: 120px;
+    line-height: 35px;
     text-align: center;
     background: #c81623;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.accounts_fale:hover,.accounts_to:hover{ color:#fff; text-decoration: none;}
+.accounts_fale{
+    display: block;
+    float: right;
+    height: 35px;
+    width: 120px;
+    line-height: 35px;
+    text-align: center;
+    background: #c8c8c8;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 15px;
 }
 .qujies a:hover{ color:#FFF;}
 /*购置数量加减*/
