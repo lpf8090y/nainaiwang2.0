@@ -1,0 +1,155 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>招标首页 — 耐耐网·触摸版</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/the_tender_css/tender_index.css">
+<link href="../css/product_1.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/sort_product.js"></script>
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+</head>
+
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <div class="header">
+    <div class="header_search"> 
+       <div class="h-left"><a href="javascript:history.go(-1);" title="返回"></a></div> 
+      <div class="search_border"><i></i>
+          <input type="text" maxlength="15" autocomplete="off" id="index_newkeyword" name="keyword" placeholder="请输入搜索内容" class="hilight1">
+      </div> 
+      <div class="change_right">
+        <a id="qiehuan" href="javascript:;">
+        <span class="img_tender"></span>
+        </a>
+      </div>
+    </div>
+     <div class="head_nav border_top">
+        <ul>
+          <li>
+            <div class="dropmiandiv" quest ="select1">
+                <input type="text" readonly id ="select1" displayMember="-1" valueMember ="类型" class="dropdiv input-center" value="类型"/>
+            </div>
+            <div class="chooseItems" answer ="select1" style="display:none; ">
+                <div class="chooseItem" displayMember="0" valueMember ="供应供应">供应供应</div>
+                <div class="chooseItem" displayMember="1" valueMember ="求购求购">求购求购</div>
+                <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+          </li>
+          <li>
+            <div class="dropmiandiv" quest ="select2">
+              <input type="text" readonly id ="select2" displayMember="-1" valueMember ="行业" class="dropdiv input-center" value="行业"/>
+            </div>
+            <div class="chooseItems" answer ="select2" style="display:none; ">
+            <div class="chooseItem" displayMember="0" valueMember ="供应供应">供应供应</div>
+            <div class="chooseItem" displayMember="1" valueMember ="求购求购">求购求购</div>
+            <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+          </li>
+          <li>
+            <div class="dropmiandiv" quest ="select3">
+              <input type="text" readonly id ="select3" displayMember="-1" valueMember ="区域" class="dropdiv input-center" value="区域"/>
+            </div>
+            <div class="chooseItems" answer ="select3" style="display:none; ">
+              <div class="chooseItem" displayMember="0" valueMember ="供应">供应供应</div>
+              <div class="chooseItem" displayMember="1" valueMember ="求购">求购求购</div>
+              <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+          </li>
+          <li>
+            <div class="dropmiandiv" quest ="select4">
+              <input type="text" readonly id ="select4" displayMember="-1" valueMember ="时间" class="dropdiv input-center" value="时间"/>
+            </div>
+            <div class="chooseItems" answer ="select4" style="display:none; ">
+            <div class="chooseItem" displayMember="0" valueMember ="供应供应">供应供应</div>
+            <div class="chooseItem" displayMember="1" valueMember ="求购求购">求购求购</div>
+            <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+          </li> 
+        </ul>
+      </div>
+  </div>
+  <div style="height:110px"></div>
+  <div class="tender-center">
+
+    <div class="tender-gg">
+      <div class="zb-zt ba8aa3ff">招标</div>
+      <div class="gg-con">
+        <a href="notice-detail.html"><b class="tite-b">自动回转炉具采购一期招标公告</b></a>
+        <p class="colab">
+          <span>【耐火市场】</span>
+          <span>河北省唐山</span>
+          <span class="right-date">06-07</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="tender-gg">
+      <div class="zb-zt baff8765">招标</div>
+      <div class="gg-con">
+        <a><b class="tite-b">自动回转炉具采购一期招标公告</b></a>
+        <p class="colab">
+          <span>【耐火市场】</span>
+          <span>河北省唐山</span>
+          <span class="right-date">06-07</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="tender-gg">
+      <div class="zb-zt ba7dd024">招标</div>
+      <div class="gg-con">
+        <a><b class="tite-b">自动回转炉具采购一期招标公告</b></a>
+        <p class="colab">
+          <span>【耐火市场】</span>
+          <span>河北省唐山</span>
+          <span class="right-date">06-07</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="tender-gg">
+      <div class="zb-zt ba8aa3ff">招标</div>
+      <div class="gg-con">
+        <a><b class="tite-b">自动回转炉具采购一期招标公告</b></a>
+        <p class="colab">
+          <span>【耐火市场】</span>
+          <span>河北省唐山</span>
+          <span class="right-date">06-07</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="tender-gg">
+      <div class="zb-zt ba8aa3ff">招标</div>
+      <div class="gg-con">
+        <a><b class="tite-b">自动回转炉具采购一期招标公告</b></a>
+        <p class="colab">
+          <span>【耐火市场】</span>
+          <span>河北省唐山</span>
+          <span class="right-date">06-07</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fb-an">
+    <a class="fab-a" href="">发布</a>
+  </div>
+
+  </div>
+</body>
+</html>
