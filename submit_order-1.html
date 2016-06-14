@@ -304,7 +304,7 @@ body{_padding-top:30px;}
             <div class="submit">
              
              <div class="submit_word">
-             <span>填写订货单</span>
+             <span>我的报价单</span>
              <span>提交订单</span>
              <span>支付货款</span>
              <span>交易完成</span>
@@ -315,61 +315,73 @@ body{_padding-top:30px;}
               <img src="images/order/oder-3.jpg" width="205" height="47" alt="第一步" />
               <img src="images/order/oder-4.jpg" width="211" height="47" alt="第一步" />
               </div> 
-               
+            <form action="" method="post">
              <div class="order_form">
-             <h2>我的进货单</h2>
+             <h2>我的报价单</h2>
              
              <div class="bezel">
              <div class="wor_list">
-             <form action="" method="post">
-             <input name="" type="checkbox" value="" id="ckAll" />
-             </form>
-             <span>全选</span>
-             <span class="goods">商品</span>
-             <span class="number">数量</span>
-             <span class="operation">操作</span>
-             <span class="amount">金额（元）</span>
-             <span class="price ">单价（元）</span>
-             </div>
              
+             <span></span>
+             <span class="goods">商品信息</span>
+             <span class="price ">意向价格</span>
+             <span class="number">需求数量</span> 
+             <span class="amount">买方名</span>
+             
+             </div>
+              
              <div class="module">
-             <form action="" method="post">
              <input name="sub" type="checkbox" value="" />
-             </form>
+             
              <a href="javascript:;"><img src="images/order/order_cp.jpg" width="80" height="80" alt="产品" /> </a>
-             <a href="javascript:;"><div class="module_word">
-             <h5>高铝质 铝矾土</h5>
-             <p>品牌：诗茗化工</p>
-             <p>规格/纯度：≥98% &nbsp; 起订量：1千克</p>
-             </div></a>
-              <!--购置数量加减开始-->
-              <input type="text" class="spinnerExample"/>
-            <script type="text/javascript">
-                $('.spinnerExample').spinner({});
-            </script>
-            <!--购置数量加减结束-->
-           <span class="danjia">1-4千克:<b>1200</b></span>  
-           <span class="jine"><i><b>￥</b>1200.00</i></span>  
-           <span><a href="#"><img class="shanchu" src="images/order/shan.jpg" width="17" height="17" alt="删除" /><i class="delet">删除</i></a></span>
+             <a href="javascript:;">
+                 <div class="module_word">
+                 <h5>高铝质 铝矾土</h5>
+                 <p>品牌：诗茗化工</p>
+                 <p>规格/纯度：≥98% &nbsp; 起订量：1千克</p>
+                 </div>
+             </a>
+             
+           <span class="danjia">￥<b>1200.0</b><span> 元/千克</span></span>  
+           <span class="jine"><i>100</i></span>  
+           <span class="shangjia"><a href="#"><i class="delet">买房商家A</i></a></span>
+           <div class="accont_total">
+               商品总价：<b>￥</b><i>12000.0</i> 元
+           </div>
            </div>
                   
                   
-           <div class="kogbai"></div>       
+                
           <div class="qujies">
-          <span><a href="#"><img class="saunchu" src="images/order/del.jpg" width="17" height="17" alt="删除" /><i>清除所选商品</i></a></span>
-          <span><a href="#"><img class="goon" src="images/order/goon.jpg" width="17" height="17" alt="删除" /><i class="juhuag">继续购物</i></a></span>
-          <span class="yitotal"><i class="jijian">1</i>件商品总计（不含运费）：<b>1200.00</b></span>
+          <span><a href="#"><i>需求规格</i></a></span>
+         
           
-          <a class="accounts_to" href="submit_order-2.html">去结算</a>
+          
           
           </div>      
-            
-            
+           <div class="input_box">
+               <label for="">规格/纯度</label><input type="text" />
+               <label for="">品牌</label><input type="text" />
+               <label for="">产地</label><input type="text" />
+           </div>
+           <div class="baoxian">
+               <span>保险</span>
+               <span><a class="haves clu_active" href="javascript:;"></a><i>包含</i></span>
+               <span><a class="haves" href="javascript:;"></a><i>不包含</i></span>
+           </div>
+        
+            <div class="input_box price">
+               <label for="">价格</label><input type="text" /><span>元/吨</span>
+           </div>
+           <div clss="anniu_boxs">
+               <a class="accounts_fale" href="submit_order-2.html">返回</a>
+               <a class="accounts_to" href="submit_order-2.html">提交报价</a>
+           </div>
              </div>
              
              </div>  
                
-
+         </form> 
 
 
              </div>
