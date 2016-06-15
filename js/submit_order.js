@@ -112,4 +112,13 @@ $($(".xuanzzf")[0]).trigger("click");
 		  
 	   });
 	
-          
+ 
+
+ /*baojiadan*/  
+   $(function(){
+                  
+    $(".baoxian .haves").click(function(){
+      $(this).addClass("clu_active").parent().siblings().find(".clu_active").removeClass("clu_active");
+    }) 
+
+ });     
