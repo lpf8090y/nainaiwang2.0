@@ -1,0 +1,63 @@
+.search_page_top {
+	border-bottom: 1px #e9e9e9 solid;
+	padding: 10px 0;
+	height: auto;
+	overflow: hidden;
+}
+.search_page_top .search_border{
+	background: #f6f6f6;
+	border-radius: 6px;
+	height: 36px;
+	overflow: hidden;
+	width: 80%;
+	margin-left: 3%;
+	position: relative;
+	float: left;
+}
+ .search_page_top .search_border i {
+display: block;
+background: url(../../images/product/pr_serch.png) no-repeat left center;
+height: 28px;
+width: 28px;
+background-size: 22px;
+margin: 3px 10px;
+}
+input.hilight1 {
+border: 0;
+display: inline-block;
+background: 0;
+font-size: 14px;
+font-family: "Hiragino Sans GB W3";
+width: 80%;
+padding: 5px;
+vertical-align: middle;
+position: absolute;
+left: 15%;
+top: 5px;
+outline: none;
+}
+.qx-an{
+	float: left;
+	line-height: 36px;
+	padding: 0 10px;
+}
+/*无搜索记录*/
+.searchs .no-search-list{
+	margin-top: 25%;
+	text-align: center;
+}
+/*无搜索记录 end*/
+.searchs .sear-htl{
+	line-height: 30px;
+	padding: 10px 20px;
+	border-bottom:1px solid #e9e9e9;
+}
+.searchs .clear_list{
+	text-align: center;
+	display: block;
+	margin: 20% 10%;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px 0;
+	font-size: 20px;
+}

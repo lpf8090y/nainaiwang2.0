@@ -1,0 +1,29 @@
+.wdztb{
+	background: #fff;
+	margin-top: 15px;
+	border-top: 1px solid #e9e9e9;
+}
+.zb-title{
+	display: block;
+	line-height: 55px;
+	padding: 0 15px;
+	border-bottom: 1px solid #e9e9e9;
+	position: relative;
+}
+.zb-title .title-img{
+	float: left;
+	margin: 7px 10px 7px 0px;
+}
+.zb-title:before {
+content: ' ';
+position: absolute;
+border: #999 solid;
+border-width: 2px 0 0 2px;
+width: 13px;
+height: 13px;
+-webkit-transform: rotate(-225deg);
+-moz-transform: rotate(-225deg);
+right: 10px;
+position: absolute;
+top: 20px;
+}

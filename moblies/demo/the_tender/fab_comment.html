@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>发布评论 — 耐耐网·触摸版</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/the_tender_css/tender_index.css">
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/the_tender_js/comment.js"></script>
+
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+<style type="text/css">
+  body{
+    background: #fff;
+  }
+</style>
+</head>
+
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="../images/iconfont-fanhui-black.png"></span> </a>
+      <h2>发布评论</h2>
+      </div>
+  </header>
+  <!--header 结束-->
+  <div class="com-con">
+    <textarea class="com-text" id="textareas"></textarea>
+  </div>
+
+  <!-- 底部按钮 -->
+  <div style="height:70px;"></div>
+  <div class="bottom-com">
+    <div class="com-t">
+        <div class="ni-name">
+          <img src="../images/icon_qd.png"/>
+          <span>匿名评论</span>
+        </div>
+    </div>
+    <div class="com-t"><a class="nav-a" href="comment_all.html">发表评论</a></div>
+  </div>
+
+</div>
+</body>
+</html>

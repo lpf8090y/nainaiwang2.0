@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>搜索 — 耐耐网·触摸版</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/the_tender_css/search.css">
+
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+<style type="text/css">
+  body{
+    background: #fff;
+  }
+</style>
+</head>
+
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="search_page_top">
+      <div class="search_border"><i></i>
+        <input type="text" maxlength="15" autocomplete="off" id="index_newkeyword" name="keyword" placeholder="名称 / 行业 / 地区..." class="hilight1">
+      </div>
+      <a class="qx-an">取消</a>
+    </div>
+    
+  </header>
+  <!--header 结束-->
+  
+  <div class="searchs">
+  	<!-- <div class="no-search-list colab">还没有搜索记录哦o(n_n)o~</div> -->
+    <div class="sear-htl"><b>搜索历史</b></div>
+    <div class="sear-htl"><span class="colab">自动回转炉具采购一期</span></div>
+    <a class="clear_list">清空搜索记录</a>
+  </div>
+
+</div>
+</body>
+</html>
