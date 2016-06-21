@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>耐耐网·触摸版</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/login.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/logistics_css/logistic_index.css">
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+
+</head>
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="../images/iconfont-fanhui-black.png"></span> </a>
+      <h2>发布车源</h2>
+    </div>
+  </header>
+  <!--header 结束-->
+  <div class="l main">
+    <form id="frm_login" method="get" action="">
+        <div class="fab_wl_tit"><span>必填项</span></div>
+        <div class="item">
+          <lable class="item_tit">出发地</lable>
+          <input class="txt-input" type="text" placeholder="选择出发地" value="">
+          <a class="adder_right"></a>
+        </div>
+        <div class="item">
+          <lable class="item_tit">到达地</lable>
+          <input class="txt-input" type="text" placeholder="选择到达地" value="">
+          <a class="adder_right"></a>
+        </div>
+        <div class="item">
+          <lable class="item_tit">信息详情</lable>
+          <input id="area" placeholder="输入信息详情" areaid="10064 10043 10375" readonly="" class="txt-input">
+        </div>
+        <div class="item">
+          <lable class="item_tit">手机号码</lable>
+          <input type="text" class="txt-input" placeholder="输入手机号码">
+        </div>
+      </form>
+    
+  </div>
+  <div class="l main">
+    <form id="frm_login" method="get" action="">
+        <div class="fab_wl_tit"><span>选填项</span></div>
+        <div class="item">
+          <lable class="item_tit">车辆类型</lable>
+          <input class="txt-input" type="text" placeholder="选择车辆类型" value="">
+          <a class="adder_right"></a>
+        </div>
+        <div class="item">
+          <lable class="item_tit">车牌号码</lable>
+          <input class="txt-input" type="text" placeholder="输入车牌号码" value="">
+        </div>
+        <div class="item">
+          <lable class="item_tit">车辆详情</lable>
+          <input id="area" placeholder="输入车辆详情信息" areaid="10064 10043 10375" readonly="" class="txt-input">
+        </div>
+        <div class="item">
+          <lable class="item_tit">座机号码</lable>
+          <input type="text" class="txt-input" placeholder="区号-座机号">
+        </div>
+      </form>
+       <div style="height:50px;"></div>
+  </div>
+  <!-- 底部按钮 strat -->
+   
+    <div class="address_save">
+        <a class="button_save" href="logistics_my_cy.html">发布</a>
+    </div>
+   <!--  底部按钮 end -->
+</div>
+<body>
+</html>
