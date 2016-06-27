@@ -11,6 +11,7 @@
     <!-- 轮播图end-->
     <!-- 竞拍页 -->
      <link rel="stylesheet" type="text/css" href="css/auction.css"/>
+     <link rel="stylesheet" type="text/css" href="css/tender_con.css"/>
     <script src="js/auction.js" type="text/javascript"/>
     <!-- 竞拍页 -->
     <script src="js/gtxh_formlogin.js" type="text/javascript"></script>
@@ -237,7 +238,13 @@ body{_padding-top:30px;}
     <div id="mainContent">
         <div class="page_width">
             <!-- 竞拍内容start -->
+            <div class="au_content_header">
+                    <b>
+                        <a>首页</a> > <a>竞拍大厅</a>
+                    </b>
+                </div>
             <div class="au_content_top">
+
                 <div class="au_top">
                     <ul>
                         <li class="au_cur"><span>耐材</span></li>
@@ -259,7 +266,7 @@ body{_padding-top:30px;}
                                                         </div>
                                                     </div>
                                                     <div class="class_jy">
-                                                        <span class="jy_title">拍卖类型：</span>
+                                                        <span class="jy_title">搜索类型：</span>
                                                         <ul>
                                                             <li  class="a_choose">
                                                                 <a href=""> 不限</a>
@@ -274,8 +281,20 @@ body{_padding-top:30px;}
                                                             </li>   
                                                                 
                                                             <li>
-                                                                <a href="">工程招标</a>
+                                                                <a href="">招标公告</a>
+                                                            </li>  
+                                                                
+                                                            <li>
+                                                                <a href="">招标预告</a>
+                                                            </li>  
+                                                                
+                                                            <li>
+                                                                <a href="">变更</a>
                                                             </li>   
+                                                                
+                                                            <li>
+                                                                <a href="">中标公告</a>
+                                                            </li>  
                                                                 
                                                         </ul>
                                                     </div> 
@@ -621,15 +640,18 @@ body{_padding-top:30px;}
                                                 <a href="">撤回</a>
                                             </li>
                                                 
-                                        </ul>
+                                        </ul>       
+                                        <div class="gj">
+                                            <b>关键词：</b><input class="gj_ci" type="text"/><input class="gjcs" type="button" value="搜索"/>
+                                        </div>
                                     </div>
                 <div style="clear:both"></div>
             </div>
             <div class="au_content">
-                <div class="con_jr">
+                <!-- <div class="con_jr">
                     <b class="au_tit_first">今日</b><b class="au_tit_two">竞价</b>
                     <a class="more" herf="">更多 <i class="icon-angle-right"></i></a>
-                </div>
+                </div> -->
                 <div class="au_commodity">
                     <div class="au_comm_con">
                         <a class="au_comm_href" href="auc_pc_deail.html" target=_blank>
