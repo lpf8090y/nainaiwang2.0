@@ -3,7 +3,7 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
 ol, ul ,li{list-style: none;} 
 img {border: 0; vertical-align:middle;} 
 body{color:#000000;/*background:#FFF;*/ } 
-.clear{clear:both;height:1px;width:100%; overflow:hidden; margin-top:-1px;} 
+.clear{content: ""; clear:both;width:100%; overflow:hidden; margin-top:-1px;} 
 a{color:#000000;text-decoration:none; }  
 i{font-style: normal;}
 .red{color: #bc1018;}
@@ -19,7 +19,7 @@ i{font-style: normal;}
 	height: auto;
     overflow: hidden;
     margin: 0 auto;
-    z-index: 99999999;
+    z-index: 10;
     position: fixed;
     background:#FFF;
 }
@@ -113,6 +113,7 @@ i{font-style: normal;}
     padding: 13px 0;
     border-top: 1px #e9e9e9 solid;
     border-bottom: 1px #dedede solid;
+    background: #fff;
 }
 .head_nav.border_top{
     margin-top: -1px;

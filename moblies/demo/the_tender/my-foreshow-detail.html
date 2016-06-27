@@ -4,21 +4,22 @@
 <meta name="author" content="m.178hui.com" />
 <meta name="applicable-device" content="mobile" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-<title>中标详情 — 耐耐网·触摸版</title>
+<title>招标预告 — 耐耐网·触摸版</title>
 <link href="../css/public.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="../css/the_tender_css/tender_index.css">
 <script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/the_tender_js/tender_index.js"></script>
 <script>
 $(window).load(function() {
-  $("#status").fadeOut();
-  $("#preloader").delay(350).fadeOut("slow");
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
 })
 </script>
 </head>
 
 <body>
 <div class="mobile">
-  <!--页面加载 开始-->
+	<!--页面加载 开始-->
   <div id="preloader">
     <div id="status">
       <p class="center-text"><span>拼命加载中···</span></p>
@@ -28,12 +29,12 @@ $(window).load(function() {
   <!--header 开始-->
   <header>
     <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="../images/iconfont-fanhui-black.png"></span> </a>
-      <h2>中标详情</h2>
+      <h2>招标预告</h2>
       </div>
   </header>
   <!--header 结束-->
   <div class="ggbt">
-      <div class="zb-zt baff8765">中标</div>
+      <div class="zb-zt ba7dd024">预告</div>
       <div class="gg-con">
         <div href="notice-detail.html"><b class="tite-b">自动回转炉具采购一期招标公告</b></div>
         <p class="colab">
@@ -41,23 +42,18 @@ $(window).load(function() {
           <span>河北省唐山</span>
         </p>
       </div>
-    </div>
-
-     <div class="xsyx">
-        <div class="xsyx-t"><i class="bz4"></i>投标情况</div>
-        <div class="fja">
-          <div class="fja-con">
-            <div class="wenj-name">
-              <span><!-- 恭喜您，已成功 -->
-                <!-- 其他人中标 -->
-                用户 186****5269
-                <span class="colbd1016">【中标】</span>
-              </span>
-              <span class="time-right colab">06-07&nbsp;08:55</span>
-            </div>
-          </div>
+      <div class="d_time clear">
+        <div class="d_tb"><img src="../images/tenter/djs.jpg"/></div>
+        <div class="js_time">
+          <span >还剩</span><span class="js">0</span>
+          <span class="colab">天</span>
+          <span class="js">20</span>
+          <span class="colab">:</span>
+          <span class="js">08</span>
+          <span class="colab">:</span>
+          <span class="js">29</span>
         </div>
-        <div class="tbqk_ck"><a class="cktbjl" href="my_tender_list2.html">查看投标记录</a></div>
+      </div>
     </div>
     <!-- 详细信息开始 -->
     <div class="xsyx">
@@ -91,8 +87,6 @@ $(window).load(function() {
       </div>
     </div>
     <!-- 详细信息结束 -->
-    
-
     <!-- 附加信息 strat -->
     <div class="xsyx">
         <div class="xsyx-t"><i class="bz3"></i>附件信息</div>
@@ -109,39 +103,12 @@ $(window).load(function() {
         </div>
     </div> 
     <!-- 附加信息 end -->   
-    <!-- 评论 strat -->
-      <div class="xsyx">
-        <div class="xsyx-t"><i class="bz2"></i>详细信息</div>
-        <!-- 暂无评论 strat -->
-        <!-- <div class="no-pl">
-          <img src="../images/tenter/no_pl.jpg"/>
-          <p class="colab">暂无评论</p>
-        </div> -->
-        <!-- 暂无评论 end -->
-        <!-- 存在评论 strat -->
-        <div class="show_pl">
-          <div class="pl-nr">
-            <div class="pl-img"><img src="../images/tenter/pl-tx.jpg"/></div>
-            <div class="pl-top">
-              匿名评论
-            </div>
-            <div class="pl-cont">
-              质量好，性价比不错。此处显示评论内容
-            </div>
-            <div class="pl-titme colab">
-              <span>06-07&nbsp;08:55</span>
-            </div>
-          </div>
-
-          <a class="ckgd" href="comment_all.html">点击查看全部</a>
-        </div>
-        <!-- 存在评论 end -->
-      </div>
-    <!-- 评论 end -->
+    
 <!-- 底部按钮 -->
   <div style="height:70px;"></div>
-  <div class="bottom-nav">
-    <div class="bidding-t"><a class="nav-a" href="fab_comment.html">发表评论</a></div>
+  <div class="my-foreshow-nav">
+    <a class="my-nav-a1">取消招标</a>
+    <a class="my-nav-a2">修改信息</a>
   </div>
 </div>
 </body>

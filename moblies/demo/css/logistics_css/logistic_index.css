@@ -1,0 +1,268 @@
+.losti_top_title{
+	line-height: 45px;
+	text-align: center;
+}
+.losti_top_title a.hy_a,.losti_top_title a.cy_a{
+	color: #bc1018;
+	border: 1px solid #bc1018;
+	padding: 5px 10px;
+	margin: 0px;
+}
+.losti_top_title a.hy_a{
+	border-radius: 5px 0 0 5px;
+}
+.losti_top_title a.cy_a{
+	border-radius: 0px 5px 5px 0px;
+}
+.losti_top_title a.a_cur{
+	background: #bc1018;
+	color: #fff;
+}
+.header .bz_img{
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+.cy_top{
+	background: #fff;
+	overflow: hidden;
+}
+.cy_top .search_bg{
+	width: 90%;
+	background: #f6f6f6;
+	margin: 10px auto 10px auto;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+}
+.cy_top .search_bg .cy-search{
+	width: 100%;
+	border:0px;
+	height: 25px;
+	line-height: 25px; 
+	background: #f6f6f6;
+	outline:none;
+}
+.cy_top .search_bg .cy-search::-webkit-input-placeholder{
+ text-align: center;
+ color: #bbbdc5;
+ background: url("../../images/logistics/icon_search_bz.png") no-repeat 40% center ;
+}
+
+.cy_top .search_bg .cy-search::-moz-placeholder{
+ text-align: center;
+ color: #bbbdc5;
+ background: url("../../images/logistics/icon_search_bz.png") no-repeat center;
+}
+.cy_top .condition ul li{
+	float: left;
+	width: 33%;
+	text-align: center;
+	line-height: 50px;
+}
+.condition ul li .b-right{
+	display: block;
+	text-align: right;
+}
+.condition ul li .b-left{
+	display: block;
+	text-align: left;
+}
+.li_img img{
+	margin-top: 10px;
+}
+.cy_infor{
+	background: #fff;
+	margin: 10px 10px 0 10px;
+	padding: 10px 10px;
+	display: block;
+}
+.cy_infor a{
+	display: block;
+}
+.cy_infor .infor_top ul li{
+	float: left;
+	width: 23%;
+	padding: 10px 0;
+}
+.infor_top .cx_right{
+	display: block;
+	float: right;
+	padding: 10px 0;
+}
+ul li .a-q{
+	font-size: 13px;
+	padding: 3px;
+	background: #8aa3ff;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+
+ul li .a-z{
+	font-size: 13px;
+	padding: 3px;
+	background: #ff8765;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+.infor_center{
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+.infor_center .infor_img img{
+	position: relative;
+	top: 5px;
+}
+.infor_center .cx_right{
+	float: right;
+	display: block;
+	padding-top: 7px;
+}
+.fb-an {
+background: rgba(241, 152, 156, 0.57);
+border-radius: 50px;
+width: 60px;
+height: 60px;
+position: fixed;
+bottom: 20px;
+right: 30px;
+}
+.fb-an a.fab-a {
+position: relative;
+display: block;
+background: #d1464d;
+color: #fff;
+width: 50px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+border-radius: 50px;
+margin: 5px auto;
+}
+
+/*物流详情 strat*/
+.cy_detail_top{
+	background: #fff;
+	padding: 20px 0px;
+	border-bottom: 1px solid #e9e9e9;
+}
+.cy_detail_top ul{
+	margin: 0 auto;
+}
+.cy_detail_top ul li{
+	float: left;
+	line-height: 40px;
+}
+.cy_detail_top ul li.wl1{
+	width: 35%;
+	text-align: right;
+}
+.cy_detail_top ul li.wl3{
+	width: 35%;
+	text-align: left;
+}
+.cy_detail_top ul li.wl2{
+	width: 30%;
+	text-align: center;
+}
+
+.details_content {
+background: #fff;
+margin-top: 10px;
+}
+.details_content .content-t {
+margin: 1px 15px;
+padding: 10px 0px;
+border-bottom: 1px solid #e9e9e9;
+position: relative;
+}
+.details_content .bz1 {
+content: "";
+display: block;
+float: left;
+width: 30px;
+height: 30px;
+background: url(../../images/tenter/icon_xq.jpg) no-repeat 0px -2px;
+}
+.content-ro{
+	padding: 0 15px;
+}
+.content-infor{
+	padding: 10px 0px;
+	border-bottom: 1px solid #e9e9e9;
+}
+.content-ro .content-line{
+	padding: 5px 0px;
+}
+.content-line .line-name{
+	display: block;
+	float: left;
+	width: 80px;
+}
+.content-line .line-cont{
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	line-height: 25px;
+}
+.phone{
+	padding: 10px 0px;
+	border-bottom: 1px solid #e9e9e9;
+	position: relative;
+}
+.phone a.lxfs{
+	position: absolute;
+	top: 12px;
+	right: 0px;
+	border: 1px solid #bc1018;
+	border-radius: 5px;
+	padding: 3px 28px 3px 5px;
+	font-size: 15px;
+	color: #bc1018;
+}
+.phone a.lxfs-sign1{
+	background: url("../../images/logistics/icon_mobile.jpg") no-repeat center right;
+}
+.phone a.lxfs-sign2{
+	background: url("../../images/logistics/icon_phone.jpg") no-repeat center right;
+}
+.hide_an{
+	background: #fff;
+	margin-top:10px;
+	padding: 15px 15px;
+	border-bottom: 1px solid #e9e9e9;
+	border-top: 1px solid #e9e9e9;
+	position: relative;
+}
+.hide_an .tp-btn{
+cursor: pointer;
+display: block;
+height: 35px;
+position: absolute;
+right: 10px;
+top: 10px;
+width: 51px;
+z-index: 1;
+}
+.hide_an .btn-off {
+background: url("../../images/u_s1.png") no-repeat scroll 0 0 / 51px 35px;
+}
+.hide_an .btn-on {
+background: url("../../images/logistics/icon_on.png") no-repeat scroll 0 0 / 51px 35px;
+}
+/*物流详情 end*/
+
+/*发布物流 strat*/
+.l{
+	margin-top:10px;
+	background: #fff;
+}
+.fab_wl_tit{
+	padding: 10px 15px;
+	border-bottom: 1px solid #e9e9e9;
+}
