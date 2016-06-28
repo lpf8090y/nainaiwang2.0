@@ -1,4 +1,9 @@
-
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
 .head_nav ul.merchant_ul li{
 	width: 33% !important;
 }
@@ -46,6 +51,7 @@
 	
 	background: #fff;
 	padding: 10px;
+	border-bottom: 1px solid #e9e9e9;
 }
 .sp_dz:after{
 	content: "";
@@ -61,8 +67,10 @@
 .sp_center{
 	display: block;
 	float: left;
-	width: 1%;
-	font-size: 25px;
+	width: 2%;
+	font-size: 30px;
+	color: #ccc;
+	font-family: -webkit-body;
 }
 .sp_right {
 	display: block;
@@ -83,7 +91,7 @@
 }
 .march_c .march_xq{
 	display: block;
-	padding: 15px 35px 15px 20px;
+	padding: 15px 35px 15px 15px;
 	text-decoration: none;
 	position: relative;
 }
