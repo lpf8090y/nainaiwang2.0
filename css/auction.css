@@ -3,7 +3,10 @@
 }
 .au_content_top{
 	border: 1px solid #e3e3e3;
-    margin: 50px 0;
+    margin: 30px 0;
+}
+.au_content_header{
+    padding-top:20px;
 }
 .au_content_top .au_top ul li{
 	float: left;
