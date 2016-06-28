@@ -22,24 +22,34 @@
   position: relative;
 }
 .anm_date .data-a i.data-i1{
- display: -webkit-inline-box;
+   display: -webkit-inline-box;
   content: "";
   width: 20px;
   height: 20px;
   background: url("../../images/bid_img/icon_date.jpg") no-repeat;
+  position: absolute;
+  top: 15px;
+  left: 15%;
+  z-index: 1;
+}
+.bid_input{
+  text-align: center;
+  width: 90%;
+  height: 30px;
   position: relative;
-  top: 5px;
-  right: 10px;
+  top: 10px;
+  left: 3px;
+  border: 0px;
 }
 .anm_date .data-a i.data-i2{
-  display: -webkit-inline-box;
+  display: block;
   content: "";
   width: 15px;
   height: 15px;
   background: url("../../images/bid_img/icon_down.jpg") no-repeat;
   position: relative;
-  top:2px;
-  left: 10px;
+  top: -12px;
+  left: 77%;
 }
 .anm_center{
   margin: 10px 0;
