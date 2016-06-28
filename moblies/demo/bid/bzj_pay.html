@@ -1,0 +1,112 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="m.178hui.com" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>耐耐网·触摸版</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/order.css">
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+
+</head>
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="../images/iconfont-fanhui-black.png"></span> </a>
+      <h2>耐耐收银台</h2>
+      </div>
+  </header>
+  <!--header 结束-->
+
+ 	<div class="con_order">
+ 		<p class="order_num">
+ 			保证金：<b class="colbd1016">￥38000</b>
+ 		</p>
+ 	</div>
+ 	<div class="con-main">
+	 	<div class="zf_tit botm_tit">
+	 		<p>
+	 			<span class="colab">选择支付方式</span>
+	 		</p>
+	 	</div>
+
+ 		<div class="pay_blank">
+	 		<div class="flo_left">
+	 			<img src="../images/icon_yue.jpg"/>
+	 		</div>
+	 		<div class="flo_left width_center">
+	 			<p>账户余额支付</p>
+	 			<p class="colab size_pay">账号余额安全支付</p>
+	 		</div>
+	 		<div class="butt_radio">
+	 			<input type="radio" name="zf" checked="checked"/>
+	 		</div>
+	 	</div>
+
+ 
+ 		<div class="pay_blank">
+	 		<div class="flo_left">
+	 			<img src="../images/zfb.jpg"/>
+	 		</div>
+	 		<div class="flo_left width_center">
+	 			<p>支付宝支付</p>
+	 			<p class="colab size_pay">支付宝安全支付</p>
+	 		</div>
+	 		<div class="butt_radio">
+	 			<input type="radio" name="zf"/>
+	 		</div>
+	 	</div>
+
+
+ 		<div class="pay_blank">
+	 		<div class="flo_left">
+	 			<img src="../images/bank.jpg"/>
+	 		</div>
+	 		<div class="flo_left width_center">
+	 			<p>银联在线支付</p>
+	 			<p class="colab size_pay">使用银联在线支付</p>
+	 		</div>
+	 		<div class="butt_radio">
+	 			<input type="radio" name="zf"/>
+	 		</div>
+	 	</div>
+ 
+
+ 		<div class="pay_blank">
+ 			<a href="offline_pay.html">
+	 		<div class="flo_left">
+	 			<img src="../images/pay_xx.jpg"/>
+	 		</div>
+	 		<div class="flo_left width_center">
+		 		<p>线下支付</p>
+		 		<p class="colab size_pay">线下去支付</p>
+	 		</div>
+	 		<div class="butt_radio">
+	 			<input type="radio" name="zf"/>
+	 		</div>
+	 		</a>
+	 	</div>
+ 	</div>
+ <div style="height:100px;"></div>
+ 	
+ 	<div class="order_bottom">
+ 		<div class="bag_bd an_height"><a class="colfff tj_order" href="bzj_pay_ok.html">支付</a></div>
+ 	</div>
+ </div>
+ <body>
+ </html>

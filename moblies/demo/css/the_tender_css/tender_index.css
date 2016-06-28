@@ -64,7 +64,7 @@ position: absolute;
   display: block;
 }
 .tender-gg .gg-con a .tite-b,.ggbt .gg-con  .tite-b{
-  height: 30px;
+  line-height: 25px;
   display: block;
 }
 .tender-gg .gg-con p .right-date{
@@ -518,6 +518,7 @@ text-decoration: none;
 /*招标预告*/
 .d_time{
   padding-top: 15px;
+  padding-left: 10px;
 }
 .d_time .d_tb{
   float: left;
