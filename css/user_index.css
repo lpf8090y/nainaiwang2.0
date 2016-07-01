@@ -316,15 +316,18 @@ div.zhxi_con.font_set span i.bold{
   border-radius: 3px;
 }
 .zhxi_con .submit_edit{
-  width: 120px;
-height: 35px;
-background: #Fff;
-color: #E51212;
-font-size: 20px;
-position: relative;
-left: 340px;
-cursor: pointer;
-border: 1px solid;
+    width: 120px;
+    height: 35px;
+    background: #Fff;
+    color: #E51212;
+    font-size: 20px;
+    position: relative;
+    left: 340px;
+    cursor: pointer;
+    border: 1px solid;
+    display: block;
+    text-align: center;
+    line-height: 35px;
 }
 .zhxi_con  .select{
 	height: 31px;
@@ -571,17 +574,23 @@ visibility: hidden;
     padding: 0px 15px;
     border-bottom: 1px solid #e3e3e3;
     position: relative;
+    overflow: hidden;
+    float: left;
+    width: 96%;
 }
 .class_jy .jy_title {
     float: left;
     line-height: 30px;
     width: 65px;
     text-align: right;
+    display: block;
 }
 .class_jy ul {
-    width: 92%;
-    height: 30px;
-    line-height: 30px;word-wrap: break-word;
+    width: 82%;
+    line-height: 30px;
+    word-wrap: break-word;
+    float: left;
+    overflow: hidden;
 }
 .class_jy ul li {
     float: left;

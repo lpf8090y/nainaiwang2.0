@@ -32,15 +32,15 @@ a:hover{ text-decoration:underline; color:#cc0000}
 #index_nav .all_steel{ float:left; width:180px; height:43px; background-color:#c81623; font-size:16px; color:#ffffff; text-align:center; line-height:43px; font-weight:bolder; position:absolute;left:0px;top:0px}
 #index_nav .nav{ height:43px; line-height:43px; float:left;position:absolute;left:180px;top:0px}
 #index_nav .nav li{ float:left;width:115px; text-align:center; border-left:1px solid #e53f30; border-right:1px solid #9e2324; }
-#index_nav .nav li a{ color:#ffffff; display:block; width:110px; text-align:center; height:43px;line-height: 43px;}
+#index_nav .nav li a{ color:#ffffff; display:block; width:110px; text-align:center; height:43px; line-height: 43px;}
 
 #index_nav .n_nav{ left:0px;top:0px}
 #index_nav .n_nav li{width: 165px;}
-#index_nav .n_nav li a{width: 160px;}
+#index_nav .n_nav li a{width: 160px;line-height: 43px;}
 
 #index_nav .nav li a:hover{ text-decoration:none}
 #index_nav .nav li:hover{background-color:#9e2324;-moz-transition:background-color .5s ease-in;-webkit-transition:background-color .5s ease-in;-o-transition:background-color .5s ease-in; -ms-transition:background-color .5s ease-in;  transition:background-color .5s ease-in;}
-#index_nav .nav li.current{ background-color:#9e2324}
+#index_nav .nav li.current{ background-color:#9e2324;line-height: 43px;}
 
 /*------左侧二维码------*/
 .mainCode_left{position:absolute; left:-150px;top:3px; width:140px; height:200px;}
