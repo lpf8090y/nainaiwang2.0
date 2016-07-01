@@ -10,7 +10,7 @@
     width: 50%;
     height: auto;
     overflow: hidden;
-    margin: 15px 25px;
+    margin: 15px 80px;
     text-align: left;
     border-right: 1px solid #e7e7e7;
 }
@@ -39,6 +39,7 @@
 .link_style span{
     line-height: 22px;
     margin-left: 8px;
+    font-size: 12px;
 }
 .offer_content .offer_right{
     float: left;
@@ -50,7 +51,7 @@
 }
 .offer_right ul li b{
     color: #f35f23;
-    font-size: 18px;
+    font-size: 24px;
 }
 .offer_right ul li{
 	font-size: 12px;
@@ -150,6 +151,9 @@
 }
 .buy_btn.baoj{
 	margin-top: 48px;
+}
+.buy_btn.baoj a{
+    color:#fff;
 }
 .offer_right ul li .qianse{
 	color: #A09D9D;

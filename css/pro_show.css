@@ -42,6 +42,6 @@ a:hover{color:#e60012;}
         .cont_1 .tit span{margin-left: 10px;font-size: 16px;line-height: 26px;height: 26px;display: inline-block;}
         .cont_1 table,.cont_1 table tr,.cont_1 table th,.cont_1 table td{border:1px solid #e7e7e7;padding:10px 0 10px 20px;color: #808080;}
         .cont_1 table tr th{width:1190px;height:25px;font-size: 14px;color:#666;background: #f5f6f7;}
-        #divCenter{position: fixed; z-index: 9; display: none; background-color: #eee; width:auto; height:auto;left:200px;top:200px; margin:15px; border:1px solid #eee;}
+        #divCenter{position: fixed; z-index: 9; display: none; background-color: #eee; width:auto; height:auto;left:500px;top:200px; margin:15px; border:1px solid #eee;}
         .cont_1 .pro_pic{width:25%;}        
         .cont_1 .pro_pic .red{color: #bc1018;}
