@@ -1,0 +1,35 @@
+.bid_zt{
+	position: absolute;
+	left: 0px;
+	background: url("../../images/bid_img/icon_zt.png") no-repeat center;
+	padding: 5px 7px;
+	color: #fff;
+}
+.xsyx .ts_img {
+content: "";
+display: block;
+float: left;
+width: 30px;
+height: 30px;
+background: url("../../images/bid_img/icon_ts_img.jpg") no-repeat 0px -2px;
+}
+.bid_zt_end{
+	position: absolute;
+	left: 0px;
+	background: url("../../images/bid_img/icon_zt_end.png") no-repeat center;
+	padding: 5px 7px;
+	color: #fff;
+}
+.end_time{
+	padding: 30px 0px 0px 40px;
+}
+/*用户协议*/
+.user_xy{
+	padding:0 10px;
+}
+.user_xy .xy_bt{
+	line-height: 30px;
+}
+.user_xy .xy_con{
+	line-height: 25px;
+}

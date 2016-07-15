@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>商户详情</title>
+	<link href="../css/product_details_css.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/product_details_js.js"></script> 
+	<script type="text/javascript" src="../js/iscroll.js"></script> 
+	<script type="text/javascript" src="../js/merchant_js/merchant_detail.js"></script> 
+	<link href="../css/product_1.css" rel="stylesheet" type="text/css" />
+	<link href="../css/commercial_css/merchants.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/buyer/zhez.css">
+	<style type="text/css">
+		body{
+			background: #fafafa;
+		}
+	</style>
+</head>
+<body>
+	 <div class="header_position">
+	 		   <div class="header">
+	 		   	   <div class="header_tit">
+	 		   	   	 <div class="h-left"><a href="javascript:history.go(-1);" title="返回"></a></div>    
+	 			   	 <div class="tit_center">
+	 			   	 	<h3>商户详情</h3>
+	 			     </div> 
+	 			     <div class="change_right">
+	 			     	<a href=""><img src="../images/product/index.png" alt=""></a>
+	 			     </div>
+	 	           </div>
+	 	          	 	           
+	 		   </div>
+	 	 </div>
+
+  <!--轮播效果html开始-->       
+         <div class="wraper">
+           <header id="scroll_pic_view" class="scroll_pic_view" style="overflow: hidden; ">
+             <div id="scroll_pic_view_div" style="width: 3840px; -webkit-transition: -webkit-transform 0ms cubic-bezier(0.33, 0.66, 0.66, 1); -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) translateZ(0px); ">
+               <ul id="scroll_pic_view_ul">
+                 <li> <a onclick="return false;"> <img src="../images/banner.jpg" width="640" height="300"> </a> </li>
+                 <li> <a onclick="return false;"> <img src="../images/banner2.jpg" width="640" height="300"> </a> </li>
+                 <li> <a onclick="return false;"> <img src="../images/banner.jpg" width="640" height="300"> </a> </li>
+                
+               </ul>
+             </div>
+             <div>
+               <ol id="scroll_pic_nav" class="scroll_pic_nav">
+         <script>
+         	(function(d, $){
+				var scrollPicView = d.getElementById("scroll_pic_view"),
+				scrollPicViewDiv = d.getElementById("scroll_pic_view_div"),
+				lis = scrollPicViewDiv.querySelectorAll("li"),
+				w = scrollPicView.offsetWidth,
+				len = lis.length;
+				for(var i=0; i<len; i++){
+					lis[i].style.width = w+"px";
+					if(i == len-1){
+						scrollPicViewDiv.style.width = w * len + "px";
+					}
+				}
+
+				var scroll_pic_view = new iScroll('scroll_pic_view', { 
+					snap: true,
+					momentum: false,
+					hScrollbar: false,
+					useTransition: true,
+					onScrollEnd: function() {
+						$("#scroll_pic_nav li").removeClass("on").eq(this.currPageX).addClass("on");
+						// $("#scroll_pic_nav li.on").prev().addClass("left");
+						// $("#scroll_pic_nav li.on").next().removeClass("left");	
+						
+						var  list=$("#scroll_pic_nav li");
+						for(var k=0;k<list.length;k++){
+							if(k<this.currPageX)
+								$(list[k]).addClass("left");
+							else
+								$(list[k]).removeClass("left");
+						}												
+					}
+				});
+				//
+				var nav_lis = new Array(lis.length);
+				d.write('<li class="on"><span>1</span></li>');
+				for(var i=1; i<nav_lis.length; i++){										
+					d.write("<li><span>"+(i+1)+"</span></li>");				
+				}
+			})(document, $);
+      </script>
+                   <li class="add_numb"><span>/</span></li> 
+               </ol>
+             </div>
+           </header>
+         </div>
+
+<!--轮播效果html结束-->
+<div class="collection">
+	<div class="zy_title">
+		<a href=""><b>德清国泰耐火材料</b></a>
+	</div>
+	<div class="details_zy">
+		<span>主营：耐火材料等</span>
+	</div>
+</div>
+<!-- 地址 -->
+	<div class="sp_dz">
+		<a class="sp_adder_left"><span>浙江省湖州市德清县和平大街小康南路177号（xxxxxx）</span></a>
+		<span class="sp_center">|</span>
+		<span class="sp_right"><img src="../images/bid_img/sh_phone.jpg"/></span>
+	</div>
+<!-- 地址 end-->
+<div class="march_c">
+	<a class="march_xq">
+		<span class="colab">商户介绍</span>
+		<span class="xq_text">详情</span>
+	</a>
+</div>
+<div class="march_c">
+	<div class="march_title">商户资质</div>
+	<a class="shz_a" href="merchant_zz.html">
+		<ul class="shz_ul">
+			<li><img src="../images/merchants_img/zhs.jpg"/></li>
+			<li><img src="../images/merchants_img/zhs.jpg"/></li>
+			<li><img src="../images/merchants_img/zhs.jpg"/></li>
+		</ul>
+		<div class="right_jt"></div>
+	</a>
+</div>
+<div class="march_c">
+	<div class="march_title">热门商品</div>
+	<div class="pro_lists_again ba_color" id="pro_lists_again">
+	 	<ul>
+	 		<li>
+	 		<div class="again_total"> 	
+	 			<div class="again_top">
+	 				<a href="merchants_product_details.html"><img src="../images/product/pr_big.png" alt=""></a>
+	 			</div>
+	 			<div class="again_down">
+	 				<dl>
+	 				<a href="merchants_product_details.html"><dt>螺纹钢<span>10*9000</span></dt></a>
+	 				<dd>材质：HRB400</dd>
+	 				<dd>产地：福冈</dd>
+	 				<dd>
+	 					<a href="merchants_product_details.html"><img src="../images/product/pr_qq.png" alt=""></a>
+	 					<span>
+	 						<a href="product_details.html">购买</a>
+		 					<p class="red">￥<i>1900</i></p>
+                        </span>
+	 				</dd>
+	 				</dl>
+
+	 			</div>
+	 		</div>	
+	 		</li>
+	 		<li>  
+	 			<div class="again_total"> 
+		 			<div class="again_top">
+		 				<a href="merchants_product_details.html"><img src="../images/product/pr_big.png" alt=""></a>
+		 			</div>
+		 			<div class="again_down">
+		 				<dl>
+		 				<a href="merchants_product_details.html"><dt>螺纹钢<span>10*9000</span></dt></a>
+		 				<dd>材质：HRB400</dd>
+		 				<dd>产地：福冈</dd>
+		 				<dd>
+		 					<a href="merchants_product_details.html"><img src="../images/product/pr_qq.png" alt=""></a>
+		 					<span>
+		 						<a href="merchants_product_details.html">报价</a>
+			 					<p class="red">￥<i>1900</i></p>
+	                        </span>
+		 				</dd>
+		 				</dl>
+                     </div>
+		 		 </div>
+	 		</li>
+	 		<li>  
+	 			<div class="again_total"> 
+		 			<div class="again_top">
+		 				<a href="merchants_product_details.html"><img src="../images/product/pr_big.png" alt=""></a>
+		 			</div>
+		 			<div class="again_down">
+		 				<dl>
+		 				<a href="merchants_product_details.html"><dt>螺纹钢<span>10*9000</span></dt></a>
+		 				<dd>材质：HRB400</dd>
+		 				<dd>产地：福冈</dd>
+		 				<dd>
+		 					<a href="merchants_product_details.html"><img src="../images/product/pr_qq.png" alt=""></a>
+		 					<span>
+		 						<a href="merchants_product_details.html">报价</a>
+			 					<p class="red">￥<i>1900</i></p>
+	                        </span>
+		 				</dd>
+		 				</dl>
+                     </div>
+		 		 </div>
+	 		</li>
+	 	</ul>	
+	 </div>
+</div>
+<div class="march_c">
+	<a class="ckqb" href="merchants_product_list.html">查看全部商品</a>
+</div>
+<div style="height:50px;"></div>
+
+
+<!-- 订单弹出层 -->
+<div class="cd-popup_d" role="alert">
+    <div class="cd-popup-container_d">
+       <div class="merch-xq-con">
+         <div class="sh_xq_title">
+         	<span>商户详情介绍</span>
+         	<a class="qx_a"></a>
+         </div>
+         <div class="base_infor">基本信息</div>
+         <div class="jbxx">
+         	<ul class="base_ul">
+         		<li><span>联系人：荣经理</span></li>
+         		<li><span>电话：0371-6412106</span></li>
+         		<li><span>邮编：0386673</span></li>
+         		<li><span>传真：0371-4123345</span></li>
+         	</ul>
+         </div>
+         <div class="base_infor">商户介绍</div>
+         <div class="jxnr">
+         	<p>广州亿福钢铁有限公司/广州市旺福贸易有限公司是近年珠三角经济圈迅速崛起的一家贸易流通企业，是北台、抚顺新 钢铁等钢厂的一级代理商。自成立以来，坚持“负责而久，顺势而快，擅盟则强，有容乃大”的经营理念，锐意进取，开拓创新。同时这里汇集了大量业务精湛， 富有激情，善于学习和创新的人才，依靠广阔的市场资源和安全稳定的运营渠道并结合高效的运作机制，迅速形成了以珠三角为中心，辅以大连、上海、海南和 广西为补充的市场营销网络；现年销售能力达20万吨。并且，为了更全面的服务于该产业链，集团下还设有物流公司----营口长航物流有限公司。</p>
+         </div>
+       </div>
+    </div>
+</div>
+<!-- 弹出提示信息结束 -->
+<!-- 遮罩层 -->
+<div id="bg"></div>
+</body>
+</html>

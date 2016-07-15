@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>品牌商户</title>
+	<link href="../css/product_1.css" rel="stylesheet" type="text/css" />
+	<link href="../css/commercial_css/merchants.css" rel="stylesheet" type="text/css" />
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/product_center_js.js"></script>
+	<script type="text/javascript" src="../js/sort_product.js"></script>
+</head>
+<body>
+	 <div class="header_position">
+		   <div class="header">
+		   	   <div class="header_search">
+		   	   	 <div class="h-left"><a href="javascript:history.go(-1);" title="返回"></a></div>    
+			   	 <div class="search_border"><i></i>
+			        <input type="text" maxlength="15" autocomplete="off" id="index_newkeyword" name="keyword" placeholder="请输入搜索内容"  class="hilight1">
+			     </div> 
+			     <div class="change_right">
+			     	<a id="qiehuan" href="javascript:;">
+			     		<span class="img_tab"></span>
+			     	</a>
+			     </div>
+	           </div>
+	           <div class="head_nav border_top">
+	           	<ul class="merchant_ul">
+	           		<li>
+	                     <div class="dropmiandiv" quest ="select1">
+	                     <input type="text" readonly id ="select1" displayMember="-1" valueMember ="区域" class="dropdiv input-center" value="   区 域 "/>
+	                     </div>
+	                     <div class="chooseItems" answer ="select1" style="display:none; ">
+	                     <div class="chooseItem" displayMember="0" valueMember ="供应供应">供应供应</div>
+	                     <div class="chooseItem" displayMember="1" valueMember ="求购求购">求购求购</div>
+	                     <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+                    </li>
+	           		<li>
+	           			<div class="dropmiandiv" quest ="select2">
+	                     <input type="text" readonly id ="select2" displayMember="-1" valueMember ="类型" class="dropdiv input-center" value="  类 型  "/>
+	                     </div>
+	                     <div class="chooseItems" answer ="select2" style="display:none; ">
+	                     <div class="chooseItem" displayMember="0" valueMember ="供应供应">供应供应</div>
+	                     <div class="chooseItem" displayMember="1" valueMember ="求购求购">求购求购</div>
+	                     <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+	           		</li>
+	           		<li>
+       					 <div class="dropmiandiv" quest ="select3">
+       			          <input type="text" readonly id ="select3" displayMember="-1" valueMember ="行业" class="dropdiv input-center" value="  行 业  "/>
+       			          </div>
+       			          <div class="chooseItems" answer ="select3" style="display:none; ">
+       			          <div class="chooseItem" displayMember="0" valueMember ="供应">供应供应</div>
+       			          <div class="chooseItem" displayMember="1" valueMember ="求购">求购求购</div>
+       			          <div class="chooseItem" displayMember="2" valueMember ="不限">不限</div>
+	           		</li>
+	
+	           	</ul>
+	           </div>
+		   </div>
+	 </div>
+
+	 <!-- 遮罩层开始 -->
+	<!--  <div class="mask_layer"></div> -->
+	 <!-- 遮罩层结束 -->
+
+	 <div style="height:107px">	</div>
+
+	 <div class="pro_lists" id="pro_lists" style="display:block;">
+	 	<ul>
+	 		<li>	
+	 			<div class="item_left_img">
+	 				<a href="merchants_product_details.html"><img src="../images/product/pr_letter.png" alt=""></a>
+	 			</div>
+	 			<div class="item_center">
+	 				<div class="item_title"><b>德清国泰耐火材料</b></div>
+	 				<div class="item_zy">主营：耐火材料</div>
+	 				<a href="" class="merch_an">进店</a>
+	 			</div>
+	 		</li>
+	 		<li>
+	 			<div class="item_left_img">
+	 				<a href="merchants_product_details.html"><img src="../images/product/pr_letter.png" alt=""></a>
+	 			</div>
+	 			
+	 			<div class="item_center">
+	 				<div class="item_title"><b>德清国泰耐火材料</b></div>
+	 				<div class="item_zy">主营：耐火材料</div>
+	 				<a href="" class="merch_an">进店</a>
+	 			</div>
+	 		</li>
+	 	</ul>
+
+	 </div>
+	 <div class="pro_lists_again" id="pro_lists_again" style="display:none;">
+	 	<ul>
+	 		<li>
+	 		<div class="again_total"> 	
+	 			<div class="again_top">
+	 				<a href="merchants_product_details.html"><img src="../images/product/pr_big.png" alt=""></a>
+	 			</div>
+	 			<div class="again_down">
+	 				<dl>
+	 				<a href="product_details.html"><dt>德清国泰耐火材料</dt></a>
+	 				<dd><span class="colab">主营：耐火材料</span></dd>
+	 				<dd>
+	 					<a href="" class="list2_jdan">进店</a>
+	 				</dd>
+	 				</dl>
+
+	 			</div>
+	 		</div>	
+	 		</li>
+	 		<li>
+	 		<div class="again_total"> 	
+	 			<div class="again_top">
+	 				<a href="merchants_product_details.html"><img src="../images/product/pr_big.png" alt=""></a>
+	 			</div>
+	 			<div class="again_down">
+	 				<dl>
+	 				<a href=""><dt>德清国泰耐火材料</dt></a>
+	 				<dd><span class="colab">主营：耐火材料</span></dd>
+	 				<dd>
+	 					<a href="" class="list2_jdan">进店</a>
+	 				</dd>
+	 				</dl>
+
+	 			</div>
+	 		</div>	
+	 		</li>
+	 		<li>
+	 		<div class="again_total"> 	
+	 			<div class="again_top">
+	 				<a href="merchants_product_details.html"><img src="../images/product/pr_big.png" alt=""></a>
+	 			</div>
+	 			<div class="again_down">
+	 				<dl>
+	 				<a href=""><dt>德清国泰耐火材料</dt></a>
+	 				<dd><span class="colab">主营：耐火材料</span></dd>
+	 				<dd>
+	 					<a href="" class="list2_jdan">进店</a>
+	 				</dd>
+	 				</dl>
+
+	 			</div>
+	 		</div>	
+	 		</li>
+	 		<li>
+	 		<div class="again_total"> 	
+	 			<div class="again_top">
+	 				<a href="merchants_product_details.html"><img src="../images/product/pr_big.png" alt=""></a>
+	 			</div>
+	 			<div class="again_down">
+	 				<dl>
+	 				<a href="merchants_product_details.html"><dt>德清国泰耐火材料</dt></a>
+	 				<dd><span class="colab">主营：耐火材料</span></dd>
+	 				<dd>
+	 					<a href="" class="list2_jdan">进店</a>
+	 				</dd>
+	 				</dl>
+
+	 			</div>
+	 		</div>	
+	 		</li>
+	 	</ul>	
+	 </div>
+
+</body>  
+</html>
