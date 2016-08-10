@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>投保缴费</title>
+  <meta name="keywords"/>
+  <meta name="description"/>
+  <meta charset="utf-8">
+  <link href="../css/user_index.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+  <script language="javascript" type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+  <script type="text/javascript" src="../js/regular.js"></script>
+   <script src="../js/center.js" type="text/javascript"></script>
+  <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+   <!-- 头部控制 -->
+  <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
+  <script src="../js/topnav20141027.js" type="text/javascript"></script>
+    <!-- 头部控制 -->
+</head>
+<body>
+<!--    公用头部控件 -->
+    <div class="bg_topnav">
+    <div class="topnav_width">
+        <div class="topnav_left">
+            <div class="login_link" id="toploginbox">
+                <a rel="external nofollow" href="login.html" target="_blank" class="topnav_login">登录</a>
+                <div class="login_box" id="login_boxMain" style="display: none;">
+                    <input name="gtxh_LoginMobile" type="text" id="gtxh_LoginMobile" class="txt_topnav" value="手机号码" maxlength="11">
+                    <br>
+                    <input type="text" id="gtxh_importpwd" class="txt_topnav" value="登录密码" maxlength="11">
+                    <input name="gtxh_LoginPwd" type="password" id="gtxh_LoginPwd" maxlength="20" style=" display:none;">
+                    <br>
+                    <input type="button" value="登录" id="gtxh_btnLogin" class="btn_topnav_login" onclick="javascript:_utaq.push(['trackEvent','btn-log']);">
+                    &nbsp;
+                    <input name="gtxh_autoLogin" type="checkbox" id="gtxh_autoLogin" style="vertical-align: middle" checked="checked">
+                    <label for="checkbox">两周内自动登录</label>
+                    <br>
+                    <a href="PasswordReset.html" target="_blank">忘记密码</a> <a href="register.html" target="_blank">立即注册</a>
+                </div>
+                <div class="topnav_regsiter" style=" float:right;">
+                    <a rel="external nofollow" href="register.html" target="_blank">免费注册</a>
+                </div>
+            </div>
+            <div class="topnav_login_in" id="userCenterbox" style="display: none;">
+                您好，<label class="icon_topnav_loginin" id="gtxh_uame"></label>
+                <a id="userCenter" href="centre/user_index.html" target="_blank">会员中心</a>
+                <a id="loginOut" href="javascript:">退出</a>
+                <iframe id="iframe_loginOut" frameborder="0" height="1" width="1" scrolling="no"></iframe>
+            </div>
+        </div>
+        <div class="topnav_right">
+            <ul>
+                <li>
+                    <div class="top_app" id="topPhone">
+                        <a href="javascript:;"><em class="icons iphone"></em><span>手机APP</span></a>
+                        <a rel="external nofollow" href="http://app.nainaiwang.com/" class="top_a" target="_blank" style="display:none !important;visibility: hidden"><!--<em class="icons zz"></em>--><i style="font-size:14px;">▪</i><span>掌中耐耐APP</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="popueButton">
+                        <a href="javascript:window.external.AddFavorite('http://www.nainaiwang.com', '耐耐网——大宗商品交易中心')">加入收藏</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="popueButton">
+                        <div id="popue_quick">
+                            网站导航<b> </b></div>
+                    </div>
+                    <div class="popuePanel" id="quickPanel" style="display: none;">
+                        <div class="quick_market">
+                            <b>产品分类</b><br>
+                            <span>耐火市场 </span>&nbsp; 
+                            <a href="http://market.nainaiwang.com/#sortId=2394&amp;nsortId=2411" target="_blank">低合金板</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2394&amp;nsortId=2414" target="_blank">容器板</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2394&amp;nsortId=2406" target="_blank">热轧开平板</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2394&amp;nsortId=2410" target="_blank">中厚板</a><br>
+                            <span>建材市场 </span>&nbsp; 
+                            <a href="http://market.nainaiwang.com/#sortId=2403&amp;nsortId=2405" target="_blank">热轧卷板</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2403&amp;nsortId=2592" target="_blank">镀锌带钢</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2403&amp;nsortId=2415" target="_blank">冷轧卷板</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2403&amp;nsortId=2603" target="_blank">低合金卷</a><br>
+                            <span>钢铁市场 </span>&nbsp; 
+                            <a href="http://market.nainaiwang.com/#sortId=2395&amp;nsortId=2475" target="_blank">等边角钢</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2395&amp;nsortId=2423" target="_blank">H型钢</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2395&amp;nsortId=2421" target="_blank">槽钢</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2395&amp;nsortId=2422" target="_blank">工字钢</a><br>
+                            <span>冶金化工 </span>&nbsp; 
+                            <a href="http://market.nainaiwang.com/#sortId=2397&amp;nsortId=2434" target="_blank">无缝管</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2397&amp;nsortId=2435" target="_blank">方管</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2397&amp;nsortId=2433" target="_blank">镀锌管</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2397&amp;nsortId=2432" target="_blank">焊管</a><br>
+                            <span>其他市场 </span>&nbsp; 
+                            <a href="http://market.nainaiwang.com/#sortId=2396&amp;nsortId=2427" target="_blank">螺纹钢</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2396&amp;nsortId=2429" target="_blank">圆钢</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2396&amp;nsortId=2430" target="_blank">高线</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2396&amp;nsortId=2522" target="_blank">盘螺</a><br>
+                            <span>核心企业 </span>&nbsp; 
+                            <a href="http://market.nainaiwang.com/#sortId=2398&amp;nsortId=2440" target="_blank">合结圆</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2398&amp;nsortId=2439" target="_blank">碳结圆</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2398&amp;nsortId=2631" target="_blank">合金钢</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2398&amp;nsortId=2458" target="_blank">轴承钢</a><br>
+                            <span>仓储专区 </span>&nbsp; 
+                            <a href="http://market.nainaiwang.com/#sortId=2398&amp;nsortId=2440" target="_blank">合结圆</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2398&amp;nsortId=2439" target="_blank">碳结圆</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2398&amp;nsortId=2631" target="_blank">合金钢</a>
+                            <a href="http://market.nainaiwang.com/#sortId=2398&amp;nsortId=2458" target="_blank">轴承钢</a>
+                        </div>
+                        <div class="quick_info">
+                            <div class="quick_city">
+                                <b>地区分站</b><br>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E4%B8%8A%E6%B5%B7" target="_blank">上海</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E6%9D%AD%E5%B7%9E" target="_blank">杭州</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E6%97%A0%E9%94%A1" target="_blank">无锡</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E9%83%91%E5%B7%9E" target="_blank">郑州</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E6%AD%A6%E6%B1%89" target="_blank">武汉</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E9%95%BF%E6%B2%99" target="_blank">长沙</a><br>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E5%B9%BF%E5%B7%9E" target="_blank">广州</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E5%94%90%E5%B1%B1" target="_blank">唐山</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E6%88%90%E9%83%BD" target="_blank">成都</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E9%82%AF%E9%83%B8" target="_blank">邯郸</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E9%87%8D%E5%BA%86" target="_blank">重庆</a>
+                                <a href="http://news.nainaiwang.com/xianhuojiage.html#areaName=%E5%A4%A9%E6%B4%A5" target="_blank">天津</a>
+                            </div>
+                            <b>信息行情</b><br>
+                            <a href="http://news.nainaiwang.com/xianhuojiage.html" target="_blank">现货价格</a>
+                            <a href="http://news.nainaiwang.com/gangweizixun.html" target="_blank">钢为资讯</a>
+                            <a href="http://news.nainaiwang.com/hangyefenxi.html" target="_blank">行业分析</a><br>
+                            <a href="http://news.nainaiwang.com/jiageyuce.html" target="_blank">价格预测</a>
+                            <a href="http://news.nainaiwang.com/gangchangtiaojia.html" target="_blank">钢厂调价</a>
+                            <a href="http://news.nainaiwang.com/yuancailiao.html" target="_blank">原材料</a>
+                            <div class="quick_info_bottom">
+                                <span><a href="http://market.nainaiwang.com/brand.html" target="_blank">品牌店</a></span>
+                                <span><a href="http://bbs.nainaiwang.com/" target="_blank">耐耐朋友圈</a></span>
+                                <span class="red"> <a href="http://app.nainaiwang.com/" target="_blank">掌中耐耐APP</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!-- 公用头部控件 -->
+<div class="header">
+		<div class="nav">
+            <div class="logo-box zn-l">
+                <a href="../index.html" alt="返回耐耐首页"><img src="../images/icon/nainaiwang.png"/></a></dd>
+            </div>
+			<div class="nav-tit">
+				<ul class="nav-list">
+                    <li>
+                        <a href="user_index.html">会员中心</a>
+                   </li>
+                    <li>
+                        <a href="user_zh.html">账户信息</a>
+                    </li>
+                    <li>
+                        <a href="user_zj.html">资金管理</a>
+                    </li>
+                    <li>
+                        <a href="user_dd.html" class="cur">交易管理</a>
+                    </li>
+                    <li>
+                        <a href="user_cd.html">仓单管理</a>
+                    </li>
+                    <li>
+                        <a href="user_chl.html">车辆管理</a>
+                    </li>
+                    <li>
+                        <a href="user_gz.html">关注中心</a>
+                    </li>
+                </ul>
+			</div>
+		</div>
+	</div>
+	<div class="user_body">
+		<div class="user_b">
+        <!--start左侧导航-->    
+            <div class="user_l">
+                <div class="left_navigation">
+                    <ul>
+                        <li class="let_nav_tit"><span class="line"></span><h3>交易管理</h3></li>
+                        <li class="btn1" id="btn1">
+                            <a class="nav-first">销售管理<i class="icon-caret-right"></i></a>
+                            <ul class="zj_zh">
+                                <li><a href="chp_list.html">销售列表</a></li>
+                                <li><a href="offer_index.html">发布产品</a></li>
+                            </ul>
+                        </li>                               
+                        
+                        <li class="btn1" id="btn2">
+                            <a class="nav-first">采购管理<i class="icon-caret-right"></i></a>
+                            <ul class="zj_zh" id="zj_zh4">
+                                <li><a href="procurement_list.html">采购列表</a></li>
+                                <li><a href="procurement_cg.html">发布采购</a></li>
+                            </ul>
+                        </li>
+                            
+                        <li class="btn1">
+                            <a class="nav-first">合同管理<i class=" icon-caret-right"></i></a>
+                            <ul class="zj_zh" id="zj_zh3">
+                                <li><a href="user_complaint.html">销售合同</a></li>
+                                <li><a href="user_complaint.html">购买合同</a></li>
+                            </ul>
+                        </li>
+                        <li  class="btn1"><a class="nav-first">申诉管理<i class=" icon-caret-right"></i></a>
+                            <ul class="zj_zh">
+                                <li><a href="user_complaint.html">合同申诉</a></li>
+                                <li><a href="user_complaint.html">提货申诉</a></li>
+                            </ul>
+                        </li>
+                        <li  class="btn1"><a class="nav-first">投保管理<i class=" icon-caret-down"></i></a>
+                            <ul class="zj_zh" id="zj_zh1">
+                                <li><a href="bao_list.html">投保列表</a></li>
+                                <li><a class="cur" href="bao_apply.html">投保申请</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+			<!--end左侧导航-->	
+			<!--start中间内容-->	
+                        <style type="text/css">.center_tabl .table2 {width: 96%;margin: 0 2%;}.user_c{width:948px;}.center_tabl .table2 i{color: #d61515}</style>
+			<div class="user_c">
+				<div class="user_zhxi">
+					<div class="zhxi_tit">
+						<p><a>投保管理</a>><a>投保缴费详情</a></p>
+					</div>
+					<div class="center_tabl">
+                    <form action="" method="">
+					   <table class="table2" cellpadding="0" cellspacing="0" >
+                            <tr>
+                                <td class="spmx_title" colspan="8">商品投保费用缴纳详情</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">保险产品</td>
+                                <td colspan="2">中国人民财产保险股份有限公司产品责任保险条款(1993版)</td>
+                                <td colspan="2">投保单号(含合同单号)</td>
+                                <td colspan="2">{C16B3D65-9B21-446C-97A7-2AD6791F047E}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">保险人名称</td>
+                                <td colspan="2"><input type="text"><i>*</i></td>
+                                <td colspan="2">保险人地址</td>
+                                <td colspan="2"><input type="text"><i>*</i></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">被保险人名称</td>
+                                <td colspan="2"><input type="text"><i>*</i></td>
+                                <td colspan="2">被保险人地址</td>
+                                <td colspan="2"><input type="text"><i>*</i></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">证件类型</td>
+                                <td colspan="2"><select>
+                                    <option>身份证</option>
+                                    <option>军人证</option>
+                                </select><i>*</i></td>
+                                <td colspan="2">统一社会信用代码</td>
+                                <td colspan="2"><input type="text"><i>*</i></td>
+                            </tr>
+                             <tr>
+                                <td colspan="3">联系人：<input type="text"><i>*</i></td>
+                                <td colspan="3">联系电话：<input type="text"><i>*</i></td>
+                                <td colspan="2">产品类型：耐火材料<i>*</i></td>
+                            </tr>
+                             <tr>
+                                <td colspan="3">产品名称：高品质耐火材料</td>
+                                <td colspan="3">生产日期：2016-5-22</td>
+                                <td colspan="2">数量(单位：吨)：30</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">保质期限：1年</td>
+                                <td colspan="3">编码信息：<input type="text"><i>*</i></td>
+                                <td colspan="2">销售额(单位：元)：2530.00<i>*</i></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">保费收入账户：139206242598</td>
+                                <td colspan="3">开户行：中国银行阳泉市城区支行</td>
+                                <td colspan="2">名称：中国人民财产保险股份有限公司阳泉分公司<i>*</i></td>
+                            </tr>
+                            <tr>
+                                <td class="spmx_title" colspan="8">备注说明</td>
+                            </tr>
+                            <tr>
+                                <td colspan="8">
+<p>特别约定：<br/>
+1.“耐耐网”平台在线投保产品责任保险的企业必须是依法注册，并取得工商行政部门、主管部门颁发的营业执照和业务经营（或生产）许可证，其产品须经国家产品质量检测机构检测合格，取得产品质量合格证，准予生产、销售，否则，发生事故后，保险公司不负责赔偿。<br/>
+2.通过“耐耐网”交易平台交易的每一笔国内贸易，其卖方企业在本网站在线投保产品责任保险。<br/>
+3.“耐耐网”产品责任保险的保险责任及相关事项按照《中国人民财产保险股份有限公司产品责任保险条款(1993版)》（2009年9月18日中国保险监督管理委员会核准备案，编号：人保（备案）[2009]N277号）执行。<br/>
+4.通过本网站在线投保的产品责任保险仅承保在本网站在线交易的产品在中华人民共和国境内（港、澳、台除外）所造成的损失赔偿责任，对于非在线交易产品造成的赔偿责任以及在线交易产品在境外造成的相关赔偿责任，本保险不负责赔偿。<br/>
+5.产品责任险承保被保险人的产品存在缺陷，造成使用、消费该产品的人或第三者的人身伤害、疾病、死亡或财产损失责任，不承担因产品未达到企业承诺的使用效能而造成的赔偿责任。 <br/>
+6.每个企业年度累计责任限额最高不超过3000万元：即从企业首次投保的保单起保日，及后续每年的该日起12个月内”，保险公司总赔偿限额不超过3000万元。
+  年度保单累计责任限额不足3000万元的，以实际累计责任限额为准。<br/>
+ 7.投保企业与特定买方的持续交易，应当在首次投保之后，最后一次投保的保单终止之前（以下称“上述期间”），持续向本保险人投保。如发生保险事故时，在上述期间被保险人与特定买方存在未投保交易，则保险人将按照已投保贸易额与上述期间内总交易额（包括任何形式完成的交易）的比例进行赔付，即赔偿金额=按保单及协议其他条件核定的损失*已投保交易额/被保险人与该特定买方在上述保险期间内的总销售额。<br/>
+8.产品责任事故发生时间与报案时间须在保单承保期限之内,保险公司予以理赔。</p>
+                                </td>                                
+                            </tr>
+                            <tr>
+                                <td colspan="8">《 中国人民财产保险股份有限公司产品责任保险条款（1993版）》</td>                             
+                            </tr>
+                            
+                             <tr>
+                                <td colspan="8">
+                                   <input class="cg_fb" type="button" value="提交" onclick="submit"/><input class="cg_fb" type="button" value="返回" onclick="history.go(-1)"/>
+                                </td>
+                            </tr>
+                        </table>
+            	    </form>
+						
+					</div>
+				</div>
+			</div>
+			<!--end中间内容-->	
+			<!--start右侧广告			
+			<div class="user_r">
+				<div class="wrap_con">
+					<div class="tit clearfix">
+						<h3>公告</h3>
+					</div>
+					<div class="con">
+						<div class="con_medal clearfix">
+							<ul>
+								<li><a>暂无勋章</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end右侧广告-->
+		</div>
+	</div>
+</body>
+</html>
