@@ -65,3 +65,7 @@ ul.nav-list{
 	background: #a30e0e;
 }
 /*个人中心头部导航 end*/
+.center{
+    width: 1190px;
+    margin: 0 auto;
+}
