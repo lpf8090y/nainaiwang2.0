@@ -1,8 +1,8 @@
 $(document).ready(function(){
   //个人中心左侧导航栏
-    $(".ul1 .ul1_titles").click(function() {
-       $(this).find(".ul2").toggle();
-       if(!$(this).find(".ul2").is(":hidden")){
+    $(".ul1 .ul1_titles .title_ul1").click(function() {
+       $(this).parents(".ul1_titles").find(".ul2").toggle();
+       if(!$(this).parents(".ul1_titles").find(".ul2").is(":hidden")){
           $(this).find("i").addClass("icon-caret-up");
           $(this).find("i").removeClass("icon-caret-down");
        }else{

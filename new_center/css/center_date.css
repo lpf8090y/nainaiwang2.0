@@ -1,4 +1,7 @@
 /*左侧基本信息栏*/
+.center a{
+    color: #000;
+}
 .left_c{
     float: left;
     width: 200px;
@@ -58,8 +61,16 @@
 	position: absolute;
 	right: 10px;
 	color: #afafaf;
-	top:20px;
-
+	top:26px;
+}
+.left_c .ul1 li i.icon-caret-up{
+    border: 7px solid;
+    border-color: transparent transparent #afafaf transparent;
+    top:18px;
+}
+.left_c .ul1 li i.icon-caret-down{
+    border: 7px solid;
+    border-color: #afafaf transparent transparent transparent
 }
 .left_c .ul1 .ul2 li{
 	padding-left: 5px;
@@ -126,7 +137,7 @@
 .rc_bate .bate-input .but_div{
 	margin: 40px 0px 0px 160px;
 }
-.rc_bate .bate-input .but_div .but_in{
+a.but_in{
 	background: #b61515;
 	color: #fff;
 	border: 1px solid #b70000;
@@ -258,7 +269,7 @@
     display: block;
     position: absolute;
     border: 12px solid transparent;
-    border-style: dashed  dashed  dashed solid;
+    border-style: dashed solid dashed dashed;
 }
 .c-tip-arrow em {
     border-right-color: #e6e6e6;
@@ -288,3 +299,82 @@
 	padding-left: 50px;
 	line-height: 25px;
 }
+/*上传头像*/
+.tx_left{
+    float: left;
+    width: 600px;
+    border-right:1px solid #e6e6e6;
+}
+.tx_right{
+    float: left;
+    width: 249px;
+    padding: 0 20px;    
+}
+.tx_left .up-img{
+    width: 519px;
+    height: 300px;
+    margin: 30px 0;
+    border: 1px solid #e6e6e6;
+    background: #fafafa;
+    position: relative;
+    padding: 10px;
+}
+.tx_left .txtj_img .tjtx_imgs{
+    float: left;
+    width: 98px;
+    height: 98px;
+    background: #fafafa;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    margin-right:10px;
+    margin-top: 10px;  
+}
+.txtj_img .hover_img{
+    border: 1px solid #ff6116 !important;
+    background: url(../images/icon/bjtp.png) no-repeat 60px 60px #fafafa !important;
+}
+.txtj_img .tjtx_imgs img{
+    height: 98px;
+}
+.tx_left .img_but{
+    margin: 40px 0px 0px;
+}
+.tx_right .tx_con{
+    font-size: 15px;
+    color: #999;
+}
+.tx_con .yltswz{
+    line-height: 25px;
+}
+.tx_con p{
+    margin: 0px;
+}
+.tx_con .ylimg1{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #e6e6e6;
+    background: url("../images/icon/moren_img.jpg") no-repeat center #fafafa;
+    margin-top:30px; 
+    position: relative;
+    padding: 7px;
+}
+
+.tx_con .img_size{
+    line-height: 35px;
+    height: 35px;
+}
+.tx_con .ylimg2{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e6e6e6;
+    background: url("../images/icon/moren_img.jpg") no-repeat center #fafafa;
+    margin-top:30px; 
+    position: relative;
+    padding: 7px;
+}
+
+
+
+
+
+
