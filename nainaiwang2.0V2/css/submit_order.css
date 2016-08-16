@@ -1,11 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
-*{ margin:0; padding:0; font-style:normal;}
-body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
-{margin:0;padding:0;font-style:normal;font:100% "Hiragino Sans GB W3",Arial, Helvetica,sans-serif;}
 
 .submit{ width:1190px; margin:0 auto; height:auto; overflow:hidden;}
-.submit_word{ margin:20px auto; width:800px; height:auto; overflow:hidden;}
+.submit_word{ padding:22px 0 0px 0; width:1190px; height:auto; overflow:hidden;border-bottom: 1px solid #e6e6e6;
+              margin-bottom: 15px;position: relative;}
+.submit_word h3 {
+    color: #666666;
+    display: block;
+    height: 25px;
+    border-bottom: 2px solid #d61515;
+    width: 120px;
+    text-align: center;
+}
 .submit_word span {
     width: 200px;
     display: block;
@@ -21,8 +27,14 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4
     width: 1190px;
     height: auto;
     overflow: hidden;
-    margin: 0 auto 120px auto;
+    margin: 0 auto 75px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px #e6e6e6 dashed;
 }
+.order_form table{
+    width: 1190px;
+}
+
 .order_form h2 {
     display: block;
     padding: 8px 25px;
@@ -309,20 +321,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .submit hr{margin:20px auto;}
 
 .zhiffs b {
-    float: left;
     display: block;
-    width: 30px;
-    margin-top: 10px;
+    width: 90px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999999;
 }
 .addwidth {
-    margin: 0px 0 0 40px;
     display: block;
-    padding: 8px 8px 8px 8px;
+    padding: 8px 8px 20px 0;
     text-align: left;
     font-size: 12px;
     font-weight: normal;
     color: #333333;
-   
     line-height: 40px;
 }
 .add_width{
@@ -576,50 +587,64 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     top: 55px;
 }
 .jiesim h3 {
-    margin: 65px 0 0 40px;
+    border-bottom: 1px dashed #e6e6e6;
     display: block;
-    padding: 8px;
-    text-align: left;
-    font-size: 12px;
     font-weight: normal;
-    color: #333333;
-    height: auto;
+    height: 10px;
     overflow: hidden;
 }
 .daizfji i{ font-style:normal;}
-.daizfji{
-	font-size:16px;
-	color:#ff0000;
+.daizfji {
+    font-size: 14px;
     float: right;
     clear: both;
-    padding-right: 15px;
+    margin-bottom: 10px;
 }
+.daizfji b{
+ color:#d61515;   
+}
+
 .zhifjin {
-    color: #333;
+    color: #999999;
     font-size: 13px;
-	margin-right: 20px;
-}
-.order_comit{
-    clear: both;
-    float: right;
-}
-.order_comit a:hover{ color:#FFF; text-decoration:none;}
-.btoncomit{
-    padding: 4px 20px;
+    width: 175px;
     display: block;
-    background: #c81624;
+    text-align: right;
+}
+.zhifjin b,.zhifjin strong{font-weight: normal;}
+.zhifjin i{
+    color:#d61515;  
+}
+.order_comit {
+    clear: both;
+    height: 42px;
+    background: #f7f7f7;
+    margin-top: 5px;
+}
+.order_comit a:hover,.order_comit a:link,.order_comit a:visited{ color:#FFF; text-decoration:none;}
+.btoncomit{
+    width: 150px;
+    height: 42px;
+    display: block;
+    background: #d61515;
     font-size: 16px;
     color: #fff;
-    margin-top: 10px;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 3px;
+    line-height: 42px;
+    text-align: center;
+    float: right;
 }
-{
-    margin: 12px 0 10px 120px;
-    font-size: 24px;
-    color: #696969;
-    font-weight: normal;
+.order_comit span{
+    display: block;
+    float: right;
+    line-height: 42px;
+    font-size: 12px;
+    color: #666666;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.order_comit span i,.order_comit span b{
+    color: #d61515;
+    font-size: 16px;
 }
 .alreaor h1{
     margin: 40px 0 20px 120px;
@@ -987,4 +1012,259 @@ table {
 }
 .mar_cotent{
     padding-left: 25px;
+}
+#mainContent .mainRow1.sure{
+    height: auto;
+    overflow: hidden;
+}
+
+.login_top li img.shouy.mobil{
+    top: 10px
+}
+table { border-collapse: collapse;
+        border: 1px solid #e6e6e6   
+  } 
+
+th {  text-align: center; 
+      padding: 0.2em; 
+      border: none; 
+}  
+.form_infoma td {
+    padding: 1.2em;
+}
+tr.form_bor{
+    border: 1px solid #e6e6e6;
+    font-size: 14px;
+    color: #999999;
+}
+tr.form_infoma{
+    height: 100px;
+}
+.form_infoma .product_img img{
+    width: 82px;
+    height: 82px;
+    border: 1px solid #e6e6e6;
+    vertical-align: middle;
+    float: left;
+}
+.form_infoma .product_img .produ_left{
+    padding: 0px 10px;
+    text-align: left;
+    height: 90px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #adadad;
+    line-height: 20px;
+}
+.form_infoma .guige{
+    color: #666666;
+    line-height: 20px;
+    text-align: left;
+}
+.form_infoma td{
+    text-align: center;
+     color: #666666;
+     font-size: 14px;
+     border: 1px solid #e6e6e6;
+}
+.form_infoma .price{
+    color: #d61515;
+}
+.sheet_box{
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666666;
+}
+.sheet_box div label{
+        width: 200px;
+    text-align: right;
+    display: block;
+    float: left;
+}
+.sheet_box div input{
+    height: 36px;
+    width: 260px;
+}
+.sheet_box div select{
+    height: 36px;
+    width: 85px;
+}
+.sheet_box div {
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+.sheet_box div .unit{
+    margin-left: 12px;
+}
+.sunmit_btn  {
+    margin-bottom: 50px;
+    position: relative;
+    height: 100px;
+}
+.sunmit_btn a{
+    background: #d61515;
+    border: 1px solid #b70000;
+    display: block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;  
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+.sunmit_btn a:hover{text-decoration: none;}
+.m_log .logoimg_box {
+    float: right;
+    padding: 20px;
+    margin-right: 5px;
+}
+.m_log .logoimg_box div{
+    float: left;
+}
+.m_log .logoimg_box div{
+    display: block;
+    text-align: center;
+    color: #999999;
+    line-height: 30px;
+    position: relative;
+}
+.logoimg_box .sure_order p{
+    position: absolute;
+    left: -12px;   
+}
+.logoimg_box .pay_order p{
+    position: absolute;
+    left: 62px;   
+}
+.logoimg_box .plete_order p{
+    position: absolute;
+    left: 75px;
+    width: 50px;
+}
+.submit_word .sure_oder{
+    display: block;
+    float: left;
+    margin-right: 12px;
+}
+.submit_word a img{
+    width: 18px;
+    height: 12px;
+    float: left;
+    margin: 0 3px;
+
+}
+.submit_word a{
+    color: #3fa5d9;
+}
+
+.counter{
+    float: left;
+    margin: 1px 20%;
+    border: 1px solid #f5f5f5;
+    border-radius: 3px;
+    background: #fff;
+}
+.counter input {
+    background: #fff;
+    width: 22px;
+    height: 23px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+}
+.counter #text_box{
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    width: 30px;
+}
+.order_form.suo{
+    margin-bottom: 35px;
+}
+.bank_box img{
+    width: 150px; 
+    height: 36px;
+    margin-right: 20px;
+}
+.intur_box{
+    margin: 20px 3px 12px 0;
+}
+.intur_box span strong{
+    display: block;
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+.pay_succeed{
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+.pay_succeed img{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.pay_succeed p {
+    display: block;
+    float: left;
+    left: 30px;
+    font-size: 20px;
+    color: #666666;
+    line-height: 50px;
+    margin-left: 20px;
+}
+.pay_succeed .sued_top{
+   padding: 80px 8px 50px 30px;
+}
+.pay_succeed .sued_cen ul{
+    color: #999999;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 22px 20px;
+}
+.sued_cen ul li span{
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 15px;
+}
+.sued_cen ul li b{
+    font-weight: normal;
+    display: block;
+    float: left;
+    width: 90px;
+    text-align: right;
+}
+.sued_bottom{
+    float: left;
+}
+.sued_cen ul li .bfpay{
+    color: #d61515;
+}
+.sued_bottom .goon_look,.sued_bottom .hetong_look{
+    display: block;
+    width: 100px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    background: #d61515;
+    float: left;
+    margin: 36px;
+}
+.sued_bottom a:hover{
+    text-decoration: none;
+}
+.line_dashed{
+    border-bottom: 1px dashed #e6e6e6;
+    width: 1190px;
+    height: 100px;
+    margin:0 auto;
 }
