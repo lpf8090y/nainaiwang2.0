@@ -33,6 +33,8 @@ $(window).load(function() {
 
 			
 			$(".action").css("display","none")
+			$(".thumbBox").css({'box-shadow':'0 0 0 1000px rgba(0, 0, 0, 0.5)',
+   ' background':' none repeat scroll 0% 0% transparent',})
 
 		}
 
@@ -64,12 +66,17 @@ $(window).load(function() {
 		}
 
 		
+	$(".imageBox").on("hover",function(){
 
-	$(".imageBox").on("mouseup",function(){
+ 		getImg();
+ 		$(".imageBox").on("mouseup",function(){
 
  		getImg();
 
   		});
+
+  	});
+	
 
 		
 
