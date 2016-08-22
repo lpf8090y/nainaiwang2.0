@@ -1,3 +1,23 @@
+/*统一修改select样式*/
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #ccc;
+
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent ;
+  background-color:  #fff;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+
+
 #mainContent .mainRow4{
 	background: #fff;
 	height: 435px;
@@ -27,6 +47,7 @@
 .found ul li{
 	font-size: 14px;
 	line-height: 50px;
+	clear: both;
 }
 .found ul li .text{
 	width:260px;
@@ -37,6 +58,9 @@
 }
 .found ul li .select_found{
 	width:80px;height: 30px;color: #666;
+	padding:4px 3px;
+	display: block;
+	float: left;margin-right: 5px;
 }
 .found ul li .textarea{
 	width:570px;
