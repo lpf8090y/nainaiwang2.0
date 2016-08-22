@@ -328,13 +328,23 @@ a.but_in{
     text-align: center;
     margin-right:10px;
     margin-top: 10px;  
+    position: relative;
 }
 .txtj_img .hover_img{
     border: 1px solid #ff6116 !important;
-    background: url(../images/icon/bjtp.png) no-repeat 60px 60px #fafafa !important;
+}
+.txtj_img .hover_img .hover_i{
+    display:block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: url("../images/icon/bjtp.png") no-repeat 10px 12px !important;
 }
 .txtj_img .tjtx_imgs img{
     height: 98px;
+    width: 98px;
 }
 .tx_left .img_but{
     margin: 40px 0px 0px;
@@ -358,6 +368,10 @@ a.but_in{
     position: relative;
     padding: 7px;
 }
+.tx_con .ylimg1 img{
+    width: 120px;
+    height: 120px;
+}
 
 .tx_con .img_size{
     line-height: 35px;
@@ -371,6 +385,10 @@ a.but_in{
     margin-top:30px; 
     position: relative;
     padding: 7px;
+}
+.tx_con .ylimg2 img{
+    width: 80px;
+    height: 80px;
 }
 
 

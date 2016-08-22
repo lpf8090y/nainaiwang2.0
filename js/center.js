@@ -165,11 +165,11 @@ jQuery(document).ready(function($){
 /*控制消息页面中详情显示和隐藏*/
 $(document).ready(function(){
   $(".tact .right-a").click(function(){
-    $(this).parents(".tact").find(".mail_cont").show();
+    $(".tact .right-a").removeClass("cold6");
+    $(this).addClass("cold6");
+    $(this).parents("tr td").find(".jy_deal").toggle();
   });
-   $(".tact .mail_cont .up_jt").click(function(){
-    $(this).parents(".mail_cont").hide();
-  });
+   
 });
 
 
