@@ -374,36 +374,82 @@ body{_padding-top:30px;}
                             <td>厂家直销，质量放心，量大价优厂家直销，质量放心，量大价优厂家直销，质量放心，量大价优厂家直销，质量放心，量大价优厂家直销，质量放心，量大价优厂家直销，质量放心，量大价优</td>
                         </tr>
                     </table>
-                    
-                    <style type="text/css">
-                        .pro_pic{float: left;margin-right: 20px;}
-                    </style>
+                    <link rel="stylesheet" href="css/product_pic.css" type="text/css">
                     <h5 class="tit"><i><img src="images/pro_show_05.jpg"></i><span>商品图片</span></h5>
-                    <p class="pro_pic" >
-                        <a name='fff' href='javascript:void(0);' onclick='picBig();'><img src="images/pro_show_img.jpg" width="80px"height="80px" style="margin:20px;float:left;" class="pro_apic"></a>
-                        <span style="margin-top:30px;display:block;">耐火市场&nbsp;高铝质&nbsp;铝矾土的图片附件</span><br/>
-                        <span><a name='fff' href='javascript:void(0);' onclick='picBig();' class="red">预览</a><a href="images/pro_show_img.jpg" class="red" style="margin-left:15px;">下载</a></span>
-                    </p>
-                    <p class="pro_pic" >
-                        <a name='fff' href='javascript:void(0);' onclick='picBig();'><img src="images/pro_show_img.jpg" width="80px"height="80px" style="margin:20px;float:left;" class="pro_apic"></a>
-                        <span style="margin-top:30px;display:block;">耐火市场&nbsp;高铝质&nbsp;铝矾土的图片附件</span><br/>
-                        <span><a name='fff' href='javascript:void(0);' onclick='picBig();' class="red">预览</a><a href="" class="red" style="margin-left:15px;">下载</a></span>
-                    </p>
+                    <div class="bodyCon08"><!--学员-->
+                        <div class="students">
+                            
+                              <div id="four_flash">
+                                <div class="flashBg">
+                                    <ul class="mobile" style="left: 0px;">
+                                        <li>
+                                            <img src="images/senke_xy00.jpg">
+                                            <!-- <a href=""></a> -->
+                                        </li>
+                                        <li>
+                                            <img src="images/senke_xy01.jpg">
+                                            
+                                        </li>
+                                        <li>
+                                            <img src="images/senke_xy02.jpg">
+                                            
+                                        </li>
+                                        <li>
+                                            <img src="images/senke_xy03.jpg">
+                                            
+                                        </li>
+                                        <li>
+                                            <img src="images/senke_xy04.jpg">
+                                            
+                                        </li>
+                                        <li>
+                                            <img src="images/senke_xy05.jpg">
+                                            
+                                        </li>
 
-                    <div id="divCenter" align="center">
-                    <img src="images/pro_show_img.jpg" /><a href="javascript:void(0);" onclick="picClose();">关闭</a>
+                                    </ul>
+                                </div>
+                                <div class="but_left"></div>
+                                <div class="but_right"></div>
+                              </div>
+                              
+                        </div>
                     </div>
-                    <script>
-                    function picBig() {
-                    var v = document.getElementById('divCenter');
-                    v.style.display = "block";
-                    }
 
-                    function picClose() {
-                    var v = document.getElementById('divCenter');
-                    v.style.display = "none";
-                    }
-                    </script>
+                    <script type="text/javascript" src="js/pic.js"></script>
+                        
+                    <script type="text/javascript">  
+                           $(document).ready(function(){  
+                                var length=$("#four_flash li").size();
+                                if(length>4){
+                                    $(".but_left").css("display","block");
+                                    $(".but_right").css("display","block");
+                                }else{              
+                                    $(".but_left").css("display","none");
+                                    $(".but_right").css("display","none");
+                                }
+
+                            //找到li下所有img的值,单击图片事件  
+                                $("#four_flash li:has(img)").click(function(){  
+                                    $("#show").fadeIn(300);  //显示图片效果  
+                                    //获得图片路径  
+                                    var photo_url=$(this).find("img").attr("src");  
+                                    //设置图片路径  
+                                    $("#photo").find("img").attr("src",photo_url);  
+                                    //单击放大后的图片消失  
+                                    $("#close").click(function(){  
+                                        $("#show").fadeOut(300); //图片消失效果  
+                                    }); 
+
+                                });  
+                            });  
+                        </script>  
+                        <div id="show" style="display: none;">  
+                            <div id="photo">  
+                                <img style="width:100%;height:100%;"/> <a href="javascript:void(0);" id="close"></a>
+                            </div>  
+                        </div> 
+
                 </div>
 
 

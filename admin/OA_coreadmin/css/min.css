@@ -248,8 +248,9 @@ strong{color:#FFF}.visualize-interaction-tracker:hover{cursor:help}.ie8 .visuali
 50px;background:url(img/slidebuttons.png);position:absolute}#content .calendar .title
 .next{background-position:18px top;top:8px;right: -13px}#content .calendar .title
 .prev{background-position:38px 0%;top:8px;left: -35px}#content .calendar
-.content{padding:0;margin:0px}#content .calendar
-table{margin-right:0px;border-collapse:collapse;vertical-align:top}#content .calendar
+.content{padding:0;margin:0px}
+#content .calendar table{margin-right:0px;border-collapse:collapse;vertical-align:top;width: 370px;margin:12px; float: left;}
+#content .calendar
 th{text-align:center;vertical-align:middle;text-transform:uppercase;border:1px
 solid #C7C7C7;border-top:none;background:#FAFAFA;background: -moz-linear-gradient(top, #fafafa 0%, #eaeae9 99%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(99%,#eaeae9));background: -webkit-linear-gradient(top, #fafafa 0%,#eaeae9 99%);background: -o-linear-gradient(top, #fafafa 0%,#eaeae9 99%);background: -ms-linear-gradient(top, #fafafa 0%,#eaeae9 99%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#eaeae9',GradientType=0 );background:linear-gradient(top, #fafafa 0%,#eaeae9 99%);height:32px;color:#6D6D6D}#content .calendar
 td{width:14%;border:1px
