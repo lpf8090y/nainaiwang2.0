@@ -136,3 +136,161 @@ a, a * { cursor: pointer; }
 
 /*轮播代码样式完*/
 
+/*观点右侧样式 strat*/
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.news{
+    margin-bottom:10px;
+    padding: 20px 0;
+}
+.news_top{
+    margin: 0 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.news_top_img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    background: #fff;
+    box-shadow: 1px;
+    position: relative;
+     -webkit-box-shadow:0 0 20px #e4e4e4;  
+  -moz-box-shadow:0 020px #e4e4e4;  
+  box-shadow:0 0 20px #e4e4e4;  
+}
+.news_top_img img{
+    border:1px solid #e4e4e4;
+    width: 90px;
+    height:90px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%; 
+    position: absolute;
+    top:4px;
+    left: 4px;
+}
+.news .news_top_right{
+    float: left;
+    padding-left: 20px;
+}
+.news .news_top_right h3{
+    padding: 15px 0px;
+}
+.news .news_top_right p{
+    line-height: 25px;
+}
+.news_mail{
+    margin: 10px 20px;
+}
+.news_mail .mail_infor{
+    display: block;
+    text-align: center;
+    border: 1px solid #ffdcdf;
+    width: 100%;
+    background: #faf0f1;
+    padding: 10px 0;
+}
+/*分页样式*/
+.page{
+    text-align:center;
+    padding: 20px 0px;
+}
+.page a{
+    text-decoration: none;
+}
+.page .page_first,.page_up{
+    padding: 10px 15px;
+    border:1px solid #e4e4e4;
+    height: 40px;
+}
+.page_up.on{
+    padding: 10px;
+    border:1px solid #c81623;
+    color: #c81623;
+}
+.page .page_num{
+    padding: 10px 15px;
+    border: 1px solid #e4e4e4;
+}
+.page .page_num.on,.page .page_num:hover{
+    background: #c81623;
+    color: #fff;
+}
+.page  .text_num{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e4e4e4;
+    text-align:center;
+}
+.page .button_num{
+    background: #fff;
+    width: 70px;
+    height: 40px;
+    border: 1px solid #e4e4e4;
+}
+/*分页样式 end*/
+/*观点右侧样式 end*/
+/*行情咨询 strat*/
+.quotation_top{
+    margin-top:20px;
+}
+.quotation_margin_top{
+    margin-top: 20px !important;
+}
+.content_title{
+    padding: 20px 0 10px;
+}
+.content_title .content_title_ul li{
+    float: left;
+    margin-left: 20px;
+    width: 97px;
+}
+.content_title .content_title_ul li a.title_a{
+    display: block;
+    border: 1px solid #c81623;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #c81623;
+    text-decoration: none;
+}
+.content_title .content_title_ul li a.on{
+    background: #c81623;
+    color:#fff;
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px; 
+}
+.content_title_ul li a.on .c-tip-arrow {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: 40px;
+}
+
+.content_title_ul li a.on .c-tip-arrow em {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    border: 8px solid transparent;
+    border-style: dashed dashed solid;
+}
+.content_title_ul li a.on .c-tip-arrow em {
+    border-top-color: #c81623;
+}
+
+/*行情咨询 end*/
