@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>个人中心</title>
+  <meta name="keywords"/>
+  <meta name="description"/>
+  <meta charset="utf-8">
+  <link href="css/center_top.css" rel="stylesheet" type="text/css" />
+  <!-- 基本信息css -->
+  <link href="css/center_date.css" rel="stylesheet" type="text/css" />
+  <!-- 基本信息css end-->
+  <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="js/center.js"></script>
+  <script type="text/javascript" src="js/tjtx.js"></script>
+  <!-- 上传图片 -->
+  <!-- <link rel="stylesheet" href="css/style.css" type="text/css">
+
+<script type="text/javascript" src="js/up_img/cropbox.js"></script>
+
+<script type="text/javascript" src="js/up_img/up_img.js"></script> -->
+<!-- 上传图片 end -->
+
+  <!-- 头部控制 -->
+  <link href="../css/topnav20141027.css" rel="stylesheet" type="text/css">
+  <script src="../js/topnav20141027.js" type="text/javascript"></script>
+    <!-- 头部控制 -->
+</head>
+<body>
+  <!------------------公用头部控件 开始-------------------->
+<div class="bg_topnav">
+    <div class="topnav_width">
+        <div class="topnav_left">
+            <div class="top_index">
+                <img class="index_img" src="../images/index/icon_index.png"/>
+                <a rel="external nofollow" href="index.html" target="_blank" >耐耐网首页</a>
+            </div>
+            <div class="index_user">
+                <a rel="external nofollow" href="login.html" target="_blank" class="">您好admin123，欢迎进入耐耐网</a>
+            </div>
+            <!-- <div class="login_link" id="toploginbox">
+                <a rel="external nofollow" href="login.html" target="_blank" class="topnav_login">请登录</a>
+            </div>
+            <div class="topnav_regsiter">
+                    <a rel="external nofollow" href="register.html" target="_blank">免费注册</a>
+            </div> -->
+        </div>
+        <div class="topnav_right">
+            <ul>
+                <!-- <li>
+                   <a>会员中心</a><span class="line_l">|<span>
+                </li>
+                <li>
+                   <a href="">我的合同</a><span class="line_l">|<span>
+                </li> -->
+                <li>
+                   <a href="">消息中心</a><span class="line_l">|<span>
+                </li>
+                <li>
+          <img class="iphon_img" src="../images/index/icon_iphon.png"/>
+                    <a href="">手机版</a><span class="line_l">|<span>
+                </li>
+                <li>
+                   <a href="">在线客服</a><span class="line_l">|<span>
+                </li>
+                <li>
+                   <a href="">交易时间：09:00--18:00</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!------------------公用头部控件 开始-------------------->
+<!-- 个人中心导航栏 strat-->
+  <div class="header">
+    <div class="nav">
+      <div class="logo-box zn-l">
+        <a href="../index.html" alt="返回耐耐首页"><img src="images/icon/icon_logo.png"/></a>
+      </div>
+      <div class="nav-tit">
+        <ul class="nav-list">
+          <li>
+            <a href="user_index.html" class="cur">我的主页</a>
+          </li>
+          <li>
+            <a href="user_header_img.html">账户信息</a>
+          </li>
+          <li>
+            <a href="user_zj.html">资金管理</a>
+          </li>
+          <li>
+            <a href="user_dd.html">交易管理</a>
+          </li>
+          <li>
+            <a href="user_cd.html">仓单管理</a>
+          </li>
+          <li>
+            <a href="user_gz.html">会员中心</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 个人中心导航栏 end-->
+  <!-- 中心内容 strat-->
+  <div class="center clear">
+    <div class="left_c">
+      <div class="user_img"><img src="images/icon/icon_tx.jpg"></div>
+      <div class="c_user_name">admin12322</div>
+      <div class="infor_c">
+        <a><img src="images/icon/icon_xx2.jpg"></a>
+        <a><img src="images/icon/icon_jp.png">金牌会员</a>
+      </div>
+      <div class="nav_left">
+        <ul class="ul1">
+          <li class="title_h3"><h3>账户信息</h3></li>
+          <li class="ul1_titles">
+            <div class="title_ul1">账户管理<i class="up_right icon-caret-up"></i></div>
+            <ul class="ul2" style="display: block;">
+              <li><a class="hover" href="user_header_img.html">基本信息</a></li>
+              <li><a href="user_pay.html">支付密码</a></li>
+              <li><a class="" href="user_date.html">账户密码</a></li>
+            </ul>
+          </li>
+          <li class="ul1_titles">
+            <div class="title_ul1">资质认证<i class="up_right icon-caret-down"></i></div>
+            <ul class="ul2" style="display: none;">
+              <li><a class="" href="user_header_img.html">基本信息</a></li>
+              <li><a href="">支付密码</a></li>
+              <li><a class="hover">账户密码</a></li>
+            </ul>
+          </li>
+          <li class="ul1_titles">
+            <div class="title_ul1">开票信息管理<i class="up_right icon-caret-down"></i></div>
+            <ul class="ul2" style="display: none;">
+              <li><a class="">基本信息</a></li>
+              <li><a href="user_pay.html">支付密码</a></li>
+              <li><a class="hover">账户密码</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right_c">
+      <div class="r_c_title">
+        <a class="tit_span">修改头像</a>
+      </div>
+      <div class="rc_bate clear">
+        <div class="tx_left">
+          <div class="header_img_ts">仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</div>
+           <link rel="stylesheet" href="jquery.Jcrop.css" type="text/css" />
+          <link rel="stylesheet" href="tex.css" type="text/css" />
+          <script src="jquery.Jcrop.min.js"></script>
+          <div class="Jcrop-box">
+            <!-- 上传图片 strat -->
+
+   
+
+           <form action="" method="post">
+      <div class="Jcrop-area"><img src="" id="Jcrop-pic"style="width:100%;height:100% "/></div>
+        
+        <div class="operation">
+            <a href="javascript:selectImage()" class="button">选择图片</a>
+       <!--  <a href="javascript:selectUpload()" class="button">上传图片</a> -->
+        </div>
+        <input type="hidden" id="jcrop_x" name="x" />
+        <input type="hidden" id="jcrop_y" name="y" />
+        <input type="hidden" id="jcrop_w" name="w" />
+        <input type="hidden" id="jcrop_h" name="h" />
+        <input id="file1" type="file" onchange="previewImage(this)" class="file" />
+        <!-- <canvas id="jcrop_canvas"></canvas>
+        <div><img id="imgs" src="" /></div> -->
+  </form>
+
+          
+            <!-- 上传图片  end-->
+  
+          </div>
+
+          <div class="txtj">
+            <div class="txtj_tit"><h4>推荐头像</h4></div>
+            <div class="txtj_img clear">
+              <div class="tjtx_imgs hover_img">
+                <i class="hover_i"></i>
+                <img src="images/icon/tjtx2.png"/>
+              </div>
+              <div class="tjtx_imgs">
+                <i class="hover_i"></i>
+                <img src="images/icon/tjtx.png"/>
+              </div>
+              <div class="tjtx_imgs">
+                <i class="hover_i"></i>
+                <img src="images/icon/tjtx3.png"/>
+              </div>
+              <div class="tjtx_imgs">
+                <i class="hover_i"></i>
+                <img src="images/icon/tjtx4.png"/>
+              </div>
+              <div class="tjtx_imgs">
+                <i class="hover_i"></i>
+                <img src="images/icon/tjtx5.png"/>
+              </div>
+              <div class="tjtx_imgs">
+                <i class="hover_i"></i>
+                <img src="images/icon/tjtx.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="img_but"><a href="" class="but_in">确认保存</a></div>
+        </div>
+        <!-- 右侧预览图 -->
+        <div class="tx_right">
+          <div class="tx_tit"><h4>效果预览</h4></div>
+          <div class="tx_con">
+
+             <div class="yltswz">
+            你上传的图片会自动生成2种尺寸，请注意小尺寸的头像是否清晰。
+            </div>
+            <div class="cropped">
+              <div id="preview-pane">
+                <div class="preview-container">
+                  <img src="images/1x1.png" class="jcrop-preview" id="jcrop-preview" />
+                </div>
+                
+              </div>
+              <p class="img_size">120*120像素</p>
+             
+          </div>
+          <div class="cropped">
+            <div id="preview-pane2">
+                <div class="preview-container2">
+                  <img src="images/1x1.png" class="jcrop-preview" id="jcrop-preview2" />
+                </div>
+                
+              </div>
+               <p class="img_size">80*80像素</p>
+          </div>
+             
+            </div>
+            <script type="text/javascript">
+  /*
+    图片品质问题： 设裁剪 图片宽高160px，得出宽高160px的base64图片。后台返回的图片，在页面图片宽高设置为120px*120px，压缩图片，提高显示图片的品质
+  */
+
+
+  var jcrop_api=false;
+  var $Jcrop_pic=$('#Jcrop-pic');
+  var jcrop_pic_w;
+  var jcrop_pic_h;
+  var canvas,context;
+  
+ 
+  var $imgs=document.getElementById("imgs");
+
+   function unhook(){
+    jcrop_api.destroy();  
+    $("#Jcrop-pic").removeAttr("style");
+
+   }
+  
+  var Jcrops=function(){    
+    var boundx,boundy,
+      $preview = $('#preview-pane'),
+      $pcnt = $('#preview-pane .preview-container'),
+      $pimg = $('#preview-pane .preview-container img'),
+      $pimg2= $('.preview-container2 img'),
+      xsize = $pcnt.width(),
+      ysize = $pcnt.height();
+      
+    $Jcrop_pic.Jcrop({
+      onChange: updatePreview,
+      onSelect: updatePreview,
+      allowSelect:false,
+      aspectRatio:1,
+      minSize:[120,120]
+    },function(){
+      jcrop_api=this;
+      var bounds = jcrop_api.getBounds();
+      boundx = bounds[0];
+      boundy = bounds[1];
+      jcrop_api.setOptions({
+        
+      })
+      //设置选框的大小，并且居中
+      var select_wh=80;
+    /*  var select_h=80;  */
+      jcrop_api.setSelect([ (boundx-select_wh)/2,(boundy-select_wh)/2,(boundx-select_wh)/2+select_wh,(boundy-select_wh)/2+select_wh ]);
+    });
+    
+    function updatePreview(c)
+    {
+      if (parseInt(c.w) > 0)
+      {
+      var rx = xsize / c.w;
+      var ry = ysize / c.h;
+    
+      $pimg.css({
+        width: Math.round(rx * boundx) + 'px',
+        height: Math.round(ry * boundy) + 'px',
+        marginLeft: '-' + Math.round(rx * c.x) + 'px',
+        marginTop: '-' + Math.round(ry * c.y) + 'px'
+      });
+      $pimg2.css({
+        width: Math.round(rx * boundx) -'40'+ 'px',
+        height: Math.round(ry * boundy) -'40'+ 'px',
+        marginLeft: '-' + Math.round(rx * c.x) + 'px',
+        marginTop: '-' + Math.round(ry * c.y) + 'px'
+      });
+      
+      /*$('#jcrop_x').val(c.x);
+      $('#jcrop_y').val(c.y);
+      $('#jcrop_w').val(c.w-40);
+      $('#jcrop_h').val(c.h-40);
+      
+      canvas=document.getElementById("jcrop_canvas");
+      canvas.width=xsize;
+      canvas.height=ysize;
+      context=canvas.getContext("2d");
+      context.drawImage(Jsrop_pic,c.x,c.y,c.w,c.h,0,0,xsize,ysize);
+      var image = new Image();
+      image.src = canvas.toDataURL("image/png");
+      $imgs.src=image.src;*/
+    
+      }
+    };
+  }
+
+  //预览图片
+  var jcrop_boole=false;
+  var Jsrop_pic=document.getElementById('Jcrop-pic');
+  var jcrop_preview=document.getElementById('jcrop-preview');
+   var jcrop_preview2=document.getElementById('jcrop-preview2');
+  
+  function previewImage(file) {
+    $(".operation .button").css("display","none") 
+    if(jcrop_api){
+      unhook();
+    }
+    //标准浏览器,FF、谷歌
+    if (file["files"] && file["files"][0]) {
+      var reader = new FileReader();
+      reader.onload = function (evt) {
+        Jsrop_pic.src = evt.target.result;
+        jcrop_preview.src = evt.target.result;
+         jcrop_preview2.src = evt.target.result;
+      }
+      reader.readAsDataURL(file.files[0]);
+    }else {  //IE
+      file.select();
+      var path = document.selection.createRange().text;
+      Jsrop_pic.src = path;
+      jcrop_preview.src = path;
+      jcrop_preview2.src = path;
+    }
+   
+
+   file_timer=setInterval(function(){
+    if(Jsrop_pic.width>0){
+      clearInterval(file_timer);
+      Jcrops();
+    }
+     },100)
+
+  }
+  //选择图片
+  function selectImage() {
+    document.getElementById('file1').click();
+
+  }
+  
+  
+</script>  
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+  </div>
+  <!-- 中心内容 end-->
+  </body>
+</html>

@@ -82,4 +82,12 @@
     function Aa(a, b) {var c = a.getElementsByTagName("*");var d = [];for (var i = 0; i < c.length; i++) {if (c[i].className == b) {d.push(c[i]);}};return d;}
     var item;
 
+$(function(){
+     $(".i_leftTit ul li a").mouseover(function (){  
+            $(this).addClass("eml") 
+        }).mouseout(function (){  
+            $(this).removeClass("eml")   
+        }); 
+})
+
   
