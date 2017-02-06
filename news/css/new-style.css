@@ -70,11 +70,10 @@ a, a * { cursor: pointer; }
 .data_box li.title h3{font-size: 20px;font-weight: normal;float: left;margin-left: 10px;}
 .data_box li.title span{display: inline-block;float: right;margin-right: 10px;width: 45px;height: 22px;line-height: 22px;border: 1px solid #ccc;text-align: center;border-radius: 20px;margin-top: 15px;}
 .data_box li:last-child{border-bottom: 0;}
-.data_box .addpic li{height: 100px;line-height: 100px;}
+.data_box .addpic li{height: 100px;}
 .data_box .addpic li .list_news_pic{width: 100px;height: 70px;float: left;margin: 10px 0;}
 .data_box .addpic li .list_news_title{display: block;width: 220px;height: 70px;float: right;margin: 10px 0;}
 .list_news_title p:first-child{line-height: 20px; }
-.list_news_title p:last-child{line-height: 45px; }
 .list_news_title p span{display: inline-block;height: 12px;line-height:12px;padding-left: 14px;}
 .list_news_title p span.time{width: 100px;background: url("../images/time.png") no-repeat left;left: 50px;}
 .list_news_title p span.count{width: 70px;background: url("../images/eye.png") no-repeat left;left: 200px;}
