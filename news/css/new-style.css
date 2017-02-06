@@ -1,0 +1,138 @@
+/* CSS Document */
+
+
+/* 全局设置 */
+*{margin: 0;padding: 0;list-style: none; font-family:"微软雅黑"!important;}
+img{border:0;}
+body { color: #555; line-height: 1; background: #f5f5f5;}
+
+body,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,th,td,p,input,dl,dt,dd,ul,ol,li,input,textarea { font-family:"微软雅黑"!important;}
+.gehang { width: 10px; height: 10px; overflow: hidden; text-indent: -9999px; clear: both; display: block; }
+
+.block { display: block; }
+
+.none { display: none; }
+
+.clear { clear: both; }
+.clear:after{    clear: :both;}
+.fl { float: left; }
+
+.fr { float: right; }
+
+.tl { text-align: left; }
+
+.tr { text-align: right; }
+
+.tc { text-align: center; }
+
+.bold { font-weight: bold; }
+
+a { text-decoration: none; cursor: pointer; color: #666; }
+a:hover, a:focus { outline: none; color: #c81623; text-decoration: underline; }
+a, a * { cursor: pointer; }
+
+/*布局*/
+.header{width: 100%;background: #fff;height: 110px;border-bottom: 1px solid #ccc;}
+.header .content{width: 1200px;height: 110px;margin: 0 auto;}
+.header .content .logo{width: 283px;height: 110px;border: 0;background: url("../images/logo.png") no-repeat;float: left;}
+.header .content .nav{width: 450px;height: auto;display: block;float: left;margin-left: 100px;}
+.header .content .nav li{width: 100px;height: 110px;line-height: 110px;text-align: center;display: block;float: left;}
+.header .content .nav li .on{color: #c81623;}
+.header .content .search{width: 360px;padding-top: 36px; float: right;height: auto;}
+.header .content .search .text{width: 260px;height: 36px;font-size: 12px;line-height: 36px;padding-left: 10px;color: #ccc;border: 1px solid #ccc;background: #fff;display: block;float: left;}
+.header .content .search .button{display: block;float: left;width: 80px;height: 38px;font-size: 14px;line-height: 38px;text-align: center;color: #fff;background: #c81623;border: 0;}
+
+.main{width: 1200px;margin: 15px auto;background: #f5f5f5;}
+.main .main_left{width: 840px;float: left;}
+.main .main_left .new_list{width: 100%;margin-top: 10px;padding-bottom: 10px; background: #fff;border-radius: 10px;}
+.main .main_left .new_list .news{width: 800px;height: 150px;margin: 20px;border: 0;border-bottom: 1px dashed #ccc;}
+.main .main_left .new_list .first{padding-top: 20px;}
+.news .news_pic{width: 220px;height: 140px;border-radius: 10px;border: 0;float: left;}
+.news .news_content{width: 560px;min-height: 140px;border: 0;float: right;}
+.news .news_content.no_pic{width: 100%;}
+.news .news_content .trade{width: 80px;height: 26px;background: url("../images/news_title.png") no-repeat;display: block;float: left;font-size: 14px;font-weight: normal;color: #fff;line-height: 26px;text-align: center;}
+.news .news_content .title{font-weight: normal;font-size: 16px;line-height: 26px;color: #333;padding-left: 5px;}
+.news .news_content p{font-size: 12px;color: #999;margin: 10px 0;line-height: 18px;}
+.news .news_content p.author {height: 32px;line-height: 32px;position: relative;}
+.news .news_content p.author .head_pic{width: 32px;height: 32px;border-radius: 50%;border: 1px solid #ccc;}
+.news .news_content p.author span{display: inline-block;height: 12px;line-height:12px;padding-left: 14px;position: absolute;top: 12px;}
+.news .news_content p.author .time{width: 100px;background: url("../images/time.png") no-repeat left;left: 50px;}
+.news .news_content p.author .count{width: 80px;background: url("../images/eye.png") no-repeat left;left: 200px;}
+.news .news_content p.author .share{width: 12px;padding-left:0;background: url("../images/share.png") no-repeat left;left: 300px;}
+.main .main_left .load_but{width: 840px;height: 50px;border-radius: 10px;background: #fff;text-align: center;line-height: 50px;margin-top: 10px;cursor: pointer;}
+.main .main_left .load_but span{width: 100px;height: 50px;display: block;margin: 0 auto;background: url("../images/load.png") no-repeat 0 center;}
+
+.main .list_right{width: 350px;float: right;}
+.main .list_right .data_box{width: 100%;height: auto;border-radius: 10px;background: #fff;color: #666;}
+.main .list_right .ad_box{width: 100%;height: 210px;border-radius: 10px;margin: 10px 0;}
+.data_box .data_list li{height: 50px;line-height: 50px;font-size: 14px;margin: 0 10px;border-bottom: 1px solid #ccc;}
+.data_box li.title{margin: 0;width: 100%;}
+.data_box li.title h3{font-size: 20px;font-weight: normal;float: left;margin-left: 10px;}
+.data_box li.title span{display: inline-block;float: right;margin-right: 10px;width: 45px;height: 22px;line-height: 22px;border: 1px solid #ccc;text-align: center;border-radius: 20px;margin-top: 15px;}
+.data_box li:last-child{border-bottom: 0;}
+.data_box .addpic li{height: 100px;line-height: 100px;}
+.data_box .addpic li .list_news_pic{width: 100px;height: 70px;float: left;margin: 10px 0;}
+.data_box .addpic li .list_news_title{display: block;width: 220px;height: 70px;float: right;margin: 10px 0;}
+.list_news_title p:first-child{line-height: 20px; }
+.list_news_title p:last-child{line-height: 45px; }
+.list_news_title p span{display: inline-block;height: 12px;line-height:12px;padding-left: 14px;}
+.list_news_title p span.time{width: 100px;background: url("../images/time.png") no-repeat left;left: 50px;}
+.list_news_title p span.count{width: 80px;background: url("../images/eye.png") no-repeat left;left: 200px;}
+.data_box .addpic li.title{height: 50px;line-height: 50px;}
+
+
+/*轮播代码样式*/
+#banner { position: relative; width: 100%; height: 395px;  overflow: hidden; /*top:-12px;*/border-radius: 10px;}
+
+#banner_list img { border: 0px; width:960px;height: 395px }
+
+#banner_bg {     position: absolute;
+    bottom: 0;
+    background-color: #000;
+    filter: Alpha(Opacity=30);
+    opacity: 0.3;
+    z-index: 1000;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    line-height: 50px; }
+
+#banner_info {    
+ position: absolute;
+    bottom: 0;
+    left: 20px;
+    line-height: 50px;
+    color: #fff;
+    z-index: 1001;
+    cursor: pointer; }
+
+#banner_text { position: absolute; width: 120px; z-index: 1002; right: 3px; bottom: 3px; }
+
+#banner ul {     
+  position: absolute;
+    list-style-type: none;
+    z-index: 1002;
+    margin: 0;
+    padding: 0;
+    bottom: 18px;
+    right: 5px;
+     }
+
+#banner ul li {    
+    float: left;
+    display: block;
+    color: #FFF;
+    background: #fff;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#banner ul li.on { width: 30px; }
+
+#banner_list a { position: absolute; }  /*让四张图片都可以重叠在一起*/
+
+/*轮播代码样式完*/
+
