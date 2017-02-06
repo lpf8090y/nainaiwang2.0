@@ -9,4 +9,11 @@ $(function(){
 		$(".page .page_num").removeClass("on");
 		$(this).addClass('on');
 	})
+	//行业移入移除效果
+	$("ul li.quotation_li").mouseover(function () {
+                $(".quotation_ul_bage").show();
+    });
+    $("ul li.quotation_li").mouseleave(function () {
+       $(".quotation_ul_bage").hide();
+    });
 })

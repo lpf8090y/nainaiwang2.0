@@ -294,3 +294,38 @@ a, a * { cursor: pointer; }
 }
 
 /*行情咨询 end*/
+/*搜索*/
+.color_c{
+    color: #c81623;
+}
+.search_result{
+    padding: 15px 20px 10px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.search_top{
+    margin: 20px 0 10px;
+
+}
+.search_top .serch_hot{
+    line-height: 50px;
+    font-weight: normal;
+    border-bottom:1px solid #e4e4e4; 
+    padding: 0 20px;
+}
+.search_top .search_word{
+    padding: 15px 20px 30px;
+}
+.search_top .search_word a{
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    margin: 10px 10px 0px 0px;
+    background: #f7f7f7;
+    border: 1px solid #e4e4e4;
+    font-size: 14px;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px; 
+}
+/*搜索 end*/
+
