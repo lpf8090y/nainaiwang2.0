@@ -273,3 +273,6 @@ padding-left: 0px;
 	font-size: 14px;
 }
 /*耐耐咨讯推荐 end*/
+
+/*搜索页面样式*/
+.search_text{border:0;background: #aaa;color: #999;padding-left: 24px;height: 40px;line-height: 40px;}
