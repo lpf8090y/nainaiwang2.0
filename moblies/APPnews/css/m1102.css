@@ -330,8 +330,6 @@ margin: 0 0px 0 20px;
 	width: 85%;
 	padding-left: 35px;
 }
-
-.search_text{border:0;background: #aaa;color: #999;padding-left: 24px;height: 40px;line-height: 40px;}
 .search .search_icon{
 	position: absolute;
 	display: block;
@@ -339,7 +337,7 @@ margin: 0 0px 0 20px;
 	height: 30px;
 	top: 6px;
 	left: 25px;
-	background: url("../images/seach.png") no-repeat;
+	background: url("../images/search.png") no-repeat;
 }
 .search .qx_icon{
  position: absolute;
@@ -347,3 +345,24 @@ margin: 0 0px 0 20px;
  line-height: 44px;
  right: 20px;
 }
+.settings .userinfo .search_icon{
+	float: left;width: 25%;
+}
+.settings .userinfo .icon_pingdao p{
+	font-size: 1.2rem;color: #ccc;margin: 0.5rem 0;
+}
+.settings .userinfo .icon_pingdao img{
+	width: 2.4rem;height: 2.4rem;
+}
+
+.settings .userinfo .search_record{
+	width: 100%;padding: 10px 0;border-bottom: 1px solid #ccc;font-size: 1rem;color: #666;
+}
+.settings .userinfo .search_record i{
+	color: #ccc;font-size: 1rem;display: inline-block;float: right;width: 1rem;height: 1rem;font-style: normal;
+}
+.settings .userinfo .clear_record{
+	display: block;line-height: 5rem;
+	width: 100%;text-align: center;font-size: 1rem;color: #666;
+}
+#focus_text{position: fixed;width: 90%;height: 100%;top: 30px;background: #fff;display:none;}

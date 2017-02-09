@@ -11,6 +11,7 @@
 <link rel="apple-touch-icon-precomposed" href=http://wap.baidu.com/static/img/webapp/img/icon_114.png/>
 <meta name="apple-itunes-app" content="app-id=869266629, app-argument=mlj://" />
 <link href="css/m1102.css" rel="stylesheet" />
+<script src="js/jquery-1.8.3.min.js"></script>
 
 <title>APP搜索页</title>
 </head>
@@ -19,58 +20,82 @@
 <section id="staticpage" class="page current" style="display:block;">
     <div class="top-nav-box">
         <div class="top-nav">
-            <input type="text" placeholder="请输入关键词" class="search_text tnav-left">
-            <a class="tnav-btn" href="#" onClick="backPage();return false;">取消</a>
+            <form>
+                <div class="search">
+                    <i class="search_icon"></i>
+                    <input class="search_text" type="text" id="search_text" placeholder="请输入关键词"/>
+                    <a class="qx_icon">取消</a>
+                </div>
+               </form>
             
         </div>
     </div>
     <div class="main-body">
         <div class="body-scroll">
             <div class="settings">
-                <div class="item userinfo">
-                        <p class="nick">浅析钙长石的应用及发展前景</p>
-                        <p class="location"><span class="author">中国发展网</span><span class="time">12-19 13:20</span></p>
-                  
+                <div class="item userinfo" style="text-align:center;">
+                    <h1>您可以搜索</h1>
+                    <ul>
+                        <li class="search_icon">
+                            <span class="icon_pingdao">
+                                    <p>
+                                        <img src="images/icon_03.png">
+                                    </p>
+                                    <p>频道</p>
+                            </span>
+                        </li>
+                        <li class="search_icon">
+                            <span class="icon_pingdao">
+                                    <p>
+                                        <img src="images/icon_05.png">
+                                    </p>
+                                    <p>观点</p>
+                            </span>
+                        </li>
+                        <li class="search_icon">
+                            <span class="icon_pingdao">
+                                    <p>
+                                        <img src="images/icon_07.png">
+                                    </p>
+                                    <p>动态</p>
+                            </span>
+                        </li>
+                        <li class="search_icon">
+                            <span class="icon_pingdao">
+                                    <p>
+                                        <img src="images/icon_09.png">
+                                    </p>
+                                    <p>新闻</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
                 </div>
-            </div>
-            <div class="settings">
-                <div class="item userinfo">
-                    <img class="face" src="http://img.meilijia.com/user_pics/f625d3ab4933d7360ca0c64d9123244a_150.jpg" />
-                    <div class="info">
-                        <p>钙长石是自然界分布最广的矿物之一钙长石是自然界分布最广的矿物之一钙长石是自然界分布最广的矿物之一钙长石是自然界分布最广的矿物之一钙长石是自然界分布最广的矿物之一钙长石是自然界分布最广的矿物之一钙长石是自然界分布最广的矿物之一钙长石是自然界分布最广的矿物之一</p>
-                    </div>
-                </div>
-            </div>
-            <div class="settings-space"></div>
-            <div class="settings">
-                <div class="item normal">
-                    <span class="title">相关推荐</span>
-                </div>
-            </div>
-            <div class="settings">
-                <div class="item userinfo">
-                    <img class="little-face" src="http://img.meilijia.com/user_pics/f625d3ab4933d7360ca0c64d9123244a_150.jpg" />
-                    <div class="info-title">
-                        <p class="nick">矿价大涨背后，到底是什么在支持</p>
-                        <p class="location"><span class="author">中国发展网</span><span class="time">12-19 13:20</span></p>
-                    </div>
-                </div>
-                <div class="item userinfo">
-                    <img class="little-face" src="http://img.meilijia.com/user_pics/f625d3ab4933d7360ca0c64d9123244a_150.jpg" />
-                    <div class="info-title">
-                        <p class="nick">矿价大涨背后，到底是什么在支持</p>
-                        <p class="location"><span class="author">中国发展网</span><span class="time">12-19 13:20</span></p>
-                    </div>
-                </div>
-                <div class="item userinfo">
-                    <img class="little-face" src="http://img.meilijia.com/user_pics/f625d3ab4933d7360ca0c64d9123244a_150.jpg" />
-                    <div class="info-title">
-                        <p class="nick">矿价大涨背后，到底是什么在支持</p>
-                        <p class="location"><span class="author">中国发展网</span><span class="time">12-19 13:20</span></p>
-                    </div>
-                </div>
-            </div>
-                        
+                <div class="item userinfo" id="focus_text" style="border:0;">
+                    <ul>
+                        <li class="search_record">
+                            <span>
+                                耐火资讯
+                                <i>X</i>
+                            </span>
+                        </li>
 
+                        <a href class="clear_record">清楚搜索记录</a>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+                        
+<script type="text/javascript">
+$(function(){
+        $("#search_text").focus(function(){
+          $("#focus_text").show();
+        });
+    });
+</script>
 </body>
 </html>
